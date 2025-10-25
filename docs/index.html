@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Business Innovation | Executive Education Masterclass</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #7c3aed;
+            --primary-dark: #5b21b6;
+            --secondary: #f59e0b;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+            --white: #ffffff;
+            --text: #374151;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        section .section-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        /* Overview Cards */
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .overview-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .overview-card h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .overview-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .overview-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .overview-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        /* Frameworks */
+        .frameworks-grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .framework-card {
+            background: var(--white);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .framework-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+
+        .framework-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .framework-number {
+            background: var(--primary);
+            color: var(--white);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .framework-card h3 {
+            color: var(--dark);
+            font-size: 1.75rem;
+        }
+
+        .framework-card .description {
+            color: var(--text);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .framework-visual {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+
+        .framework-card .application {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+            margin-top: 1rem;
+        }
+
+        .framework-card .application strong {
+            color: var(--secondary);
+        }
+
+        /* Exercises */
+        .exercises-grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .exercise-card {
+            background: linear-gradient(to right, var(--white), var(--light));
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .exercise-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+
+        .exercise-card h3 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .exercise-duration {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .exercise-format {
+            color: var(--text);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .exercise-card .learning {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .exercise-card .learning strong {
+            color: var(--primary);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .highlight-box h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Schedule */
+        .schedule-timeline {
+            max-width: 900px;
+            margin: 3rem auto;
+        }
+
+        .timeline-section {
+            margin-bottom: 3rem;
+        }
+
+        .timeline-section h3 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 69px;
+            top: 48px;
+            bottom: -32px;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-item:last-child:before {
+            display: none;
+        }
+
+        .timeline-time {
+            min-width: 120px;
+            font-weight: 600;
+            color: var(--primary);
+            padding-top: 0.5rem;
+        }
+
+        .timeline-content {
+            flex: 1;
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .timeline-content h4 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content .type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content .type.exercise {
+            background: var(--secondary);
+        }
+
+        .timeline-content .type.break {
+            background: #9ca3af;
+        }
+
+        .timeline-content .type.core {
+            background: #dc2626;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* Resources */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .resource-card {
+            background: var(--white);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: border-color 0.3s;
+        }
+
+        .resource-card:hover {
+            border-color: var(--primary);
+        }
+
+        .resource-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .resource-card h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .resource-card .description {
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .timeline-item:before {
+                display: none;
+            }
+
+            .exercise-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">AI Business Innovation</div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#frameworks">Frameworks</a></li>
+                <li><a href="#exercises">Exercises</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>AI-Driven Business Innovation</h1>
+            <p class="subtitle">One Day Executive Education Masterclass</p>
+            <div class="hero-meta">
+                <div class="meta-item">⏱️ 7.5 Hours</div>
+                <div class="meta-item">👥 Executives & Strategic Leaders</div>
+                <div class="meta-item">💡 Strategic Investment Focus</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview">
+        <div class="container">
+            <h2>Course Overview</h2>
+            <p class="section-intro">
+                Master the strategic frameworks to evaluate, prioritize, and invest in AI initiatives.
+                This intensive masterclass uses the Dragon's Den investment simulation to practice real portfolio decisions.
+            </p>
+
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>🎯 Who Should Attend</h3>
+                    <ul>
+                        <li>C-suite executives and senior leaders</li>
+                        <li>Innovation officers and strategists</li>
+                        <li>Portfolio managers</li>
+                        <li>Business unit leaders</li>
+                        <li>Investment committee members</li>
+                    </ul>
+                </div>
+
+                <div class="overview-card">
+                    <h3>📚 What You'll Learn</h3>
+                    <ul>
+                        <li>5 strategic frameworks for AI investment</li>
+                        <li>Portfolio balancing across time horizons</li>
+                        <li>ROI calculation for AI initiatives</li>
+                        <li>Strategic positioning with AI</li>
+                        <li>Investment decision-making</li>
+                    </ul>
+                </div>
+
+                <div class="overview-card">
+                    <h3>🚀 Learning Approach</h3>
+                    <ul>
+                        <li>Dragon's Den investment simulation</li>
+                        <li>Strategic exercises (50% of time)</li>
+                        <li>RetailFlow investment decisions</li>
+                        <li>Peer evaluation and debate</li>
+                        <li>Personal action planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="frameworks" style="background: var(--light);">
+        <div class="container">
+            <h2>Five Strategic Frameworks</h2>
+            <p class="section-intro">
+                Proven frameworks for making strategic AI investment decisions.
+            </p>
+
+            <div class="frameworks-grid">
+                <div class="framework-card">
+                    <div class="framework-header">
+                        <div class="framework-number">1</div>
+                        <h3>AI Transformation Matrix</h3>
+                    </div>
+                    <p class="description">
+                        Classify AI initiatives across two dimensions: Process vs. Strategic, and Incremental vs. Transformational.
+                    </p>
+                    <div class="framework-visual">
+                        TRANSFORMATIONAL
+              │
+    REVOLUTIONIZE  │  TRANSFORM
+    (New Processes)│  (New Business Models)
+    ───────────────┼───────────────
+    OPTIMIZE       │  ENHANCE
+    (Efficiency)   │  (Better Products)
+              │
+         INCREMENTAL
+                    </div>
+                    <div class="application">
+                        <strong>Strategic Application:</strong> Balance your AI portfolio across all four quadrants.
+                        Most organizations over-invest in "Optimize" - identify strategic gaps.
+                    </div>
+                </div>
+
+                <div class="framework-card">
+                    <div class="framework-header">
+                        <div class="framework-number">2</div>
+                        <h3>Data Value Pyramid</h3>
+                    </div>
+                    <p class="description">
+                        Five levels of data maturity from basic collection to autonomous operations.
+                        You can't jump to Level 5 AI without Level 3+ data foundations.
+                    </p>
+                    <div class="framework-visual">
+         ┌─────────────┐
+         │ AUTONOMOUS  │ Level 5
+         ├─────────────┤
+         │ PRESCRIPTIVE│ Level 4
+         ├─────────────┤
+         │ PREDICTIVE  │ Level 3
+         ├─────────────┤
+         │ DIAGNOSTIC  │ Level 2
+         ├─────────────┤
+         │ DESCRIPTIVE │ Level 1
+         └─────────────┘
+                    </div>
+                    <div class="application">
+                        <strong>Strategic Application:</strong> Assess your data maturity before investing in advanced AI.
+                        Match AI initiatives to your current data capabilities.
+                    </div>
+                </div>
+
+                <div class="framework-card">
+                    <div class="framework-header">
+                        <div class="framework-number">3</div>
+                        <h3>Three Horizons Model</h3>
+                    </div>
+                    <p class="description">
+                        Balance your AI investment portfolio across three time horizons with different risk/return profiles.
+                    </p>
+                    <div class="framework-visual">
+Horizon 1: Extend & Defend Core (60-70%)
+  • 0-12 months payback
+  • Low risk, proven ROI
+  • Optimize current operations
+
+Horizon 2: Build Emerging Capabilities (20-30%)
+  • 1-3 years payback
+  • Medium risk, strategic value
+  • Adjacent opportunities
+
+Horizon 3: Create Transformational Options (10-15%)
+  • 3-5+ years payback
+  • High risk, breakthrough potential
+  • Future business models
+                    </div>
+                    <div class="application">
+                        <strong>Strategic Application:</strong> Evaluate whether your AI portfolio is balanced.
+                        All H1 = no future. All H3 = no present. Balance creates sustainable innovation.
+                    </div>
+                </div>
+
+                <div class="framework-card">
+                    <div class="framework-header">
+                        <div class="framework-number">4</div>
+                        <h3>AI Investment Model</h3>
+                    </div>
+                    <p class="description">
+                        Calculate ROI across four value categories to quantify business impact systematically.
+                    </p>
+                    <div class="framework-visual">
+1. Cost Reduction
+   • Labor savings
+   • Process efficiency
+   • Resource optimization
+
+2. Revenue Growth
+   • New sales
+   • Retention improvement
+   • Pricing power
+
+3. Risk Reduction
+   • Fraud prevention
+   • Compliance
+   • Error reduction
+
+4. Strategic Positioning
+   • Competitive advantage
+   • Capability building
+   • Market leadership
+                    </div>
+                    <div class="application">
+                        <strong>Strategic Application:</strong> Move beyond "AI for AI's sake."
+                        Quantify value rigorously. Compare initiatives on consistent criteria.
+                    </div>
+                </div>
+
+                <div class="framework-card">
+                    <div class="framework-header">
+                        <div class="framework-number">5</div>
+                        <h3>Innovation Adoption Framework</h3>
+                    </div>
+                    <p class="description">
+                        Five-phase journey from knowledge building to comprehensive transformation.
+                        Respect the journey - don't skip phases.
+                    </p>
+                    <div class="framework-visual">
+Phase 1: Knowledge Building (3-6 mo)
+Phase 2: Pilot Experimentation (6-12 mo)
+Phase 3: Selective Deployment (12-18 mo)
+Phase 4: Scaling Operations (18-36 mo)
+Phase 5: Comprehensive Transformation (36+ mo)
+
+At each phase: Scale, Pivot, or Kill
+                    </div>
+                    <div class="application">
+                        <strong>Strategic Application:</strong> Understand where each initiative is in the journey.
+                        Use Scale/Pivot/Kill criteria honestly at each phase gate.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="exercises">
+        <div class="container">
+            <h2>Strategic Exercises</h2>
+            <p class="section-intro">
+                Four exercises to practice strategic AI decision-making using real investment scenarios.
+            </p>
+
+            <div class="exercises-grid">
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div>
+                            <h3>Exercise 1: AI Tech Radar</h3>
+                            <p class="exercise-format">Portfolio mapping</p>
+                        </div>
+                        <div class="exercise-duration">45 min</div>
+                    </div>
+                    <p>
+                        Map your organization's AI capabilities across the Transformation Matrix. Use 12 AI capability cards
+                        to assess where you're over-invested, under-invested, and identify strategic gaps.
+                    </p>
+                    <div class="learning">
+                        <strong>Key Learning:</strong> Most organizations cluster in "Optimize" quadrant (60-80%).
+                        Strategic leaders balance across all four quadrants intentionally.
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div>
+                            <h3>Exercise 2: Threat & Opportunity Mapping</h3>
+                            <p class="exercise-format">Competitive strategy</p>
+                        </div>
+                        <div class="exercise-duration">60 min</div>
+                    </div>
+                    <p>
+                        Identify competitive threats from AI (how could competitors disrupt you?) and strategic opportunities
+                        (how could you use AI for advantage?). Position opportunities across Three Horizons.
+                    </p>
+                    <div class="learning">
+                        <strong>Key Learning:</strong> AI is both threat and opportunity. Most teams identify more H1 opportunities
+                        than H2/H3 - pushing strategic thinking reveals transformational options.
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div>
+                            <h3>Exercise 3: Dragon's Den Investment Simulation</h3>
+                            <p class="exercise-format">Investment pitch & evaluation</p>
+                        </div>
+                        <div class="exercise-duration">90 min</div>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>⭐ THE CORE LEARNING ACTIVITY ⭐</h4>
+                        <p>This simulation is where strategic frameworks meet real investment decisions</p>
+                    </div>
+                    <p>
+                        <strong>The Challenge:</strong> RetailFlow has $2M AI budget. Four competing initiatives.
+                        Investment Committee must allocate budget strategically.
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        <strong>Four AI Initiatives:</strong>
+                    </p>
+                    <ul style="margin: 1rem 0; padding-left: 2rem;">
+                        <li><strong>Customer Service Chatbot</strong> ($450K, 92% ROI, H1 Optimize)</li>
+                        <li><strong>Dynamic Pricing</strong> ($850K, 253% ROI, H2 Enhance)</li>
+                        <li><strong>Inventory Optimization</strong> ($1.1M, 264% ROI, H1-H2 Revolutionize)</li>
+                        <li><strong>Fraud Detection</strong> ($650K, 315% ROI, H1 Optimize)</li>
+                    </ul>
+                    <p>
+                        Project Teams prepare 10-minute pitches using Investment Model framework. Committee evaluates,
+                        questions, deliberates, and announces investment decisions with strategic rationale.
+                    </p>
+                    <div class="learning">
+                        <strong>Key Learning:</strong> Highest ROI doesn't always win. Strategic fit, portfolio balance,
+                        capability building, and timing all matter. Practice making tough investment calls with limited budget.
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div>
+                            <h3>Exercise 4: Strategic Response Scenarios</h3>
+                            <p class="exercise-format">Quick decision practice</p>
+                        </div>
+                        <div class="exercise-duration">15 min</div>
+                    </div>
+                    <p>
+                        Three rapid strategic decisions: (1) Competitive threat response - fast-follow, differentiate, or wait?
+                        (2) Pilot performance - scale, pivot, or kill? (3) Emerging tech - pioneer, fast-follow, or wait?
+                    </p>
+                    <div class="learning">
+                        <strong>Key Learning:</strong> Strategic agility = frameworks + judgment. Practice using frameworks
+                        for faster, better decisions under time pressure.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" style="background: var(--light);">
+        <div class="container">
+            <h2>Daily Schedule</h2>
+            <p class="section-intro">
+                9:00 AM - 4:30 PM (7.5 hours including breaks)
+            </p>
+
+            <div class="schedule-timeline">
+                <div class="timeline-section">
+                    <h3>Morning Session: AI Strategy Foundations</h3>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">9:00-9:20 AM</div>
+                        <div class="timeline-content">
+                            <span class="type">Welcome</span>
+                            <h4>Strategic Context & Introductions</h4>
+                            <p>Course objectives, AI initiatives roundtable</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">9:20-9:50 AM</div>
+                        <div class="timeline-content">
+                            <span class="type">Framework 1</span>
+                            <h4>AI Transformation Matrix</h4>
+                            <p>Classify AI initiatives strategically across 4 quadrants</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">9:50-10:35 AM</div>
+                        <div class="timeline-content">
+                            <span class="type exercise">Exercise 1</span>
+                            <h4>AI Tech Radar</h4>
+                            <p>Map your organization's AI portfolio and identify gaps</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">10:35-10:50 AM</div>
+                        <div class="timeline-content">
+                            <span class="type break">Break</span>
+                            <h4>Coffee Break</h4>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">10:50-11:20 AM</div>
+                        <div class="timeline-content">
+                            <span class="type">Framework 2 & 3</span>
+                            <h4>Data Value Pyramid & Three Horizons Model</h4>
+                            <p>Data foundations and portfolio balancing</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">11:20-12:20 PM</div>
+                        <div class="timeline-content">
+                            <span class="type exercise">Exercise 2</span>
+                            <h4>Threat & Opportunity Mapping</h4>
+                            <p>Competitive intelligence and strategic positioning</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">12:20-12:30 PM</div>
+                        <div class="timeline-content">
+                            <span class="type">Debrief</span>
+                            <h4>Morning Synthesis</h4>
+                            <p>Key insights, transition to investment decisions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h3>Afternoon Session: Investment Decisions</h3>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">12:30-1:15 PM</div>
+                        <div class="timeline-content">
+                            <span class="type break">Break</span>
+                            <h4>Lunch Break</h4>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">1:15-1:45 PM</div>
+                        <div class="timeline-content">
+                            <span class="type">Framework 4</span>
+                            <h4>AI Investment Model</h4>
+                            <p>Calculate ROI across 4 value categories + RetailFlow context</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">1:45-3:15 PM</div>
+                        <div class="timeline-content">
+                            <span class="type core">⭐ Exercise 3 - CORE</span>
+                            <h4>Dragon's Den Investment Simulation</h4>
+                            <p><strong>THE CENTERPIECE:</strong> Pitch and evaluate competing AI investments</p>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                                <li>Team prep (30 min)</li>
+                                <li>Investment pitches (45 min)</li>
+                                <li>Committee decision (10 min)</li>
+                                <li>Debrief (5 min)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">3:15-3:30 PM</div>
+                        <div class="timeline-content">
+                            <span class="type break">Break</span>
+                            <h4>Afternoon Break</h4>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">3:30-4:00 PM</div>
+                        <div class="timeline-content">
+                            <span class="type">Framework 5</span>
+                            <h4>Innovation Adoption & Scaling</h4>
+                            <p>5-phase implementation journey, Scale/Pivot/Kill criteria</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">4:00-4:15 PM</div>
+                        <div class="timeline-content">
+                            <span class="type exercise">Exercise 4</span>
+                            <h4>Strategic Response Scenarios</h4>
+                            <p>Quick strategic decisions under pressure</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">4:15-4:30 PM</div>
+                        <div class="timeline-content">
+                            <span class="type">Synthesis</span>
+                            <h4>Personal Action Planning & Wrap-Up</h4>
+                            <p>90-day action plans, key takeaways, Q&A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources">
+        <div class="container">
+            <h2>Course Resources</h2>
+            <p class="section-intro">
+                Strategic tools and templates to apply frameworks in your organization.
+            </p>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📋</div>
+                    <h3>Framework Reference</h3>
+                    <p class="description">Complete guide to all 5 strategic frameworks with examples</p>
+                    <a href="frameworks.html" class="btn">View Frameworks</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎯</div>
+                    <h3>Exercise Materials</h3>
+                    <p class="description">Capability cards, investment scenarios, decision templates</p>
+                    <a href="exercises.html" class="btn">View Exercises</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <h3>Investment Calculator</h3>
+                    <p class="description">ROI calculation template across 4 value categories</p>
+                    <a href="calculator.html" class="btn">Use Calculator</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h3>RetailFlow Case Study</h3>
+                    <p class="description">Complete company context for Dragon's Den simulation</p>
+                    <a href="retailflow.html" class="btn">View Case Study</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📝</div>
+                    <h3>Action Plan Template</h3>
+                    <p class="description">90-day strategic action planning worksheet</p>
+                    <a href="action-plan.html" class="btn">Download Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎓</div>
+                    <h3>Facilitator Guide</h3>
+                    <p class="description">Complete delivery guide for course instructors</p>
+                    <a href="facilitator.html" class="btn">View Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><strong>AI-Driven Business Innovation Masterclass</strong></p>
+            <p style="margin-top: 1rem; opacity: 0.8;">
+                Executive Education | Curtin Business School
+            </p>
+            <p style="margin-top: 1rem;">
+                <a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
