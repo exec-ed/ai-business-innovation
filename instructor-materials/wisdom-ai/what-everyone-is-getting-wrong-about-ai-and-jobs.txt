@@ -1,0 +1,41 @@
+Based on the provided text, here's the extracted wisdom on AI's impact on labor, distilled into key principles:
+
+### Core Insight
+**AI will transform the economy, not destroy it.** Both extreme doom (universal unemployment) and dismissive hype (no fundamental change) are flawed. History, industry, and logic point to **efficiency-driven demand growth**, not job annihilation.
+
+### Key Principles Explained
+1. **Jevons Paradox Applies to AI:**  
+   - Technological efficiency (e.g., cheaper AI tools) *increases* demand for the resource/service.  
+   - **Example:** AI made medical imaging cheaper/denser → more scans → higher demand for radiologists to interpret complex cases.  
+   - **Historical Parallels:**  
+     - Containerization (shipping) → global trade boom → new logistics jobs.  
+     - Cloud computing → cheaper infrastructure → rise of DevOps/cloud architects.  
+     - AI inference cost drops → soaring GPU demand (Nvidia's success).
+
+2. **Jobs Evolve, Don't Vanish:**  
+   - AI automates *rote, low-context, error-forgiving tasks* (e.g., data entry, routine paperwork).  
+   - **Transformation:** Humans shift to **supervision, oversight, and high-value tasks**:  
+     - Radiologists: Move from basic scans to complex treatment planning.  
+     - Admin staff: Shift from paperwork to patient care coordination.  
+     - Customer service: Focus on nuanced issues, not scripted responses.  
+   - **Outcome:** More engaging, higher-value roles replace tedious work.
+
+3. **New Demand Emerges:**  
+   - Lowering the cost of services (e.g., legal docs, code, diagnostics) unlocks **latent demand**.  
+   - **Result:** Demand for human expertise (e.g., lawyers, engineers, specialists) *increases* as AI handles basics.  
+   - **Quote:** *"When the cost of doing work goes down, the demand for it goes up."* — Aaron Levy (CEO, Box).
+
+4. **Practical Realities & Constraints:**  
+   - **Regulation & Trust:** Humans remain in the loop (e.g., medical malpractice, legal accountability).  
+   - **Augmentation > Replacement:** AI amplifies human capability; radiologists + AI tools > AI alone.  
+   - **Job Refactoring:** Roles become "AI managers" (e.g., supervising AI agents in sales/admin).
+
+### Actionable Wisdom for Individuals & Entrepreneurs
+- **Don't Underestimate AI:** Recognize its transformative power (comparable to the internet). Avoid skepticism like Krugman's 1998 dismissal of the internet.  
+- **Avoid Extremes:** Reject both "doomer" panic and "hype" dismissal. Focus on adaptation.  
+- **Embrace Evolution:** Upskill for AI-augmented roles (oversight, strategy, creativity).  
+- **Build the Future:** The AI-driven economy is being built *now* by proactive founders. Identify gaps where human-AI collaboration creates value.  
+- **Proactive Mindset:** Don't wait for UBI or automation "utopia." Innovate, adapt, and lead change.  
+
+### Bottom Line
+**AI is a catalyst for economic growth and job transformation, not elimination.** Efficiency lowers costs, spurs demand, and creates new human-centric roles. Success lies in adapting to a future where humans and AI collaborate, not compete.

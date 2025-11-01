@@ -23,15 +23,15 @@ You are **facilitating AI-augmented strategic thinking**, not teaching AI prompt
 
 ## Pre-Exercise Setup (During Break 10:30-11:00)
 
-**Technology check:**
-- Confirm each table has 1 laptop with internet
+**Technology check (BYOD - Bring Your Own Device):**
+- Most participants will have laptops/tablets (this is executive workshop)
 - **AI Tool Options** (participants choose):
   - **Google Gemini** (recommended): gemini.google.com - FREE, NO LOGIN
   - ChatGPT: chat.openai.com - free tier, requires account
   - Claude: claude.ai - free tier, requires account  
   - Bing Chat/Copilot: Built into Edge - free, no login
-- **Backup:** Have YOUR laptop ready to demonstrate if tables lack access
-- **Test:** Open Gemini on your laptop to confirm it works
+- **Backup:** Have YOUR laptop ready to demonstrate if a table lacks devices
+- **Test:** Open Gemini on your laptop to confirm venue wifi works
 
 **Room prep:**
 - Flipcharts at each table with Three Horizons grid drawn
@@ -40,13 +40,24 @@ You are **facilitating AI-augmented strategic thinking**, not teaching AI prompt
 - Strategic Prompting Guide handout at each seat
 
 **Announce at 11:00:**
-"Next exercise uses AI tools. Each table needs one laptop. 
+"Next exercise uses AI tools on your devices. Each table, designate one person as 'AI Lead'—
+they'll be the main person typing prompts.
 
 Recommended: Google Gemini (free, no login required). Or use ChatGPT/Claude if you prefer.
 
-Who has a laptop with internet? [Show of hands]. 
+Others at the table can follow along on their own devices if they want, or gather around 
+one screen. Your choice.
 
-Good—if your table doesn't have access, you'll watch my demonstration and still do the thinking exercise."
+Who has a device with internet? [Show of hands]. 
+
+Good—looks like we're set. If any table has issues, I'll demonstrate live and you can 
+still do the thinking exercise."
+
+**Pro tip for facilitators:**
+- Don't be rigid about "one device per table"—executives will naturally collaborate however works for them
+- Some tables: everyone on own device, comparing responses
+- Other tables: huddle around one laptop
+- Both work fine—let them self-organize
 
 **Critical:** 
 - ✅ DO recommend Gemini (removes login friction)
@@ -416,6 +427,49 @@ This is why you need YOUR expertise to evaluate AI's suggestions. AI generates, 
 - Someone says: "I'm going to use reverse prompting on Monday"
 
 ---
+
+## BYOD Troubleshooting
+
+### "Multiple people at our table have laptops—should we all use AI?"
+
+**Say:**
+"Your choice! Some tables like everyone on their own device comparing responses. Others prefer gathering around one screen. Both work—whatever helps you think better."
+
+**Reality:** 
+- High-performing tables often split work: "You do Risk Deep-Dive, I'll do Reverse Prompting"
+- Collaborative tables huddle around one device
+- Both are fine—don't micromanage
+
+### "Nobody at our table brought a laptop"
+
+**Say:**
+"No problem—I'll demonstrate on mine [project on screen]. You'll watch, discuss what AI says, and still do the synthesis exercise. The learning still happens."
+
+**Then:**
+- Use their sticky notes as the example
+- They become the "demo table"
+- All tables learn from watching them
+
+### "We all have ChatGPT accounts—should we use same prompts?"
+
+**Say:**
+"Yes! Use the same prompts. Interesting to see if you get different responses. That's valuable—shows AI isn't deterministic. Compare and discuss."
+
+### "Can I use AI on my phone instead of laptop?"
+
+**Say:**
+"Absolutely. Gemini and ChatGPT work great on mobile. Just harder to type long prompts—maybe pair up with someone on laptop."
+
+### "Our wifi is slow / AI is taking forever"
+
+**Say:**
+"While you wait, discuss: What do you EXPECT AI to say? What would YOU add if you were the AI?
+
+When it finally loads, see if you were right. Builds your AI prediction skills."
+
+**If really stuck:**
+- Switch to demo mode (your laptop)
+- This table watches, others continue
 
 ## Backup Plans
 

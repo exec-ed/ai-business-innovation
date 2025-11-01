@@ -58,22 +58,26 @@ Write one opportunity per sticky note. Place on appropriate horizon.
 
 ## Phase 2: AI Augmentation (30 minutes)
 
-**Setup:**
-- **One laptop per table** (participant brings their own)
-- **AI Tool Options** (choose ONE that works for your table):
+**Setup (BYOD - Bring Your Own Device):**
+- **Each table designates one "AI Lead"** with laptop/tablet
+  - This person shares their screen OR reads AI responses aloud
+  - Others can follow along on their own devices if they want
+  - Or work together around one device
+- **AI Tool Options** (table chooses):
   - **Google Gemini** (recommended): https://gemini.google.com (free, no login)
   - **ChatGPT**: https://chat.openai.com (free tier, requires account)
   - **Claude**: https://claude.ai (free tier, requires account)
   - **Bing Chat/Copilot**: Built into Edge browser (free, no login)
-- **Roles:**
-  - One person is "AI operator" (types prompts and reads responses)
-  - One person is "scribe" (captures insights on sticky notes)
-  - Everyone participates in discussion
+- **Suggested Roles:**
+  - "AI Lead": Opens AI tool, types prompts, reads responses aloud
+  - "Scribe": Captures insights on sticky notes (different color)
+  - Everyone: Participates in discussion and evaluates AI responses
 
 **Important:** 
 - ✅ You'll TYPE your sticky note content into the prompt (takes 2-3 min)
 - ❌ No photo upload needed—manual typing is faster and more reliable
 - ✅ All AI tools work equally well for this exercise
+- ✅ Multiple people can have AI open—just coordinate so you're not duplicating work
 
 **You'll use AI in three different ways:**
 
