@@ -341,7 +341,9 @@ That's the right model. AI generates, you decide. This is how you'll use AI this
 > 
 > Example: GitHub Copilot costs Microsoft $30-80 per user per month in AI costs, but they charge $10/month. They're losing money on every user hoping to make it up in volume (classic startup mistake).
 > 
-> Power users can cost OpenAI $200+/month while paying $20. Companies must cap usage (frustrating users) or lose money on heavy users."
+> Power users can cost OpenAI $200+/month while paying $20. Companies must cap usage (frustrating users) or lose money on heavy users.
+>
+> The 'dead subscription' problem: Many AI companies survive on users who PAY but don't USE the product. Once those users cancel, the economics collapse."
 
 **Teaching point:**
 "This is why 'continuous learning costs' in our AI Investment Checklist are 30-50% annually, not 10-15% like traditional IT.
@@ -351,8 +353,12 @@ When vendors pitch you AI at 'low cost,' ask:
 - Do you cap my usage?
 - What happens if my usage 10x?
 - What's your margin on this deal?
+- What percentage of your revenue comes from 'dead subscriptions'?
 
 If they're selling at a loss (subsidized by VC), they'll raise prices later or go bankrupt. Budget for realistic ongoing costs."
+
+**Advanced point:**
+"The litmus test for any AI investment: Would this solve a real problem WITHOUT AI? If the answer is no—if AI is the only value proposition—be very cautious. The best AI businesses use AI to ENHANCE an already-valuable service, not to BE the service."
 
 ---
 
@@ -458,20 +464,30 @@ Your committee decision to require external bias audits? That's not overcautious
 **The narrative:**
 > "The Jevons Paradox: When you make something more efficient, you don't use less of it—you use MORE.
 > 
-> Historical example: Steam engines made coal power more efficient. Did we burn less coal? No—we burned MORE because now it was economical to use steam power for everything.
+> Historical examples:
+> - **Steam engines**: Made coal power more efficient → we burned MORE coal (not less) because now it was economical to use steam power for everything
+> - **Containerization**: Made shipping more efficient → global trade BOOMED → created entire new logistics industry
+> - **Cloud computing**: Made infrastructure cheaper → explosion of DevOps, cloud architects, SRE roles
+> - **AI inference costs drop**: GPU demand SOARS (Nvidia's success)
 > 
 > AI parallel: AI makes you more efficient at analysis. Do you work less? No—your boss expects you to analyze 10x more data, or spend saved time on higher-level strategy.
+>
+> Real example: Radiologists
+> - AI makes medical imaging cheaper/faster → hospitals run MORE scans → radiologists shift from basic scans to complex treatment planning
+> - Result: Higher demand for radiologists, but doing different (higher-value) work
 > 
 > The bar is rising for everyone. As AI commoditizes execution, the value shifts to:
-> - Synthesis (connecting disparate ideas)
+> - Supervision and oversight (managing AI outputs)
 > - Complex judgment (decisions with incomplete information)  
-> - Critical thinking (asking the right questions)
+> - High-value tasks (strategic vs. tactical work)
 > - Effective communication (translating complexity)
 > 
-> AI replaces tasks, not jobs (yet). But the tasks that remain require higher-order thinking."
+> AI automates rote, low-context, error-forgiving tasks. Humans shift to nuanced, high-stakes, relationship-based work."
 
 **Teaching point:**
 "This is why you're learning strategic frameworks, not just AI tools. AI helps you analyze faster. But frameworks help you DECIDE better.
+
+When cost of work goes down, demand for it goes UP. This creates latent demand—new markets that weren't economically viable before. Example: Legal document drafting becomes cheap → small businesses can now afford legal services → higher demand for lawyers (doing oversight, not drafting).
 
 Your competitive advantage isn't 'I can use ChatGPT.' Everyone can. It's 'I can use ChatGPT to generate insights, THEN apply strategic frameworks to make better investment decisions than people who only have one or the other.'
 
@@ -507,6 +523,44 @@ That hands-on experience is worth 10 blog posts about AI. This afternoon, if you
 ---
 
 ## Business Model Stories {#business-model-stories}
+
+### Story: "Evaluating AI Vendors: Red Flags and Green Flags"
+
+**When to use:** During Dragon's Den prep (1:45 PM) or when discussing vendor selection
+
+**The narrative:**
+> "When evaluating AI vendors or building your own AI, watch for these red flags:
+>
+> **Red Flags:**
+> 1. **VC-subsidized pricing**: Selling at a loss, burning VC cash. They'll raise prices 3-5x when funding dries up.
+> 2. **Usage caps without transparency**: 'Unlimited plan' that throttles after X uses. Frustrates users, drives churn.
+> 3. **Focus on vanity metrics**: 'Weekly Active Users' instead of Monthly Active Users, or total signups instead of retention.
+> 4. **AI is the ONLY value**: If you remove AI, there's no business left. These fail when AI commoditizes.
+> 5. **Low conversion rates**: <10% trial-to-paid conversion suggests weak product-market fit.
+> 6. **Dead subscription reliance**: Revenue depends on users who pay but don't use the product.
+>
+> **Green Flags:**
+> 1. **Enhances existing value**: AI improves an already-useful product (not the entire proposition).
+> 2. **Transparent pricing**: Clear per-user costs, no hidden usage caps, sustainable margins (50%+).
+> 3. **Traditional SaaS metrics**: Shares retention, conversion, churn rates—not just 'total users.'
+> 4. **Human-in-loop design**: AI recommends, humans decide. Accountability stays with humans.
+> 5. **Solves boring, expensive problems**: Document processing, workflow automation in legacy industries.
+> 6. **Clear ROI without AI**: If AI disappeared tomorrow, the core value proposition still exists."
+
+**Teaching point:**
+"When RetailFlow evaluates the chatbot vendor, ask:
+- What's your gross margin on this contract?
+- What's your customer retention rate (1-year, 3-year)?
+- What percentage of revenue comes from users who don't actively use the product?
+- If your AI API costs increase 2x, what happens to our pricing?
+- Can you share 3 customers with similar deployments and their outcomes?
+
+If vendor can't answer these, or answers are concerning (margins <40%, retention <70%, pricing depends on VC subsidy), that's high risk."
+
+**Real-world application:**
+"Many 'AI startups' are just wrappers around OpenAI/Anthropic APIs with 10-20% margin. When API costs rise or OpenAI releases their own version, these businesses die. Look for defensible moats: proprietary data, deep industry expertise, established customer relationships—not just 'we have a nice UI for ChatGPT.'"
+
+---
 
 ### Story: "The Hype Cycle Reality"
 
@@ -569,17 +623,31 @@ If you fund Dynamic Pricing because of FOMO ('everyone's doing dynamic pricing!'
 > ✅ Clear ROI (time savings, cost reduction)
 > ✅ Boring = less competition
 > ✅ Regulatory industries = high switching costs
+> ✅ **The litmus test**: Would this business work WITHOUT AI? (Yes—it's document processing. AI just makes it 10x cheaper/faster)
 > 
-> The hype chases consumer AI. The profits hide in boring B2B automation."
+> The hype chases consumer AI. The profits hide in boring B2B automation.
+>
+> Reality check on AI adoption:
+> - Even ChatGPT (market leader) has <2-7% conversion to paid
+> - 93% of AI-native users are on ChatGPT (300-400M MAU)
+> - Claude: 3M MAU, Gemini: 47M, Copilot: 33M
+> - These are EARLY adoption numbers despite the hype
+> 
+> Why low conversion? Weak product-market fit. Easy to get people to TRY AI (hype/FOMO). Hard to deliver unique, replicable value that justifies ongoing costs."
 
 **Teaching point:**
 "Look at your investment scenarios:
-- Chatbot: Boring admin automation (FAQs) ✅ Sustainable
-- Fraud Detection: Boring admin (flagging transactions) ✅ Sustainable  
-- Dynamic Pricing: Sexy strategic automation ⚠️ Risky
-- Inventory: Boring operational automation ✅ Sustainable
+- Chatbot: Boring admin automation (FAQs) ✅ Sustainable, would work with/without AI
+- Fraud Detection: Boring admin (flagging transactions) ✅ Sustainable, enhances existing process
+- Dynamic Pricing: Sexy strategic automation ⚠️ Risky, AI IS the value proposition
+- Inventory: Boring operational automation ✅ Sustainable, improves existing forecasting
 
-Sometimes boring is better. Don't chase hype—chase solid business cases."
+Sometimes boring is better. Don't chase hype—chase solid business cases.
+
+The best AI investments enhance already-valuable processes. The worst try to create value FROM AI itself."
+
+**When students say "But everyone's doing AI now":**
+"ChatGPT has 300-400M users but <7% pay. That's not adoption—that's trial. Real adoption means retention and conversion. Use traditional SaaS metrics, not vanity metrics like 'weekly active users.' If an AI vendor won't share retention rates, that's a red flag."
 
 ---
 
@@ -643,8 +711,13 @@ BUT—that doesn't mean AI isn't valuable. It means separating hype from reality
 - ✅ "Cross-Model Validation" (advanced technique)
 
 ### 1:15-1:45 PM: AI Investment Model
-- ✅ "The AI Margin Chasm" (ongoing costs reality)
+- ✅ "The AI Margin Chasm" (ongoing costs reality + dead subscriptions)
 - ✅ "The Productivity Paradox" (hidden verification costs)
+- ✅ "Evaluating AI Vendors" (red flags and green flags)
+
+### 1:45-2:30 PM: Dragon's Den Prep
+- ✅ "Evaluating AI Vendors" (questions to ask)
+- ✅ "The Litmus Test" (would this work without AI?)
 
 ### 3:00-4:10 PM: Dragon's Den
 - ✅ "Automate Admin, Not Accountability" (what AI should do)
@@ -653,8 +726,8 @@ BUT—that doesn't mean AI isn't valuable. It means separating hype from reality
 
 ### 4:10-4:25 PM: Debrief & Synthesis
 - ✅ "The 5% Who Succeed" (what they did right)
-- ✅ "The Jevons Paradox" (AI raises the bar, doesn't lower it)
-- ✅ "Boring Billion-Dollar Opportunities" (sustainable AI businesses)
+- ✅ "The Jevons Paradox" (AI raises the bar, doesn't lower it - ENHANCED with radiologist, containerization examples)
+- ✅ "Boring Billion-Dollar Opportunities" (sustainable AI businesses + conversion rate reality)
 - ✅ "The Hype Cycle Reality" (context for current moment)
 
 ---
@@ -675,6 +748,22 @@ BUT—that doesn't mean AI isn't valuable. It means separating hype from reality
 
 ---
 
+## Recently Integrated Wisdom (2025-11-01)
+
+**From what-everyone-is-getting-wrong-about-ai-and-jobs.txt:**
+- ✅ Enhanced Jevons Paradox with containerization, cloud computing examples
+- ✅ Added radiologist transformation concrete example
+- ✅ Latent demand concept (when costs drop, new markets emerge)
+- ✅ Job evolution vs elimination narrative
+
+**From why-most-ai-startup-are-bad.txt:**
+- ✅ Dead subscriptions concept
+- ✅ Conversion rate reality (<2-7% for ChatGPT)
+- ✅ Usage caps vs user experience trade-off
+- ✅ NEW SECTION: "Evaluating AI Vendors: Red Flags and Green Flags"
+- ✅ The litmus test: "Would this work without AI?"
+- ✅ VC-subsidized pricing warnings
+
 ## Additional Wisdom Files to Mine
 
 **For future facilitation enhancement:**
@@ -686,6 +775,12 @@ BUT—that doesn't mean AI isn't valuable. It means separating hype from reality
 2. **why.txt**
    - Deeper "why AI matters" context
    - Could inform pre-readings
+
+3. **what-it-really-takes-to-spot-a-billion-dollar-ai-idea.txt**
+   - Additional billion-dollar opportunity insights
+   
+4. **learned-12-years-amazon.txt**
+   - More Amazon organizational insights
 
 **Recommendation:** Read these and add key insights to this document for next iteration.
 
