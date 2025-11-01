@@ -1,0 +1,12 @@
+# Quarto render outputs
+slide-deck.html
+slide-deck.pdf
+slide-deck.pptx
+slide-deck.docx
+slide-deck_files/
+_output/
+
+# Temporary files
+*.tmp
+*.log
+.quarto/

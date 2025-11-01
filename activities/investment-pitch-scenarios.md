@@ -116,6 +116,42 @@ Implement an AI chatbot to handle routine customer inquiries across all channels
 - Reduction in average handling time by 40%
 - 95% accuracy in responses
 
+### AI-Specific Evaluation Criteria
+
+**1. Data Readiness Score**: 8/10
+- ✅ 2 years of customer inquiry data (150K inquiries)
+- ✅ Product catalog and policies well-documented
+- ⚠️ Some inquiries lack proper categorization
+- ⚠️ Social media data quality needs improvement
+
+**2. Continuous Learning Plan**: Batch Retraining (Quarterly)
+- Retrain on new inquiries and resolutions
+- A/B test responses for continuous improvement
+- Ongoing cost: 30% of initial investment annually ($135K/year)
+
+**3. Accuracy & Risk Tolerance**:
+- **Risk level**: Medium (customer-facing, not life-impacting)
+- **Target accuracy**: 90-95% (matches requirement)
+- **Human oversight**: All escalations reviewed by agents
+- **Failure cost**: Customer frustration, potential sale lost
+
+**4. Explainability Requirements**: Low-Medium
+- Need to show customers "why" we're asking certain questions
+- Agents need to understand chatbot logic for escalations
+- Solution: Use retrieval-based + GPT hybrid (can show sources)
+
+**5. Ethical Risk Assessment**: Low-Medium
+- **Bias risk**: Could treat customer segments differently
+- **Mitigation**: Test responses across customer demographics
+- **Monitoring**: Track satisfaction scores by customer segment
+- **Budget add**: +$25K for bias testing
+
+**AI-Specific Budget Additions**:
+- Continuous learning infrastructure: +$50K
+- Bias testing & monitoring: +$25K
+- **Revised Total**: $525K (from $450K)
+- **Revised ROI**: 75% Year 1 (still strong)
+
 ---
 
 ## PITCH SCENARIO 2: Dynamic Pricing Optimization
@@ -202,6 +238,55 @@ Implement AI-driven dynamic pricing that optimizes prices in real-time based on 
 - Markdown reduction to 25% or below
 - Gross margin improvement of 2+ percentage points
 - No pricing incidents causing customer complaints spike
+
+### AI-Specific Evaluation Criteria
+
+**1. Data Readiness Score**: 6/10 ⚠️
+- ✅ 3+ years of internal pricing and sales data
+- ✅ Inventory turnover data available
+- ❌ Competitor pricing data needs sourcing (web scraping/service)
+- ❌ Customer willingness-to-pay data limited
+- **Action required**: Invest in competitive intelligence data ($100K) BEFORE proceeding
+
+**2. Continuous Learning Plan**: Real-time Learning
+- Price optimization updates daily based on market conditions
+- Requires real-time data pipelines and monitoring
+- Ongoing cost: 40% of initial investment annually ($340K/year)
+- Creates data flywheel: better pricing → more sales data → better model
+
+**3. Accuracy & Risk Tolerance**:
+- **Risk level**: HIGH (pricing errors can damage brand/revenue)
+- **Target accuracy**: Need 98%+ to avoid pricing disasters
+- **Human oversight**: Required for prices outside 20% of baseline
+- **Failure cost**: Revenue loss + brand damage (very high)
+- **Mitigation**: Price floor/ceiling guardrails, gradual rollout
+
+**4. Explainability Requirements**: HIGH ⚠️
+- Merchandising team must understand "why" prices changed
+- Need to justify pricing to leadership and potentially regulators
+- Solution: Use interpretable models (not black box deep learning)
+- **Budget add**: +$100K for explainability dashboards
+
+**5. Ethical Risk Assessment**: HIGH ⚠️
+- **Bias risk**: Could charge different prices to protected groups (illegal)
+- **Fairness concerns**: "Dynamic pricing" can be seen as discriminatory
+- **Regulatory risk**: Some jurisdictions restrict algorithmic pricing
+- **Mitigation**: 
+  - Prohibit using demographic data in pricing
+  - Test for disparate impact across customer segments
+  - Legal review of pricing practices
+  - Transparency about dynamic pricing
+- **Budget add**: +$150K for ethics review, bias testing, legal compliance
+
+**AI-Specific Budget Additions**:
+- Competitive data sourcing: +$100K
+- Explainability dashboards: +$100K
+- Ethics/bias/legal compliance: +$150K
+- Real-time learning infrastructure: +$100K
+- **Revised Total**: $1.3M (from $850K, EXCEEDS $1.2M cap)
+- **Revised ROI**: Still strong but higher risk due to ethical concerns
+
+**⚠️ COMMITTEE NOTE**: High ethical risk requires extra scrutiny. Price discrimination lawsuits could be existential.
 
 ---
 
@@ -290,6 +375,50 @@ Deploy AI to optimize inventory levels across all locations, reducing stockouts 
 - Inventory turns increase from 4x to 5x annually
 - Working capital reduction of $12M
 
+### AI-Specific Evaluation Criteria
+
+**1. Data Readiness Score**: 7/10 ✅
+- ✅ 3+ years of sales history by location/SKU
+- ✅ Inventory and turnover data available
+- ⚠️ Supplier lead time data inconsistent (needs standardization)
+- ⚠️ External data (weather, events) needs integration
+- **Action**: Data cleaning project (3 months, already in budget)
+
+**2. Continuous Learning Plan**: Batch Retraining (Weekly)
+- Demand patterns shift seasonally and with trends
+- Weekly model updates with latest sales data
+- Ongoing cost: 30% of initial investment annually ($330K/year)
+- Improves over time as patterns are learned
+
+**3. Accuracy & Risk Tolerance**:
+- **Risk level**: MEDIUM (operational impact, not customer-facing)
+- **Target accuracy**: 85% forecast accuracy (achievable with good models)
+- **Human oversight**: Buyers review recommendations, don't auto-order
+- **Failure cost**: Stockout (lost sale) or overstock (carrying cost)
+- **Mitigation**: Start with recommendations, not automation. Pilot with low-risk categories.
+
+**4. Explainability Requirements**: MEDIUM-HIGH
+- **Need**: Buyers must understand "why" AI forecasts differ from their intuition
+- **Resistance risk**: "The computer doesn't know my business"
+- **Solution**: Explainable forecasts showing key drivers (trends, seasonality, events)
+- **Change management**: Critical - buyers must trust the system
+- **Budget add**: +$75K for explainability dashboards + training
+
+**5. Ethical Risk Assessment**: LOW ✅
+- **Bias risk**: Internal operations, no customer discrimination risk
+- **Fairness**: Could favor certain store locations over others
+- **Mitigation**: Monitor stock distribution fairness across demographics
+- **Budget add**: +$25K for fairness monitoring (ensure all communities served)
+
+**AI-Specific Budget Additions**:
+- Explainability dashboards & training: +$75K
+- Fairness monitoring: +$25K
+- Continuous learning infrastructure: +$50K
+- **Revised Total**: $1.25M (from $1.1M, EXCEEDS $1.2M cap slightly)
+- **Revised ROI**: 243% (still excellent)
+
+**✅ COMMITTEE NOTE**: Strong fundamentals, manageable risk, but exceeds budget cap by $50K. Could trim scope to fit.
+
 ---
 
 ## PITCH SCENARIO 4: Fraud Detection & Prevention System
@@ -375,6 +504,59 @@ Implement AI-powered fraud detection across online transactions, returns, and lo
 - False positive rate reduction to <1%
 - $3M+ in prevented fraud losses Year 1
 - Investigation time reduction by 50%
+
+### AI-Specific Evaluation Criteria
+
+**1. Data Readiness Score**: 6/10 ⚠️
+- ✅ 3+ years of transaction data available
+- ⚠️ Fraud labels inconsistent (some fraud undetected/unlabeled)
+- ❌ Organized fraud rings not well-documented
+- ⚠️ Return fraud patterns need better categorization
+- **Action required**: 3-6 month data labeling project ($75K) before AI development
+
+**2. Continuous Learning Plan**: Real-time Learning (CRITICAL)
+- Fraudsters adapt constantly - must retrain continuously
+- New fraud patterns emerge weekly
+- Ongoing cost: 40% of initial investment annually ($260K/year)
+- **Non-negotiable**: Static model will be obsolete in months
+
+**3. Accuracy & Risk Tolerance**:
+- **Risk level**: HIGH (two-sided risk)
+  - Miss fraud = $$ loss
+  - False positive = angry customer, lost sale
+- **Target accuracy**: Need 99% specificity (1% false positive rate)
+- **Current capability**: 95-97% achievable (gap exists)
+- **Human oversight**: Medium/high-risk transactions reviewed by team
+- **Failure cost**: Lost revenue (false positive) OR fraud loss (false negative)
+
+**4. Explainability Requirements**: HIGH ⚠️
+- **Legal requirement**: Must explain why customer was flagged/blocked
+- **Investigation need**: Fraud team needs evidence for prosecution
+- **Customer service**: Must explain declined transactions
+- **Solution**: Use interpretable models + audit trails
+- **Budget add**: +$100K for explainability + audit system
+
+**5. Ethical Risk Assessment**: HIGH ⚠️
+- **Bias risk**: Could discriminate against protected demographics
+- **Historical bias**: Past fraud detection may have targeted minorities unfairly
+- **Disparate impact**: AI could perpetuate or amplify existing biases
+- **Legal risk**: Discrimination lawsuits if biased
+- **Mitigation**: 
+  - Prohibit demographic features in model
+  - Test for disparate impact across customer segments
+  - External bias audit before launch
+  - Ongoing monitoring of false positive rates by demographic
+- **Budget add**: +$125K for bias testing, external audit, monitoring
+
+**AI-Specific Budget Additions**:
+- Data labeling project (pre-requisite): +$75K
+- Explainability & audit system: +$100K
+- Bias testing & monitoring: +$125K
+- Real-time learning infrastructure: +$100K
+- **Revised Total**: $1.05M (from $650K)
+- **Revised ROI**: 200% Year 1 (still strong but lower)
+
+**⚠️ COMMITTEE NOTE**: Highest ethical risk of all four projects. Fraud detection AI has history of racial bias. External audit mandatory. Consider phased rollout with heavy monitoring.
 
 ---
 

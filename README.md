@@ -9,30 +9,56 @@
 
 ---
 
-## What You Have
+## Course Structure
 
-### For Teaching the Course
+### For Facilitators
 ```
-DELIVERY_TIMELINE.md         ← Complete day schedule with timing
-content/
-  ├── frameworks-overview.md ← (TO CREATE: Framework explanations for slides)
-  ├── pre-readings.md        ← What participants read beforehand
-  └── exercise-notes.md      ← Original exercise ideas
-```
-
-### Materials for Activities
-```
-activities/materials/
-  ├── capability-cards/      ← AI capability assessment cards (TO CREATE)
-  ├── scenario-briefs/       ← Investment scenarios (TO CREATE)
-  └── worksheets/            ← Exercise templates (TO CREATE)
+instructor-materials/facilitation-notes/
+  ├── delivery-timeline.md       ← Complete day schedule with timing
+  ├── facilitator-guide.md       ← 64-page complete delivery guide
+  └── storytelling-narratives.md ← Narrative examples for teaching
 ```
 
-### Participant Take-Aways
+### Published Materials (GitHub Pages from root)
+All materials are in root folder for GitHub Pages publishing:
+
 ```
-handouts/
-  └── frameworks-reference-sheet.md  ← ALL 5 frameworks in one document ✅ CREATED
+/
+  ├── index.html             ← GitHub Pages landing page
+  ├── pre-readings/          ← Executive-focused pre-readings (REQUIRED)
+  │   ├── strategic-ai-investment.md
+  │   ├── retailflow-company-overview.md
+  │   └── what-executives-need-to-know-about-ai.md
+  ├── handouts/              ← Frameworks reference sheet
+  │   └── frameworks-reference-sheet.md
+  ├── activities/            ← All exercise materials and templates
+  │   ├── ai-capability-cards.md
+  │   ├── investment-pitch-scenarios.md
+  │   ├── strategic-response-scenarios.md
+  │   ├── ai-transformation-matrix-template.md
+  │   ├── investment-calculator-template.md
+  │   └── personal-action-plan-template.md
+  └── slides/                ← Slide deck (to be created)
+      └── slide-deck.md
 ```
+
+### What Participants Need
+
+**Before the course (48 hours prior):**
+- Read all three pre-readings in `pre-readings/` (approx. 40 minutes total)
+- Complete self-assessment questions
+- Bring one strategic AI challenge to discuss
+
+**During the course (BYOD REQUIRED):**
+- Laptop or tablet with spreadsheet software (Excel, Google Sheets)
+- Calculator functionality for ROI exercises
+- Note-taking capability
+- Access to digital templates
+
+**Take home:**
+- Frameworks reference sheet (PDF)
+- Digital templates (editable)
+- Personal action plan (completed during course)
 
 ---
 
@@ -159,36 +185,50 @@ handouts/
 
 ## How to Deliver This Course
 
-### Before the Course
-1. Read `DELIVERY_TIMELINE.md` - complete schedule
-2. Review `handouts/frameworks-reference-sheet.md` - all frameworks in one place
-3. Create or print materials:
-   - AI capability cards (Exercise 1)
-   - Investment pitch templates (Exercise 3)
-   - Scenario briefs (Exercise 4)
+### Before the Course (1 Week Prior)
+1. Read `instructor-materials/facilitation-notes/facilitator-guide.md` - complete 64-page delivery guide
+2. Review `instructor-materials/facilitation-notes/delivery-timeline.md` - exact timing for day
+3. Send pre-readings to participants (pre-readings/)
+4. Convert materials to HTML/PDF:
+   - Frameworks reference sheet
+   - Activity templates
+   - Pre-readings
+5. Set up digital templates (Google Sheets or Excel):
+   - Investment calculator
+   - AI transformation matrix
+   - Personal action plan
+
+### Course Requirements
+
+**Technology (BYOD REQUIRED):**
+- Participants MUST bring laptops or tablets
+- Spreadsheet software required (Excel, Google Sheets)
+- Calculator functionality for ROI exercises
+- Projector and screen for facilitator
+- Flipcharts/whiteboards for group exercises
+
+**Room Setup:**
+- Main presentation area
+- Breakout space for Dragon's Den team preparation
+- Tables for 4-6 people (collaborative work)
+
+**Materials to Print:**
+- Frameworks reference sheet (1 per participant)
+- Investment pitch scenarios (Exercise 3)
+- Strategic response scenarios (Exercise 4)
 
 ### During the Course
-1. Follow `DELIVERY_TIMELINE.md` for exact timing
-2. Use frameworks from `handouts/frameworks-reference-sheet.md` for teaching
+1. Follow `instructor-materials/facilitation-notes/delivery-timeline.md` for exact timing
+2. Use frameworks from `handouts/frameworks-reference-sheet.md`
 3. RetailFlow provides strategic context throughout
+4. Monitor energy levels (Dragon's Den at 1:45 PM is the peak)
 
 ### After the Course
-Participants use frameworks for their own AI strategy and investment decisions
-
----
-
-## What Participants Need
-
-**Before attending:**
-- Read `content/pre-readings.md` (AI strategy context)
-
-**During the course:**
-- Exercise worksheets (you provide)
-- Calculator for ROI calculations (Exercise 3)
-
-**Take home:**
-- `handouts/frameworks-reference-sheet.md` - ALL 5 frameworks
-- Personal action plan (completed during course)
+Participants take home:
+- Digital templates (editable)
+- Frameworks reference (PDF)
+- Personal action plan (completed)
+- Links to additional resources
 
 ---
 
@@ -208,13 +248,14 @@ Participants use frameworks for their own AI strategy and investment decisions
 
 **RetailFlow in Exercise 3 (Dragon's Den):**
 - CEO has $2M AI budget
-- Four competing initiatives (see `activities/materials/investment-pitch-scenarios.md`):
+- Four competing initiatives (see `activities/investment-pitch-scenarios.md`):
   1. Customer service chatbot ($450K)
   2. Dynamic pricing optimization ($850K)
   3. AI inventory optimization ($1.1M)
   4. Fraud detection system ($650K)
 - Cannot fund all - must prioritize strategically
 - Teams pitch, committee decides using frameworks
+- Participants read RetailFlow overview as pre-reading (pre-readings/retailflow-company-overview.md)
 
 ### RetailFlow Resources
 
@@ -234,20 +275,27 @@ RetailFlow provides consistent business context across all strategic exercises.
 ## Quick Start for Facilitators
 
 **What's ready:**
-- ✅ DELIVERY_TIMELINE.md (complete schedule)
-- ✅ FACILITATOR_GUIDE.md (64-page complete delivery guide)
-- ✅ COURSE_STATUS.md (readiness summary)
-- ✅ frameworks-reference-sheet.md (all frameworks documented)
-- ✅ Exercise materials (all 4 exercises complete)
+- ✅ Facilitator materials (`instructor-materials/facilitation-notes/`)
+  - ✅ delivery-timeline.md (complete schedule)
+  - ✅ facilitator-guide.md (64-page complete delivery guide)
+  - ✅ storytelling-narratives.md (teaching narratives)
+- ✅ Pre-readings (executive-focused, `pre-readings/`)
+  - ✅ strategic-ai-investment.md
+  - ✅ retailflow-company-overview.md
+  - ✅ what-executives-need-to-know-about-ai.md
+- ✅ Frameworks reference sheet (`handouts/frameworks-reference-sheet.md`)
+- ✅ Exercise materials (all 4 exercises, `activities/`)
   - ✅ ai-capability-cards.md (Exercise 1)
   - ✅ investment-pitch-scenarios.md (Exercise 3 - 4 detailed scenarios)
   - ✅ strategic-response-scenarios.md (Exercise 4 - 3 decision scenarios)
-- ✅ Templates (all participant worksheets)
+- ✅ Templates (all participant worksheets, `activities/`)
   - ✅ ai-transformation-matrix-template.md
   - ✅ investment-calculator-template.md
   - ✅ personal-action-plan-template.md
 
 **The course is 100% complete and ready to deliver immediately!**
+
+**Publishing:** All materials in root folder for GitHub Pages (serve from root, not docs/).
 
 ---
 

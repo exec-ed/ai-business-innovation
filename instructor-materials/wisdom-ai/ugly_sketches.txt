@@ -1,0 +1,35 @@
+Here's a distilled extraction of the key wisdom on using pictures at work from Martin's TED Talk:
+
+**Core Insight:** Visualization transforms abstract information into tangible, collaborative tools, boosting creativity, communication, decision-making, and collaboration.
+
+**Why We Underuse Visualization:**
+*   We default to "old ways" like bullet-point slides ("the museum effect" – perfect-looking visuals stop thinking and invite critique, not collaboration).
+
+**Three Powerful Practices:**
+
+1.  **Embrace the "Ugly" Sketch (Provisionality is Key):**
+    *   **Do:** Use deliberately rough, simple sketches/doodles instead of polished slides or diagrams.
+    *   **Why:** Imperfect visuals signal "work in progress," reducing the "museum effect." They invite participation, critique, and co-creation because they *look* improvable. ("Low perceived finnishness" is a feature, not a bug!)
+    *   **Evidence:** Experiments show "ugly" visuals lead to better sales, collaboration, and creativity than polished ones. Tweaking software to look more sketchy has similar benefits.
+
+2.  **Lead with Visual Metaphors (Not Just Diagrams):**
+    *   **Do:** Start conversations with a simple, concrete visual metaphor (e.g., "Fortress on Sand") instead of bullet points or complex diagrams.
+    *   **Why:** Metaphors leverage shared knowledge, make concepts concrete and memorable, spark new ideas, and create a shared starting point for discussion. They act like a "red carpet" inviting others to engage.
+    *   **Key for Effective Metaphors:**
+        *   Simpler than the concept it represents.
+        *   Concrete and relatable to the audience.
+        *   Culturally appropriate (avoid pitfalls like the volcano metaphor in an active volcano zone).
+    *   **Evidence:** Studies (e.g., BMW Financial Services) show groups exposed to a visual metaphor remembered more and were more motivated to act than those given the same information via bullet points or diagrams.
+
+3.  **Create Visual Variation (Start a Series, Don't Overload One):**
+    *   **Do:** Use a simple visual metaphor/image repeatedly, but vary it slightly over time or context.
+    *   **Why:** Variations act like a "red thread," connecting ideas and inviting others to extend the series. They spark imagination, generate new associations, and make collaboration iterative ("build on that").
+    *   **Evidence:** Rooted in "Variation Theory" – understanding requires seeing concepts represented in multiple ways.
+    *   **Example:** Using different "bridge" problems (misaligned, crowded, shaky) to explore various communication challenges, prompting others to suggest more variations.
+
+**The Transformation:** Using these practices shifts communication from a one-way presentation ("bombarding") to a collaborative dialogue ("co-creating"). Pictures become the foundation for shared understanding and innovation.
+
+**Ultimate Wisdom:** **Go forth and visualize (or vanish).** To truly harness the power of pictures at work:
+1.  **Make visuals look provisional** (ugly sketches).
+2.  **Lead conversations with powerful visual metaphors.**
+3.  **Start sequences of visual variations** to invite collective building.
