@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive AI Prompt Library</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 40px;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #64748b;
+        }
+
+        .controls {
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            font-size: 1.3em;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #e5e7eb;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover {
+            border-color: #667eea;
+            background: #f8faff;
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: #667eea;
+        }
+
+        .results-info {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            color: #64748b;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            min-height: 400px;
+        }
+
+        .prompt-card {
+            background: #fafbfc;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .prompt-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+        }
+
+        .prompt-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .prompt-title {
+            flex: 1;
+        }
+
+        .prompt-title h3 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+
+        .prompt-category {
+            display: inline-block;
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+
+        .prompt-when {
+            color: #64748b;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .prompt-content {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 6px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.95em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            position: relative;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .copy-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .copy-btn.copied {
+            background: #16a34a;
+        }
+
+        .prompt-tips {
+            background: #f8faff;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+            margin-top: 15px;
+        }
+
+        .prompt-tips strong {
+            color: #667eea;
+        }
+
+        .prompt-tips ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #94a3b8;
+        }
+
+        .no-results h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header, .controls, .content {
+                padding: 20px;
+            }
+
+            .prompt-card {
+                padding: 20px;
+            }
+
+            .filter-buttons {
+                flex-direction: column;
+            }
+
+            .filter-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Executive AI Prompt Library</h1>
+            <p>Ready-to-use prompts for strategic decision-making</p>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search prompts by keyword... (e.g., 'risk', 'investment', 'data')" oninput="filterPrompts()">
+                <span class="search-icon">🔍</span>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all" onclick="selectCategory('all')">All Prompts</button>
+                <button class="filter-btn" data-category="strategic" onclick="selectCategory('strategic')">Strategic Planning</button>
+                <button class="filter-btn" data-category="investment" onclick="selectCategory('investment')">AI Investment</button>
+                <button class="filter-btn" data-category="risk" onclick="selectCategory('risk')">Risk & Ethics</button>
+                <button class="filter-btn" data-category="stakeholder" onclick="selectCategory('stakeholder')">Stakeholder Mgmt</button>
+                <button class="filter-btn" data-category="advanced" onclick="selectCategory('advanced')">Advanced Techniques</button>
+            </div>
+
+            <div class="results-info" id="resultsInfo">
+                Showing all prompts
+            </div>
+        </div>
+
+        <div class="content" id="promptContainer">
+            <!-- Prompts will be dynamically populated -->
+        </div>
+    </div>
+
+    <script>
+        let currentCategory = 'all';
+        let currentSearch = '';
+
+        const prompts = [
+            {
+                id: 'portfolio-audit',
+                title: 'Portfolio Audit',
+                category: 'strategic',
+                when: 'Reviewing your current AI initiatives to identify gaps and balance',
+                prompt: `You are a strategic portfolio consultant specializing in AI investments.
+
+Our current AI portfolio:
+[LIST YOUR CURRENT AI INITIATIVES - e.g., "Chatbot for customer service, predictive maintenance, fraud detection"]
+
+Industry context: [YOUR INDUSTRY]
+Annual AI budget: [$AMOUNT]
+Organization size: [EMPLOYEES/REVENUE]
+
+Analyze our portfolio using Three Horizons Model:
+1. What % is in each horizon (H1: 0-12mo, H2: 1-3yr, H3: 3-5yr)?
+2. Are we balanced (target: 70% H1, 20% H2, 10% H3)?
+3. What strategic gaps exist?
+4. What should we add, drop, or pivot?
+
+Be critical. Identify over-investment in optimization vs. transformation.`,
+                followUp: [
+                    'Which initiative should we kill or deprioritize and why?',
+                    'What H3 transformation initiative should we start exploring?',
+                    'How does this compare to competitors in [INDUSTRY]?'
+                ]
+            },
+            {
+                id: 'strategic-roadmap',
+                title: 'Strategic Roadmap Development',
+                category: 'strategic',
+                when: 'Building a 3-year AI strategy',
+                prompt: `You are a Chief AI Strategy Officer. Help me develop a 3-year AI roadmap.
+
+Current state:
+- Data maturity level: [1-5]
+- Current AI capabilities: [DESCRIBE]
+- Key business challenges: [TOP 3]
+- Competitive pressure: [DESCRIBE]
+
+Strategic goals:
+- [GOAL 1]
+- [GOAL 2]
+- [GOAL 3]
+
+Create a phased roadmap:
+- Year 1 (Horizon 1): Quick wins, optimize core
+- Year 2 (Horizon 2): Build emerging capabilities
+- Year 3 (Horizon 3): Transformational initiatives
+
+For each phase:
+1. Recommended AI initiatives (prioritized)
+2. Data infrastructure needs
+3. Budget allocation
+4. Success metrics
+5. Risk mitigation
+
+Be realistic about timelines and dependencies.`,
+                followUp: [
+                    'What should we absolutely do in the first 6 months?',
+                    'Where are we most likely to fail and how do we de-risk?'
+                ]
+            },
+            {
+                id: 'competitive-landscape',
+                title: 'Competitive Landscape Analysis',
+                category: 'strategic',
+                when: 'Understanding how competitors are using AI',
+                prompt: `You are a competitive intelligence analyst for [YOUR INDUSTRY].
+
+Our competitors:
+- [COMPETITOR 1]: [WHAT THEY'RE DOING WITH AI]
+- [COMPETITOR 2]: [WHAT THEY'RE DOING WITH AI]
+- [COMPETITOR 3]: [WHAT THEY'RE DOING WITH AI]
+
+Our position: [MARKET LEADER / CHALLENGER / NICHE PLAYER]
+Our current AI: [DESCRIBE]
+
+Analyze:
+1. Who's ahead/behind in AI adoption?
+2. What competitive advantages are they building?
+3. What threats do we face if we don't match/exceed?
+4. What opportunities exist that no one is pursuing?
+5. Should we fast-follow, leapfrog, or wait-and-watch?
+
+Use Innovation Adoption Framework: Pioneer, Fast-Follower, or Mainstream timing.`,
+                followUp: [
+                    'Which competitor move should we respond to immediately?',
+                    'Where can we differentiate instead of matching?'
+                ]
+            },
+            {
+                id: 'ai-opportunities',
+                title: 'AI Opportunity Identification',
+                category: 'investment',
+                when: 'Brainstorming where AI could create value',
+                prompt: `You are an AI innovation consultant for [YOUR INDUSTRY].
+
+About my business:
+- Core operations: [DESCRIBE]
+- Biggest bottleneck: [WHAT'S SLOW/EXPENSIVE/ERROR-PRONE]
+- Customer pain points: [TOP 3]
+- Competitors are doing: [DESCRIBE AI USES]
+
+Help me identify AI opportunities I'm missing:
+
+1. What repetitive decisions could AI automate or augment?
+2. What data do we collect but not fully use?
+3. Where could AI create "flywheel effects" (better with usage)?
+4. What customer problems could AI solve better than humans?
+5. What "unsexy" backend processes have huge ROI potential?
+
+Think broadly: automation, prediction, personalization, optimization, generation.
+Prioritize by: ROI potential, data readiness, competitive urgency.`,
+                followUp: [
+                    'For each opportunity, estimate: Data readiness (0-10), ROI timeline (months), Risk level (Low/Med/High)'
+                ]
+            },
+            {
+                id: 'investment-risk',
+                title: 'Investment Risk Assessment',
+                category: 'investment',
+                when: 'Evaluating a specific AI investment before approval',
+                prompt: `You are a Chief Risk Officer evaluating this AI investment proposal:
+
+Project: [NAME AND DESCRIPTION]
+Budget: [$AMOUNT]
+Timeline: [MONTHS]
+Expected ROI: [% AND TIMEFRAME]
+
+Use the AI Investment Checklist framework:
+
+1. DATA READINESS (score 0-10):
+   - Do we have sufficient training data?
+   - Is data quality acceptable?
+   - Are there biases in historical data?
+
+2. CONTINUOUS LEARNING:
+   - What are realistic ongoing costs (% of initial)?
+   - How often must models be retrained?
+   - What happens if we stop retraining?
+
+3. ACCURACY VS. RISK:
+   - What's acceptable failure rate?
+   - What's the cost of being wrong?
+   - Does AI capability match our requirements?
+
+4. EXPLAINABILITY:
+   - Must we explain AI decisions (regulatory/operational)?
+   - Does this limit algorithm choices?
+   - What's the transparency plan?
+
+5. ETHICAL RISKS:
+   - Could this discriminate against protected groups?
+   - What's our bias testing plan?
+   - What's reputational risk if biased?
+
+For each criterion: Identify red flags, estimate hidden costs, recommend go/no-go.
+Be critical—your job is to find problems, not justify the investment.`,
+                followUp: []
+            },
+            {
+                id: 'data-readiness',
+                title: 'Data Readiness Evaluation',
+                category: 'investment',
+                when: 'Determining if your data is ready for AI',
+                prompt: `You are a data strategy consultant. Evaluate our data readiness for this AI initiative:
+
+Proposed AI: [DESCRIBE THE AI PROJECT]
+Data sources: [LIST YOUR DATA SOURCES]
+
+Score our data readiness (0-10) on:
+
+1. DATA AVAILABILITY (25% weight):
+   - Volume: Do we have 1,000-10,000+ examples?
+   - Coverage: Does data span all relevant scenarios?
+   - Recency: Is historical data still relevant?
+
+2. DATA QUALITY (30% weight):
+   - Accuracy: Is data >90% accurate?
+   - Completeness: Missing values <10%?
+   - Consistency: Same definitions across sources?
+
+3. DATA ACCESS (20% weight):
+   - Integration: Can we connect all necessary sources?
+   - Real-time: Can we get fresh data when needed?
+   - Permissions: Do we have legal rights to use this data?
+
+4. DATA BIAS (25% weight):
+   - Representative: Does data cover all customer segments?
+   - Historical bias: Were past decisions discriminatory?
+   - Proxy variables: Does data contain demographic proxies?
+
+Provide weighted total score. If <7, specify what infrastructure we must build BEFORE starting AI project.`,
+                followUp: [
+                    'What would it cost to improve our data readiness to 7+?',
+                    'How long would data preparation take?'
+                ]
+            },
+            {
+                id: 'build-vs-buy',
+                title: 'Build vs. Buy Analysis',
+                category: 'investment',
+                when: 'Deciding whether to build in-house or buy vendor solution',
+                prompt: `You are evaluating build-in-house vs. buy-vendor-solution for this AI capability:
+
+Capability needed: [DESCRIBE]
+Budget available: [$AMOUNT]
+Timeline pressure: [URGENT / MODERATE / FLEXIBLE]
+
+Compare options:
+
+BUILD IN-HOUSE:
+- Cost: [ESTIMATED $]
+- Timeline: [ESTIMATED MONTHS]
+- Pros: Custom fit, IP ownership, competitive differentiation
+- Cons: High risk, needs AI talent, longer timeline
+
+BUY VENDOR SOLUTION:
+- Cost: [ESTIMATED $ / YEAR]
+- Timeline: [ESTIMATED MONTHS]
+- Pros: Proven technology, faster deployment, lower risk
+- Cons: Ongoing costs, vendor lock-in, less differentiation
+
+Analyze:
+1. Do we have AI talent to build in-house? (33% fail rate for custom builds)
+2. Is this a core differentiator or commodity capability?
+3. What's the 5-year total cost for each option?
+4. What's the strategic vs. tactical value?
+5. Which option aligns with our risk tolerance?
+
+Recommend: Build, Buy, or Partner (hybrid). Include decision criteria.`,
+                followUp: [
+                    'What if we start with vendor, then build custom later?',
+                    'Which vendors should we evaluate for this?'
+                ]
+            },
+            {
+                id: 'bias-risk',
+                title: 'Bias Risk Assessment',
+                category: 'risk',
+                when: 'Evaluating potential discrimination or fairness issues',
+                prompt: `You are an AI ethics consultant. Assess bias risk for this AI system:
+
+AI system: [DESCRIBE]
+Training data: [DESCRIBE DATA SOURCES]
+Use case: [WHO IS AFFECTED, WHAT DECISIONS]
+
+Evaluate bias risk:
+
+1. PROTECTED CLASSES IMPACT:
+   - Does this affect hiring, lending, housing, healthcare, criminal justice?
+   - Could decisions have "disparate impact" on race, gender, age, disability?
+
+2. PROXY VARIABLES:
+   - Does data include: ZIP code, names, education, device type, language?
+   - These can be proxies for protected characteristics
+
+3. HISTORICAL BIAS:
+   - Was past human decision-making biased?
+   - Will AI learn and amplify historical discrimination?
+
+4. FEEDBACK LOOPS:
+   - Could AI decisions reinforce existing inequalities?
+   - Example: AI denies loans to certain groups → they can't build credit → AI continues denying
+
+5. LEGAL RISKS:
+   - Which regulations apply? (GDPR, ECOA, Fair Housing, etc.)
+   - What's potential liability? (Class action risk?)
+
+For each risk: Rate severity (Low/Med/High), estimate mitigation cost, recommend proceed/pause/redesign.`,
+                followUp: [
+                    'What bias testing should we do before launch?',
+                    'Should we bring in external ethics audit?'
+                ]
+            },
+            {
+                id: 'ethical-analysis',
+                title: 'Ethical Implications Analysis',
+                category: 'risk',
+                when: 'Exploring broader ethical concerns beyond bias',
+                prompt: `You are an AI ethics board member. Analyze ethical implications of:
+
+AI initiative: [DESCRIBE]
+Stakeholders affected: [WHO]
+Decision authority: [WHAT CAN AI DECIDE]
+
+Evaluate across 5 ethical dimensions:
+
+1. AUTONOMY: Does this reduce human agency?
+   - Are humans informed AI is making decisions?
+   - Can humans override AI decisions?
+
+2. TRANSPARENCY: Can decisions be explained?
+   - Is the AI a "black box"?
+   - Can affected parties challenge decisions?
+
+3. FAIRNESS: Could this create unfair outcomes?
+   - Price discrimination?
+   - Unequal access to services?
+
+4. ACCOUNTABILITY: Who bears responsibility?
+   - If AI makes a mistake, who's liable?
+   - Is there human accountability chain?
+
+5. PRIVACY: How is personal data used?
+   - What data is collected?
+   - Is consent meaningful?
+
+For each dimension: Flag concerns, estimate reputational risk, recommend safeguards.`,
+                followUp: [
+                    'What ethical guidelines should we create?',
+                    'Should we establish an AI ethics board?'
+                ]
+            },
+            {
+                id: 'regulatory-compliance',
+                title: 'Regulatory Compliance Check',
+                category: 'risk',
+                when: 'Understanding regulatory requirements for AI deployment',
+                prompt: `You are a regulatory compliance expert for AI systems in [YOUR INDUSTRY/GEOGRAPHY].
+
+AI system details:
+- What it does: [DESCRIBE]
+- Data used: [TYPES OF DATA]
+- Decisions made: [WHAT AI DECIDES]
+- Geography: [WHERE DEPLOYED]
+
+Identify applicable regulations:
+
+1. DATA PROTECTION:
+   - GDPR (EU), CCPA (California), other data privacy laws
+   - Right to explanation?
+   - Consent requirements?
+
+2. ANTI-DISCRIMINATION:
+   - Fair Credit Reporting Act
+   - Equal Employment Opportunity
+   - Fair Housing Act
+   - Other anti-discrimination laws
+
+3. INDUSTRY-SPECIFIC:
+   - Financial services (SEC, banking regulations)
+   - Healthcare (HIPAA, FDA)
+   - Insurance (state regulations)
+
+4. AI-SPECIFIC REGULATIONS:
+   - EU AI Act (high-risk systems)
+   - Algorithmic accountability laws
+   - Emerging AI governance
+
+For each regulation: Explain requirements, estimate compliance cost, identify penalties for violation.
+Flag if this is "high-risk AI system" requiring extra scrutiny.`,
+                followUp: [
+                    'Do we need legal review before proceeding?',
+                    'What compliance documentation is required?'
+                ]
+            },
+            {
+                id: 'failure-scenarios',
+                title: 'Failure Scenario Planning',
+                category: 'risk',
+                when: 'Planning for what could go wrong',
+                prompt: `You are a risk strategist. Generate failure scenarios for this AI project:
+
+Project: [DESCRIBE AI INITIATIVE]
+Budget: [$AMOUNT]
+Timeline: [MONTHS]
+
+Generate 5 realistic failure scenarios:
+
+1. TECHNICAL FAILURE: AI doesn't achieve accuracy targets
+   - What causes this?
+   - Early warning signs?
+   - Mitigation plan?
+   - Pivot options?
+
+2. DATA FAILURE: Data quality/bias issues discovered late
+   - What causes this?
+   - Cost impact?
+   - Timeline impact?
+
+3. ADOPTION FAILURE: Users don't trust/use the AI
+   - Why would they resist?
+   - Change management gaps?
+   - Recovery options?
+
+4. ETHICAL FAILURE: Bias or discrimination discovered post-launch
+   - What would trigger this?
+   - PR/legal consequences?
+   - Prevention plan?
+
+5. ROI FAILURE: Costs exceed benefits
+   - What hidden costs emerge?
+   - What benefits don't materialize?
+   - Kill criteria?
+
+For each: Probability (%), Impact ($), and mitigation strategy.`,
+                followUp: [
+                    'Which failure scenario is most likely?',
+                    'What would make us kill this project?'
+                ]
+            },
+            {
+                id: 'stakeholder-objections',
+                title: 'Stakeholder Objection Handling',
+                category: 'stakeholder',
+                when: 'Addressing concerns about AI investment',
+                prompt: `You are preparing for an AI investment review. Help me address objections.
+
+Proposal: [YOUR AI INITIATIVE]
+Budget: [$AMOUNT]
+Expected objections:
+- [OBJECTION 1 - e.g., "Too expensive"]
+- [OBJECTION 2 - e.g., "Too risky"]
+- [OBJECTION 3 - e.g., "Unproven technology"]
+
+For each objection, provide:
+
+1. VALIDATION: Is this a legitimate concern? (Don't dismiss)
+2. DATA: What evidence addresses this concern?
+3. MITIGATION: How can we reduce the risk they're worried about?
+4. REFRAME: How can we reframe this from different perspective?
+5. RESPONSE: Draft a 2-3 sentence response
+
+Also prepare:
+- 3 questions they'll ask (and your answers)
+- Your strongest counter-argument if they say "wait 6 months"
+- Compromise position if they want to cut budget`,
+                followUp: [
+                    'What if they ask for smaller pilot first?',
+                    'How do I respond to "AI is just hype"?'
+                ]
+            },
+            {
+                id: 'board-prep',
+                title: 'Board Presentation Prep',
+                category: 'stakeholder',
+                when: 'Preparing to present AI strategy to board',
+                prompt: `You are coaching an executive for a board presentation on AI strategy.
+
+Presentation goal: [GET APPROVAL / GET BUDGET / SHARE PROGRESS]
+Board composition: [TECH-SAVVY / TRADITIONAL / MIXED]
+Time allocated: [MINUTES]
+
+Help me prepare:
+
+1. OPENING (30 seconds):
+   - Hook that captures attention
+   - Why AI matters NOW (competitive urgency)
+
+2. STRATEGIC CONTEXT (2 min):
+   - Where we are vs. where we need to be
+   - What competitors are doing
+   - Risk of inaction
+
+3. PROPOSAL (3 min):
+   - What we're investing in (portfolio approach)
+   - Why these initiatives (strategic fit)
+   - How we'll de-risk (phased approach)
+
+4. FINANCIALS (2 min):
+   - Budget request and ROI projections
+   - How we'll measure success
+   - What we're NOT funding (discipline)
+
+5. CLOSE (30 seconds):
+   - Clear ask
+   - Decision timeline
+
+Also prepare:
+- 5 tough questions board will ask
+- 3 backup slides if they probe deeper
+- Your "if we only get 50% of budget" pivot`,
+                followUp: []
+            },
+            {
+                id: 'change-management',
+                title: 'Change Management Planning',
+                category: 'stakeholder',
+                when: 'Planning organizational change for AI adoption',
+                prompt: `You are a change management expert for AI transformation.
+
+Our AI initiative: [DESCRIBE]
+Impact: [NUMBER] employees affected
+Change type: [AUTOMATES TASKS / NEW PROCESSES / NEW SKILLS NEEDED]
+
+Design change management plan:
+
+1. STAKEHOLDER ANALYSIS:
+   - Who wins? (benefits from AI)
+   - Who loses? (work displaced, power shifts)
+   - Who's neutral? (can be convinced either way)
+
+2. RESISTANCE SOURCES:
+   - Why will people resist this AI?
+   - What are their legitimate fears?
+   - What's the "unofficial" resistance?
+
+3. COMMUNICATION PLAN:
+   - What do we tell people and when?
+   - How do we address "will I lose my job?"
+   - How do we create early wins?
+
+4. TRAINING & SUPPORT:
+   - What new skills are needed?
+   - How long to become proficient?
+   - What ongoing support is required?
+
+5. CHAMPIONS & PILOTS:
+   - Who should be early adopters?
+   - How do we create success stories?
+   - How do we scale from pilots?
+
+Include: Timeline, budget for change mgmt (often 15-20% of tech cost), success metrics.`,
+                followUp: [
+                    'How do we handle the 20% who will never adopt?',
+                    'What if managers sabotage the initiative?'
+                ]
+            },
+            {
+                id: 'reverse-prompting',
+                title: 'Reverse Prompting (Advanced)',
+                category: 'advanced',
+                when: 'Having AI ask YOU questions to reveal insights',
+                prompt: `You are an expert AI strategist. Your role: Ask ME probing questions.
+
+Context:
+- My challenge: [DESCRIBE PROBLEM YOU'RE FACING]
+- My industry: [INDUSTRY]
+- My constraints: [BUDGET / TIME / RESOURCES]
+
+Your task: Ask me 5-7 probing questions that will help me:
+- Discover hidden assumptions
+- Identify blind spots
+- Reveal opportunities I'm overlooking
+- Clarify my actual priorities
+
+Rules:
+1. ASK ONE QUESTION AT A TIME (wait for my answer)
+2. Each question should build on my previous answer
+3. Challenge my assumptions gently
+4. Be Socratic—help me discover, don't tell me
+
+Start with your first question now.`,
+                followUp: []
+            },
+            {
+                id: 'multi-perspective',
+                title: 'Multi-Perspective Debate',
+                category: 'advanced',
+                when: 'Seeing multiple viewpoints on a decision',
+                prompt: `Context: [DESCRIBE YOUR AI DECISION]
+
+I need to see this from multiple perspectives. Provide 3 viewpoints:
+
+PERSPECTIVE 1: "AI Optimist" 
+Make the STRONGEST case for moving aggressively NOW.
+Focus on: First-mover advantage, competitive pressure, learning value.
+
+PERSPECTIVE 2: "AI Pragmatist"
+Make the STRONGEST case for proceeding cautiously.
+Focus on: Data readiness, risk mitigation, proven ROI first.
+
+PERSPECTIVE 3: "AI Skeptic"
+Make the STRONGEST case for minimal/no investment.
+Focus on: Hype cycle, vendor lock-in, alternative priorities.
+
+For each perspective:
+- 3-4 sentence argument
+- Key assumption they're making
+- Evidence they'd cite
+- What would change their mind
+
+After presenting all three, synthesize: What's the balanced view?`,
+                followUp: [
+                    'Which perspective is most valid for our context?',
+                    'What decision criteria should we use?'
+                ]
+            },
+            {
+                id: 'red-team',
+                title: 'Red Team Analysis',
+                category: 'advanced',
+                when: 'Stress-testing your AI strategy or pitch',
+                prompt: `You are a hostile investor/"Red Team" trying to KILL this AI proposal:
+
+Proposal: [YOUR AI INITIATIVE]
+Budget: [$AMOUNT]
+Claimed ROI: [% OVER TIMEFRAME]
+
+Your job: Find every weakness and make the case against funding.
+
+Attack vectors:
+1. OPTIMISTIC ASSUMPTIONS: What are we overestimating?
+2. HIDDEN COSTS: What costs are we underestimating or missing?
+3. COMPETITIVE RISK: What if competitors do this cheaper/better?
+4. TECHNICAL RISK: What could fail technically?
+5. DATA GAPS: What data problems will we discover?
+6. ADOPTION RISK: Why won't users actually use this?
+7. ALTERNATIVE USES: What else could we do with $[AMOUNT]?
+
+Be brutal. Your goal: Convince me NOT to fund this.
+Then, for each attack, suggest how proponents should address it.`,
+                followUp: [
+                    'Which attack is hardest to defend against?',
+                    'How should I strengthen my proposal?'
+                ]
+            },
+            {
+                id: 'second-order',
+                title: 'Second-Order Effects Analysis',
+                category: 'advanced',
+                when: 'Understanding ripple effects of AI decisions',
+                prompt: `You are a systems thinker. Analyze second and third-order effects of this AI initiative:
+
+Initiative: [DESCRIBE]
+First-order effect: [IMMEDIATE IMPACT - e.g., "20% cost reduction in customer service"]
+
+Map cascading effects:
+
+SECOND-ORDER (6-12 months later):
+- What happens because of the first-order change?
+- Who else is impacted (up/downstream)?
+- What behaviors change?
+- What new bottlenecks emerge?
+
+THIRD-ORDER (12-24 months later):
+- What systemic changes result?
+- What unintended consequences?
+- What competitive responses?
+- What becomes newly possible?
+
+Example thinking:
+"If AI reduces call center staff by 20% → 
+   → Remaining staff handle complex issues only → 
+      → Need higher skills → 
+         → Higher wages, different recruiting → 
+            → Culture shift from volume to quality"
+
+Identify: Positive surprises (opportunities), Negative surprises (risks to plan for).`,
+                followUp: [
+                    'Which second-order effect is most strategically important?',
+                    'What should we do NOW to prepare for third-order effects?'
+                ]
+            },
+            {
+                id: 'executive-communication',
+                title: 'Executive Summary Generator',
+                category: 'stakeholder',
+                when: 'Distilling complex AI analysis into executive brief',
+                prompt: `You are a strategic communications expert. Help me create an executive summary.
+
+Full context: [PASTE YOUR DETAILED ANALYSIS / REPORT]
+Audience: [C-SUITE / BOARD / INVESTORS]
+Decision needed: [WHAT YOU'RE ASKING FOR]
+
+Create executive summary (1 page max):
+
+STRUCTURE:
+1. SITUATION (2 sentences): Current state and why this matters now
+2. RECOMMENDATION (1 sentence): Clear ask
+3. RATIONALE (3 bullets): Why this is the right move
+4. RISKS & MITIGATION (2 bullets): What could go wrong and our plan
+5. FINANCIAL IMPACT (1 sentence): ROI and timeline
+6. DECISION REQUIRED (1 sentence): What we need approved and by when
+
+STYLE:
+- Active voice, no jargon
+- Lead with conclusions, not methodology
+- Quantify everything possible
+- Anticipate objections in rationale
+
+Keep total to 150-200 words.`,
+                followUp: [
+                    'Expand section 3 (rationale) with more evidence',
+                    'Make this more urgent without being alarmist'
+                ]
+            },
+            {
+                id: 'scale-pivot-kill',
+                title: 'Scale/Pivot/Kill Decision',
+                category: 'investment',
+                when: 'Deciding what to do with underperforming AI pilot',
+                prompt: `You are reviewing this AI pilot performance:
+
+Initiative: [NAME]
+Budget spent: [$AMOUNT]
+Timeline: [MONTHS IN]
+Results vs. targets:
+- [METRIC 1]: Actual [X]%, Target [Y]%
+- [METRIC 2]: Actual [X]%, Target [Y]%
+- [METRIC 3]: Actual [X]%, Target [Y]%
+
+User feedback: [SUMMARIZE]
+
+Evaluate using Scale/Pivot/Kill framework:
+
+SCALE signals:
+- Exceeding targets
+- Users embracing
+- Clear path to ROI
+- Competitive necessity
+→ Recommend: Deploy broadly
+
+PIVOT signals:
+- Below targets BUT improving trend
+- Solvable technical issues
+- Users interested but needs refinement
+- Strategic fit still strong
+→ Recommend: Fix issues, re-pilot
+
+KILL signals:
+- Negative or flat trajectory
+- Fundamental technical flaws
+- User resistance despite iteration
+- Better alternatives emerged
+→ Recommend: Stop losses, reallocate
+
+Analyze our pilot. Which signals are present? What's your recommendation?
+If pivot: What specifically should we change?
+If kill: How do we communicate this without killing AI momentum?`,
+                followUp: [
+                    'What would it take to turn this into a Scale decision?',
+                    'If we kill this, what should we fund instead?'
+                ]
+            }
+        ];
+
+        function renderPrompts(filtered = prompts) {
+            const container = document.getElementById('promptContainer');
+            
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="no-results">
+                        <h3>No prompts found</h3>
+                        <p>Try different search terms or filters</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = filtered.map(p => `
+                <div class="prompt-card">
+                    <div class="prompt-header">
+                        <div class="prompt-title">
+                            <h3>${p.title}<span class="prompt-category">${getCategoryName(p.category)}</span></h3>
+                        </div>
+                    </div>
+                    <div class="prompt-when">📌 When to use: ${p.when}</div>
+                    <div class="prompt-content">
+                        <button class="copy-btn" onclick="copyPrompt('${p.id}', this)">📋 Copy</button>${escapeHtml(p.prompt)}</div>
+                    ${p.followUp.length > 0 ? `
+                        <div class="prompt-tips">
+                            <strong>💡 Follow-up prompts:</strong>
+                            <ul>
+                                ${p.followUp.map(f => `<li>${f}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        function getCategoryName(cat) {
+            const names = {
+                'strategic': 'Strategic Planning',
+                'investment': 'AI Investment',
+                'risk': 'Risk & Ethics',
+                'stakeholder': 'Stakeholder Mgmt',
+                'advanced': 'Advanced'
+            };
+            return names[cat] || cat;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function selectCategory(category) {
+            currentCategory = category;
+            
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.category === category) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            filterPrompts();
+        }
+
+        function filterPrompts() {
+            currentSearch = document.getElementById('searchInput').value.toLowerCase();
+            
+            let filtered = prompts;
+            
+            // Filter by category
+            if (currentCategory !== 'all') {
+                filtered = filtered.filter(p => p.category === currentCategory);
+            }
+            
+            // Filter by search
+            if (currentSearch) {
+                filtered = filtered.filter(p => 
+                    p.title.toLowerCase().includes(currentSearch) ||
+                    p.when.toLowerCase().includes(currentSearch) ||
+                    p.prompt.toLowerCase().includes(currentSearch) ||
+                    p.category.toLowerCase().includes(currentSearch)
+                );
+            }
+            
+            // Update results info
+            const info = document.getElementById('resultsInfo');
+            if (currentSearch) {
+                info.textContent = `Found ${filtered.length} prompt${filtered.length !== 1 ? 's' : ''} matching "${currentSearch}"`;
+            } else if (currentCategory !== 'all') {
+                info.textContent = `Showing ${filtered.length} ${getCategoryName(currentCategory)} prompt${filtered.length !== 1 ? 's' : ''}`;
+            } else {
+                info.textContent = `Showing all ${filtered.length} prompts`;
+            }
+            
+            renderPrompts(filtered);
+        }
+
+        function copyPrompt(id, button) {
+            const prompt = prompts.find(p => p.id === id);
+            if (!prompt) return;
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(prompt.prompt).then(() => {
+                // Update button
+                const originalText = button.textContent;
+                button.textContent = '✅ Copied!';
+                button.classList.add('copied');
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                alert('Failed to copy. Please select and copy manually.');
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderPrompts();
+        });
+    </script>
+</body>
+</html>
