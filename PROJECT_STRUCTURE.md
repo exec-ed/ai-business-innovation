@@ -10,14 +10,18 @@
 ```
 ai-business-innovation/
 ├── index.html                      ← GitHub Pages landing page (root serving)
+├── README.md                       ← Course overview and quick start
+├── PROJECT_STRUCTURE.md            ← This file - repository structure guide
 │
 ├── pre-readings/                   ← Executive pre-readings (REQUIRED, ~40 min)
 │   ├── strategic-ai-investment.md          (15 min - portfolio thinking)
 │   ├── retailflow-company-overview.md      (10 min - case study context)
-│   └── what-executives-need-to-know-about-ai.md  (12 min - non-technical AI)
+│   ├── what-executives-need-to-know-about-ai.md  (12 min - non-technical AI)
+│   └── why-ai-innovation-is-different.md   (10 min - AI-specific criteria)
 │
 ├── activities/                     ← Exercise materials and templates
 │   ├── ai-capability-cards.md              (Exercise 1 - 12 capability cards)
+│   ├── ai-assisted-strategic-analysis.md   (Exercise 2 - AI augmentation)
 │   ├── investment-pitch-scenarios.md       (Exercise 3 - 4 RetailFlow scenarios)
 │   ├── strategic-response-scenarios.md     (Exercise 4 - 3 decision scenarios)
 │   ├── ai-transformation-matrix-template.md
@@ -25,16 +29,27 @@ ai-business-innovation/
 │   └── personal-action-plan-template.md
 │
 ├── handouts/                       ← Reference materials
-│   └── frameworks-reference-sheet.md       (All 5 frameworks)
+│   ├── frameworks-reference-sheet.md       (All 5 frameworks)
+│   ├── ai-investment-checklist.md          (AI-specific evaluation criteria)
+│   ├── strategic-prompting-guide.md        (AI prompting techniques)
+│   └── executive-ai-prompt-library.md      (Pre-built prompts)
 │
-├── slides/                         ← Slide deck (to be created)
-│   └── README.md
+├── instructor-materials/           ← Instructor-only materials
+│   ├── facilitation-notes/
+│   │   ├── delivery-timeline.md            (Minute-by-minute schedule)
+│   │   ├── facilitator-guide.md            (Complete 64-page guide)
+│   │   └── storytelling-narratives.md      (Teaching narratives)
+│   ├── exercise-guides/
+│   │   └── exercise-2-guide.md             (AI-assisted analysis guide)
+│   ├── answer-keys/
+│   │   ├── dragon-den-decision-rationales.md
+│   │   └── exercise-2-ai-responses.md
+│   └── wisdom-ai/                          (AI thought leadership articles)
 │
-├── FACILITATOR_GUIDE.md            ← Complete 64-page delivery guide
-├── DELIVERY_TIMELINE.md            ← Minute-by-minute schedule
-├── COURSE_STATUS.md                ← Readiness summary
-├── README.md                       ← Course overview and quick start
-└── RESTRUCTURE_SUMMARY.md          ← History of restructure decisions
+└── slides/                         ← Slide deck
+    ├── slide-deck.qmd                      (Quarto presentation)
+    ├── render-slides.sh                    (Build script)
+    └── README.md
 ```
 
 ---
@@ -47,9 +62,7 @@ ai-business-innovation/
 |------|---------|----------|
 | `index.html` | GitHub Pages landing page | Participants (web) |
 | `README.md` | Course overview and quick start | Facilitators |
-| `FACILITATOR_GUIDE.md` | Complete delivery instructions | Facilitators |
-| `DELIVERY_TIMELINE.md` | Minute-by-minute schedule | Facilitators |
-| `COURSE_STATUS.md` | Readiness checklist | Facilitators |
+| `PROJECT_STRUCTURE.md` | Repository structure documentation | Maintainers/Facilitators |
 
 ### Pre-Readings (REQUIRED for participants)
 
@@ -58,8 +71,9 @@ ai-business-innovation/
 | `strategic-ai-investment.md` | Portfolio thinking, Three Horizons, ROI | 15 minutes |
 | `retailflow-company-overview.md` | Dragon's Den case study context | 10 minutes |
 | `what-executives-need-to-know-about-ai.md` | Non-technical AI overview | 12 minutes |
+| `why-ai-innovation-is-different.md` | AI-specific investment criteria | 10 minutes |
 
-**Total:** 37 minutes  
+**Total:** 47 minutes  
 **Send:** 48 hours before course
 
 ### Activities
@@ -67,7 +81,8 @@ ai-business-innovation/
 | File | Exercise | Duration | Type |
 |------|----------|----------|------|
 | `ai-capability-cards.md` | Exercise 1: AI Tech Radar | 45 min | Portfolio mapping |
-| `investment-pitch-scenarios.md` | Exercise 3: Dragon's Den | 90 min | Investment simulation |
+| `ai-assisted-strategic-analysis.md` | Exercise 2: AI Strategic Analysis | 60 min | AI augmentation |
+| `investment-pitch-scenarios.md` | Exercise 3: Dragon's Den | 70 min | Investment simulation |
 | `strategic-response-scenarios.md` | Exercise 4: Strategic Response | 15 min | Quick decisions |
 | `ai-transformation-matrix-template.md` | Exercise 1 | - | Participant worksheet |
 | `investment-calculator-template.md` | Exercise 3 | - | ROI calculator (digital) |
@@ -78,12 +93,26 @@ ai-business-innovation/
 | File | Purpose | When |
 |------|---------|------|
 | `frameworks-reference-sheet.md` | All 5 frameworks in one document | Take-home reference |
+| `ai-investment-checklist.md` | AI-specific evaluation criteria | Exercise 3 |
+| `strategic-prompting-guide.md` | AI prompting techniques | Exercise 2 |
+| `executive-ai-prompt-library.md` | Pre-built executive prompts | Exercise 2 |
 
 ### Slides
 
 | File | Purpose |
 |------|---------|
-| `slide-deck.md` | Presentation slides (to be created from frameworks) |
+| `slide-deck.qmd` | Quarto presentation slides |
+| `render-slides.sh` | Build script for generating slides |
+| `README.md` | Instructions for rendering slides |
+
+### Instructor Materials
+
+| Folder | Contents | Purpose |
+|--------|----------|---------|
+| `facilitation-notes/` | delivery-timeline.md, facilitator-guide.md, storytelling-narratives.md | Complete delivery instructions |
+| `exercise-guides/` | exercise-2-guide.md | Detailed exercise facilitation |
+| `answer-keys/` | dragon-den-decision-rationales.md, exercise-2-ai-responses.md | Answer keys and rationales |
+| `wisdom-ai/` | AI thought leadership articles | Background reading for facilitators |
 
 ---
 
@@ -178,24 +207,31 @@ ai-business-innovation/
 - `activities/templates/` - Merged into `activities/`
 - `content/` - Renamed to `slides/`
 - `docs/` - Moved to root
+- `COURSE_STATUS.md` - Removed (redundant with README.md)
 
 ### What Was Created
-- 3 executive-focused pre-readings
-- `slides/` folder structure
+- 4 executive-focused pre-readings
+- `instructor-materials/` folder structure
+- `slides/` folder with Quarto setup
 - `index.html` in root
+- 3 additional handouts (AI checklist, prompting guide, prompt library)
 - This `PROJECT_STRUCTURE.md` file
 
 ### What Was Moved
 - All materials from `docs/` → root
 - `content/` → `slides/`
+- `FACILITATOR_GUIDE.md` → `instructor-materials/facilitation-notes/facilitator-guide.md`
+- `DELIVERY_TIMELINE.md` → `instructor-materials/facilitation-notes/delivery-timeline.md`
 
 ---
 
 ## Next Steps for Facilitators
 
 ### 1 Week Before Course
+- [ ] Read `instructor-materials/facilitation-notes/facilitator-guide.md`
+- [ ] Review `instructor-materials/facilitation-notes/delivery-timeline.md`
 - [ ] Enable GitHub Pages (Settings → Pages → Source: root)
-- [ ] Send pre-readings to participants (3 markdown files)
+- [ ] Send pre-readings to participants (4 markdown files)
 - [ ] Create digital templates (Google Sheets for calculator)
 - [ ] Convert frameworks reference to PDF (optional)
 
@@ -208,7 +244,7 @@ ai-business-innovation/
 ### During Course
 - [ ] Confirm all participants brought devices
 - [ ] Share digital template links
-- [ ] Follow DELIVERY_TIMELINE.md
+- [ ] Follow `instructor-materials/facilitation-notes/delivery-timeline.md`
 - [ ] Capture feedback for improvements
 
 ---
