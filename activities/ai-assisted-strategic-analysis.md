@@ -59,10 +59,21 @@ Write one opportunity per sticky note. Place on appropriate horizon.
 ## Phase 2: AI Augmentation (30 minutes)
 
 **Setup:**
-- One laptop per table with ChatGPT (https://chat.openai.com) or Claude (https://claude.ai)
-- One person is "AI operator" (types prompts)
-- One person is "scribe" (captures insights)
-- Everyone participates in discussion
+- **One laptop per table** (participant brings their own)
+- **AI Tool Options** (choose ONE that works for your table):
+  - **Google Gemini** (recommended): https://gemini.google.com (free, no login)
+  - **ChatGPT**: https://chat.openai.com (free tier, requires account)
+  - **Claude**: https://claude.ai (free tier, requires account)
+  - **Bing Chat/Copilot**: Built into Edge browser (free, no login)
+- **Roles:**
+  - One person is "AI operator" (types prompts and reads responses)
+  - One person is "scribe" (captures insights on sticky notes)
+  - Everyone participates in discussion
+
+**Important:** 
+- ✅ You'll TYPE your sticky note content into the prompt (takes 2-3 min)
+- ❌ No photo upload needed—manual typing is faster and more reliable
+- ✅ All AI tools work equally well for this exercise
 
 **You'll use AI in three different ways:**
 
@@ -289,20 +300,36 @@ Ask AI to "think step by step" or "show your reasoning" for deeper insights.
 
 ## What If AI Isn't Available?
 
-**Backup plan if no internet or AI access:**
+**Backup plan if no internet or AI access at tables:**
 
-Facilitator demonstrates with projector:
-1. Show Risk Deep-Dive prompt on a sample industry (retail)
-2. Show live AI response
-3. Show Reverse Prompting dialogue
-4. Show AI Debate (pre-prepared)
+**Option A: Facilitator Demonstrates (Recommended)**
+1. Project facilitator's laptop on screen
+2. Use one table's sticky notes as live example
+3. Show all three techniques in real-time:
+   - Risk Deep-Dive with their threats
+   - Reverse Prompting dialogue (facilitator answers)
+   - AI Debate (prepare both sides)
+4. All tables watch, discuss, learn
 
-Tables then do traditional brainstorming, but with awareness of:
-- Questions AI would ask
-- Perspectives AI would bring
-- Need to challenge their own assumptions
+**Option B: Pre-Recorded Demo**
+If internet is completely unavailable:
+- Show pre-recorded video of AI interaction
+- Pause at key moments for discussion
+- Tables still do synthesis exercise
 
-**The learning still happens:** Even watching AI used effectively teaches prompt engineering.
+**Tables then continue with:**
+- Brainstorm: "What questions WOULD AI ask us?"
+- Role-play: "If I were AI, I'd say..."
+- Discuss: "How would we improve this prompt?"
+- Capture insights AI would likely surface
+
+**The learning still happens:** 
+- Watching good prompting teaches prompting
+- Discussing AI's likely responses builds critical thinking
+- The meta-lesson (AI as thought partner) still lands
+- Participants leave knowing HOW to use AI on Monday
+
+**Key message:** "You don't need AI in the room to learn AI thinking. But you'll want to try these techniques when you get back to your desk."
 
 ---
 

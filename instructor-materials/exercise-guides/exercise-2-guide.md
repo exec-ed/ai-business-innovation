@@ -25,16 +25,34 @@ You are **facilitating AI-augmented strategic thinking**, not teaching AI prompt
 
 **Technology check:**
 - Confirm each table has 1 laptop with internet
-- Test: Can you access ChatGPT or Claude? (free tier is fine)
-- Backup: Have YOUR laptop ready to demonstrate if tables lack access
+- **AI Tool Options** (participants choose):
+  - **Google Gemini** (recommended): gemini.google.com - FREE, NO LOGIN
+  - ChatGPT: chat.openai.com - free tier, requires account
+  - Claude: claude.ai - free tier, requires account  
+  - Bing Chat/Copilot: Built into Edge - free, no login
+- **Backup:** Have YOUR laptop ready to demonstrate if tables lack access
+- **Test:** Open Gemini on your laptop to confirm it works
 
 **Room prep:**
 - Flipcharts at each table with Three Horizons grid drawn
 - RED sticky notes (threats) and GREEN sticky notes (opportunities)
+- BLUE/YELLOW sticky notes (for AI-generated insights - different color)
 - Strategic Prompting Guide handout at each seat
 
 **Announce at 11:00:**
-"Next exercise uses AI tools. Each table needs one laptop with ChatGPT or Claude. Who has access? [Show of hands]. Good, if your table doesn't have access, you'll watch my demonstration."
+"Next exercise uses AI tools. Each table needs one laptop. 
+
+Recommended: Google Gemini (free, no login required). Or use ChatGPT/Claude if you prefer.
+
+Who has a laptop with internet? [Show of hands]. 
+
+Good—if your table doesn't have access, you'll watch my demonstration and still do the thinking exercise."
+
+**Critical:** 
+- ✅ DO recommend Gemini (removes login friction)
+- ✅ DO emphasize "manual typing is fine" (no photo upload)
+- ❌ DON'T require specific tool
+- ❌ DON'T set up Ollama server or complex infrastructure
 
 ---
 
