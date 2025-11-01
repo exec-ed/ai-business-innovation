@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Investment Calculator - Business Innovation Masterclass</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .section.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        input[type="number"] {
+            text-align: right;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 10px;
+            align-items: end;
+        }
+
+        .cost-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .year-inputs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .results {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            position: sticky;
+            top: 20px;
+        }
+
+        .results h2 {
+            color: white;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            margin-bottom: 20px;
+        }
+
+        .metric {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .metric.positive .metric-value {
+            color: #4ade80;
+        }
+
+        .metric.negative .metric-value {
+            color: #f87171;
+        }
+
+        .recommendation {
+            background: rgba(255,255,255,0.15);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #4ade80;
+        }
+
+        .recommendation.no {
+            border-left-color: #f87171;
+        }
+
+        .recommendation.maybe {
+            border-left-color: #fbbf24;
+        }
+
+        .recommendation h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .bar-chart {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            height: 200px;
+            margin-top: 10px;
+        }
+
+        .bar {
+            flex: 1;
+            margin: 0 10px;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .bar:hover {
+            opacity: 0.8;
+        }
+
+        .bar-label {
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .bar-value {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .summary-table th,
+        .summary-table td {
+            padding: 12px;
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .summary-table th {
+            background: #f1f5f9;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .summary-table td:first-child,
+        .summary-table th:first-child {
+            text-align: left;
+        }
+
+        .summary-table .total-row {
+            background: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .help-text {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .input-group,
+            .cost-row,
+            .year-inputs {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Investment Calculator</h1>
+            <p>Evaluate AI initiatives using traditional ROI + AI-specific criteria</p>
+        </div>
+
+        <div class="content">
+            <!-- Left Column: Inputs -->
+            <div class="inputs-column">
+                <!-- Initiative Overview -->
+                <div class="section">
+                    <h2>📋 Initiative Overview</h2>
+                    <div class="form-group">
+                        <label>Initiative Name</label>
+                        <input type="text" id="initiativeName" placeholder="e.g., Customer Service Chatbot">
+                    </div>
+                    <div class="form-group">
+                        <label>Brief Description</label>
+                        <textarea id="description" rows="3" placeholder="What does this initiative do?"></textarea>
+                    </div>
+                </div>
+
+                <!-- Upfront Costs -->
+                <div class="section">
+                    <h2>💰 Upfront Costs (Year 0)</h2>
+                    <div class="cost-row">
+                        <label>Software/Platform License</label>
+                        <input type="number" id="cost_software" value="0" min="0" step="1000">
+                    </div>
+                    <div class="cost-row">
+                        <label>Implementation Services</label>
+                        <input type="number" id="cost_implementation" value="0" min="0" step="1000">
+                    </div>
+                    <div class="cost-row">
+                        <label>Infrastructure/Hardware</label>
+                        <input type="number" id="cost_infrastructure" value="0" min="0" step="1000">
+                    </div>
+                    <div class="cost-row">
+                        <label>Data Preparation</label>
+                        <input type="number" id="cost_data" value="0" min="0" step="1000">
+                    </div>
+                    <div class="cost-row">
+                        <label>Integration</label>
+                        <input type="number" id="cost_integration" value="0" min="0" step="1000">
+                    </div>
+                    <div class="cost-row">
+                        <label>Training & Change Management</label>
+                        <input type="number" id="cost_training" value="0" min="0" step="1000">
+                    </div>
+                    <div class="metric" style="background: rgba(102, 126, 234, 0.1); color: #333; margin-top: 15px;">
+                        <div class="metric-label">Total Upfront Investment</div>
+                        <div class="metric-value" id="totalUpfront" style="color: #667eea;">$0</div>
+                    </div>
+                </div>
+
+                <!-- Ongoing Costs -->
+                <div class="section">
+                    <h2>🔄 Ongoing Costs (Annual)</h2>
+                    <div class="form-group">
+                        <label>Year 1 Annual Costs</label>
+                        <input type="number" id="ongoing_year1" value="0" min="0" step="1000">
+                        <p class="help-text">Licenses, maintenance, staff (30-50% of upfront for AI)</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Year 2 Annual Costs</label>
+                        <input type="number" id="ongoing_year2" value="0" min="0" step="1000">
+                    </div>
+                    <div class="form-group">
+                        <label>Year 3 Annual Costs</label>
+                        <input type="number" id="ongoing_year3" value="0" min="0" step="1000">
+                    </div>
+                </div>
+
+                <!-- Expected Returns -->
+                <div class="section">
+                    <h2>📈 Expected Returns</h2>
+                    
+                    <h3>Cost Reduction</h3>
+                    <div class="year-inputs">
+                        <div class="form-group">
+                            <label>Year 1 ($)</label>
+                            <input type="number" id="return_cost_year1" value="0" min="0" step="1000">
+                        </div>
+                        <div class="form-group">
+                            <label>Year 2 ($)</label>
+                            <input type="number" id="return_cost_year2" value="0" min="0" step="1000">
+                        </div>
+                        <div class="form-group">
+                            <label>Year 3 ($)</label>
+                            <input type="number" id="return_cost_year3" value="0" min="0" step="1000">
+                        </div>
+                    </div>
+
+                    <h3>Revenue Growth</h3>
+                    <div class="year-inputs">
+                        <div class="form-group">
+                            <label>Year 1 ($)</label>
+                            <input type="number" id="return_revenue_year1" value="0" min="0" step="1000">
+                        </div>
+                        <div class="form-group">
+                            <label>Year 2 ($)</label>
+                            <input type="number" id="return_revenue_year2" value="0" min="0" step="1000">
+                        </div>
+                        <div class="form-group">
+                            <label>Year 3 ($)</label>
+                            <input type="number" id="return_revenue_year3" value="0" min="0" step="1000">
+                        </div>
+                    </div>
+
+                    <h3>Risk Reduction</h3>
+                    <div class="year-inputs">
+                        <div class="form-group">
+                            <label>Year 1 ($)</label>
+                            <input type="number" id="return_risk_year1" value="0" min="0" step="1000">
+                        </div>
+                        <div class="form-group">
+                            <label>Year 2 ($)</label>
+                            <input type="number" id="return_risk_year2" value="0" min="0" step="1000">
+                        </div>
+                        <div class="form-group">
+                            <label>Year 3 ($)</label>
+                            <input type="number" id="return_risk_year3" value="0" min="0" step="1000">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Assessment -->
+                <div class="section">
+                    <h2>🎯 Strategic Assessment</h2>
+                    <div class="form-group">
+                        <label>AI Transformation Matrix Quadrant</label>
+                        <select id="matrix_quadrant">
+                            <option value="">Select...</option>
+                            <option value="optimize">Optimize (Process/Incremental)</option>
+                            <option value="enhance">Enhance (Strategic/Incremental)</option>
+                            <option value="revolutionize">Revolutionize (Process/Transformational)</option>
+                            <option value="transform">Transform (Strategic/Transformational)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Three Horizons Classification</label>
+                        <select id="horizon">
+                            <option value="">Select...</option>
+                            <option value="h1">Horizon 1: Optimize Core (0-12 months)</option>
+                            <option value="h2">Horizon 2: Build Emerging (1-3 years)</option>
+                            <option value="h3">Horizon 3: Create Future (3-5+ years)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Results -->
+            <div class="results-column">
+                <div class="results">
+                    <h2>📊 Investment Analysis</h2>
+                    
+                    <div class="metric">
+                        <div class="metric-label">Total Investment (3 Years)</div>
+                        <div class="metric-value" id="totalInvestment">$0</div>
+                    </div>
+
+                    <div class="metric positive">
+                        <div class="metric-label">Total Benefits (3 Years)</div>
+                        <div class="metric-value" id="totalBenefits">$0</div>
+                    </div>
+
+                    <div class="metric" id="netBenefitMetric">
+                        <div class="metric-label">Net Benefit</div>
+                        <div class="metric-value" id="netBenefit">$0</div>
+                    </div>
+
+                    <div class="metric" id="roiMetric">
+                        <div class="metric-label">3-Year ROI</div>
+                        <div class="metric-value" id="roi">0%</div>
+                    </div>
+
+                    <div class="metric">
+                        <div class="metric-label">Year 1 ROI</div>
+                        <div class="metric-value" id="year1ROI">0%</div>
+                    </div>
+
+                    <div class="metric">
+                        <div class="metric-label">Payback Period</div>
+                        <div class="metric-value" id="payback" style="font-size: 1.5em;">-- months</div>
+                    </div>
+
+                    <!-- Recommendation -->
+                    <div class="recommendation" id="recommendation">
+                        <h3>💡 Recommendation</h3>
+                        <p id="recommendationText">Enter costs and benefits to see recommendation</p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="button-group">
+                        <button class="button" onclick="printResults()">🖨️ Print</button>
+                        <button class="button" onclick="resetForm()">🔄 Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Width Sections -->
+            <div class="section full-width">
+                <h2>📊 Financial Summary</h2>
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Year 1</th>
+                            <th>Year 2</th>
+                            <th>Year 3</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Costs</td>
+                            <td id="table_cost_y1">$0</td>
+                            <td id="table_cost_y2">$0</td>
+                            <td id="table_cost_y3">$0</td>
+                            <td id="table_cost_total">$0</td>
+                        </tr>
+                        <tr>
+                            <td>Cost Reduction</td>
+                            <td id="table_cost_reduction_y1">$0</td>
+                            <td id="table_cost_reduction_y2">$0</td>
+                            <td id="table_cost_reduction_y3">$0</td>
+                            <td id="table_cost_reduction_total">$0</td>
+                        </tr>
+                        <tr>
+                            <td>Revenue Growth</td>
+                            <td id="table_revenue_y1">$0</td>
+                            <td id="table_revenue_y2">$0</td>
+                            <td id="table_revenue_y3">$0</td>
+                            <td id="table_revenue_total">$0</td>
+                        </tr>
+                        <tr>
+                            <td>Risk Reduction</td>
+                            <td id="table_risk_y1">$0</td>
+                            <td id="table_risk_y2">$0</td>
+                            <td id="table_risk_y3">$0</td>
+                            <td id="table_risk_total">$0</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td>Total Benefits</td>
+                            <td id="table_benefits_y1">$0</td>
+                            <td id="table_benefits_y2">$0</td>
+                            <td id="table_benefits_y3">$0</td>
+                            <td id="table_benefits_total">$0</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td>Net Benefit</td>
+                            <td id="table_net_y1">$0</td>
+                            <td id="table_net_y2">$0</td>
+                            <td id="table_net_y3">$0</td>
+                            <td id="table_net_total">$0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="chart-container">
+                    <h3 style="color: #667eea; margin-bottom: 20px;">Costs vs. Benefits by Year</h3>
+                    <div class="bar-chart" id="barChart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize calculations on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add event listeners to all inputs
+            const inputs = document.querySelectorAll('input[type="number"]');
+            inputs.forEach(input => {
+                input.addEventListener('input', calculate);
+            });
+
+            // Initial calculation
+            calculate();
+        });
+
+        function calculate() {
+            // Get upfront costs
+            const upfront = {
+                software: parseFloat(document.getElementById('cost_software').value) || 0,
+                implementation: parseFloat(document.getElementById('cost_implementation').value) || 0,
+                infrastructure: parseFloat(document.getElementById('cost_infrastructure').value) || 0,
+                data: parseFloat(document.getElementById('cost_data').value) || 0,
+                integration: parseFloat(document.getElementById('cost_integration').value) || 0,
+                training: parseFloat(document.getElementById('cost_training').value) || 0
+            };
+
+            const totalUpfront = Object.values(upfront).reduce((a, b) => a + b, 0);
+            document.getElementById('totalUpfront').textContent = formatCurrency(totalUpfront);
+
+            // Get ongoing costs
+            const ongoing = {
+                year1: parseFloat(document.getElementById('ongoing_year1').value) || 0,
+                year2: parseFloat(document.getElementById('ongoing_year2').value) || 0,
+                year3: parseFloat(document.getElementById('ongoing_year3').value) || 0
+            };
+
+            // Total costs by year
+            const costs = {
+                year1: totalUpfront + ongoing.year1,
+                year2: ongoing.year2,
+                year3: ongoing.year3
+            };
+
+            // Get returns
+            const returns = {
+                cost: {
+                    year1: parseFloat(document.getElementById('return_cost_year1').value) || 0,
+                    year2: parseFloat(document.getElementById('return_cost_year2').value) || 0,
+                    year3: parseFloat(document.getElementById('return_cost_year3').value) || 0
+                },
+                revenue: {
+                    year1: parseFloat(document.getElementById('return_revenue_year1').value) || 0,
+                    year2: parseFloat(document.getElementById('return_revenue_year2').value) || 0,
+                    year3: parseFloat(document.getElementById('return_revenue_year3').value) || 0
+                },
+                risk: {
+                    year1: parseFloat(document.getElementById('return_risk_year1').value) || 0,
+                    year2: parseFloat(document.getElementById('return_risk_year2').value) || 0,
+                    year3: parseFloat(document.getElementById('return_risk_year3').value) || 0
+                }
+            };
+
+            // Calculate total benefits by year
+            const benefits = {
+                year1: returns.cost.year1 + returns.revenue.year1 + returns.risk.year1,
+                year2: returns.cost.year2 + returns.revenue.year2 + returns.risk.year2,
+                year3: returns.cost.year3 + returns.revenue.year3 + returns.risk.year3
+            };
+
+            // Calculate net benefits
+            const netBenefits = {
+                year1: benefits.year1 - costs.year1,
+                year2: benefits.year2 - costs.year2,
+                year3: benefits.year3 - costs.year3
+            };
+
+            // Calculate totals
+            const totalCosts = costs.year1 + costs.year2 + costs.year3;
+            const totalBenefits = benefits.year1 + benefits.year2 + benefits.year3;
+            const totalNetBenefit = netBenefits.year1 + netBenefits.year2 + netBenefits.year3;
+
+            // Calculate ROI
+            const roi = totalCosts > 0 ? ((totalBenefits - totalCosts) / totalCosts * 100) : 0;
+            const year1ROI = costs.year1 > 0 ? ((benefits.year1 - costs.year1) / costs.year1 * 100) : 0;
+
+            // Calculate payback period
+            let payback = calculatePayback(costs, benefits);
+
+            // Update main metrics
+            document.getElementById('totalInvestment').textContent = formatCurrency(totalCosts);
+            document.getElementById('totalBenefits').textContent = formatCurrency(totalBenefits);
+            document.getElementById('netBenefit').textContent = formatCurrency(totalNetBenefit);
+            document.getElementById('roi').textContent = roi.toFixed(1) + '%';
+            document.getElementById('year1ROI').textContent = year1ROI.toFixed(1) + '%';
+            document.getElementById('payback').textContent = payback;
+
+            // Update net benefit styling
+            const netBenefitMetric = document.getElementById('netBenefitMetric');
+            const roiMetric = document.getElementById('roiMetric');
+            
+            if (totalNetBenefit > 0) {
+                netBenefitMetric.className = 'metric positive';
+                roiMetric.className = 'metric positive';
+            } else if (totalNetBenefit < 0) {
+                netBenefitMetric.className = 'metric negative';
+                roiMetric.className = 'metric negative';
+            } else {
+                netBenefitMetric.className = 'metric';
+                roiMetric.className = 'metric';
+            }
+
+            // Update summary table
+            updateSummaryTable(costs, returns, benefits, netBenefits, totalCosts, totalBenefits, totalNetBenefit);
+
+            // Update chart
+            updateChart(costs, benefits);
+
+            // Update recommendation
+            updateRecommendation(roi, year1ROI, totalNetBenefit);
+        }
+
+        function calculatePayback(costs, benefits) {
+            let cumulative = 0;
+            
+            // Check Year 1
+            cumulative = benefits.year1 - costs.year1;
+            if (cumulative >= 0) {
+                const months = costs.year1 > 0 ? (costs.year1 / benefits.year1) * 12 : 0;
+                return months.toFixed(1) + ' months';
+            }
+
+            // Check Year 2
+            cumulative += benefits.year2 - costs.year2;
+            if (cumulative >= 0) {
+                const monthsInYear2 = Math.abs(cumulative - (benefits.year2 - costs.year2)) / benefits.year2 * 12;
+                return (12 + monthsInYear2).toFixed(1) + ' months';
+            }
+
+            // Check Year 3
+            cumulative += benefits.year3 - costs.year3;
+            if (cumulative >= 0) {
+                const monthsInYear3 = Math.abs(cumulative - (benefits.year3 - costs.year3)) / benefits.year3 * 12;
+                return (24 + monthsInYear3).toFixed(1) + ' months';
+            }
+
+            return '> 3 years';
+        }
+
+        function updateSummaryTable(costs, returns, benefits, netBenefits, totalCosts, totalBenefits, totalNetBenefit) {
+            // Costs row
+            document.getElementById('table_cost_y1').textContent = formatCurrency(costs.year1);
+            document.getElementById('table_cost_y2').textContent = formatCurrency(costs.year2);
+            document.getElementById('table_cost_y3').textContent = formatCurrency(costs.year3);
+            document.getElementById('table_cost_total').textContent = formatCurrency(totalCosts);
+
+            // Cost reduction row
+            document.getElementById('table_cost_reduction_y1').textContent = formatCurrency(returns.cost.year1);
+            document.getElementById('table_cost_reduction_y2').textContent = formatCurrency(returns.cost.year2);
+            document.getElementById('table_cost_reduction_y3').textContent = formatCurrency(returns.cost.year3);
+            document.getElementById('table_cost_reduction_total').textContent = formatCurrency(returns.cost.year1 + returns.cost.year2 + returns.cost.year3);
+
+            // Revenue growth row
+            document.getElementById('table_revenue_y1').textContent = formatCurrency(returns.revenue.year1);
+            document.getElementById('table_revenue_y2').textContent = formatCurrency(returns.revenue.year2);
+            document.getElementById('table_revenue_y3').textContent = formatCurrency(returns.revenue.year3);
+            document.getElementById('table_revenue_total').textContent = formatCurrency(returns.revenue.year1 + returns.revenue.year2 + returns.revenue.year3);
+
+            // Risk reduction row
+            document.getElementById('table_risk_y1').textContent = formatCurrency(returns.risk.year1);
+            document.getElementById('table_risk_y2').textContent = formatCurrency(returns.risk.year2);
+            document.getElementById('table_risk_y3').textContent = formatCurrency(returns.risk.year3);
+            document.getElementById('table_risk_total').textContent = formatCurrency(returns.risk.year1 + returns.risk.year2 + returns.risk.year3);
+
+            // Total benefits row
+            document.getElementById('table_benefits_y1').textContent = formatCurrency(benefits.year1);
+            document.getElementById('table_benefits_y2').textContent = formatCurrency(benefits.year2);
+            document.getElementById('table_benefits_y3').textContent = formatCurrency(benefits.year3);
+            document.getElementById('table_benefits_total').textContent = formatCurrency(totalBenefits);
+
+            // Net benefit row
+            document.getElementById('table_net_y1').textContent = formatCurrency(netBenefits.year1);
+            document.getElementById('table_net_y2').textContent = formatCurrency(netBenefits.year2);
+            document.getElementById('table_net_y3').textContent = formatCurrency(netBenefits.year3);
+            document.getElementById('table_net_total').textContent = formatCurrency(totalNetBenefit);
+        }
+
+        function updateChart(costs, benefits) {
+            const chartContainer = document.getElementById('barChart');
+            chartContainer.innerHTML = '';
+
+            const maxValue = Math.max(costs.year1, costs.year2, costs.year3, benefits.year1, benefits.year2, benefits.year3);
+            
+            if (maxValue === 0) return; // Don't show chart if no data
+
+            for (let year = 1; year <= 3; year++) {
+                const costHeight = (costs['year' + year] / maxValue) * 100;
+                const benefitHeight = (benefits['year' + year] / maxValue) * 100;
+
+                // Cost bar
+                const costBar = document.createElement('div');
+                costBar.className = 'bar';
+                costBar.style.height = costHeight + '%';
+                costBar.style.background = 'linear-gradient(180deg, #f87171 0%, #dc2626 100%)';
+                costBar.innerHTML = `
+                    <div class="bar-value">${formatCurrency(costs['year' + year])}</div>
+                    <div class="bar-label">Y${year} Cost</div>
+                `;
+                chartContainer.appendChild(costBar);
+
+                // Benefit bar
+                const benefitBar = document.createElement('div');
+                benefitBar.className = 'bar';
+                benefitBar.style.height = benefitHeight + '%';
+                benefitBar.style.background = 'linear-gradient(180deg, #4ade80 0%, #16a34a 100%)';
+                benefitBar.innerHTML = `
+                    <div class="bar-value">${formatCurrency(benefits['year' + year])}</div>
+                    <div class="bar-label">Y${year} Benefit</div>
+                `;
+                chartContainer.appendChild(benefitBar);
+            }
+        }
+
+        function updateRecommendation(roi, year1ROI, netBenefit) {
+            const recommendation = document.getElementById('recommendation');
+            const recommendationText = document.getElementById('recommendationText');
+            const horizon = document.getElementById('horizon').value;
+
+            let text = '';
+            let className = 'recommendation';
+
+            // Determine threshold based on horizon
+            let threshold = 200; // Default H1
+            if (horizon === 'h2') threshold = 150;
+            if (horizon === 'h3') threshold = 100;
+
+            if (netBenefit <= 0) {
+                className += ' no';
+                text = `❌ <strong>Not Recommended:</strong> Negative net benefit. This investment loses money over 3 years. Reconsider scope or timeline.`;
+            } else if (year1ROI < 50 && roi < threshold) {
+                className += ' maybe';
+                text = `⚠️ <strong>Conditional:</strong> ROI (${roi.toFixed(0)}%) is below ${threshold}% threshold for ${horizon.toUpperCase()}. Consider if strategic value justifies lower financial return.`;
+            } else if (year1ROI >= threshold || roi >= threshold) {
+                className += '';
+                text = `✅ <strong>Recommended:</strong> Strong financial returns. ROI of ${roi.toFixed(0)}% exceeds ${threshold}% threshold for ${horizon.toUpperCase()}. Proceed with investment.`;
+            } else {
+                className += ' maybe';
+                text = `⚠️ <strong>Marginal:</strong> Positive returns but below target threshold. Review assumptions and consider pilots before full investment.`;
+            }
+
+            recommendation.className = className;
+            recommendationText.innerHTML = text;
+        }
+
+        function formatCurrency(value) {
+            return '$' + Math.round(value).toLocaleString();
+        }
+
+        function printResults() {
+            window.print();
+        }
+
+        function resetForm() {
+            if (confirm('Reset all values? This cannot be undone.')) {
+                document.querySelectorAll('input[type="number"]').forEach(input => input.value = 0);
+                document.querySelectorAll('input[type="text"], textarea').forEach(input => input.value = '');
+                document.querySelectorAll('select').forEach(select => select.selectedIndex = 0);
+                calculate();
+            }
+        }
+
+        // Load example data
+        function loadExample(scenario) {
+            if (scenario === 'chatbot') {
+                document.getElementById('initiativeName').value = 'Customer Service Chatbot';
+                document.getElementById('description').value = 'AI-powered chatbot to handle routine customer inquiries and reduce call center volume';
+                
+                // Costs
+                document.getElementById('cost_software').value = 100000;
+                document.getElementById('cost_implementation').value = 150000;
+                document.getElementById('cost_infrastructure').value = 50000;
+                document.getElementById('cost_data').value = 75000;
+                document.getElementById('cost_integration').value = 50000;
+                document.getElementById('cost_training').value = 25000;
+                
+                document.getElementById('ongoing_year1').value = 180000;
+                document.getElementById('ongoing_year2').value = 190000;
+                document.getElementById('ongoing_year3').value = 200000;
+                
+                // Returns
+                document.getElementById('return_cost_year1').value = 200000;
+                document.getElementById('return_cost_year2').value = 350000;
+                document.getElementById('return_cost_year3').value = 400000;
+                
+                document.getElementById('return_revenue_year1').value = 50000;
+                document.getElementById('return_revenue_year2').value = 75000;
+                document.getElementById('return_revenue_year3').value = 100000;
+                
+                document.getElementById('matrix_quadrant').value = 'optimize';
+                document.getElementById('horizon').value = 'h1';
+            }
+            
+            calculate();
+        }
+    </script>
+</body>
+</html>
