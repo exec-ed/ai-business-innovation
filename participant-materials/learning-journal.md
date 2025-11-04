@@ -1,6 +1,6 @@
 <div style="text-align: center; padding: 8rem 2rem; page-break-after: always;">
 
-![Cover Image Placeholder](https://via.placeholder.com/400x500/2563eb/ffffff?text=AI+Business+Innovation)
+![AI Business Innovation Learning Journal Cover](images/learning-journal-cover.png)
 
 # AI-Driven Business Innovation Masterclass
 
@@ -36,12 +36,14 @@ This Learning Journal is your companion throughout today's masterclass on AI-Dri
 This is **your space** to capture insights, questions, and key takeaways throughout today's masterclass.
 
 **During each exercise:**
+
 - Record your thoughts and observations
 - Note "aha moments" and surprises
 - Capture questions for further exploration
 - Document decisions and rationale
 
 **After the workshop:**
+
 - Use this as a reference for your Personal Action Plan
 - Share with your manager as evidence of professional development
 - Review your insights when implementing AI initiatives
@@ -97,10 +99,12 @@ By the end of today's masterclass, you will be able to:
 ## Today's Agenda
 
 **Morning Session (9:00 AM - 12:30 PM)**
+
 - Exercise 1: AI Tech Radar
 - Exercise 2: AI-Assisted Strategic Analysis
 
 **Afternoon Session (1:30 PM - 4:30 PM)**
+
 - Exercise 3 & 4: Dragon's Den Investment Simulation
 - End of Day Synthesis
 
@@ -161,9 +165,9 @@ _______________________________________________________________________
 **My biggest "aha moment" from this exercise:**
 
 ┌──────────────────────────────────────────────────┐
-│                                                    │
-│                                                    │
-│                                                    │
+│                                                  │
+│                                                  │
+│                                                  │
 └──────────────────────────────────────────────────┘
 
 
@@ -243,9 +247,9 @@ _______________________________________________________________________
 **My biggest "aha moment" from this exercise:**
 
 ┌──────────────────────────────────────────────────┐
-│                                                    │
-│                                                    │
-│                                                    │
+│                                                  │
+│                                                  │
+│                                                  │
 └──────────────────────────────────────────────────┘
 
 
@@ -342,9 +346,9 @@ _______________________________________________________________________
 **My biggest "aha moment" from this exercise:**
 
 ┌──────────────────────────────────────────────────┐
-│                                                    │
-│                                                    │
-│                                                    │
+│                                                  │
+│                                                  │
+│                                                  │
 └──────────────────────────────────────────────────┘
 
 
@@ -504,9 +508,9 @@ _______________________________________________________________________
 **My biggest "aha moment" from this exercise:**
 
 ┌──────────────────────────────────────────────────┐
-│                                                    │
-│                                                    │
-│                                                    │
+│                                                  │
+│                                                  │
+│                                                  │
 └──────────────────────────────────────────────────┘
 
 ---
@@ -523,22 +527,22 @@ _______________________________________________________________________
 **1. Most important insight from today:**
 
 ┌──────────────────────────────────────────────────┐
-│                                                    │
-│                                                    │
+│                                                  │
+│                                                  │
 └──────────────────────────────────────────────────┘
 
 **2. Most useful framework or tool:**
 
 ┌──────────────────────────────────────────────────┐
-│                                                    │
-│                                                    │
+│                                                  │
+│                                                  │
 └──────────────────────────────────────────────────┘
 
 **3. Most surprising learning:**
 
 ┌──────────────────────────────────────────────────┐
-│                                                    │
-│                                                    │
+│                                                  │
+│                                                  │
 └──────────────────────────────────────────────────┘
 
 
@@ -562,8 +566,8 @@ _______________________________________________________________________
 **First thing I'll do on Monday morning:**
 
 ┌──────────────────────────────────────────────────┐
-│                                                    │
-│                                                    │
+│                                                  │
+│                                                  │
 └──────────────────────────────────────────────────┘
 
 
@@ -611,6 +615,7 @@ _______________________________________________________________________
 Within the next 48 hours, complete the **Personal Action Plan Worksheet** to translate today's insights into concrete actions.
 
 Your Learning Journal will help you:
+
 - Identify which initiatives to prioritize
 - Determine your strategic starting point
 - Plan your 30-60-90 day roadmap
@@ -618,6 +623,7 @@ Your Learning Journal will help you:
 ### Share Your Learning
 
 Consider sharing this journal or key insights with:
+
 - Your manager (evidence of professional development)
 - Your team (cascade the learning)
 - HR/L&D (for professional development records)
@@ -625,9 +631,10 @@ Consider sharing this journal or key insights with:
 
 ### Stay Connected
 
-**Course website:** [Link to GitHub Pages]
+**Course website:** [https://exec-ed.github.io/ai-business-innovation/]
 
 **Additional resources:**
+
 - Interactive AI Investment Checklist
 - Executive AI Prompt Library
 - Frameworks Reference Sheet (digital version)
@@ -642,6 +649,7 @@ Consider sharing this journal or key insights with:
 I completed the AI-Driven Business Innovation Masterclass on **[date]**.
 
 **Key competencies developed:**
+
 - ☑ Strategic AI evaluation and investment frameworks
 - ☑ AI-assisted strategic analysis techniques
 - ☑ Investment decision-making for emerging technologies
@@ -693,6 +701,7 @@ Access all course materials online:
 https://exec-ed.github.io/ai-business-innovation/
 
 **Available Resources:**
+
 - ✓ Interactive AI Investment Checklist
 - ✓ Executive AI Prompt Library (1000+ prompts)
 - ✓ Investment Calculator Tool
@@ -707,8 +716,6 @@ https://exec-ed.github.io/ai-business-innovation/
 **Questions or Follow-up?**
 
 📧 **Email:** michael.borck@curtin.edu.au
-
-📞 **Phone:** [Your phone number]
 
 🌐 **LinkedIn:** [Your LinkedIn]
 

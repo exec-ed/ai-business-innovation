@@ -31,8 +31,18 @@ mkdir -p "$OUTPUT_DIR"
 mkdir -p "$OUTPUT_PDF"
 mkdir -p "$OUTPUT_DIR/css"
 mkdir -p "$OUTPUT_DIR/js"
+mkdir -p "$OUTPUT_DIR/images"
 mkdir -p "$OUTPUT_INSTRUCTOR"
 mkdir -p "$OUTPUT_INSTRUCTOR_PDF"
+
+# Copy images from participant-materials to docs/images
+if [ -d "$SOURCE_DIR" ]; then
+  find "$SOURCE_DIR" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" -o -name "*.svg" \) -exec cp {} "$OUTPUT_DIR/images/" \;
+  image_count=$(find "$SOURCE_DIR" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" -o -name "*.svg" \) | wc -l)
+  if [ $image_count -gt 0 ]; then
+    echo -e "${GREEN}✓${NC} Copied $image_count image(s) to docs/images/\n"
+  fi
+fi
 
 # Copy CSS and JS to output
 if [ -f "$TEMPLATE_DIR/materials.css" ]; then
