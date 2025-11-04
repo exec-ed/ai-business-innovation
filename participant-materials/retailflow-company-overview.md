@@ -1,6 +1,6 @@
 <div style="text-align: center; padding: 8rem 2rem; page-break-after: always;">
 
-![RetailFlow Case Study Cover](images/retailflow-cover.png)
+![](images/retailflow-cover.png)
 
 # RetailFlow Inc.
 
@@ -13,6 +13,10 @@ AI-Driven Business Innovation Masterclass
 ---
 
 *Your strategic case study for AI investment decision-making*
+
+*Scan QR code for quick access to digital materials:*
+
+![](images/qr-retailflow.png)
 
 </div>
 

@@ -4,10 +4,9 @@ subtitle: "Strategic Frameworks for AI Investment Decisions"
 author: "Dr. Michael Borck | Curtin University"
 date: today
 format:
-  pptx:
-    reference-doc: null
-    slide-level: 2
+  pptx: default
   html:
+    embed-resources: true
     theme: cosmo
     toc: true
     toc-depth: 2
@@ -15,103 +14,55 @@ format:
     toc: false
     geometry:
       - margin=1in
-  docx:
-    reference-doc: null
+  docx: default
 ---
 
-# Welcome {background-colour="#667eea"}
+# Companion Site
 
-## AI-Driven Business Innovation
+*Scan QR code for quick access to digital materials:*
 
-**One-Day Executive Masterclass**
+![](images/qr-course.png)
 
-::: {.columns}
-::: {.column width="50%"}
-**Duration:** 9:00 AM - 4:30 PM
+# The Question We'll Answer
 
-**Focus:** Strategic Investment Decisions
+![](images/crossroads.png)
 
-**Style:** Frameworks + Simulation
-:::
-
-::: {.column width="50%"}
-**Goal:** Learn to evaluate AI using BOTH:
-- Traditional criteria (ROI, strategic fit)
-- **AI-specific criteria** (data, ethics, explainability)
-:::
-:::
-
-## Today's Central Question
-
-::: {.callout-important}
-## The Question We'll Answer
-
+::: {.notes}
 **How is evaluating AI investments DIFFERENT from traditional IT investments?**
-:::
 
-By 4:30 PM today, you'll know:
+By end of day, you'll know:
 
 - 5 ways AI differs from traditional IT
 - 5 AI-specific evaluation criteria
 - Why highest ROI ≠ best AI investment
 
-## Your Facilitator
-
-**Michael Borck**
-
-**Contact:**
-- Email: michael.borck@curtin.edu.au
-- Course materials: [GitHub Pages URL]
-
-## Course Materials
-
-**You have:**
-
-- Framework Reference Sheet (all 5 frameworks)
-- AI Investment Checklist (evaluation tool)
-- Exercise templates
-
-**You need:**
-
-- Laptop/tablet (BYOD for ROI calculator)
-- Pre-readings completed (4 documents)
-
-## Today's Schedule
-
-| Time | Activity |
-|------|----------|
-| 9:00-10:15 | **SESSION 1:** What Makes AI Different + Exercise 1 |
-| 10:15-10:45 | ☕ Break |
-| 10:45-12:15 | **SESSION 2:** Strategic Frameworks + Exercise 2 |
-| 12:15-1:00 | 🍴 Lunch |
-| 1:00-2:15 | **SESSION 3:** AI Investment Model + Dragon's Den Setup |
-| 2:15-2:45 | ☕ Break |
-| 2:45-4:30 | **SESSION 4:** Dragon's Den Simulation + Debrief |
-
-# SESSION 1: AI Strategy Foundations {background-colour="#667eea"}
-
-## Icebreaker: Your AI Journey
-
-**Go around the room (30 seconds each):**
-
-1. Your name and role
-2. One AI initiative (tried or considering)
-3. One concern about AI investment
-
-## What We'll Discover Today
-
-Traditional strategic frameworks are **NECESSARY** but **NOT SUFFICIENT** for AI
-
-::: {.incremental}
-- Three Horizons Model → Still needed ✅
-- ROI Analysis → Still needed ✅
-- Portfolio Balance → Still needed ✅
-- **BUT**: AI requires 5 ADDITIONAL evaluation criteria
 :::
 
-# What Makes AI Different? {background-colour="#764ba2"}
+---
 
-## The Core Insight
+# Today's Schedule
+
+**Morning Session:**
+
+- What Makes AI Different
+- Exercise 1: AI Tech Radar
+- Strategic Frameworks
+- Exercise 2: AI-Assisted Strategic Analysis
+
+**Afternoon Session:**
+
+- AI Investment Model
+- Exercise 3: Dragon's Den
+- Exercise 4: Strategic Response Scenarios
+- Debrief & Action Planning
+
+---
+
+# Traditional vs. AI
+
+![](images/difference.png)
+
+::: {.notes}
 
 Traditional IT | AI
 ---------------|----
@@ -121,166 +72,121 @@ Build once, maintain | Continuous learning
 Traceable decisions | Black box
 Human bias | Amplified bias at scale
 
-::: {.callout-warning}
 **Implication:** AI needs DIFFERENT evaluation criteria
+
 :::
 
-## 1. Data Dependency
+---
+
+# 1. Data Dependency
+
+![](images/data-dependency.png)
+
+::: {.notes}
 
 **Traditional IT:**
+
 - Write code based on business rules
 - Works regardless of data quality
-- Example: "If inventory < 10, alert"
 
 **AI:**
+
 - Learns patterns from historical data
 - Quality = Data Quality × Algorithm
-- Example: "Predict inventory needs" → Useless without good data
 
-::: {.callout-important}
 **Before funding AI:** Assess data readiness (0-10 score, need 7+)
 :::
 
-## Data Readiness Scoring
+---
 
-Score across 4 dimensions:
+# 2. Continuous Learning
 
-1. **Data Availability** - Enough historical data? (1000s-100,000s examples)
-2. **Data Quality** - Accurate, complete, consistent?
-3. **Data Access** - Can integrate necessary sources?
-4. **Data Bias** - Representative, unbiased data?
+![](images/continuous.png)
 
-Average → **Data Readiness Score**
-
-**If <7:** Fund data infrastructure FIRST, then AI
-
-## 2. Continuous Learning
-
+::: {.notes}
 **Traditional IT:**
+
 - Build once, maintain 10-15% annually
 - Predictable costs
 
 **AI:**
+
 - Continuous retraining as world changes
 - Ongoing costs: **30-50% annually**
 
-::: {.callout-warning}
 **Calculate 5-year TCO, not just Year 1 cost**
+
 :::
 
-## Continuous Learning Costs
+---
 
-Project | Year 1 | Annual Ongoing | 5-Year TCO
---------|--------|----------------|------------
-Traditional IT | $500K | $50K (10%) | $700K
-**AI System** | **$500K** | **$200K (40%)** | **$1.3M**
+# 3. Probabilistic Nature
 
-::: {.callout-important}
-AI is 2x more expensive over 5 years than traditional IT
-:::
+![](images/probabilistic.png)
 
-## 3. Probabilistic Nature
+::: {.notes}
+**Traditional IT:** Same input = same output (100%)
 
-**Traditional IT:** Same input = same output (100% deterministic)
+**AI:** "I'm 87% confident customer will churn"
 
-**AI:** "I'm 87% confident customer will churn" (probabilistic)
+Match AI accuracy to business risk tolerance:
 
-::: {.incremental}
-- **Low stakes** (recommendations): 70-80% accuracy OK
+- **Low stakes** (recommendations): 70-80% OK
 - **Medium stakes** (operations): 85-95% needed
 - **High stakes** (medical, financial): 95-99%+ required
 :::
 
-::: {.callout-tip}
-Match AI accuracy to business risk tolerance
-:::
+---
 
-## Accuracy vs. Risk Tolerance
+# 4. Black Box Problem
 
-What's the cost of being wrong?
+![](images/blackbox.png)
 
-- Wrong product recommendation → Mild annoyance
-- Wrong fraud flag → Angry customer
-- Wrong medical diagnosis → Lawsuit/death
-
-::: {.callout-warning}
-**If AI can't meet accuracy requirement:** Add human-in-loop OR don't proceed
-:::
-
-## 4. Black Box Problem
-
+::: {.notes}
 **Traditional IT:**
-- Trace every decision step-by-step
+
+- Trace every decision
 - Developers explain "why"
-- Easy to debug
 
 **AI (especially deep learning):**
+
 - Input → **Black Box** → Output
 - "The model learned that pattern"
-- Difficult to debug
 
-## Explainability Requirements
+High explainability = Limited algorithms + Higher cost (+15-20%)
 
-Level | Need | Solution | Cost Impact
-------|------|----------|-------------
-HIGH | Regulated (banking, medical) | Interpretable models only | +15-20%
-MEDIUM | Operational trust | Add explanation tools | +10-15%
-LOW | Consumer-facing | Any algorithm OK | +0%
-
-::: {.callout-warning}
-High explainability = Limited algorithm choice + Higher cost
 :::
 
-## 5. Ethical & Bias Risk
+---
+
+# 5. Ethical & Bias Risk
+
+![](images/bias.png)
+
+::: {.notes}
 
 **Traditional IT:**
-- Biases are human decisions
-- Limited scale
+
+- Human biases, limited scale
 
 **AI:**
+
 - Learns biases from historical data
 - Applies at **massive scale**
-- Hidden in model, hard to detect
+- Hidden in model
 
-::: {.callout-important}
-One biased AI = Millions of biased decisions = Existential risk
-:::
+**One biased AI = Millions of biased decisions**
 
-## Examples of AI Bias
-
-- **Hiring AI** → Gender/race bias from historical hires
-- **Credit scoring** → Discriminates against protected classes
-- **Facial recognition** → Works poorly on dark skin tones
-- **Predictive policing** → Over-targets minority neighborhoods
-
-::: {.callout-warning}
 Budget 10-30% for bias testing, diverse teams, monitoring
 :::
 
-## What Makes AI Different: Summary
+---
 
-::: {.columns}
-::: {.column width="50%"}
-**Traditional IT:**
-- Works without data
-- Build once (10-15% annual)
-- Deterministic (100% certain)
-- Explainable decisions
-- Human-scale bias
-:::
+# The 5 AI-Specific Criteria
 
-::: {.column width="50%"}
-**AI:**
-- Needs quality data (score ≥7)
-- Continuous learning (30-50% annual)
-- Probabilistic (never 100%)
-- Black box decisions
-- Bias at massive scale
-:::
-:::
+![](images/5-criteria.png)
 
-## The 5 AI-Specific Criteria
-
+::: {.notes}
 Every AI investment must answer:
 
 1. **Data Readiness** - Score 0-10, need ≥7?
@@ -289,571 +195,17 @@ Every AI investment must answer:
 4. **Explainability** - Can we explain decisions (if required)?
 5. **Ethical Risk** - Have we tested for bias?
 
-::: {.callout-important}
-Must pass BOTH traditional AND AI-specific criteria
+**Must pass BOTH traditional AND AI-specific criteria**
 :::
+---
 
-# Exercise 1: AI Tech Radar {background-color="#f59e0b"}
+# Framework 1: AI Transformation Matrix
 
-## Exercise 1: AI Tech Radar (45 min)
+![](images/transform-matrix.png)
 
-**Your Task (in table groups):**
+::: {notes}
 
-1. Map AI capabilities on Transformation Matrix (15 min)
-2. **Assess data readiness** for each (0-10 score) (15 min)
-3. **Flag ethical risks** (HIGH/MED/LOW) (10 min)
-
-**Materials:**
-- AI capability cards
-- Tech radar template
-- Data readiness scorecard
-
-**Output:** Where are you today? Where are gaps? Is data ready?
-
-## AI Transformation Matrix
-
-```
-          TRANSFORMATIONAL
-                  │
-    REVOLUTIONIZE │ TRANSFORM
-    (New Process) │ (New Business Model)
-    ──────────────┼──────────────
-       OPTIMIZE   │   ENHANCE
-      (Efficiency)│ (Better Products)
-                  │
-           INCREMENTAL
-```
-
-Most organizations: 80% in OPTIMIZE
-
-# ☕ BREAK (30 minutes) {background-color="#9ca3af"}
-
-## Break Time: 10:30 - 11:00 AM
-
-**☕ Coffee, networking, questions**
-
-**We resume at 11:00 AM with:**
-- Data Value Pyramid
-- Three Horizons Model
-- Exercise 2: Competitive Threats & Opportunities
-
-# SESSION 2: Strategic Frameworks {background-color="#667eea"}
-
-## Strategic Frameworks
-
-**Today you'll learn 5 frameworks:**
-
-1. ✅ AI Transformation Matrix (just used)
-2. **Data Value Pyramid** - Match AI ambition to data maturity
-3. **Three Horizons Model** - Balance portfolio across timeframes
-4. **AI Investment Model** - Traditional + AI-specific criteria
-5. **AI Investment Checklist** - 10 questions for every AI project
-
-# Data Value Pyramid {background-color="#764ba2"}
-
-## Data Value Pyramid
-
-**5 Levels of Data Maturity:**
-
-Level 5: **AUTONOMOUS** - AI decides and acts  
-Level 4: **PREDICTIVE** - Forecast what will happen  
-Level 3: **DESCRIPTIVE** - Understand what happened  
-Level 2: **INTEGRATION** - Connect data sources  
-Level 1: **COLLECTION** - Gather raw data
-
-::: {.callout-warning}
-**You cannot skip levels**
-:::
-
-## The Gate Principle
-
-::: {.callout-important}
-## Critical Rule
-
-**If you're at Level 2, you cannot do Level 5 AI**
-
-You will fail.
-:::
-
-**Most organizations:**
-- Current state: Level 2-3
-- AI ambition: Level 5
-- **Gap = Why 85% of AI projects fail**
-
-## Match AI to Data Maturity
-
-AI Type | Data Level Needed | Example
---------|-------------------|----------
-Basic automation | Level 1-2 | RPA, rules-based
-Analytics & reporting | Level 2-3 | Dashboards, BI
-Predictive models | Level 3-4 | Forecasting, recommendations
-Autonomous decisions | Level 4-5 | Dynamic pricing, auto-ordering
-
-::: {.callout-tip}
-Assess data maturity BEFORE funding AI
-:::
-
-# Three Horizons Model {background-color="#764ba2"}
-
-## Three Horizons Model
-
-Balance AI portfolio across timeframes:
-
-**Horizon 1** (0-12 mo): Optimize core - **70%** of budget  
-**Horizon 2** (1-3 yrs): Build emerging - **20%** of budget  
-**Horizon 3** (3-5+ yrs): Create future - **10%** of budget
-
-::: {.callout-warning}
-All H1 = No future | All H3 = No present
-:::
-
-## Horizon 1: Optimize Core
-
-**Focus:** Improve existing operations  
-**Budget:** 60-70%  
-**ROI Threshold:** >200% in Year 1  
-**Risk:** Low  
-**Examples:** Chatbots, process automation, basic forecasting
-
-## Horizon 2: Build Emerging
-
-**Focus:** Adjacent opportunities, new capabilities  
-**Budget:** 20-30%  
-**ROI Threshold:** >150% over 3 years  
-**Risk:** Medium  
-**Examples:** Personalization, dynamic pricing, supply chain AI
-
-## Horizon 3: Create Future
-
-**Focus:** New business models, disruption  
-**Budget:** 10-15%  
-**ROI Threshold:** >100% over 5 years  
-**Risk:** High  
-**Examples:** AI products, autonomous operations, platforms
-
-## Portfolio Balance
-
-**Most organisations get this wrong:**
-
-1. **All H1 (80%+ optimize):** Efficient today, irrelevant tomorrow
-2. **All H3 (50%+ moonshots):** Exciting vision, no cash flow
-
-**Right balance:** 70/20/10
-
-::: {.callout-tip}
-Audit your AI portfolio: Are you balanced?
-:::
-
-# Exercise 2: AI-Assisted Strategic Analysis {background-color="#f59e0b"}
-
-## Exercise 2: AI Tools in Action (60 min)
-
-**Something NEW: You'll use AI tools (ChatGPT/Claude) for strategic thinking**
-
-**Three phases:**
-1. **Human Brainstorm** (15 min) - Your thinking first
-2. **AI Augmentation** (30 min) - Use AI to go deeper ⭐
-3. **Human Synthesis** (15 min) - Compare & learn
-
-::: {.callout-tip}
-This is hands-on. You'll actually USE AI for strategy.
-:::
-
-## Why This Matters
-
-**Morning so far:** You've learned ABOUT AI investment
-
-**Now:** You'll USE AI as a strategic thought partner
-
-**This afternoon:** AI is available if you choose to use it
-
-::: {.callout-important}
-Measure of success: You naturally reach for AI tools during Dragon's Den prep
-:::
-
-## Phase 1: Human Brainstorm (15 min)
-
-**Traditional exercise:**
-
-- RED sticky notes: AI threats to your business
-- GREEN sticky notes: AI opportunities
-- Place on Three Horizons grid (H1/H2/H3)
-
-**Goal:** Generate 10-15 ideas from YOUR expertise
-
-::: {.callout-note}
-Humans first, AI second. Your experience is irreplaceable.
-:::
-
-## Phase 2: AI Augmentation (30 min)
-
-**You'll use AI in three ways:**
-
-### Round 1: Risk Deep-Dive (10 min)
-AI identifies threats you missed
-
-### Round 2: Reverse Prompting (10 min)
-AI asks YOU questions to reveal opportunities
-
-### Round 3: AI Debate (10 min)
-Two AIs argue different perspectives
-
-## Round 1: Risk Deep-Dive
-
-**Give AI your threat list, ask it to:**
-- What are we missing?
-- What second-order effects?
-- Which threat is existential?
-- Early warning signs?
-
-::: {.callout-tip}
-**Example prompt:**
-"You are a strategic consultant in [industry]. We identified these threats: [list]. What are we missing or underestimating?"
-:::
-
-## Round 2: Reverse Prompting
-
-**Instead of asking AI for answers, ask AI to ask YOU questions**
-
-::: {.callout-tip}
-**Example prompt:**
-"You are an AI innovation expert. Ask me probing questions to help me discover opportunities I'm overlooking. Ask ONE question at a time."
-:::
-
-**The magic:** AI's questions reveal opportunities hiding in plain sight
-
-## Round 3: AI Debate
-
-**Have two AIs debate different perspectives:**
-
-- AI #1 (Optimist): "Invest in AI aggressively NOW"
-- AI #2 (Pragmatist): "Build data infrastructure FIRST"
-
-**Watch them debate 2-3 rounds**
-
-::: {.callout-note}
-Which AI makes the stronger case? Why? What's the synthesis?
-:::
-
-## Phase 3: Synthesis (15 min)
-
-**Compare human vs. AI contributions:**
-
-1. What did AI identify that humans missed?
-2. What did humans see that AI missed?
-3. Which AI insights are most valuable?
-4. How did AI change your strategic thinking?
-
-**Group presentations:** One insight AI generated that surprised you
-
-## What You're Learning
-
-**Surface:** Threats and opportunities in your industry
-
-**Deep:** 
-- AI is a powerful augmentation tool
-- Prompt engineering is a critical skill
-- AI is best as "thought partner" not "answer generator"
-- Human judgment + AI analysis = Better decisions
-
-::: {.callout-important}
-If AI helps YOU (experts) think better... imagine what it can do for your organisation
-:::
-
-## Technology Needed
-
-**Each table needs:**
-- 1 laptop with internet
-- Free ChatGPT (https://chat.openai.com) OR
-- Free Claude (https://claude.ai)
-
-**Roles:**
-- AI Operator (types prompts)
-- Scribe (captures insights)
-- Everyone discusses
-
-**Backup:** Facilitator demonstrates if no access
-
-## The Afternoon Test
-
-**This afternoon:**
-- Dragon's Den team prep (1:45-2:30 PM)
-- Committee deliberation
-- Action planning
-
-**AI tools available. We won't mandate use.**
-
-::: {.callout-tip}
-Success = Someone says "Let's ask Claude what risks we're missing" without prompting
-:::
-
-## You Have: Strategic Prompting Guide
-
-**Take-home handout with templates:**
-
-1. Risk Deep-Dive Template
-2. Reverse Prompting Template
-3. AI Debate Template
-
-**Use Monday morning on real decisions**
-
-# 🍴 LUNCH BREAK (45 minutes) {background-color="#9ca3af"}
-
-## Lunch Break: 12:30 - 1:15 PM
-
-**🍴 Lunch provided**
-
-**This afternoon:**
-- AI Investment Model (traditional + AI-specific)
-- **Dragon's Den Simulation** (90 minutes)
-- Make real portfolio allocation decisions with $2M budget
-
-# SESSION 3: AI Investment Framework {background-color="#667eea"}
-
-## What's Coming: Dragon's Den
-
-**The scenario:**
-- RetailFlow has $2M AI budget
-- 4 competing AI initiatives
-- Cannot fund everything
-- Must allocate strategically
-
-**Your task:**
-- Project teams: Pitch your AI initiative
-- Investment committee: Evaluate and allocate budget
-
-**The twist:** AI-specific criteria change everything
-
-# AI Investment Model {background-color="#764ba2"}
-
-## AI Investment Model
-
-**Two-part evaluation:**
-
-**Part A: Traditional Criteria**
-- Strategic fit (Three Horizons, Transformation Matrix)
-- Financial ROI (4 value categories)
-- Implementation feasibility
-
-**Part B: AI-Specific Criteria** ⭐ NEW
-- Data readiness (0-10 score)
-- Continuous learning plan
-- Accuracy vs. risk tolerance
-- Explainability requirements
-- Ethical risk assessment
-
-## Traditional: 4 Value Categories
-
-Every AI investment creates value across:
-
-1. **Cost Reduction** - Labor, efficiency, waste
-2. **Revenue Growth** - New sales, retention, pricing
-3. **Risk Reduction** - Fraud, compliance, quality
-4. **Strategic Positioning** - Competitive advantage, capabilities
-
-::: {.callout-tip}
-Strong business cases address MULTIPLE categories
-:::
-
-## AI-Specific: The 5 Criteria
-
-**1. Data Readiness (0-10)**
-- Data availability, quality, access, bias
-- If <7: Stop, fund data infrastructure first
-
-**2. Continuous Learning (TCO)**
-- Static (10-15%), Batch (25-30%), Real-time (35-50%)
-- Calculate 5-year TCO, not just Year 1
-
-## AI-Specific: The 5 Criteria (cont.)
-
-**3. Accuracy vs. Risk Tolerance**
-- Low stakes: 70-80% OK
-- Medium: 85-95% needed
-- High: 95-99%+ required
-- Match capability to requirement
-
-**4. Explainability**
-- HIGH (regulated): Interpretable models only (+15-20%)
-- MEDIUM (operational): Add explanation tools (+10-15%)
-- LOW (consumer): Any algorithm OK
-
-## AI-Specific: The 5 Criteria (cont.)
-
-**5. Ethical Risk Assessment**
-- HIGH (life-impacting): Extensive testing (+20-30%)
-- MEDIUM (customer-facing): Bias testing (+10-15%)
-- LOW (internal): Basic review (+5%)
-
-::: {.callout-important}
-Budget for bias testing, diverse teams, monitoring
-:::
-
-## The AI Investment Decision Tree
-
-```
-Traditional Criteria
-├── Strategic fit? ✓
-├── Financial ROI? ✓
-└── Feasible? ✓
-    └── YES → Proceed to AI-Specific
-
-AI-Specific Criteria
-├── Data readiness ≥7? 
-├── Learning plan & budget?
-├── Accuracy matches risk?
-├── Explainability addressed?
-└── Ethics mitigated?
-    └── ALL YES → APPROVED
-```
-
-## The Dragon's Den Preview
-
-Original ROI view | After AI-specific analysis
-------------------|---------------------------
-Chatbot: 92% ROI | $525K, Low risk ✅
-Dynamic Pricing: 253% ROI (best!) | $1.3M (over cap), HIGH ethical risk ⚠️
-Inventory: 264% ROI (best!) | $1.25M (over cap), Med risk ⚠️
-Fraud: 315% ROI (best!) | $1.05M, HIGH bias risk, data not ready ⚠️
-
-::: {.callout-important}
-**Top 3 ROI projects all have AI-specific red flags**
-:::
-
-# Dragon's Den Setup {background-color="#f59e0b"}
-
-## Dragon's Den Roles
-
-**Investment Committee** (4-5 people):
-- Represent CEO, CFO, CTO, CMO
-- Evaluate 4 AI proposals
-- Allocate $2M budget
-- Use AI Investment Checklist
-
-**Project Teams** (3 teams of 3-4):
-- Team 1: Chatbot pitch
-- Team 2: Dynamic Pricing pitch
-- Team 3: Inventory Optimization pitch
-- (Fraud Detection: pre-prepared)
-
-## The Constraints
-
-- **Total budget:** $2M (cannot exceed)
-- **Must fund:** At least 2 initiatives
-- **Maximum:** $1.2M per project
-- **Timeline:** Results within 18 months
-
-**You cannot fund everything. Make strategic choices.**
-
-## Your 7-Minute Pitch Must Include
-
-1. Business problem (30 sec)
-2. Traditional ROI (2 min)
-   - Cost reduction / Revenue growth / Risk reduction / Strategic positioning
-3. **AI-Specific Criteria (3 min)** ⭐
-   - Data readiness score
-   - Continuous learning plan
-   - Accuracy vs. risk
-   - Explainability approach
-   - Ethical risk mitigation
-4. Why fund us? (1.5 min)
-
-## Team Preparation: 45 Minutes
-
-**Project Teams:**
-- Prepare 7-minute pitch
-- Use pitch scenario + AI Investment Checklist
-- Address all 5 AI-specific criteria honestly
-- Prepare for tough questions
-
-**Investment Committee:**
-- Review AI Investment Checklist
-- Prepare questions to probe AI-specific risks
-- Discuss evaluation approach
-
-**You have 45 minutes. After break, we begin.**
-
-# ☕ BREAK (30 minutes) {background-color="#9ca3af"}
-
-## Break Time: 2:30 - 3:00 PM
-
-**☕ Coffee & final prep**
-
-**We resume at 3:00 PM with:**
-- 4 AI pitches (7 min pitch + 5 min Q&A each)
-- Committee deliberation (10 min)
-- Investment decision announcement
-- Debrief: What did we learn?
-
-# SESSION 4: Dragon's Den Simulation {background-color="#667eea"}
-
-## Dragon's Den: The Pitches
-
-**3:00 - 4:10 PM (70 minutes)**
-
-1. **Chatbot** (15 min)
-2. **Dynamic Pricing** (15 min)
-3. **Inventory Optimization** (15 min)
-4. **Fraud Detection** (10 min - facilitator presents)
-5. **Committee Deliberation** (10 min)
-6. **Investment Decision** (5 min)
-
-::: {.callout-tip}
-Committee: Probe on data readiness, ethical risks, ongoing costs
-:::
-
-## After the Decisions
-
-**Key questions we'll explore:**
-
-1. How did AI-specific criteria change your evaluation?
-2. What surprised you about "hidden costs"?
-3. Which project would you have funded with ROI only?
-4. How will you apply this Monday morning?
-
-# Key Insights & Debrief {background-color="#764ba2"}
-
-## What You Learned Today
-
-**AI investments require DIFFERENT evaluation:**
-
-::: {.incremental}
-1. **Data readiness gates everything** (6/10 = delay the project)
-2. **Ongoing costs are 3-5x higher** (30-50% vs. 10-15%)
-3. **Ethical risks are existential** (one biased AI = massive damage)
-4. **Explainability isn't optional** (regulated industries)
-5. **Highest ROI ≠ best investment** (must pass AI criteria too)
-:::
-
-## The Monday Morning Question
-
-**When your team proposes AI, ask:**
-
-1. Is our data ready? (0-10 score)
-2. What's the 5-year TCO? (not just Year 1)
-3. What's the cost of being wrong? (accuracy requirement)
-4. Must we explain decisions? (regulatory?)
-5. Could this discriminate? (bias testing?)
-
-::: {.callout-important}
-If you can't answer all 5, you're not ready to invest
-:::
-
-## Your AI Investment Checklist
-
-**You have the tool:**
-- Section A: Traditional criteria
-- Section B: 5 AI-specific criteria
-- Scoring rubrics
-- Budget impact calculators
-
-::: {.callout-tip}
-Use it Monday morning on your next AI proposal
-:::
-
-# The 5 Frameworks: Summary {background-color="#764ba2"}
-
-## Framework 1: AI Transformation Matrix
+**Four Quadrants of AI Impact:**
 
 **Classify AI initiatives:**
 
@@ -862,166 +214,418 @@ Use it Monday morning on your next AI proposal
 - **REVOLUTIONIZE** (Process + Transformational): New processes
 - **TRANSFORM** (Strategic + Transformational): New business models
 
+**Most organizations:** 80% in OPTIMIZE quadrant
+
 **Use:** Identify portfolio balance and gaps
 
-## Framework 2: Data Value Pyramid
+- The Innovation Adoption Framework provides a roadmap for implementing AI in organisations
+- Phase 1 is Knowledge Building - understanding what's possible before making commitments
+- Phase 2 is Strategic Alignment - connecting AI initiatives to specific business objectives
+- Phase 3 is Capability Development - building or acquiring the needed skills and technologies
+- Phase 4 is Pilot Implementation - testing in controlled environments to demonstrate value
+- Phase 5 is Organisational Transformation - scaling successful approaches across the business
+- The Digital Agriculture Services example illustrates this progression
+- They began by building knowledge about how satellite imagery and ML could predict crop yields
+- They aligned this with strategic business needs in agricultural insurance and investment
+- They developed capabilities by building data science teams and satellite imagery processing
+- Their pilot implementations tested predictions against ground-truth data in specific regions
+- Now they're transforming the agricultural intelligence landscape at organisational scale
+- This framework applies to any significant innovation initiative, not just AI
+- The key insight: skipping phases often leads to implementation failure
+- Many organisations jump straight to pilots without strategic alignment or capability building
+- The KPMG framework provides additional detail on implementing each phase
+- What phase is your organisation currently in? Are you trying to skip essential steps?
 
-**5 Levels:** Collection → Integration → Descriptive → Predictive → Autonomous
-
-**Use:** Match AI ambition to data maturity
-
-::: {.callout-warning}
-Can't do Level 5 AI with Level 2 data
 :::
 
-## Framework 3: Three Horizons Model
+---
 
-**Balance portfolio:**
+# Framework 2: Data Value Pyramid
 
-- H1 (0-12 mo): 70% - Optimize core
-- H2 (1-3 yrs): 20% - Build emerging
-- H3 (3-5+ yrs): 10% - Create future
+![](images/data-value.png)
 
-**Use:** Ensure portfolio balance (not all H1 or all H3)
+::: {.notes}
+**5 Levels of Data Maturity:**
 
-## Framework 4: AI Investment Model
+- Level 5: **AUTONOMOUS** - AI decides and acts
+- Level 4: **PREDICTIVE** - Forecast what will happen
+- Level 3: **DESCRIPTIVE** - Understand what happened
+- Level 2: **INTEGRATION** - Connect data sources
+- Level 1: **COLLECTION** - Gather raw data
 
-**Traditional criteria:**
-- Strategic fit, ROI (4 value categories), Feasibility
+**You cannot skip levels**
+:::
 
-**AI-specific criteria:**
-- Data readiness, Continuous learning, Accuracy vs. risk, Explainability, Ethics
+---
 
-**Use:** Evaluate every AI investment with BOTH sets
+# Match AI to Data Maturity
 
-## Framework 5: AI Investment Checklist
+![](images/data-maturity.png)
 
-**10 critical questions:**
+::: {.notes}
+AI Type | Data Level Needed | Example
+--------|-------------------|----------
+Basic automation | Level 1-2 | RPA, rules-based
+Analytics & reporting | Level 2-3 | Dashboards, BI
+Predictive models | Level 3-4 | Forecasting, recommendations
+Autonomous decisions | Level 4-5 | Dynamic pricing, auto-ordering
 
-1. Data ready? (≥7/10)
-2. Learning plan? (30-50% annual)
-3. Accuracy match? (requirement vs. capability)
-4. Explainable? (if required)
-5. Bias tested? (if customer-facing)
+**Assess data maturity BEFORE funding AI**
+:::
 
-**Use:** Gate approval process for AI projects
+---
 
-## What Makes This AI-Specific
+# Why 85% of AI projects fail
 
-**Traditional strategic course would teach:**
-- ✅ Three Horizons
-- ✅ Portfolio balance
-- ✅ ROI analysis
+![](images/gated.png)
 
-**This AI course ADDS:**
-- ⭐ Data readiness assessment
-- ⭐ Continuous learning costs
-- ⭐ Accuracy vs. risk matching
-- ⭐ Explainability requirements
-- ⭐ Ethical risk evaluation
+::: {.notes}
+**If you're at Level 2, you cannot do Level 5 AI**
 
-# Personal Action Planning {background-color="#f59e0b"}
+You will fail.
 
-## Your Action Plan (5 minutes)
+**Most organizations:**
 
-**Write down:**
+- Current state: Level 2-3
+- AI ambition: Level 5
 
-1. **One AI initiative** you'll evaluate differently
-2. **Your data readiness score** (0-10, be honest)
-3. **The AI criterion** that concerns you most
-4. **Two actions** in next 30 days
-5. **Who you'll share this with**
+- **Gap = Why 85% of AI projects fail**
+:::
+---
 
-**Take 5 minutes. Silent work time.**
+# Exercise 1: AI Tech Radar
 
-# Thank You {background-color="#667eea"}
+![](images/ai-tech-radar.png)
 
-## Thank You for Participating
+::: {.notes}
 
+**Your Task (in table groups):**
+
+1. Map AI capabilities on Transformation Matrix
+2. Assess data readiness for each (0-10 score)
+3. Flag ethical risks (HIGH/MED/LOW)
+
+**Output:** Where are you today? Where are gaps?
+
+:::
+
+---
+
+# Framework 3: Three Horizons Model
+
+![](images/3-horizons.png)
+
+::: {.notes}
+
+Balance AI portfolio across timeframes:
+
+- **Horizon 1** (0-12 mo): Optimize core - **70%** of budget
+- **Horizon 2** (1-3 yrs): Build emerging - **20%** of budget
+- **Horizon 3** (3-5+ yrs): Create future - **10%** of budget
+
+All H1 = No future | All H3 = No present
+:::
+
+---
+
+# Portfolio Balance
+
+![](images/balanced-portfolio.png)
+
+::: {.notes}
+**Most organisations get this wrong:**
+
+1. **All H1 (80%+ optimize):** Efficient today, irrelevant tomorrow
+2. **All H3 (50%+ moonshots):** Exciting vision, no cash flow
+
+**Right balance:** 70/20/10
+
+Audit your AI portfolio: Are you balanced?
+:::
+
+---
+
+# Framework 4: Innovation Adoption Framework
+
+![](images/investment-model.png)
+
+::: {.notes}
+**Even great AI initiatives fail if people don't adopt them**
+
+- Technical feasibility ✓
+- Strong business case ✓
+- **But:** 70% of digital transformation fails due to people resistance
+
+**Must assess organizational readiness BEFORE investing**
+:::
+
+---
+
+# The 5 Adoption Barriers
+
+![](images/adoption-barriers.png)
+
+::: {.notes}
+
+Every AI initiative faces resistance:
+
+1. **Skill Gap** - Do people have required capabilities?
+2. **Process Change** - How much disruption to workflows?
+3. **Cultural Fit** - Does it align with organizational values?
+4. **Trust** - Do people believe in the technology?
+5. **Change Fatigue** - Are people exhausted from prior changes?
+:::
+
+---
+
+# Adoption Readiness Assessment
+
+![](images/readiness.png)
+
+::: {notes}
+
+**Score each barrier 1-5 (5 = low barrier, 1 = high barrier):**
+
+Barrier | Score | Impact
+--------|-------|--------
+Skill Gap | ___ | Training needs
+Process Change | ___ | Change management
+Cultural Fit | ___ | Messaging strategy
+Trust | ___ | Transparency requirements
+Change Fatigue | ___ | Timing decision
+
+- **Average ≥4:** Ready to proceed
+- **Average 3-3.9:** Proceed with risk mitigation
+- **Average <3:** High adoption risk, reconsider
+
+:::
+
+---
+
+# Exercise 2: AI-Assisted Strategic Analysis
+
+![](images/ai-assisted.png)
+
+**Round 1: Risk Deep-Dive**
+AI identifies threats you missed
+
+**Round 2: Reverse Prompting**
+AI asks YOU questions to reveal opportunities
+
+**Round 3: AI Debate**
+Two AIs argue different perspectives
+
+::: {.notes}
+
+**You'll use AI tools (ChatGPT/Claude/Gemini) for strategic thinking**
+
+**Three phases:**
+
+1. **Human Brainstorm** - Your thinking first
+2. **AI Augmentation** - Use AI to go deeper
+3. **Human Synthesis** - Compare & learn
+
+:::
+
+
+---
+
+# Framework 5: AI Investment Model
+
+![](images/investment-model-scales.png)
+
+::: {.notes}
+
+**Two-part evaluation:**
+
+**Part A: Traditional Criteria**
+
+- Strategic fit (Three Horizons, Transformation Matrix)
+- Financial ROI (4 value categories)
+- Implementation feasibility
+
+**Part B: AI-Specific Criteria**
+
+- Data readiness (0-10 score)
+- Continuous learning plan
+- Accuracy vs. risk tolerance
+- Explainability requirements
+- Ethical risk assessment
+:::
+
+---
+
+# The 4 Value Categories
+
+![](images/4-value-categories.png)
+
+::: {.notes}
+Every AI investment creates value across:
+
+1. **Cost Reduction** - Labor, efficiency, waste
+2. **Revenue Growth** - New sales, retention, pricing
+3. **Risk Reduction** - Fraud, compliance, quality
+4. **Strategic Positioning** - Competitive advantage, capabilities
+
+Strong business cases address MULTIPLE categories
+:::
+
+---
+
+# AI-Specific: The 5 Criteria
+
+![](images/5-criteria.png)
+
+::: {.notes}
+
+**1. Data Readiness (0-10)**
+
+- Data availability, quality, access, bias
+- If <7: Stop, fund data infrastructure first
+
+**2. Continuous Learning (TCO)**
+
+- Static (10-15%), Batch (25-30%), Real-time (35-50%)
+- Calculate 5-year TCO, not just Year 1
+
+**3. Accuracy vs. Risk Tolerance**
+
+- Low stakes: 70-80% OK
+- Medium: 85-95% needed
+- High: 95-99%+ required
+
+**4. Explainability**
+
+- HIGH (regulated): Interpretable models only (+15-20%)
+- MEDIUM (operational): Add explanation tools (+10-15%)
+- LOW (consumer): Any algorithm OK
+
+**5. Ethical Risk Assessment**
+
+- HIGH (life-impacting): Extensive testing (+20-30%)
+- MEDIUM (customer-facing): Bias testing (+10-15%)
+- LOW (internal): Basic review (+5%)
+
+Budget for bias testing, diverse teams, monitoring
+:::
+
+---
+
+# The Strategic Dilemma
+
+![](images/strategic-dilemma.png)
+
+::: {notes}
+**If you used ONLY traditional ROI:**
+
+1. Fraud Detection: 315% ROI ← **Fund this**
+2. Inventory: 264% ROI ← **Fund this**
+3. Dynamic Pricing: 253% ROI ← **Maybe this?**
+4. Chatbot: 92% ROI ← Don't fund
+
+**But after AI-specific analysis:**
+
+1. Fraud: Data not ready (need 6 months prep first)
+2. Inventory: Exceeds budget cap
+3. Dynamic Pricing: HIGH ethical/bias risk
+4. Chatbot: Only one that's truly ready ✅
+
+**Traditional criteria would fund the WRONG projects**
+
+:::
+
+---
+
+# Exercise 3: Dragon's Den
+
+![](images/dragons-den.png)
+
+::: {.notes}
+**Strategic stress test of the AI Investment Model:**
+
+- RetailFlow has $2M budget, $2.95M in requests
+- 4 competing initiatives, all with strong ROI
+- You cannot fund everything
+- **The test:** Do AI-specific criteria change your decisions?
+
+**Your task:**
+
+- Project teams: Build investment case using AI criteria
+- Investment committee: Evaluate using complete framework
+:::
+
+---
+
+# What You Learned Today
+
+![](images/what-you-learned.png)
+
+::: {.notes}
+**AI investments require DIFFERENT evaluation:**
+
+1. **Data readiness gates everything** (6/10 = delay the project)
+2. **Ongoing costs are 3-5x higher** (30-50% vs. 10-15%)
+3. **Ethical risks are existential** (one biased AI = massive damage)
+4. **Explainability isn't optional** (regulated industries)
+5. **Highest ROI ≠ best investment** (must pass AI criteria too)
+:::
+
+---
+
+# The Monday Morning Test
+
+![](images/monday.png)
+
+::: {notes}
+
+**Next AI proposal you see, ask these 5 questions:**
+
+1. **What's our data readiness score?** (0-10, need ≥7)
+2. **What's the 5-year TCO?** (not just Year 1 build cost)
+3. **What's the cost of being wrong?** (accuracy requirement)
+4. **Must we explain AI decisions?** (regulatory/trust)
+5. **Could this discriminate?** (bias testing plan)
+
+**If they can't answer all 5, you're not ready to approve**
+
+This is your new governance standard.
+:::
+
+---
+
+# The 5 Frameworks: Summary
+
+**Framework 1: AI Transformation Matrix** - Portfolio balance
+
+**Framework 2: Data Value Pyramid** - Match AI to data maturity
+
+**Framework 3: Three Horizons Model** - Balance across timeframes
+
+**Framework 4: Innovation Adoption** - Organizational readiness
+
+**Framework 5: AI Investment Model** - Traditional + AI-specific criteria
+
+---
+
+# Thank You
+
+Please take the survey
+
+![](images/qr-survey.png)
+
+![](images/feedback.png)
+
+**Contact:** michael.borck@curtin.edu.au
+
+**Materials:** https://exec-ed.github.io/ai-business-innovation/
+
+::: {.notes}
 **You now have:**
+
 - ✅ 5 strategic frameworks
 - ✅ AI Investment Checklist
 - ✅ Understanding of what makes AI different
 
 **Use them Monday morning.**
-
-## Course Materials
-
-**Digital resources:**
-- Framework Reference Sheet
-- AI Investment Checklist
-- Exercise templates
-- Pre-readings
-
-**Available at:** [GitHub Pages URL]
-
-## Your Feedback Matters
-
-::: {.callout-note}
-## Scan to Provide Feedback
-
-[QR CODE PLACEHOLDER]
-
-Your feedback helps us improve this masterclass.
 :::
 
-**Questions?** [your.email@institution.edu]
-
-## Contact & Resources
-
-**Facilitator:**
-- Dr. Michael Borck
-- michael.borck@curtin.edu.au
-- [Course website URL]
-
-**Additional Resources:**
-- Framework source: [AAAC-AI-Innovation link]
-- AI Investment Checklist (digital version)
-- Pre-readings and case studies
-
-**Safe travels, and good luck with your AI investments!**
-
-# Appendix: Quick Reference {background-color="#9ca3af"}
-
-## AI-Specific vs. Traditional IT
-
-Characteristic | Traditional IT | AI
----------------|----------------|----
-**Data dependency** | Works without data | Useless without quality data
-**Costs** | 10-15% annual maintenance | 30-50% annual retraining
-**Decisions** | Deterministic (100%) | Probabilistic (70-99%)
-**Explainability** | Fully traceable | Black box (often)
-**Bias** | Human-scale | Amplified at massive scale
-
-## The 5 AI-Specific Questions
-
-1. **Data?** Score 0-10 (need ≥7)
-2. **Learning?** Budget 30-50% annually
-3. **Risk?** Match accuracy to stakes
-4. **Trust?** Can we explain decisions?
-5. **Ethics?** Have we tested for bias?
-
-::: {.callout-important}
-If you can't answer all 5: Not ready to invest
-:::
-
-## ROI Thresholds by Horizon
-
-Horizon | Timeframe | ROI Threshold | Budget %
---------|-----------|---------------|----------
-H1 | 0-12 months | >200% Year 1 | 60-70%
-H2 | 1-3 years | >150% over 3 yrs | 20-30%
-H3 | 3-5+ years | >100% over 5 yrs | 10-15%
-
-## Data Maturity vs. AI Capability
-
-Data Level | AI You Can Do | AI You Can't Do
------------|---------------|------------------
-1-2 | Basic automation, rules | Predictions, ML
-3 | Analytics, segmentation | Autonomous decisions
-4 | Predictive models, forecasts | Real-time optimization
-5 | Autonomous decisions, optimization | (Full capability)
-
-::: {.callout-tip}
-Assess your level, match AI ambition to data reality
-:::

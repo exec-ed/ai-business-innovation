@@ -1,6 +1,6 @@
 <div style="text-align: center; padding: 8rem 2rem; page-break-after: always;">
 
-![AI Business Innovation Learning Journal Cover](images/learning-journal-cover.png)
+![](images/learning-journal-cover.png)
 
 # AI-Driven Business Innovation Masterclass
 
@@ -64,7 +64,7 @@ Access all course materials, interactive tools, and additional resources:
 
 *Scan QR code for quick access to digital materials:*
 
-[QR Code Placeholder - Add your course website QR code here]
+![](images/qr-course.png)
 
 </div>
 

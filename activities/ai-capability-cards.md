@@ -5,12 +5,11 @@
 
 ## How to Use These Cards
 
-1. **Print and cut** these cards (or display digitally)
-2. **Review each capability** with your team
-3. **Place on the matrix** based on:
+1. **Review each capability** with your team
+2. **Place on the matrix** based on:
    - **Horizontal axis**: Process (task-level) ← → Strategic (business model-level)
    - **Vertical axis**: Incremental (optimize existing) ← → Transformational (create new)
-4. **Identify gaps**: What quadrants are empty?
+3. **Identify gaps**: What quadrants are empty?
 
 ---
 
@@ -222,25 +221,3 @@ Use this to plot your capabilities:
 ```
 
 ---
-
-## Exercise Instructions for Facilitators
-
-**Setup (5 min):**
-1. Distribute or display capability cards
-2. Draw large AI Transformation Matrix on flipchart or use digital template
-3. Provide sticky notes or markers
-
-**Activity (30 min):**
-1. **Individual Review (10 min)**: Participants read cards, consider their organisation
-2. **Team Mapping (15 min)**: Place capabilities your organisation has/plans on matrix
-3. **Gap Analysis (5 min)**: Identify which quadrants are empty or weak
-
-**Debrief (10 min):**
-- What surprised you about where your capabilities cluster?
-- What gaps are most critical to address?
-- Are you over-investing in one quadrant?
-
-**Learning Outcomes:**
-- Understand the strategic difference between AI capability types
-- Recognise portfolio imbalance (e.g., only optimizing processes)
-- Identify strategic gaps in AI capability

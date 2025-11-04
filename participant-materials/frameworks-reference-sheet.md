@@ -1,6 +1,6 @@
 <div style="text-align: center; padding: 8rem 2rem; page-break-after: always;">
 
-![Strategic Frameworks Cover](images/frameworks-cover.png)
+![](images/frameworks-cover.png)
 
 # AI-Driven Business Innovation
 
