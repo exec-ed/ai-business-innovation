@@ -64,7 +64,7 @@ cd /path/to/ai-business-innovation
 bash build/scripts/build.sh
 ```
 
-**Note:** PDF generation disabled locally (requires LaTeX)
+**Output:** 25 HTML files in docs/ directory
 
 ### Test Locally:
 ```bash
@@ -73,11 +73,20 @@ python3 -m http.server 8000
 # Visit http://localhost:8000/materials.html
 ```
 
-### In GitHub Actions (HTML + PDF):
-- Push to main branch
-- GitHub Actions runs build with LaTeX
-- Generates both HTML and PDF versions
-- Deploys to GitHub Pages automatically
+### PDF Generation Decision
+
+**Current Status:** PDFs NOT generated (disabled in build script)
+
+**Rationale:**
+- ✅ PDFs require LaTeX (complex installation, slow builds)
+- ✅ HTML works perfectly on all devices (responsive design)
+- ✅ Interactive tools (calculator, checklist, assessment) only work as HTML
+- ✅ Participants can create PDFs via browser: File → Print → Save as PDF
+- ✅ Simpler build process, faster iterations, easier maintenance
+
+**User Experience:** Browser print-to-PDF is simple and works for all materials
+
+**Future:** Could enable PDF generation in GitHub Actions CI if needed, but HTML-only is recommended
 
 ---
 
@@ -114,11 +123,11 @@ All links in docs/materials.html are now functional:
 ## Next Steps
 
 1. ✅ Build system fixed and tested
-2. ✅ All materials generated
+2. ✅ All materials generated (25 HTML files)
 3. ✅ Links verified working
-4. 📋 Ready for GitHub Pages deployment
-5. 📋 Test on GitHub Pages once deployed
-6. 📋 Enable PDF generation in GitHub Actions (if LaTeX configured)
+4. ✅ PDF links removed (HTML-only approach)
+5. 📋 Ready for GitHub Pages deployment
+6. 📋 Test on GitHub Pages once deployed
 
 ---
 
