@@ -1,5 +1,5 @@
 # AI Capability Cards - Exercise 1
-**Purpose**: Map your organization's AI capabilities across the AI Transformation Matrix
+**Purpose**: Map your organisation's AI capabilities across the AI Transformation Matrix
 
 ---
 
@@ -75,11 +75,11 @@
 **Example**: Product recommendations, content curation, next-best-action suggestions
 **Typical ROI**: 10-30% increase in conversion rates
 **Implementation Time**: 6-9 months
-**Data Requirements**: User behavior data, product catalog, interaction history
+**Data Requirements**: User behaviour data, product catalog, interaction history
 
 **Questions to Consider:**
 - Do you have sufficient variety in offerings to recommend?
-- Can you track user behavior/preferences?
+- Can you track user behaviour/preferences?
 - What's the business impact of better matching?
 
 ---
@@ -231,8 +231,8 @@ Use this to plot your capabilities:
 3. Provide sticky notes or markers
 
 **Activity (30 min):**
-1. **Individual Review (10 min)**: Participants read cards, consider their organization
-2. **Team Mapping (15 min)**: Place capabilities your organization has/plans on matrix
+1. **Individual Review (10 min)**: Participants read cards, consider their organisation
+2. **Team Mapping (15 min)**: Place capabilities your organisation has/plans on matrix
 3. **Gap Analysis (5 min)**: Identify which quadrants are empty or weak
 
 **Debrief (10 min):**
@@ -242,5 +242,5 @@ Use this to plot your capabilities:
 
 **Learning Outcomes:**
 - Understand the strategic difference between AI capability types
-- Recognize portfolio imbalance (e.g., only optimizing processes)
+- Recognise portfolio imbalance (e.g., only optimizing processes)
 - Identify strategic gaps in AI capability

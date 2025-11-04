@@ -4,7 +4,7 @@ Based on the provided text, here is an extraction of the core wisdom and key ins
 
 *   **Big Tech is Fundamentally Chaotic:** Companies like Amazon operate on decentralized autonomy ("two-pizza teams"), which leads to speed but also massive fragmentation, duplicated work, and wasted resources.
 *   **The Biggest Cost is Wasted Time:** The primary expense in tech isn't technology; it's the human hours spent navigating bureaucracy, finding the right information, and resolving conflicting definitions across siloed teams.
-*   **Organizational Amnesia is Rampant:** High employee turnover means critical knowledge (the "why" behind decisions) is constantly lost. Teams repeat the mistakes of the past, burning millions of dollars because the knowledge isn't stored in an accessible way.
+*   **Organisational Amnesia is Rampant:** High employee turnover means critical knowledge (the "why" behind decisions) is constantly lost. Teams repeat the mistakes of the past, burning millions of dollars because the knowledge isn't stored in an accessible way.
 
 ### The Promise of AI vs. The Messy Reality
 
@@ -30,7 +30,7 @@ Based on the provided text, here is an extraction of the core wisdom and key ins
 ### What AI Means for Your Career
 
 *   **AI Replaces Tasks, Not Jobs (Yet):** AI is automating repetitive, low-level information processing tasks, not entire roles.
-*   **The Bar is Rising for Everyone (Jevons Paradox):** As AI makes you more efficient at certain tasks, the expectation won't be that you work less. The expectation will be that you analyze 10x more data or spend the freed-up time on higher-level strategy.
+*   **The Bar is Rising for Everyone (Jevons Paradox):** As AI makes you more efficient at certain tasks, the expectation won't be that you work less. The expectation will be that you analyse 10x more data or spend the freed-up time on higher-level strategy.
 *   **The Most Valuable Skills are Human:** The future belongs to those who can leverage AI to amplify their core human skills. The value is shifting away from hoarding knowledge and toward:
     *   **Synthesis:** Connecting disparate ideas.
     *   **Complex Judgment:** Making decisions with incomplete information.

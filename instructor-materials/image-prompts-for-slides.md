@@ -876,10 +876,10 @@ Create a simple hand-drawn sketch showing:
 **Image prompt:**
 ```
 Create a simple hand-drawn sketch showing:
-- Center path labeled "Strategic Discipline" (stick figure walking on it)
+- Centre path labeled "Strategic Discipline" (stick figure walking on it)
 - Left side: Temptation labeled "FOMO - Invest in everything!" (stick figures running off cliff)
 - Right side: Temptation labeled "Paralysis - Wait for perfection" (stick figures frozen)
-- Center figure with frameworks book staying on path
+- Centre figure with frameworks book staying on path
 - Sketchy hand-drawn style, black ink
 ```
 
@@ -919,7 +919,7 @@ Create a simple hand-drawn sketch showing:
 Create a simple hand-drawn sketch showing:
 - Sieve labeled "Data Quality Filter"
 - Messy data (papers, conflicting documents) falling through
-- Only clean, organized data makes it through
+- Only clean, organised data makes it through
 - AI waiting below for clean data only
 - Sketchy hand-drawn style, black ink
 ```
@@ -981,7 +981,7 @@ Bullet points here
 
 **Avoid:**
 - ❌ Polished, professional graphics (defeats "ugly sketch" purpose)
-- ❌ Color (except minimal use for emphasis: red for danger, green for good)
+- ❌ Colour (except minimal use for emphasis: red for danger, green for good)
 - ❌ Complex details (keep it simple)
 - ❌ Realistic illustrations (stick figures > realistic people)
 - ❌ Corporate clip art aesthetic

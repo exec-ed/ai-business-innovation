@@ -197,7 +197,7 @@ Calculate value across four categories:
   - Use: Model-agnostic explanations (SHAP, LIME)
   - Budget add: +10-15% for explanation tools
 
-- [ ] **Low Explainability:** Consumer recommendations, search, personalization
+- [ ] **Low Explainability:** Consumer recommendations, search, personalisation
   - Results speak for themselves
   - Algorithm choice: Any (including deep learning)
   - Use: Most powerful AI techniques available

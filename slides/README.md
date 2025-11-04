@@ -12,7 +12,7 @@ This folder contains the Quarto markdown slide deck for the one-day masterclass.
 
 ## Slide Deck Contents
 
-**Total slides:** ~60 slides organized into sections
+**Total slides:** ~60 slides organised into sections
 
 ### Structure
 

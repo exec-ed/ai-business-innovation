@@ -372,7 +372,7 @@
                     <li>Your AI leadership style profile</li>
                     <li>Your strengths in AI decision-making</li>
                     <li>Potential blind spots to watch for</li>
-                    <li>Personalized recommendations for this workshop</li>
+                    <li>Personalised recommendations for this workshop</li>
                 </ul>
                 <p style="margin-top: 15px; font-style: italic;">
                     There are no "right" or "wrong" answers. Choose the response that most naturally reflects 
@@ -443,14 +443,14 @@
             {
                 q: "When a competitor launches a new AI capability, your first instinct is to:",
                 options: [
-                    { text: "Analyze it thoroughly before deciding if we need to respond", dims: { risk: -1, speed: -1, data: 1 } },
+                    { text: "Analyse it thoroughly before deciding if we need to respond", dims: { risk: -1, speed: -1, data: 1 } },
                     { text: "Fast-track a pilot to test if it works for us", dims: { risk: 1, speed: 1, experimentation: 1 } },
                     { text: "Study the business case and ROI before considering it", dims: { roi: 1, risk: -1, strategy: 1 } },
                     { text: "Assemble a cross-functional team to explore strategic implications", dims: { strategy: 1, people: 1, data: 1 } }
                 ]
             },
             {
-                q: "Your organization's data is messy, siloed, and inconsistent. You would:",
+                q: "Your organisation's data is messy, siloed, and inconsistent. You would:",
                 options: [
                     { text: "Pause AI initiatives until data infrastructure is solid", dims: { risk: -2, data: 2 } },
                     { text: "Start with AI pilots that work with available data", dims: { experimentation: 2, speed: 1 } },
@@ -500,20 +500,20 @@
                     { text: "Customer needs and competitive threats", dims: { strategy: 2, speed: 1 } },
                     { text: "Clear ROI and financial returns", dims: { roi: 2, risk: -1 } },
                     { text: "Technical capabilities and data readiness", dims: { data: 2, risk: -1 } },
-                    { text: "Learning and building organizational capability", dims: { experimentation: 1, people: 2 } }
+                    { text: "Learning and building organisational capability", dims: { experimentation: 1, people: 2 } }
                 ]
             },
             {
                 q: "An AI initiative will displace 30% of a department's routine work. You:",
                 options: [
                     { text: "Proceed with strong change management and retraining", dims: { people: 2, strategy: 1 } },
-                    { text: "Phase it in slowly to minimize disruption", dims: { risk: -1, people: 1, strategy: 1 } },
-                    { text: "Proceed if ROI justifies the organizational cost", dims: { roi: 2, risk: 1 } },
+                    { text: "Phase it in slowly to minimise disruption", dims: { risk: -1, people: 1, strategy: 1 } },
+                    { text: "Proceed if ROI justifies the organisational cost", dims: { roi: 2, risk: 1 } },
                     { text: "Start with volunteers to test AI-human collaboration", dims: { experimentation: 1, people: 1, risk: -1 } }
                 ]
             },
             {
-                q: "Best way to build AI capabilities in your organization:",
+                q: "Best way to build AI capabilities in your organisation:",
                 options: [
                     { text: "Hire AI specialists and build in-house", dims: { people: 2, data: 1, risk: 1 } },
                     { text: "Partner with AI vendors for specialized solutions", dims: { risk: -1, speed: 1, roi: 1 } },
@@ -535,7 +535,7 @@
                 options: [
                     { text: "5-10% cost reduction across operations", dims: { roi: 2, risk: -1 } },
                     { text: "New AI-powered products generating revenue", dims: { strategy: 2, risk: 1, experimentation: 1 } },
-                    { text: "AI embedded in daily work across the organization", dims: { people: 2, strategy: 1, data: 1 } },
+                    { text: "AI embedded in daily work across the organisation", dims: { people: 2, strategy: 1, data: 1 } },
                     { text: "Portfolio of AI capabilities ready to scale", dims: { experimentation: 2, strategy: 1 } }
                 ]
             },
@@ -732,14 +732,14 @@
                     strengths: [
                         "Fast to test new ideas and technologies",
                         "Comfortable with uncertainty and iteration",
-                        "Good at building organizational learning",
+                        "Good at building organisational learning",
                         "Creates culture of innovation and adaptability"
                     ],
                     watchOuts: [
                         "May launch too many pilots without focus",
                         "Risk of 'pilot purgatory' (testing but never scaling)",
                         "Can underestimate importance of data infrastructure",
-                        "May move too fast for organizational change readiness"
+                        "May move too fast for organisational change readiness"
                     ],
                     recommendations: [
                         "Use AI Investment Checklist to add rigor to experiments",
@@ -824,7 +824,7 @@
             const dimensions = [
                 { key: 'strategy', name: 'Strategic Thinking', max: 10 },
                 { key: 'roi', name: 'ROI Focus', max: 10 },
-                { key: 'risk', name: 'Risk Tolerance', max: 8, center: true },
+                { key: 'risk', name: 'Risk Tolerance', max: 8, centre: true },
                 { key: 'experimentation', name: 'Experimentation', max: 10 },
                 { key: 'data', name: 'Data-Driven', max: 10 },
                 { key: 'people', name: 'People Focus', max: 10 }
@@ -838,7 +838,7 @@
                 let percentage = 0;
                 let displayScore = '';
                 
-                if (dim.center) {
+                if (dim.centre) {
                     // Risk: -X to +X scale
                     displayScore = score >= 0 ? `+${score}` : score.toString();
                     percentage = ((score + dim.max) / (dim.max * 2)) * 100;

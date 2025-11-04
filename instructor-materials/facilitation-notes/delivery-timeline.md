@@ -51,11 +51,11 @@
 #### **9:55 - 10:40 AM: Exercise 1 - AI Tech Radar with Data Readiness (45 min)**
 - **Format**: Group assessment of AI capabilities
 - **Activity**: 
-  - Map your organization on AI Transformation Matrix (20 min)
+  - Map your organisation on AI Transformation Matrix (20 min)
   - **NEW**: Assess data readiness for each initiative (15 min)
   - **NEW**: Flag ethical risks (10 min)
 - **Materials**: AI capability cards (printable version), tech radar template, data readiness scorecard
-- **Learning**: Where is your organization today? Is your data ready for AI?
+- **Learning**: Where is your organisation today? Is your data ready for AI?
 
 ---
 
@@ -250,7 +250,7 @@
 ### Exercise 1: AI Tech Radar with Data Readiness (9:55-10:40, 45 min)
 **Frameworks:** AI Transformation Matrix, Data Value Pyramid
 **NEW:** Physical capability cards, data readiness assessment
-**Output:** Map of your organization's AI maturity + data readiness gaps
+**Output:** Map of your organisation's AI maturity + data readiness gaps
 
 ### Exercise 2: AI-Assisted Strategic Analysis (11:20-12:30, 70 min)
 **Framework:** Three Horizons Model
@@ -528,4 +528,4 @@ RetailFlow provides the strategic context for Dragon's Den:
 
 ---
 
-**This revised schedule delivers AI-specific strategic leadership skills through frameworks that recognize what makes AI investment different from traditional IT—with improved pacing, energy management, and guaranteed delivery of all core content.**
+**This revised schedule delivers AI-specific strategic leadership skills through frameworks that recognise what makes AI investment different from traditional IT—with improved pacing, energy management, and guaranteed delivery of all core content.**

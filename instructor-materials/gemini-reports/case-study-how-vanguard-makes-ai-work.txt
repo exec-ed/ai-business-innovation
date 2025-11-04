@@ -1,0 +1,62 @@
+Case Study: How Vanguard Makes AI Work
+
+Introduction: Making AI Real
+
+Many see enterprise Artificial Intelligence as a complex, futuristic engine they don't know how to build. This case study looks under the hood at Vanguard to show it's less like a rocket ship and more like a set of high-performance power tools designed to help a skilled crew work better and faster.
+
+Our goal is to demystify how a large, established company puts AI to work. By looking at concrete examples from Vanguard—a firm with over 50 million investors and $11 trillion or so in assets under management—we can see how this powerful technology is used not to replace people, but to help them do their jobs better and serve customers more effectively.
+
+However, successfully implementing AI isn't easy. Many organisations invest heavily in this technology only to see their projects fail. First, let's explore why that happens.
+
+1. The Big Challenge: Why Most Companies Struggle with AI
+
+Despite the hype, successfully using AI is a major hurdle for most large organisations. According to an AI Magazine report on research from MIT, companies have invested $30 to $40 billion globally in Generative AI, yet a staggering 95% of these projects fail to deliver any measurable business return. This has created a "Gen AI Divide" between a small group of high-achievers and the vast majority who are struggling.
+
+The reason for this widespread failure is often misunderstood. It's typically not a problem with the AI technology itself. Instead, the primary reason most AI projects fail is due to poor integration into the daily workflows of employees. When a new tool is clunky, misaligned with how people actually work, or doesn't solve a tangible problem, it gets abandoned.
+
+This is the central challenge that Vanguard has managed to navigate with its thoughtful and people-centric approach.
+
+2. Vanguard's Philosophy: AI as a "Crew" Helper
+
+Vanguard's core principle for using AI is simple but powerful: the technology should augment its employees, not replace them. The company refers to its employees as "crew," and its entire AI strategy is built around empowering them to be more effective. This philosophy serves two key stakeholders simultaneously: by empowering the crew, Vanguard creates a direct, positive impact on the client experience.
+
+This vision is championed from the top. CIO Nitin Tandon describes Vanguard's goal for AI as being:
+
+"...an invisible hand that elevates every facet of our client experience — from how clients engage with us to the results they achieve."
+
+This "invisible hand" works by taking on the heavy lifting of analysis and routine tasks, giving the company’s experts the power to focus more deeply on the financial conversations that clients value. This isn't just talk. Vanguard has invested heavily in making sure its crew is ready for this technological shift. The company created the Vanguard AI Academy to train employees on artificial intelligence. As a testament to this commitment, 50% of the entire crew have already completed the program, ensuring that the people who use the tools understand their potential and purpose.
+
+This philosophy of empowering people first provides the foundation for the specific, practical AI tools the company has developed.
+
+3. Vanguard's AI in Action: Four Concrete Examples
+
+Vanguard is currently piloting dozens of AI applications, focusing on tools that create real value. The following four examples show how their "crew helper" philosophy translates into tangible business solutions.
+
+AI Tool	What It Does	Primary Benefit (The "So What?")
+Crew Assist	A generative AI tool for contact centre staff. An employee can ask a question and get an instant, accurate answer drawn from Vanguard's vast internal knowledge base.	This leads to faster call resolution for customers. It also significantly reduces training time for new crew members, getting them up to speed more quickly.
+Tools for Financial Advisers	AI automatically summarizes client phone calls and handles other administrative tasks like generating follow-up emails and agenda suggestions.	This frees up as much as 50% of an adviser's time, allowing them to move away from paperwork and focus on high-value, meaningful conversations with clients.
+AI-Assisted Investing	A Large Language Model (LLM) analyzes the transcripts of over 22,000 company earnings calls to detect subtle cues and predict future dividend activity.	This helps investment managers reduce risk in client portfolios by proactively identifying and avoiding stocks that are likely to underperform.
+Digital Advisor	An AI-powered wealth management service accessible to clients with as little as $100. It can even help project a client's risk of job loss based on historical data.	This makes sophisticated financial planning more accessible to lower-income clients, helping them prepare for emergencies and build long-term wealth.
+
+These applications are successful because they are built on a solid foundation of strategic thinking and organisational support. Let's break down the key ingredients that make Vanguard an AI leader.
+
+4. The Blueprint for Success: What Makes Vanguard a Leader?
+
+Vanguard's success is not a result of finding a single "magic algorithm." Instead, they built a complete system of leadership, people, and technology. This system, confirmed by joint research from McKinsey and MIT's Machine Intelligence for Manufacturing and Operations program, is what separates AI leaders from the laggards.
+
+1. Executive Sponsorship Successful AI projects require strong, unwavering support from the highest levels of leadership. These champions provide the vision and resources needed to see complex projects through, even when the return on investment isn't immediately clear. At Vanguard, both CEO Salim Ramji and CIO Nitin Tandon are described as firm believers in AI, providing the top-down sponsorship necessary to keep projects on track.
+2. Focus on People & Process Technology alone is not a solution. Leading companies understand that AI must be woven into the fabric of how people already work. They foster cross-functional collaboration between technical and business teams to ensure the tools are genuinely useful. Vanguard's "augment the crew" philosophy and its AI Academy are perfect examples of this, ensuring that employees are not just users of the new technology, but active participants in its success.
+3. Strong Technical Foundation To build a house, you need a solid foundation. In the world of AI, that foundation is a modern data and technology infrastructure. Leaders invest heavily in their core systems. Vanguard's decision to transition its technology platform almost entirely to the cloud was a critical move that positioned it to innovate rapidly and effectively with AI.
+
+These three pillars—leadership, people, and technology—create a powerful combination that allows companies like Vanguard to move beyond failed pilots and generate real value from AI.
+
+5. Conclusion: Key Lessons from Vanguard
+
+Vanguard's journey provides a clear and practical roadmap for how to make AI work in the real world. By focusing on helping people instead of replacing them, the company has successfully navigated the pitfalls that trap most organisations, turning a complex technology into a powerful tool for business improvement.
+
+For anyone new to this topic, Vanguard's story offers three essential takeaways:
+
+* AI is most powerful when it's used as a tool to help people do their jobs better, not replace them. The goal should be augmentation, not just automation.
+* Success starts with a clear business goal, like improving customer service or freeing up an expert's time, rather than just using technology for its own sake.
+* Real-world AI isn't science fiction. It involves practical applications like summarizing articles, analysing data, and providing quick information to service agents to solve everyday problems.
+

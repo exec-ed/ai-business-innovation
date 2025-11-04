@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔒 $title$ | AI Innovation Masterclass</title>
+  <link rel="stylesheet" href="../css/materials.css">
+  <script src="../js/auth.js"></script>
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<body onload="checkAuth()">
+  <nav class="topnav">
+    <div class="container">
+      <a href="../index.html" class="logo">AI Business Innovation</a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../materials.html">Public Materials</a>
+        <a href="index.html">🔒 Instructor</a>
+        <a href="pdf/$filename$.pdf" class="download-btn">📥 Download PDF</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" id="protected-content" style="display:none;">
+    <article class="material-content">
+      <header class="material-header">
+        <h1>🔒 $title$</h1>
+        <div class="material-meta">
+          <span style="color: #e74c3c; font-weight: 600;">Password-Protected Instructor Material</span>
+          <a href="pdf/$filename$.pdf" class="btn-primary">📥 Download PDF</a>
+        </div>
+      </header>
+
+      $if(toc)$
+      <nav id="toc" class="toc">
+        <h2>Contents</h2>
+        $toc$
+      </nav>
+      $endif$
+
+      <div class="content">
+        $body$
+      </div>
+
+      <footer class="material-footer">
+        <p>
+          <a href="index.html">← Back to Instructor Materials</a> |
+          <a href="../materials.html">Public Materials</a> |
+          <a href="#" onclick="logout(); return false;" style="color: #e74c3c;">🔓 Logout</a>
+        </p>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>AI-Driven Business Innovation Masterclass</strong></p>
+      <p style="margin-top: 0.5rem; opacity: 0.8;">Executive Education | Curtin Business School</p>
+      <p style="margin-top: 1rem;"><a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></p>
+    </div>
+  </footer>
+</body>
+</html>

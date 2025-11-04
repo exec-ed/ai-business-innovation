@@ -1,11 +1,11 @@
 # What Executives Need to Know About AI
 
-## Purpose of This Reading
+## Executive Summary
 
-You don't need to understand how AI works to make strategic decisions about AI. You need to understand what AI can do, what it can't do, and how to think about AI investment strategically.
+AI is software that learns patterns from data rather than following explicit rules. Five types matter for business: Predictive Analytics (forecasting demand, churn, fraud), Natural Language Processing (chatbots, document analysis), Computer Vision (quality inspection, security), Generative AI (content creation, code generation), and Recommendation Systems (personalisation, cross-sell). Your organisation's data maturity determines which AI is realistic—most companies are at Level 2-3 (basic data collection/integration) but attempt Level 4-5 AI (predictive/autonomous), causing the 85% failure rate. Before investing, assess: Do you have 2+ years of clean, unbiased, integrated data? Are patterns stable enough to predict? What's the cost of being wrong? Data readiness gates everything else.
 
-**Reading time:** 12 minutes  
-**Technical level:** None required
+**Reading time:** 12 minutes
+**Key takeaway:** Match your AI ambitions to your data reality—you can't do Level 5 AI with Level 2 data.
 
 ---
 
@@ -13,7 +13,7 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 
 ### The Simple Definition
 
-**Artificial Intelligence (AI):** Systems that can perform tasks that typically require human intelligence—learning from experience, recognizing patterns, making predictions, and adapting to new situations.
+**Artificial Intelligence (AI):** Systems that can perform tasks that typically require human intelligence—learning from experience, recognising patterns, making predictions, and adapting to new situations.
 
 ### What Makes AI Different from Traditional Software
 
@@ -68,7 +68,7 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 **Example:** Customer service chatbot answering common questions.
 
 ### 3. Computer Vision
-**What it does:** Analyzes and understands images and video
+**What it does:** Analyses and understands images and video
 
 **Business applications:**
 - Quality control inspection
@@ -83,17 +83,17 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 
 **Example:** Walmart using cameras to detect when shelves need restocking.
 
-### 4. Optimization and Decision AI
+### 4. Optimisation and Decision AI
 **What it does:** Makes complex decisions with many variables
 
 **Business applications:**
 - Dynamic pricing
-- Supply chain optimization
+- Supply chain optimisation
 - Resource allocation
-- Schedule optimization
+- Schedule optimisation
 
 **When it works well:**
-- Clear objective function (what to optimize for)
+- Clear objective function (what to optimise for)
 - Constraints are well-defined
 - Decisions can be automated
 
@@ -132,7 +132,7 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 - Basic customer inquiries
 - Routine analysis
 
-✅ **Optimization of complex systems**
+✅ **Optimisation of complex systems**
 - Too many variables for human analysis
 - Real-time decision-making
 - Continuous improvement through learning
@@ -173,7 +173,7 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 
 **Current AI is narrow:**
 - Good at specific tasks
-- Can't generalize broadly
+- Can't generalise broadly
 - Needs retraining for new contexts
 
 **Example:** An AI that's excellent at detecting credit card fraud can't help with inventory management. Each application requires separate development.
@@ -236,7 +236,7 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 **Why AI projects fail:**
 - 85% of AI projects fail (Gartner)
 - Not because the technology doesn't work
-- Because organizations aren't ready for the change
+- Because organisations aren't ready for the change
 
 **The change management challenges:**
 - Employees resist AI-driven processes
@@ -245,14 +245,14 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 - Insufficient training and support
 - Leadership doesn't model AI adoption
 
-**Strategic implication:** Budget as much for organizational change as for technology.
+**Strategic implication:** Budget as much for organisational change as for technology.
 
 ### 5. Ethics and Bias Are Real Risks
 
 **AI can perpetuate and amplify biases:**
 - Hiring AI discriminates based on historical patterns
 - Facial recognition works poorly on minority groups
-- Credit scoring penalizes protected classes
+- Credit scoring penalises protected classes
 - Predictive policing targets specific communities
 
 **Sources of bias:**
@@ -282,7 +282,7 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 **Readiness assessment:**
 - Do we have the data this requires?
 - Do we have the technical capabilities?
-- Is the organization ready for this change?
+- Is the organisation ready for this change?
 
 **Value proposition:**
 - How does this create value across our four categories?
@@ -315,7 +315,7 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 - Realistic data assessment
 - Pilot approach with learning cycles
 - Multiple value categories addressed
-- Thoughtful about organizational change
+- Thoughtful about organisational change
 - Considers ethical implications
 - Fits portfolio strategy
 
@@ -349,7 +349,7 @@ You don't need to understand how AI works to make strategic decisions about AI. 
 
 **Often the best strategy:**
 - Buy commercial platforms
-- Customize with your data
+- Customise with your data
 - Build proprietary applications on top
 
 **Example:** Use Salesforce (buy), add custom AI models for your customer segmentation (build).
@@ -394,7 +394,7 @@ Understanding where you are helps determine where to invest.
 - AI augments human decisions
 - Some automation
 
-**Focus:** Scale AI across organization
+**Focus:** Scale AI across organisation
 
 ### Level 5: Autonomous Operations
 **Characteristics:**
@@ -405,37 +405,10 @@ Understanding where you are helps determine where to invest.
 
 **Focus:** Transform business model with AI
 
-**Most organizations are at Level 1-2. That's okay. Maturity is a journey, not a destination.**
+**Most organisations are at Level 1-2. That's okay. Maturity is a journey, not a destination.**
 
 ---
 
-## Preparing for the Masterclass
-
-### Assess Your Organization
-
-**Current state:**
-- What level of AI maturity are we at?
-- What AI initiatives are underway?
-- What's working? What's struggling?
-
-**Strategic context:**
-- What are our top business challenges?
-- Where are competitors investing in AI?
-- What capabilities will be "table stakes" in 3 years?
-
-**Resources:**
-- What's our AI investment capacity?
-- What capabilities do we have internally?
-- What partnerships do we need?
-
-### Come Ready to Discuss
-
-1. One AI initiative you're considering
-2. One strategic challenge AI could address
-3. Your biggest concerns about AI investment
-4. Your organization's readiness for AI
-
----
 
 ## Key Takeaways
 
@@ -459,16 +432,10 @@ Understanding where you are helps determine where to invest.
 
 ## Further Reading
 
-**If you want to go deeper (optional):**
 
-- Andrew Ng: "AI For Everyone" (Coursera, non-technical)
-- Ajay Agrawal et al.: "Prediction Machines" (book, economics of AI)
-- Stuart Russell: "Human Compatible" (book, AI alignment and ethics)
+- NG, Andrew. 2018a. “AI for Everyone | Coursera.” Coursera. 2018. https://www.coursera.org/learn/ai-for-everyone.
+- Agrawal, A., J. Gans, and A. Goldfarb. 2018. Prediction Machines: The Simple Economics of Artificial Intelligence. Boston: Harvard Business Review Press.
+- Russell, Stuart. 2019. Human Compatible: Artificial Intelligence and the Problem of Control. New York: Viking.
+- Singla, Alex, Alexander Sukharevsky, Lareina Yee, Michael Chui, and Bryce Hall. "The state of AI." How Organisations are Rewiring to Capture Value. Publisher: McKinsey (2025)
+- Gartner. 2025. “Hype Cycle Research Methodology.” Gartner. 2025. https://www.gartner.com/en/research/methodologies/gartner-hype-cycle.
 
-**Industry reports:**
-- McKinsey: "The State of AI" (annual report)
-- Gartner: "Hype Cycle for AI" (annual report)
-
----
-
-**You're now ready for the strategic frameworks in the masterclass. Focus on decision-making, not technical details.**

@@ -269,4 +269,4 @@ ai-business-innovation/
 
 ---
 
-**The structure is finalized and ready for course delivery.**
+**The structure is finalised and ready for course delivery.**

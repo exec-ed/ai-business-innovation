@@ -196,7 +196,7 @@
 ```
 2:15-2:30 (15 min): Mid-prep break
   - Teams take break DURING prep
-  - Come back refreshed to finalize
+  - Come back refreshed to finalise
 
 2:30-3:00 (30 min): Finish prep
 3:00-4:10 (70 min): Dragon's Den

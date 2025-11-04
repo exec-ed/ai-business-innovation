@@ -17,11 +17,11 @@
 
 ## PART 1: Current State Assessment
 
-### Your Organization's AI Maturity
+### Your Organisation's AI Maturity
 
-**Where is your organization today on the Data Value Pyramid?**
+**Where is your organisation today on the Data Value Pyramid?**
 - [ ] Level 1: Data Collection - Basic data capture
-- [ ] Level 2: Data Organization - Structured, clean data
+- [ ] Level 2: Data Organisation - Structured, clean data
 - [ ] Level 3: Insights & Reporting - Descriptive analytics
 - [ ] Level 4: Predictive Analytics - Forecasting capabilities
 - [ ] Level 5: Autonomous Operations - Self-optimizing systems
@@ -44,7 +44,7 @@
 - [ ] Insufficient budget/resources
 - [ ] Data quality/availability issues
 - [ ] Skills/talent gaps
-- [ ] Organizational resistance to change
+- [ ] Organisational resistance to change
 - [ ] Technology complexity
 - [ ] Unclear ROI/business case
 - [ ] Regulatory/compliance concerns
@@ -59,7 +59,7 @@ _______________________________________________________________
 
 ## PART 2: Strategic Priorities
 
-### Top 3 AI Opportunities for Your Organization
+### Top 3 AI Opportunities for Your Organisation
 
 **Opportunity #1**: _________________________________________________
 
@@ -236,7 +236,7 @@ _______________________________________________________________
 - [ ] Integration/API capabilities
 - [ ] Other: _________________________________________________
 
-**Organizational Capabilities**:
+**Organisational Capabilities**:
 - [ ] AI strategy & governance
 - [ ] Change management
 - [ ] Business case development
@@ -406,5 +406,5 @@ _______________________________________________________________
 *Keep this action plan visible. Review weekly. Update as you learn.*
 *Share with your team. Use frameworks. Make strategic AI decisions.*
 
-**The future belongs to organizations that strategically deploy AI.**
+**The future belongs to organisations that strategically deploy AI.**
 **Your action plan is the first step.**

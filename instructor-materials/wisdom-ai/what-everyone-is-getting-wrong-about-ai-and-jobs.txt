@@ -1,4 +1,4 @@
-Based on the provided text, here's the extracted wisdom on AI's impact on labor, distilled into key principles:
+Based on the provided text, here's the extracted wisdom on AI's impact on labour, distilled into key principles:
 
 ### Core Insight
 **AI will transform the economy, not destroy it.** Both extreme doom (universal unemployment) and dismissive hype (no fundamental change) are flawed. History, industry, and logic point to **efficiency-driven demand growth**, not job annihilation.
@@ -31,7 +31,7 @@ Based on the provided text, here's the extracted wisdom on AI's impact on labor,
    - **Job Refactoring:** Roles become "AI managers" (e.g., supervising AI agents in sales/admin).
 
 ### Actionable Wisdom for Individuals & Entrepreneurs
-- **Don't Underestimate AI:** Recognize its transformative power (comparable to the internet). Avoid skepticism like Krugman's 1998 dismissal of the internet.  
+- **Don't Underestimate AI:** Recognise its transformative power (comparable to the internet). Avoid skepticism like Krugman's 1998 dismissal of the internet.  
 - **Avoid Extremes:** Reject both "doomer" panic and "hype" dismissal. Focus on adaptation.  
 - **Embrace Evolution:** Upskill for AI-augmented roles (oversight, strategy, creativity).  
 - **Build the Future:** The AI-driven economy is being built *now* by proactive founders. Identify gaps where human-AI collaboration creates value.  

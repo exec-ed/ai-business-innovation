@@ -178,7 +178,7 @@
 
 **Cons:**
 - Sunk cost of $1.3M
-- Signal failure to organization
+- Signal failure to organisation
 - Lose potential future benefits
 - Might be giving up too soon
 
@@ -290,7 +290,7 @@
    - Important but not critical → Fast-Follower
    - Nice to have → Wait
 
-2. **Risk Tolerance**: What's your organization's innovation appetite?
+2. **Risk Tolerance**: What's your organisation's innovation appetite?
    - High tolerance, innovation culture → Pioneer
    - Balanced, pragmatic → Fast-Follower
    - Risk-averse, efficiency-focused → Wait
@@ -316,7 +316,7 @@
 - Do you already have enough H3 bets?
 
 ### Discussion Questions
-- Which option aligns with your organization's strategy?
+- Which option aligns with your organisation's strategy?
 - How do you decide when to be a pioneer vs. fast-follower?
 - What signals would tell you it's time to move?
 - Is there a middle ground between these options?
@@ -392,4 +392,4 @@ If you have extra time or want homework assignments, use these:
 "Three paths to AI capability: build internally ($2M, 18 months), buy vendor solution ($500K/year), or partner with startup (equity swap). Which creates most strategic value?"
 
 ### SCENARIO 6: AI Ethics Dilemma
-"Your AI system can personalize pricing by customer segment, potentially increasing revenue by $10M. But it raises fairness concerns. How do you balance economic value and ethical considerations?"
+"Your AI system can personalise pricing by customer segment, potentially increasing revenue by $10M. But it raises fairness concerns. How do you balance economic value and ethical considerations?"

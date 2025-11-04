@@ -47,7 +47,7 @@
 **The narrative:**
 > "MIT research found that 95% of integrated AI pilots in businesses fail to generate measurable profit and loss impact. Only 5% extract significant value.
 > 
-> Why such a high failure rate? Not because the AI doesn't work technically. Because organizations aren't ready:
+> Why such a high failure rate? Not because the AI doesn't work technically. Because organisations aren't ready:
 > - Data is messy, fragmented, contradictory
 > - Staff must manually check everything AI produces
 > - The productivity paradox: AI creates MORE work (verification) instead of saving time
@@ -57,11 +57,11 @@
 "This is why we emphasize data readiness, change management, and human-in-loop processes. Technical AI success ≠ business AI success. Our frameworks address the 95% failure causes."
 
 **Follow-up:**
-"What's your organization's AI success rate so far? If it's low, it's not your fault—most organizations are in the same boat. Our goal today: Move you into the 5% that succeed."
+"What's your organization's AI success rate so far? If it's low, it's not your fault—most organisations are in the same boat. Our goal today: Move you into the 5% that succeed."
 
 ---
 
-### Story: "Amazon's Organizational Amnesia"
+### Story: "Amazon's Organisational Amnesia"
 
 **When to use:** Explaining why data readiness matters (11:00 AM Data Pyramid section)
 
@@ -70,7 +70,7 @@
 > 
 > The biggest cost isn't technology—it's wasted human hours. People spending days navigating bureaucracy, finding the right information, resolving conflicts between teams.
 > 
-> High turnover means 'organizational amnesia'—the 'why' behind decisions is constantly lost. Teams repeat mistakes from 3 years ago because the knowledge isn't stored accessibly. Millions of dollars burned rediscovering what was already learned.
+> High turnover means 'organisational amnesia'—the 'why' behind decisions is constantly lost. Teams repeat mistakes from 3 years ago because the knowledge isn't stored accessibly. Millions of dollars burned rediscovering what was already learned.
 > 
 > AI was supposed to be the 'corporate historian' connecting these dots. But feeding messy, contradictory data into AI produces confident but wrong answers. The AI can't tell the difference between your current strategy and a deprecated document from 2019."
 
@@ -125,7 +125,7 @@
 **Teaching point:**
 "For Exercise 2, you're using AI this way—giving it YOUR context, YOUR threats and opportunities, YOUR expertise. That's why it works. You curate the input, you verify the output. This is the model that succeeds."
 
-**Implication for their organizations:**
+**Implication for their organisations:**
 "Start with high-value individual use cases (AI for sales team, AI for finance team) with curated data. Don't try to boil the ocean with enterprise-wide AI on all your messy data. That's the 95% that fails."
 
 ---
@@ -252,7 +252,7 @@ Design AI to augment humans, not replace accountability. That's the sustainable 
 > 
 > And now the worker is RESPONSIBLE for AI errors they might not catch.
 > 
-> This is why 55% of companies regret replacing people with AI. The promised productivity gains don't materialize because verification work is hidden."
+> This is why 55% of companies regret replacing people with AI. The promised productivity gains don't materialise because verification work is hidden."
 
 **Teaching point:**
 "When evaluating AI ROI, don't just calculate time saved generating output. Calculate time needed to VERIFY output. This is why human-in-loop isn't optional—it's where the actual work is.
@@ -283,7 +283,7 @@ Real savings: More like 40-50%, not 80%. Adjust your ROI calculations accordingl
 > - But: Makes confident mistakes, lacks your context, needs direction
 > 
 > Editor-in-chief (YOU):
-> - Provides direction ('analyze our pricing strategy focusing on competitive position')
+> - Provides direction ('analyse our pricing strategy focusing on competitive position')
 > - Critiques output ('That's too generic, be more specific to retail')
 > - Verifies facts ('Is that market size accurate? Let me check')
 > - Synthesizes ('Take this from AI, combine with my industry knowledge, create final recommendation')
@@ -470,7 +470,7 @@ Your committee decision to require external bias audits? That's not overcautious
 > - **Cloud computing**: Made infrastructure cheaper → explosion of DevOps, cloud architects, SRE roles
 > - **AI inference costs drop**: GPU demand SOARS (Nvidia's success)
 > 
-> AI parallel: AI makes you more efficient at analysis. Do you work less? No—your boss expects you to analyze 10x more data, or spend saved time on higher-level strategy.
+> AI parallel: AI makes you more efficient at analysis. Do you work less? No—your boss expects you to analyse 10x more data, or spend saved time on higher-level strategy.
 >
 > Real example: Radiologists
 > - AI makes medical imaging cheaper/faster → hospitals run MORE scans → radiologists shift from basic scans to complex treatment planning
@@ -485,7 +485,7 @@ Your committee decision to require external bias audits? That's not overcautious
 > AI automates rote, low-context, error-forgiving tasks. Humans shift to nuanced, high-stakes, relationship-based work."
 
 **Teaching point:**
-"This is why you're learning strategic frameworks, not just AI tools. AI helps you analyze faster. But frameworks help you DECIDE better.
+"This is why you're learning strategic frameworks, not just AI tools. AI helps you analyse faster. But frameworks help you DECIDE better.
 
 When cost of work goes down, demand for it goes UP. This creates latent demand—new markets that weren't economically viable before. Example: Legal document drafting becomes cheap → small businesses can now afford legal services → higher demand for lawyers (doing oversight, not drafting).
 
@@ -665,7 +665,7 @@ The best AI investments enhance already-valuable processes. The worst try to cre
 ### During Exercises (Use for Depth)
 
 **When table says:** "We scored our data readiness 9/10"  
-**You respond:** "Really? Amazon—one of the most sophisticated tech companies—describes their data as 'fragmented, contradictory, with massive organizational amnesia.' Are you more ready than Amazon? Or should we recalibrate?"
+**You respond:** "Really? Amazon—one of the most sophisticated tech companies—describes their data as 'fragmented, contradictory, with massive organisational amnesia.' Are you more ready than Amazon? Or should we recalibrate?"
 
 **Impact:** Reality check prevents over-optimism
 
@@ -703,7 +703,7 @@ BUT—that doesn't mean AI isn't valuable. It means separating hype from reality
 - ✅ "The Garbage In, Garbage Out Principle" (data dependency)
 
 ### 11:00-11:30 AM: Data Pyramid
-- ✅ "Amazon's Organizational Amnesia" (why data readiness matters)
+- ✅ "Amazon's Organisational Amnesia" (why data readiness matters)
 - ✅ "Level 2 data ≠ Level 5 AI capability" (can't skip levels)
 
 ### 11:30-12:30 PM: Exercise 2 Debrief
@@ -780,7 +780,7 @@ BUT—that doesn't mean AI isn't valuable. It means separating hype from reality
    - Additional billion-dollar opportunity insights
    
 4. **learned-12-years-amazon.txt**
-   - More Amazon organizational insights
+   - More Amazon organisational insights
 
 **Recommendation:** Read these and add key insights to this document for next iteration.
 

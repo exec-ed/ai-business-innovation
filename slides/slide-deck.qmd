@@ -19,7 +19,7 @@ format:
     reference-doc: null
 ---
 
-# Welcome {background-color="#667eea"}
+# Welcome {background-colour="#667eea"}
 
 ## AI-Driven Business Innovation
 
@@ -88,7 +88,7 @@ By 4:30 PM today, you'll know:
 | 2:15-2:45 | ☕ Break |
 | 2:45-4:30 | **SESSION 4:** Dragon's Den Simulation + Debrief |
 
-# SESSION 1: AI Strategy Foundations {background-color="#667eea"}
+# SESSION 1: AI Strategy Foundations {background-colour="#667eea"}
 
 ## Icebreaker: Your AI Journey
 
@@ -109,7 +109,7 @@ Traditional strategic frameworks are **NECESSARY** but **NOT SUFFICIENT** for AI
 - **BUT**: AI requires 5 ADDITIONAL evaluation criteria
 :::
 
-# What Makes AI Different? {background-color="#764ba2"}
+# What Makes AI Different? {background-colour="#764ba2"}
 
 ## The Core Insight
 
@@ -433,7 +433,7 @@ All H1 = No future | All H3 = No present
 
 ## Portfolio Balance
 
-**Most organizations get this wrong:**
+**Most organisations get this wrong:**
 
 1. **All H1 (80%+ optimize):** Efficient today, irrelevant tomorrow
 2. **All H3 (50%+ moonshots):** Exciting vision, no cash flow
@@ -557,7 +557,7 @@ Which AI makes the stronger case? Why? What's the synthesis?
 - Human judgment + AI analysis = Better decisions
 
 ::: {.callout-important}
-If AI helps YOU (experts) think better... imagine what it can do for your organization
+If AI helps YOU (experts) think better... imagine what it can do for your organisation
 :::
 
 ## Technology Needed

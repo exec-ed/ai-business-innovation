@@ -127,7 +127,7 @@ Here's what you'll discover today: The traditional strategic frameworks you know
 **Instructions to group:**
 "Let's go around the room. Share:
 1. Your name and role
-2. One AI initiative your organization has tried or is considering
+2. One AI initiative your organisation has tried or is considering
 3. One concern you have about AI investment
 
 Keep it to 30 seconds each."
@@ -236,7 +236,7 @@ Fraud Detection 315% ROI (best!)  HIGH bias risk ⚠️
 1. **AI Capability Mapping (15 min)**: 
    - Review the 12 AI capability cards
    - Place each on the Transformation Matrix (Process vs. Strategic, Incremental vs. Transformational)
-   - Identify where your organization is currently active
+   - Identify where your organisation is currently active
    - Identify gaps
 
 2. **Data Readiness Assessment (15 min)**:
@@ -275,7 +275,7 @@ Ask 2-3 tables to share:
 - "Which initiatives can't move forward until data infrastructure improves?"
 
 **Key learning to emphasize:**
-"Most organizations are Level 2-3 on data maturity but trying to do Level 5 AI. That's like trying to build a skyscraper on a foundation meant for a house. Data readiness gates AI investment decisions."
+"Most organisations are Level 2-3 on data maturity but trying to do Level 5 AI. That's like trying to build a skyscraper on a foundation meant for a house. Data readiness gates AI investment decisions."
 
 ---
 
@@ -322,7 +322,7 @@ Use this time to:
 **The gate principle** (3 min):
 "You CANNOT skip levels. If you're at Level 2 (disconnected data sources), you cannot do Level 5 AI (autonomous decisions). You'll fail.
 
-Most organizations are at Level 2-3 but want Level 5 results. That's why 85% of AI projects fail—not because the AI is bad, but because the data foundation isn't there."
+Most organisations are at Level 2-3 but want Level 5 results. That's why 85% of AI projects fail—not because the AI is bad, but because the data foundation isn't there."
 
 **Show RetailFlow examples** (3 min):
 - Chatbot: Needs Level 3 (historical inquiry patterns) → RetailFlow is ready
@@ -363,7 +363,7 @@ Most organizations are at Level 2-3 but want Level 5 results. That's why 85% of 
   - Data: Level 5 + continuous learning required
 
 **The portfolio balance principle** (3 min):
-"Most organizations get this wrong in one of two ways:
+"Most organisations get this wrong in one of two ways:
 1. **All H1 (80%+ in optimize)**: Efficient today, irrelevant tomorrow. Competitors will transform while you optimize into obsolescence.
 2. **All H3 (50%+ in moonshots)**: Exciting vision, no cash flow today. Can't fund transformation if core business suffers.
 
@@ -701,7 +701,7 @@ Use the AI Investment Checklist. Any project that FAILS an AI-specific criterion
   - Remind: "What about the AI-specific criteria? Dynamic Pricing has high ROI but also high ethical risk."
 
 **5 minutes before break:**
-"Teams, you have 5 minutes to finalize your pitch. After break, we start. Committee, review your questions."
+"Teams, you have 5 minutes to finalise your pitch. After break, we start. Committee, review your questions."
 
 ---
 
@@ -892,7 +892,7 @@ If you can't answer all 5, you're not ready to invest."
 "Take 5 minutes. In your Personal Action Plan template, write:
 
 1. **One AI initiative** you'll evaluate differently starting Monday
-2. **Your organization's data readiness score** (0-10, be honest)
+2. **Your organisation's data readiness score** (0-10, be honest)
 3. **The AI-specific criterion** that concerns you most (data? ethics? explainability?)
 4. **Two actions** you'll take in the next 30 days:
    - Example: "Audit data readiness for our customer segmentation AI"
@@ -941,7 +941,7 @@ Safe travels, and good luck with your AI investments."
 **Solution**: During prep time, visit each team: "Your scenario flags HIGH ethical risk. How will you address that in your pitch?"
 
 ### "Dynamic Pricing team is defensive about ethical concerns"
-**Solution**: "That defensiveness is realistic—project advocates often minimize risks. Committee's job is to probe those risks. Let's see how they handle it."
+**Solution**: "That defensiveness is realistic—project advocates often minimise risks. Committee's job is to probe those risks. Let's see how they handle it."
 
 ### "Participants are skeptical: 'This is too theoretical'"
 **Solution**: Use real examples: "Amazon faced price discrimination lawsuit over dynamic pricing. That's why ethical risk isn't theoretical."

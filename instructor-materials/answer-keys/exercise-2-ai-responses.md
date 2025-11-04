@@ -76,7 +76,7 @@
 
 **What students learn:**
 - AI reveals trends from other industries (embedded finance from retail)
-- AI identifies talent/organizational risks (not just competitive product risks)
+- AI identifies talent/organisational risks (not just competitive product risks)
 - AI challenges assumptions about competitive advantages ("data moat")
 
 ---
@@ -92,7 +92,7 @@
 > 
 > 1. **AI-designed products:** Generative design AI creating products humans couldn't design—lighter, stronger, cheaper. Competitors' products become functionally superior, not just cheaper.
 > 
-> 2. **Micro-factories with AI orchestration:** Small, distributed, AI-coordinated production competing with your centralized facilities. Lower capital costs, faster customization.
+> 2. **Micro-factories with AI orchestration:** Small, distributed, AI-coordinated production competing with your centralised facilities. Lower capital costs, faster customization.
 > 
 > 3. **Supplier AI sophistication:** Your suppliers using AI for yield optimization means they have pricing power over you (they know your willingness-to-pay better than you know their costs).
 > 
@@ -100,7 +100,7 @@
 > 
 > 1. **Compound effect of small improvements:** Each AI optimization (maintenance, quality, supply chain) is only 3-5% improvement. But competitors doing ALL of them = 15-20% cost advantage. That's existential.
 > 
-> 2. **Skilled labor scarcity:** As AI automates routine tasks, demand spikes for "AI trainers" and "automation supervisors." Labor market shift makes hiring harder, not easier.
+> 2. **Skilled labour scarcity:** As AI automates routine tasks, demand spikes for "AI trainers" and "automation supervisors." Labour market shift makes hiring harder, not easier.
 
 **What students learn:**
 - AI identifies non-obvious threats (generative design, micro-factories)
@@ -160,7 +160,7 @@
 ### Example Dialogue 2: Retail
 
 **AI Question 1:**
-> "What customer behavior do you wish you could predict but currently can't?"
+> "What customer behaviour do you wish you could predict but currently can't?"
 
 **Student Answer:**
 > "Which customers are about to churn—stop shopping with us and go to competitors."
@@ -181,7 +181,7 @@
 > "If you could predict churn 30 days in advance with 80% accuracy, what would you do differently than your current 'send coupon' approach?"
 
 **Student Answer:**
-> "We'd intervene earlier, personalize the intervention based on WHY they're churning, maybe VIP treatment for high-value customers... this is way more strategic than just coupons."
+> "We'd intervene earlier, personalise the intervention based on WHY they're churning, maybe VIP treatment for high-value customers... this is way more strategic than just coupons."
 
 **AI Question 5:**
 > "Do you currently collect and integrate all those leading indicators you mentioned, or would this require data infrastructure work first?"
@@ -219,7 +219,7 @@
 > "You're right to be cautious about scaling prematurely. Here's the synthesis: (1) Pilot NOW on highest-quality data sources. (2) Simultaneously invest in data infrastructure (not sequentially). (3) Define clear 'data readiness gates' for scaling. This balances urgency with prudence."
 
 **Pragmatist Final:**
-> "Agreed on simultaneous approach, with caveat: Budget MUST reflect both—60% AI pilot, 40% data infrastructure. Not 90/10. And leadership must commit to NOT scaling if data gates aren't met, even if pilot shows promise. That's discipline most organizations lack."
+> "Agreed on simultaneous approach, with caveat: Budget MUST reflect both—60% AI pilot, 40% data infrastructure. Not 90/10. And leadership must commit to NOT scaling if data gates aren't met, even if pilot shows promise. That's discipline most organisations lack."
 
 **What instructor should observe:**
 - Debate clarifies the actual decision (not "invest or wait" but "invest with discipline")
@@ -389,7 +389,7 @@ Use AI for: Breadth, alternatives, challenging assumptions.
 Use YOUR expertise for: Context, judgment, final decision."
 
 **Teaching moment:**
-"This afternoon in Dragon's Den, you'll use frameworks to decide which AI to fund. AI can help analyze, but YOU decide. That's the right balance."
+"This afternoon in Dragon's Den, you'll use frameworks to decide which AI to fund. AI can help analyse, but YOU decide. That's the right balance."
 
 ### Red Flag 4: "This is taking too long"
 

@@ -1,11 +1,11 @@
 # Why AI Innovation is Different: What Executives Must Know
 
-## Purpose of This Reading
+## Executive Summary
 
-AI isn't just another technology investment. It fundamentally differs from traditional IT and innovation in ways that require different strategic thinking. This pre-reading explains the unique characteristics of AI that change how you evaluate, implement, and scale AI initiatives.
+Traditional innovation frameworks (Three Horizons, portfolio management, ROI analysis) are necessary but insufficient for AI. Add five AI-specific criteria: (1) Data Readiness—score 7+/10 across availability, quality, access, and bias or stop; (2) Continuous Learning—budget 30-50% annual costs vs. traditional IT's 10-15%; (3) Accuracy vs. Risk—match AI's probabilistic nature to business risk tolerance (marketing accepts 80%, healthcare needs 99%+); (4) Explainability—regulated industries require interpretable models, limiting algorithm choice and adding 10-20% cost; (5) Ethical Risk—customer-facing AI needs bias testing, diverse teams, and monitoring (budget +20-30%). Projects with high traditional ROI often have fatal AI-specific flaws. Both sets of criteria must pass.
 
-**Reading time:** 10 minutes  
-**Key takeaway:** AI investments require different evaluation criteria than traditional technology projects.
+**Reading time:** 10 minutes
+**Key takeaway:** Use traditional criteria AND five AI-specific criteria—high ROI means nothing if data isn't ready or ethical risk is existential.
 
 ---
 
@@ -18,7 +18,8 @@ Short answer: **No.** Here's why.
 Traditional innovation frameworks (like Three Horizons, portfolio management, ROI analysis) provide the **structure** for decision-making. But AI has unique characteristics that require **additional criteria** for evaluation.
 
 Think of it this way:
-- **Traditional frameworks** = How to organize your investment portfolio
+
+- **Traditional frameworks** = How to organise your investment portfolio
 - **AI-specific criteria** = What to look for when evaluating AI investments specifically
 
 You need both.
@@ -114,7 +115,7 @@ You need both.
 ✓ **Risk tolerance matters:**
 - High stakes (healthcare, finance, safety): Need 99%+ accuracy
 - Medium stakes (marketing, recommendations): 80-90% might be fine
-- Low stakes (content personalization): 70%+ acceptable
+- Low stakes (content personalisation): 70%+ acceptable
 
 ✓ **Human-in-the-loop decisions:**
 | AI Confidence | Human Role | Example |
@@ -209,7 +210,7 @@ You need both.
 - [ ] What's our process if bias is discovered post-launch?
 
 **Strategic question:** "What's the reputational risk if this AI is biased?"
-- Low: Internal operations (inventory optimization)
+- Low: Internal operations (inventory optimisation)
 - Medium: Customer-facing (search rankings, recommendations)
 - High: Life-impacting (hiring, lending, healthcare)
 
@@ -375,47 +376,6 @@ AI-Specific Investment Criteria
 
 ---
 
-## What to Bring to the Masterclass
-
-Come prepared to discuss YOUR organization's AI initiatives:
-
-1. **An AI project you're considering:**
-   - What problem does it solve?
-   - What's your data readiness score (0-10)?
-   - What could go wrong?
-
-2. **Your current AI challenges:**
-   - Data quality issues?
-   - Explainability requirements?
-   - Ethical concerns?
-
-3. **Your strategic context:**
-   - What are competitors doing with AI?
-   - What's your AI maturity level?
-   - What's your risk tolerance?
-
----
-
-## In the Masterclass, You'll Practice:
-
-**Morning exercises:**
-- Map your AI initiatives (including data readiness)
-- Assess where AI can create competitive advantage
-- Identify gaps in your AI portfolio
-
-**Afternoon Dragon's Den:**
-- Evaluate competing AI investments
-- Apply BOTH traditional AND AI-specific criteria
-- Make tough portfolio allocation decisions
-- Practice justifying AI investment decisions
-
-**You'll leave with:**
-- Frameworks for evaluating AI differently
-- AI Investment Checklist (10 questions)
-- Personal action plan for your AI initiatives
-
----
-
 ## Key Takeaways
 
 1. **AI is different:** Data-dependent, continuous learning, probabilistic, black box, ethical risks
@@ -433,5 +393,3 @@ Come prepared to discuss YOUR organization's AI initiatives:
 7. **Use both frameworks:** Traditional investment criteria + AI-specific criteria
 
 ---
-
-**See you in the masterclass, where we'll apply these principles to real investment decisions.**

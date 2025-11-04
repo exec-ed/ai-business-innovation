@@ -44,7 +44,7 @@ Based on the transcript, here are the key AI collaboration techniques distilled 
 
 ### Advanced Application: Roleplay for Tough Conversations  
 Use **3 AI personas** in parallel:  
-1. **Personality Profiler** → Analyze the other person’s communication style.  
+1. **Personality Profiler** → Analyse the other person’s communication style.  
 2. **Roleplay AI** → Simulate the conversation (e.g., *"You’re Jim – a direct, sarcastic sales leader"*).  
 3. **Feedback AI** → Critique your performance (grade you, suggest improvements).  
 

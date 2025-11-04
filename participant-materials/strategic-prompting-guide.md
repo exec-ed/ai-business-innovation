@@ -245,7 +245,7 @@ Don't accept first response—go deeper:
 ## Common Use Cases
 
 ### Strategic Planning
-**Prompt:** "You're a strategy consultant. We're developing our 3-year AI roadmap. Ask me 10 questions to ensure we're thinking comprehensively about threats, opportunities, and organizational readiness."
+**Prompt:** "You're a strategy consultant. We're developing our 3-year AI roadmap. Ask me 10 questions to ensure we're thinking comprehensively about threats, opportunities, and organisational readiness."
 
 ### Investment Evaluation  
 **Prompt:** "We're evaluating this AI investment: [DETAILS]. Use the AI Investment Checklist framework: assess data readiness (0-10), continuous learning needs, accuracy requirements, explainability, and ethical risks. Be critical."
@@ -304,7 +304,7 @@ NOT as:
 **Best results:** Human expertise + AI analysis
 
 You bring:
-- Deep context about your organization
+- Deep context about your organisation
 - Industry experience and intuition
 - Understanding of stakeholders and politics
 - Ability to judge what's realistic
@@ -337,7 +337,7 @@ When using AI for strategic decisions:
 **3. Cite AI when appropriate**
 - If AI insight influences your decision: "AI analysis suggested we consider [X]"
 - Helps others understand your reasoning
-- Models good practice for your organization
+- Models good practice for your organisation
 
 **4. Don't outsource judgment**
 - AI provides input, humans make decisions

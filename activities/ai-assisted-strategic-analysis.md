@@ -70,7 +70,7 @@ Write one opportunity per sticky note. Place on appropriate horizon.
   - **Bing Chat/Copilot**: Built into Edge browser (free, no login)
 - **Suggested Roles:**
   - "AI Lead": Opens AI tool, types prompts, reads responses aloud
-  - "Scribe": Captures insights on sticky notes (different color)
+  - "Scribe": Captures insights on sticky notes (different colour)
   - Everyone: Participates in discussion and evaluates AI responses
 
 **Important:** 
@@ -244,7 +244,7 @@ Compare human vs. AI contributions:
    - Gut feelings about competitors?
 
 3. **Which AI-generated insights are most valuable?**
-   - Add these to your sticky notes (use different color to mark "AI-generated")
+   - Add these to your sticky notes (use different colour to mark "AI-generated")
 
 4. **How did AI change your strategic thinking?**
    - Did reverse prompting reveal hidden opportunities?
@@ -367,7 +367,7 @@ If internet is completely unavailable:
 
 **Strategic insight:**
 If AI can help YOU (executives with deep expertise) think better about strategy...
-imagine what it can do for your organization when deployed thoughtfully.
+imagine what it can do for your organisation when deployed thoughtfully.
 
 **This validates the course premise:**
 AI is different. It's not just another tool to evaluate—it's a tool that changes HOW you evaluate.
@@ -395,7 +395,7 @@ Participants leave thinking "I should use AI for strategic analysis" not "AI is 
 
 ---
 
-## Prompts for Your Organization (Take-Home)
+## Prompts for Your Organisation (Take-Home)
 
 You've practiced three techniques. Use them Monday:
 
@@ -408,7 +408,7 @@ Help identify risks we might be overlooking:
 
 1. Technical risks (data, accuracy, integration)
 2. Business risks (ROI, competition, timing)
-3. Organizational risks (adoption, change management)
+3. Organisational risks (adoption, change management)
 4. Ethical/legal risks (bias, discrimination, regulation)
 
 Be specific. Use examples from similar initiatives.

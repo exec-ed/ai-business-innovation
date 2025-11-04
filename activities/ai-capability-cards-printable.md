@@ -98,7 +98,7 @@
 │                                         │                                         │
 │  RECOMMENDATION SYSTEMS                 │  DYNAMIC PRICING & OPTIMIZATION         │
 │                                         │                                         │
-│  Personalize Suggestions                │  Optimize Prices in Real-Time           │
+│  Personalise Suggestions                │  Optimize Prices in Real-Time           │
 │                                         │                                         │
 │  TECHNOLOGY:                            │  TECHNOLOGY:                            │
 │  AI that personalizes content and       │  AI that adjusts prices based on        │
@@ -365,7 +365,7 @@ TRANSFORM (Strategic + Transformational)
 ### Variations:
 - **Digital projection**: Display cards on screen, use virtual sticky notes
 - **Industry-specific**: Add blank cards for participants to create custom capabilities
-- **Color coding**: Print quadrants in different colors (Optimize=Blue, Enhance=Green, etc.)
+- **Colour coding**: Print quadrants in different colours (Optimize=Blue, Enhance=Green, etc.)
 
 ### Storage:
 - Keep card sets in labeled envelopes

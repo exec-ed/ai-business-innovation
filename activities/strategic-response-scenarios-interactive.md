@@ -172,10 +172,10 @@ Multi-modal AI (text + image + video) shows breakthrough potential for retail. E
 
 ## Backup Plan: No Tech / Forms Not Working
 
-### Low-Tech Alternative: Colored Cards
+### Low-Tech Alternative: Coloured Cards
 
 **Prepare before workshop:**
-- Print 3 colored cards per participant
+- Print 3 coloured cards per participant
 - Red = Option A
 - Yellow = Option B  
 - Green = Option C

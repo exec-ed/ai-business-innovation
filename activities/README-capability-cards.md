@@ -2,7 +2,7 @@
 
 ## Overview
 
-The AI Capability Cards are designed for **Exercise 1: AI Tech Radar** (9:45-10:30 AM, 45 minutes). They help participants map their organization's AI capabilities using the AI Transformation Matrix.
+The AI Capability Cards are designed for **Exercise 1: AI Tech Radar** (9:45-10:30 AM, 45 minutes). They help participants map their organisation's AI capabilities using the AI Transformation Matrix.
 
 ---
 
@@ -27,7 +27,7 @@ The AI Capability Cards are designed for **Exercise 1: AI Tech Radar** (9:45-10:
 ### Why Physical Cards Work Better:
 ✅ **Tactile engagement**: Participants can hold, shuffle, discuss  
 ✅ **Better collaboration**: Pass cards around table, point at specific ones  
-✅ **Visual organization**: Physically placing on matrix clarifies relationships  
+✅ **Visual organisation**: Physically placing on matrix clarifies relationships  
 ✅ **Professional feel**: Mimics design thinking/innovation workshops  
 ✅ **Takeaway value**: Participants can keep cards as reference  
 
@@ -88,7 +88,7 @@ Each A4 page produces **4 cards**:
 - Read technology, examples, questions
 
 ### Phase 2: Group Mapping (20 min)
-- Tables **discuss** which capabilities their organization has/needs
+- Tables **discuss** which capabilities their organisation has/needs
 - **Place cards** on the matrix based on:
   - Horizontal: Process ↔ Strategic
   - Vertical: Incremental ↔ Transformational
@@ -137,8 +137,8 @@ Use the **blank cards** (Page 4) to add:
 
 Participants can fill these out during the exercise.
 
-### Color Coding:
-Print quadrants in different colors for visual clarity:
+### Colour Coding:
+Print quadrants in different colours for visual clarity:
 - **Blue cards**: Optimize (Process/Incremental)
 - **Green cards**: Enhance (Strategic/Incremental)
 - **Orange cards**: Revolutionize (Process/Transformational)
@@ -148,7 +148,7 @@ Print quadrants in different colors for visual clarity:
 
 ## Troubleshooting
 
-### "The cards don't fit our organization"
+### "The cards don't fit our organisation"
 → Use blank cards to create custom capabilities  
 → Participants can modify examples to match their industry
 

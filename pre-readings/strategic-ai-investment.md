@@ -2,10 +2,10 @@
 
 ## Executive Summary
 
-This pre-reading prepares you for strategic decision-making about AI investments. Rather than asking "Should we invest in AI?" (the answer is almost certainly yes), executives must ask: "Where should we invest in AI, and how should we balance our portfolio?"
+Rather than asking "Should we invest in AI?" (the answer is almost certainly yes), executives must ask: "Where should we invest in AI, and how should we balance our portfolio?" Use McKinsey's Three Horizons model: allocate 70% to Horizon 1 (optimise existing operations, 0-12 months, proven tech), 20% to Horizon 2 (build emerging capabilities, 1-3 years, scaling challenges), and 10% to Horizon 3 (transform business models, 3-5+ years, high risk). Evaluate AI investments across four value categories—cost reduction, revenue growth, risk reduction, and strategic positioning—not just traditional ROI. Over-investing in H1 optimises you into obsolescence; over-investing in H3 starves near-term revenue needed to fund experiments.
 
-**Reading time:** 15 minutes  
-**Key takeaway:** AI investment requires portfolio thinking—balancing quick wins, emerging capabilities, and transformational bets.
+**Reading time:** 15 minutes
+**Key takeaway:** AI portfolio balance matters more than individual project ROI—use the 70/20/10 rule across three time horizons.
 
 ---
 
@@ -39,7 +39,7 @@ AI portfolio management asks:
 
 McKinsey's Three Horizons model provides a framework for balancing AI investments:
 
-### Horizon 1: Optimize Core (0-12 months)
+### Horizon 1: Optimise Core (0-12 months)
 **Focus:** Improve existing operations  
 **Budget allocation:** 70%  
 **ROI expectation:** >200% in Year 1  
@@ -63,8 +63,8 @@ McKinsey's Three Horizons model provides a framework for balancing AI investment
 **Risk profile:** Medium risk, scaling challenges
 
 **Examples:**
-- Personalization engines
-- Dynamic pricing optimization
+- Personalisation engines
+- Dynamic pricing optimisation
 - Supply chain AI
 - Fraud detection
 
@@ -130,7 +130,7 @@ AI creates value in four ways. Strong business cases articulate value across mul
 
 ### Evaluation Criteria
 
-**For Horizon 1 (Optimize):**
+**For Horizon 1 (Optimise):**
 1. Clear ROI >200% in Year 1
 2. Low technical risk
 3. Fast implementation (<6 months)
@@ -154,7 +154,7 @@ AI creates value in four ways. Strong business cases articulate value across mul
 - "AI will solve everything" (too vague)
 - No clear success metrics
 - Assumes perfect data quality
-- Ignores organizational change requirements
+- Ignores organisational change requirements
 - "Everyone else is doing it" (FOMO-driven)
 - Over-confidence in ROI projections
 - Underestimates integration complexity
@@ -183,7 +183,7 @@ AI creates value in four ways. Strong business cases articulate value across mul
 **Solution:** 30-40% of AI budget should go to data infrastructure.
 
 ### Mistake 3: All Horizon 1, No Horizon 3
-**Problem:** Optimize into obsolescence while competitors transform  
+**Problem:** Optimise into obsolescence while competitors transform  
 **Solution:** Force yourself to allocate 10% to moonshots.
 
 ### Mistake 4: Overestimating Short-term Impact
@@ -212,7 +212,7 @@ AI creates value in four ways. Strong business cases articulate value across mul
 - Better ROI clarity
 - Avoid dead-end investments
 
-**Know which game you're playing:** Are you defining a new category (first-mover) or optimizing a proven approach (fast-follower)?
+**Know which game you're playing:** Are you defining a new category (first-mover) or optimising a proven approach (fast-follower)?
 
 ### Disruptive Threats
 
@@ -227,77 +227,12 @@ AI creates value in four ways. Strong business cases articulate value across mul
 
 ---
 
-## Preparing for the Masterclass
 
-### Bring to Class
-
-1. **Your organization's current AI investments**
-   - What's funded? What's working? What's struggling?
-
-2. **Your strategic priorities**
-   - Top 3 business challenges
-   - Competitive threats
-   - Growth opportunities
-
-3. **Your resource constraints**
-   - Available AI budget
-   - Internal capabilities
-   - Talent gaps
-
-4. **One specific decision**
-   - An AI investment you're considering
-   - A struggling AI initiative
-   - A competitive threat you're facing
-
-### Questions to Consider
-
-1. What's our current balance across the three horizons?
-2. Where are competitors investing that we're not?
-3. What AI capabilities will be "table stakes" in our industry in 3 years?
-4. How much of our AI budget goes to infrastructure vs. applications?
-5. What would we do if our AI budget doubled? If it was cut in half?
-
----
-
-## Key Frameworks You'll Learn
-
-In the masterclass, you'll use five frameworks to make better AI investment decisions:
-
-1. **AI Transformation Matrix** - Classify initiatives by focus and magnitude
-2. **Data Value Pyramid** - Assess organizational AI readiness
-3. **Three Horizons Model** - Balance portfolio across timeframes
-4. **AI Investment Model** - Calculate ROI across four value categories
-5. **Innovation Adoption Framework** - Plan phased transformation journey
-
-You'll practice applying these frameworks to real investment scenarios, including a "Dragon's Den" simulation where you'll pitch and evaluate competing AI initiatives.
-
----
 
 ## Further Reading
 
-**Essential:**
-- Iansiti & Lakhani: "Competing in the Age of AI" (HBR, 2020)
-- Davenport & Ronanki: "Artificial Intelligence for the Real World" (HBR, 2018)
+- Iansiti, Marco, and Karim R. Lakhani. 2020. "Competing in the Age of AI." Harvard Business Review 98 (1): 60–67
+- Davenport, Thomas H., and Rajeev Ronanki. 2018. "Artificial Intelligence for the Real World." Harvard Business Review 96 (1): 108–16.
+- Agrawal, A., J. Gans, and A. Goldfarb. 2018. Prediction Machines: The Simple Economics of Artificial Intelligence. Boston: Harvard Business Review Press.
+- Fountaine, Tim, Brian McCarthy, and Tamim Saleh. 2019. "Building the AI-Powered Organisation." Harvard Business Review 97 (4): 62–73.
 
-**Advanced:**
-- Agrawal, Gans & Goldfarb: "Prediction Machines" (HBR Press, 2018)
-- Fountaine, McCarthy & Saleh: "Building the AI-Powered Organization" (HBR, 2019)
-
----
-
-## Course Logistics
-
-**What to bring:**
-- Laptop or tablet (REQUIRED for calculator exercises)
-- Current strategic plan or roadmap
-- Recent AI proposals or business cases
-- Open mind about your organization's AI readiness
-
-**Course format:**
-- 50% frameworks and strategic concepts
-- 50% hands-on exercises and simulations
-- Focus on decision-making, not technical details
-
----
-
-**See you in class. Come prepared to make strategic AI investment decisions.**

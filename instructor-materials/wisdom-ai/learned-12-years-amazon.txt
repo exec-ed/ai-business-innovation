@@ -1,14 +1,14 @@
 Based on the provided text, here is an extraction of the core wisdom and key insights from the speaker's experience as a product manager at Amazon.
 
 ### Core Philosophy: The Reality of AI in Big Tech
-*   **AI as a Solution to Chaos, Not Innovation:** The primary driver for AI adoption in large companies isn't a quest for pure innovation, but a desperate attempt to survive internal chaos. It's a tool to combat fragmentation, bureaucracy, and "organizational amnesia"—the constant loss of knowledge as employees leave.
+*   **AI as a Solution to Chaos, Not Innovation:** The primary driver for AI adoption in large companies isn't a quest for pure innovation, but a desperate attempt to survive internal chaos. It's a tool to combat fragmentation, bureaucracy, and "organisational amnesia"—the constant loss of knowledge as employees leave.
 *   **We are in the "Trough of Disillusionment":** The initial hype is crashing into the reality that AI is fundamentally flawed (it lies), expensive to run, and most companies can't use it effectively due to messy internal data. This phase is healthy because it forces a shift from fantasy to real utility.
 
 ### On Using AI Effectively (The Personal Playbook)
 1.  **Adopt an "Editor-in-Chief" Mindset:** Your role is not to be a writer but an editor. Treat the AI as a junior employee that generates raw material. Your value shifts from generating content to directing, critiquing, verifying, and elevating that content.
 2.  **Use AI as a "Cognitive Exoskeleton":** Leverage AI for personal productivity to stay sane amidst chaos. Use it as an "instant analyst" for complex queries (SQL, Excel), a "strategic sparring partner" to find flaws in your proposals, and a tool to sharpen arguments in written documents.
 3.  **Practice Cross-Model Validation:** Never rely on a single AI model for a critical task. Run prompts through multiple models (e.g., ChatGPT, Claude, Gemini) and compare the outputs. Significant differences are a massive red flag that requires deeper human investigation.
-4.  **Build a Personal RAG System:** While enterprise-wide AI fails due to messy data, a personal Retrieval-Augmented Generation (RAG) system is incredibly powerful. Ground an AI in your own curated notes, documents, and research to create a personalized, expert assistant that bypasses the corporate data disaster.
+4.  **Build a Personal RAG System:** While enterprise-wide AI fails due to messy data, a personal Retrieval-Augmented Generation (RAG) system is incredibly powerful. Ground an AI in your own curated notes, documents, and research to create a personalised, expert assistant that bypasses the corporate data disaster.
 
 ### On AI's Fundamental Flaws
 *   **AI is a "Confident Liar":** The biggest flaw of Large Language Models (LLMs) is that they hallucinate—they confidently invent plausible-sounding but completely fabricated information. This is not a bug to be fixed, but a core feature of their architecture, as they are pattern predictors, not truth machines.
@@ -16,5 +16,5 @@ Based on the provided text, here is an extraction of the core wisdom and key ins
 
 ### The Future of Your Career
 *   **AI Replaces Tasks, Not Jobs:** AI is not eliminating entire roles at scale but is automating repetitive tasks. This leads to a restructuring of work, not mass replacement.
-*   **The Bar is Rising for Everyone (The Jevons Paradox):** As AI makes you more efficient at tasks, the expectation isn't that you'll work less. The expectation is that you will analyze 10x more data or spend the saved time on higher-level strategy. The value of execution is decreasing while the value of strategy and critical thinking is increasing.
+*   **The Bar is Rising for Everyone (The Jevons Paradox):** As AI makes you more efficient at tasks, the expectation isn't that you'll work less. The expectation is that you will analyse 10x more data or spend the saved time on higher-level strategy. The value of execution is decreasing while the value of strategy and critical thinking is increasing.
 *   **The Most Valuable Skills are Human:** The people who thrive will be those who master skills AI cannot replicate: synthesizing information, making complex judgments, communicating effectively, and navigating ambiguity. Your value is in becoming the strategist, not the person being automated.

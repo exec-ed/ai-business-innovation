@@ -39,7 +39,7 @@
 
 ---
 
-## Your Organization's Current AI Initiatives
+## Your Organisation's Current AI Initiatives
 
 **Instructions**: List each AI initiative/capability and place it in the appropriate quadrant
 

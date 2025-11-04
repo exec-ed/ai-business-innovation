@@ -9,7 +9,7 @@
 - ✅ Ready to copy/paste (customize the [BRACKETED] sections)
 - ✅ Tested in real business contexts
 - ✅ Designed for strategic/executive decisions
-- ✅ Organized by use case
+- ✅ Organised by use case
 
 **Quick start:**
 1. Find the use case that matches your need
@@ -68,9 +68,9 @@ Our current AI portfolio:
 
 Industry context: [YOUR INDUSTRY]
 Annual AI budget: [$ AMOUNT]
-Organization size: [EMPLOYEES/REVENUE]
+Organisation size: [EMPLOYEES/REVENUE]
 
-Analyze our portfolio using Three Horizons Model:
+Analyse our portfolio using Three Horizons Model:
 1. What % is in each horizon (H1: 0-12mo, H2: 1-3yr, H3: 3-5yr)?
 2. Are we balanced (target: 70% H1, 20% H2, 10% H3)?
 3. What strategic gaps exist?
@@ -104,7 +104,7 @@ Ask me 10 strategic questions to ensure a comprehensive roadmap covering:
 - Capability building (6-18 months)
 - Transformation initiatives (18-36 months)
 - Data infrastructure needs
-- Organizational readiness
+- Organisational readiness
 - Risk mitigation
 
 Ask ONE question at a time. Probe my answers before moving to next question.
@@ -156,7 +156,7 @@ Our opportunity:
 - Investment: [$AMOUNT]
 - Target: [CUSTOMER SEGMENT]
 
-Analyze this market entry:
+Analyse this market entry:
 1. What AI capabilities are "table stakes" (must-have to compete)?
 2. What AI capabilities could differentiate us (competitive advantage)?
 3. What's the data cold-start problem? (How do we get initial training data?)
@@ -289,7 +289,7 @@ Final recommendation:
 **When to use:** Deciding whether to build custom AI or buy commercial solution
 
 ```
-You are a technology strategy consultant analyzing build vs. buy for:
+You are a technology strategy consultant analysing build vs. buy for:
 
 AI capability needed: [DESCRIBE]
 Business criticality: [Low/Medium/High]
@@ -300,7 +300,7 @@ Current context:
 - Budget: [$AMOUNT]
 - Timeline pressure: [URGENT/MODERATE/PATIENT]
 
-Analyze both options:
+Analyse both options:
 
 BUILD CUSTOM:
 - Pros: Control, differentiation, data privacy
@@ -378,7 +378,7 @@ Red flags that should stop project: [IDENTIFY].
 **When to use:** Broader ethical review beyond just bias
 
 ```
-You are an AI ethics philosopher analyzing this AI system:
+You are an AI ethics philosopher analysing this AI system:
 
 System: [DESCRIBE]
 Purpose: [BUSINESS GOAL]
@@ -428,7 +428,7 @@ Jurisdiction: [COUNTRIES/REGIONS]
 Industry: [SECTOR - some have specific AI regulations]
 Personal data involved: [YES/NO - what types]
 
-Analyze regulatory compliance:
+Analyse regulatory compliance:
 
 1. GDPR (if EU users):
    - Right to explanation: Can we explain AI decisions?
@@ -487,7 +487,7 @@ Walk me through the failure:
    - Why didn't we catch it earlier?
 
 4. ROOT CAUSE ANALYSIS:
-   - Was this technical failure, business failure, or organizational failure?
+   - Was this technical failure, business failure, or organisational failure?
    - What could we have done differently?
 
 Now: For each failure scenario, what should we monitor NOW to prevent it?
@@ -515,7 +515,7 @@ Claimed benefits: [ROI/IMPROVEMENTS]
 Your concerns:
 - Wasting money on AI hype
 - Data quality insufficient
-- Organization not ready for change
+- Organisation not ready for change
 - Ethical/legal risks
 - Unproven technology
 
@@ -587,7 +587,7 @@ What questions will each board member ask based on their background?
 
 ### Change Management Planning {#change-management}
 
-**When to use:** Planning organizational change for AI adoption
+**When to use:** Planning organisational change for AI adoption
 
 ```
 You are a change management consultant specializing in AI transformation.
@@ -597,7 +597,7 @@ Affected employees: [NUMBER, ROLES]
 Change magnitude: [MINOR/MODERATE/TRANSFORMATIVE]
 Timeline: [MONTHS]
 
-Analyze change resistance:
+Analyse change resistance:
 
 1. WHO WILL RESIST AND WHY:
    - Which roles feel threatened?
@@ -755,7 +755,7 @@ Attack vectors:
 
 2. EXECUTION RISKS:
    - Data not ready (despite claims)
-   - Organization not ready
+   - Organisation not ready
    - Technical complexity underestimated
 
 3. COMPETITIVE RESPONSE:
@@ -783,7 +783,7 @@ Be brutal. Your job is to break this strategy, not defend it.
 **When to use:** Understanding ripple effects of AI decisions
 
 ```
-You are a systems thinker analyzing second-order effects of:
+You are a systems thinker analysing second-order effects of:
 
 Primary action: [DESCRIBE AI INITIATIVE/DECISION]
 
@@ -795,7 +795,7 @@ FIRST-ORDER EFFECTS (immediate, obvious):
 SECOND-ORDER EFFECTS (6-12 months later):
 - Those effects cause what other changes?
 - What adjustments do stakeholders make?
-- What new behaviors emerge?
+- What new behaviours emerge?
 
 THIRD-ORDER EFFECTS (12-24 months later):
 - What systemic shifts occur?
@@ -808,10 +808,10 @@ For each order:
 - Probability (high/med/low)
 
 Focus especially on:
-- Employee behavior changes
+- Employee behaviour changes
 - Competitive responses
 - Customer reaction shifts
-- Organizational dynamics
+- Organisational dynamics
 
 What second-order effect is most likely to surprise us?
 ```

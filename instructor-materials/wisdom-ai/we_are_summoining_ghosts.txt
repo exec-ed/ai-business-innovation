@@ -1,5 +1,5 @@
 
-Here's the distilled wisdom from Andre Karpathy's interview, organized by key themes:
+Here's the distilled wisdom from Andre Karpathy's interview, organised by key themes:
 
 ---
 
@@ -52,7 +52,7 @@ Here's the distilled wisdom from Andre Karpathy's interview, organized by key th
 ### **Societal & Economic Impact**
 8. **AI as Automation Continuum**:  
    - AI extends computing’s automation arc (compilers → search → LLMs). No sudden "intelligence explosion," just gradual integration.  
-   - **Economic Growth**: AI will sustain GDP growth (~2%) but won’t drastically accelerate it. Labor constraints persist; AI augments but doesn’t replace human creativity.  
+   - **Economic Growth**: AI will sustain GDP growth (~2%) but won’t drastically accelerate it. Labour constraints persist; AI augments but doesn’t replace human creativity.  
    - **Deployment Realities**: Like self-driving (still human-in-loop), AI agents face safety, legal, and economic hurdles. "March of nines" (reliability) takes time.
 
 9. **Human Empowerment**:  

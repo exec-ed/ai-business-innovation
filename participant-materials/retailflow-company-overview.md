@@ -60,7 +60,7 @@ Sarah Martinez, CEO (joined 2023 from Amazon):
 - Limited innovation
 
 **Online-First Competitors:**
-- Heavy AI investment in personalization
+- Heavy AI investment in personalisation
 - Dynamic pricing algorithms
 - Automated customer service
 - Superior recommendation engines
@@ -293,7 +293,7 @@ You'll be split into two groups:
 
 ---
 
-## Questions to Consider Before Class
+## Questions to Consider as You Read
 
 1. If you were CEO, which initiative would you fund? Why?
 2. What additional information would you need to make the decision?
@@ -314,8 +314,21 @@ RetailFlow is fictional, but the challenges are real:
 - The resource constraints are realistic
 - The strategic dilemmas are what you'll face
 
-**Use RetailFlow as a safe space to practice decision-making frameworks you'll apply to your real organization.**
+**Use RetailFlow as a safe space to practice decision-making frameworks you'll apply to your real organisation.**
 
 ---
 
-**Come to class ready to make tough investment decisions about RetailFlow's AI future.**
+## How This Connects to Your Organisation
+
+As you work through the RetailFlow case, keep asking yourself:
+
+- **"How is this similar to my company's situation?"**
+- **"What challenges does RetailFlow face that we also face?"**
+- **"Would my executive team make the same trade-offs?"**
+- **"What would I do differently?"**
+
+The goal isn't to become an expert on RetailFlow—it's to use RetailFlow as a lens for thinking more strategically about your own AI investment decisions.
+
+---
+
+**Now let's make some tough investment decisions about RetailFlow's AI future.**

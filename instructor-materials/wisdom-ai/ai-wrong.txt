@@ -14,7 +14,7 @@ Based on the transcript, here is the extracted wisdom from the Cold Fusion episo
 *   **Echoes of the Dot-Com Bubble:** The current AI boom mirrors the dot-com bubble, characterized by massive valuations and investments based on future hype rather than proven business models or profitability.
 *   **Signs of a Bubble:**
     1.  **Massive, Inefficient Spending:** Companies are spending billions on GPUs (e.g., Meta has 600,000 H100s) without a proportional return in scientific breakthroughs or profits.
-    2.  **Unsustainable Costs:** The operational cost for major AI companies is enormous (e.g., OpenAI's data centers cost ~$40 billion/year while revenues are ~$15-20 billion).
+    2.  **Unsustainable Costs:** The operational cost for major AI companies is enormous (e.g., OpenAI's data centres cost ~$40 billion/year while revenues are ~$15-20 billion).
     3.  **Disappointing Progress:** Recent releases (like ChatGPT-5) have been seen as incremental rather than revolutionary, leading to user disappointment.
     4.  **Public Fatigue:** The general populace is growing tired of "AI slop" and unreliable AI interactions.
 

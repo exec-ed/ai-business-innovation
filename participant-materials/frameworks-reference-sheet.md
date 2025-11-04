@@ -27,7 +27,7 @@ Keep this handy for strategic AI decision-making.
 
 **Examples:**
 - **Optimize:** Automate invoice processing, chatbot for FAQs
-- **Enhance:** AI product recommendations, personalized marketing
+- **Enhance:** AI product recommendations, personalised marketing
 - **Revolutionize:** Fully autonomous supply chain, lights-out manufacturing
 - **Transform:** AI-as-a-Service new revenue stream, platform business model
 
@@ -63,7 +63,7 @@ Keep this handy for strategic AI decision-making.
 
 **Key Insight:** You can't skip levels. AI requires strong data foundations.
 
-**Use this when:** Assessing organizational readiness for AI initiatives
+**Use this when:** Assessing organisational readiness for AI initiatives
 
 ---
 
@@ -105,7 +105,7 @@ Keep this handy for strategic AI decision-making.
 ### Value Categories
 
 **1. Cost Reduction**
-- Labor savings from automation
+- Labour savings from automation
 - Efficiency improvements
 - Error reduction
 
@@ -147,7 +147,7 @@ Keep this handy for strategic AI decision-making.
 
 ## Framework 5: Innovation Adoption Framework
 
-**Purpose:** Implement AI strategically across the organization
+**Purpose:** Implement AI strategically across the organisation
 
 ### Phase 1: Knowledge Building (3-6 months)
 - **Activities:** Education, workshops, vendor briefings, pilot identification
@@ -165,7 +165,7 @@ Keep this handy for strategic AI decision-making.
 - **Investment:** Growing (30-40% of AI budget)
 
 ### Phase 4: Scaling Operations (18-36 months)
-- **Activities:** Broader rollout, platform building, center of excellence
+- **Activities:** Broader rollout, platform building, centre of excellence
 - **Goal:** Systematic value delivery
 - **Investment:** Peak (40-50% of AI budget)
 
@@ -174,7 +174,7 @@ Keep this handy for strategic AI decision-making.
 - **Goal:** AI as core competency
 - **Investment:** Sustained (30-40% of AI budget, shifts to R&D)
 
-**Key Insight:** Most organizations fail by trying to skip to Phase 4/5. Respect the journey.
+**Key Insight:** Most organisations fail by trying to skip to Phase 4/5. Respect the journey.
 
 **Use this when:** Planning multi-year AI transformation
 

@@ -49,7 +49,7 @@
 
 2. **Inventory (H1-H2, Revolutionize):** Strong ROI (243% after trim), manageable risk, builds strategic capability. We trimmed scope to fit $1.2M cap—start with top 20% SKUs, expand if successful.
 
-3. **Fraud data prep:** We recognize Fraud has highest ROI (315%), but data isn't ready. We'll fund the 6-month data labeling project ($75K) now, revisit AI implementation in Year 2 when data is ready.
+3. **Fraud data prep:** We recognise Fraud has highest ROI (315%), but data isn't ready. We'll fund the 6-month data labeling project ($75K) now, revisit AI implementation in Year 2 when data is ready.
 
 **Not funded:**
 - **Dynamic Pricing:** Despite 253% ROI, we cannot accept the ethical/legal risk of price discrimination. One lawsuit erases years of ROI. Additionally, at $1.3M it exceeds our cap. Not worth the risk.
@@ -127,7 +127,7 @@ We recommend option 1: Trim Fraud to $800K (remove some fraud types, focus on hi
 
 2. **Inventory (H1-H2, medium risk):** Strong ROI, builds strategic capability. Trimmed scope to fit cap, phased rollout (10 stores pilot, scale if successful).
 
-3. **Dynamic Pricing (H2, high risk) - MODIFIED:** We recognize the ethical/budget issues. Instead of full implementation:
+3. **Dynamic Pricing (H2, high risk) - MODIFIED:** We recognise the ethical/budget issues. Instead of full implementation:
    - Fund data infrastructure ($100K competitive data)
    - Fund explainability platform ($100K)
    - Fund 6-month pilot with strict ethical guardrails ($50K)
@@ -169,7 +169,7 @@ We recommend option 1: Trim Fraud to $800K (remove some fraud types, focus on hi
 
 2. **Fraud data prep:** Get data ready NOW so we can implement in Year 2.
 
-3. **AI Infrastructure (NEW - not in original proposals):** We realized all four projects need:
+3. **AI Infrastructure (NEW - not in original proposals):** We realised all four projects need:
    - Integrated data platform
    - ML ops infrastructure
    - Governance and monitoring tools
@@ -231,7 +231,7 @@ We recommend option 1: Trim Fraud to $800K (remove some fraud types, focus on hi
 
 **Your facilitation:**
 - This reveals their risk tolerance
-- No "right" answer—depends on organizational context
+- No "right" answer—depends on organisational context
 - Probe: "What's your organization's appetite for risk? Do you need a quick win to build credibility?"
 
 **Teaching point:**
@@ -248,7 +248,7 @@ We recommend option 1: Trim Fraud to $800K (remove some fraud types, focus on hi
 "It's $50K over cap. If this is our most strategic investment, we should ask CEO for exception. Don't hamstring the best project over $50K."
 
 **Your facilitation:**
-- In real world: Depends on organizational culture (rules-bound vs. flexible)
+- In real world: Depends on organisational culture (rules-bound vs. flexible)
 - Force the decision: "CEO said $1.2M cap, no exceptions. What gets cut from Inventory?"
 
 **Teaching point:**
@@ -342,7 +342,7 @@ Yes, there's bias risk. We're budgeting $120K for external bias audit and divers
 
 **Inventory (H1-H2):** Strategic capability, strong ROI, manageable risk.
 
-**Dynamic Pricing (H2 exploration):** We recognize full implementation has issues (ethical + budget). Instead:
+**Dynamic Pricing (H2 exploration):** We recognise full implementation has issues (ethical + budget). Instead:
 - 6-month pilot with ONE product category
 - Heavy ethical guardrails (no demographic-based pricing)
 - External ethics review ($50K)
@@ -374,7 +374,7 @@ This explores high-potential opportunity while de-risking ethical concerns.
 
 **Fraud data prep:** Getting data ready for Year 2 implementation.
 
-**AI Governance & Ethics Program (NEW):** We realized all four projects need:
+**AI Governance & Ethics Program (NEW):** We realised all four projects need:
 - Bias testing framework
 - Ethical AI guidelines
 - Data governance standards
@@ -520,7 +520,7 @@ Prompt: "Anyone planning to use the prompting techniques from this morning?"
 **Example:** "We set data readiness threshold at 7, but we're funding Fraud which scores 6."
 
 **Your response:**
-"I notice you're making an exception to your own framework. That's a real organizational dynamic—frameworks get bent under pressure.
+"I notice you're making an exception to your own framework. That's a real organisational dynamic—frameworks get bent under pressure.
 
 If you do this, you need explicit mitigation: What SPECIFICALLY will you do about the 6/10 data readiness?"
 

@@ -36,7 +36,7 @@ You are **facilitating AI-augmented strategic thinking**, not teaching AI prompt
 **Room prep:**
 - Flipcharts at each table with Three Horizons grid drawn
 - RED sticky notes (threats) and GREEN sticky notes (opportunities)
-- BLUE/YELLOW sticky notes (for AI-generated insights - different color)
+- BLUE/YELLOW sticky notes (for AI-generated insights - different colour)
 - Strategic Prompting Guide handout at each seat
 
 **Announce at 11:00:**
@@ -57,7 +57,7 @@ still do the thinking exercise."
 - Don't be rigid about "one device per table"—executives will naturally collaborate however works for them
 - Some tables: everyone on own device, comparing responses
 - Other tables: huddle around one laptop
-- Both work fine—let them self-organize
+- Both work fine—let them self-organise
 
 **Critical:** 
 - ✅ DO recommend Gemini (removes login friction)
@@ -79,7 +79,7 @@ Here's the structure:
 - Second: AI augmentation (see what AI adds)
 - Third: Compare and learn (human + AI = better)
 
-Why this matters: If AI can help YOU—experts with deep industry knowledge—think better about strategy, imagine what it can do for your organization when deployed thoughtfully.
+Why this matters: If AI can help YOU—experts with deep industry knowledge—think better about strategy, imagine what it can do for your organisation when deployed thoughtfully.
 
 The measure of success: This afternoon during Dragon's Den prep, someone says 'Let's ask Claude about our pitch' without me suggesting it. That means you experienced AI's value."
 
@@ -184,7 +184,7 @@ Walk to projector, show your screen:
 "Let me show you an example. I'll ask about retail." [Submit prompt, get response]. "See how it identified [X]? That's the kind of insight you're looking for. Now keep going."
 
 **Time check (at 8 min):**
-"30 seconds—capture 2-3 AI insights on sticky notes, different color."
+"30 seconds—capture 2-3 AI insights on sticky notes, different colour."
 
 ### Round 2: Reverse Prompting (10 min) - 11:55-12:05
 
@@ -209,7 +209,7 @@ Turn to 'Reverse Prompting' template. Submit that prompt. AI will ask your first
 "Don't rush. When AI asks a question, discuss it for 1-2 minutes BEFORE answering. The questions are designed to make you think."
 
 **Intervention if stuck:**
-"What did that question make you realize? What opportunity is hiding in your answer?"
+"What did that question make you realise? What opportunity is hiding in your answer?"
 
 **Model good engagement if needed:**
 [On projector] "Watch this. AI asked me: 'What manual process takes most time?' I'm going to answer honestly..." [Type thoughtful answer]. "Now AI's next question builds on my answer. See how this is a dialogue?"
@@ -371,7 +371,7 @@ Lunch break. See you at 1:15 PM."
 ### Challenge 3: "This feels forced/artificial"
 
 **Empathize:**
-"You're right, it's not how you normally work. But humor me for 30 minutes."
+"You're right, it's not how you normally work. But humour me for 30 minutes."
 
 **After Phase 2:**
 "Now that you've tried it—did AI add ANY value? One insight you didn't have?"  

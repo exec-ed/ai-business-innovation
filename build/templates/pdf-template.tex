@@ -1,0 +1,56 @@
+\documentclass[11pt,letterpaper]{article}
+
+% Packages
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{parskip}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{AI Innovation Masterclass}
+\rhead{\thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Title formatting
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vskip 0.5em}
+\preauthor{\begin{center}\large}
+\postauthor{\end{center}}
+\predate{\begin{center}\large}
+\postdate{\end{center}}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdfauthor={Dr. Michael Borck},
+    pdftitle={$title$}
+}
+
+% Better tables
+\renewcommand{\arraystretch}{1.3}
+
+% Document
+\begin{document}
+
+$if(title)$
+\title{$title$}
+\author{AI-Driven Business Innovation Masterclass}
+\date{}
+\maketitle
+\thispagestyle{empty}
+$endif$
+
+$body$
+
+\end{document}

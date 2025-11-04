@@ -66,7 +66,7 @@ Implement an AI chatbot to handle routine customer inquiries across all channels
 
 **Cost Reduction** (Year 1):
 - Handle 72,000 inquiries automatically (60% × 80%)
-- Labor savings: $864,000/year (72,000 × $12)
+- Labour savings: $864,000/year (72,000 × $12)
 - Net Year 1 return: $414,000
 - **ROI: 92%**
 
@@ -121,7 +121,7 @@ Implement an AI chatbot to handle routine customer inquiries across all channels
 **1. Data Readiness Score**: 8/10
 - ✅ 2 years of customer inquiry data (150K inquiries)
 - ✅ Product catalog and policies well-documented
-- ⚠️ Some inquiries lack proper categorization
+- ⚠️ Some inquiries lack proper categorisation
 - ⚠️ Social media data quality needs improvement
 
 **2. Continuous Learning Plan**: Batch Retraining (Quarterly)
@@ -227,7 +227,7 @@ Implement AI-driven dynamic pricing that optimizes prices in real-time based on 
 **Risk 2**: Pricing errors causing brand damage
 - *Mitigation*: Price floor/ceiling guardrails, human oversight for major changes
 
-**Risk 3**: Organizational resistance (sales/merchandising teams)
+**Risk 3**: Organisational resistance (sales/merchandising teams)
 - *Mitigation*: Extensive change management, preserve human judgment role
 
 **Risk 4**: Competitive pricing wars
@@ -293,7 +293,7 @@ Implement AI-driven dynamic pricing that optimizes prices in real-time based on 
 ## PITCH SCENARIO 3: AI-Powered Inventory Optimization
 
 ### The Opportunity
-Deploy AI to optimize inventory levels across all locations, reducing stockouts while minimizing excess inventory carrying costs.
+Deploy AI to optimize inventory levels across all locations, reducing stockouts while minimising excess inventory carrying costs.
 
 ### The Business Case
 **Problem**:
@@ -406,7 +406,7 @@ Deploy AI to optimize inventory levels across all locations, reducing stockouts 
 
 **5. Ethical Risk Assessment**: LOW ✅
 - **Bias risk**: Internal operations, no customer discrimination risk
-- **Fairness**: Could favor certain store locations over others
+- **Fairness**: Could favour certain store locations over others
 - **Mitigation**: Monitor stock distribution fairness across demographics
 - **Budget add**: +$25K for fairness monitoring (ensure all communities served)
 
@@ -434,11 +434,11 @@ Implement AI-powered fraud detection across online transactions, returns, and lo
   - Loyalty program abuse: $1M
 - Manual review catches only 30% of fraud
 - False positives frustrate legitimate customers (5% of transactions flagged)
-- Organized retail crime increasing
+- Organised retail crime increasing
 
 **Solution**:
-- Real-time ML models analyzing transaction patterns
-- Multi-signal fraud detection (purchase, return, account behavior)
+- Real-time ML models analysing transaction patterns
+- Multi-signal fraud detection (purchase, return, account behaviour)
 - Automated risk scoring and blocking
 - Investigation case management
 
@@ -461,7 +461,7 @@ Implement AI-powered fraud detection across online transactions, returns, and lo
 
 **Cost Reduction**:
 - Reduce manual review time by 60%
-- Labor savings: $200,000/year
+- Labour savings: $200,000/year
 
 **Revenue Protection**:
 - Reduce false positives from 5% to 1%
@@ -485,7 +485,7 @@ Implement AI-powered fraud detection across online transactions, returns, and lo
 ### Data Requirements
 - Transaction history (3+ years)
 - Labeled fraud cases
-- Customer account behavior
+- Customer account behaviour
 - Return patterns
 - **Data Readiness**: MEDIUM (fraud labels need cleaning)
 
@@ -496,7 +496,7 @@ Implement AI-powered fraud detection across online transactions, returns, and lo
 **Risk 2**: Fraudsters adapt to detection patterns
 - *Mitigation*: Continuous model retraining, anomaly detection
 
-**Risk 3**: Privacy concerns with behavior tracking
+**Risk 3**: Privacy concerns with behaviour tracking
 - *Mitigation*: Transparent policies, compliance review
 
 ### Success Metrics
@@ -510,8 +510,8 @@ Implement AI-powered fraud detection across online transactions, returns, and lo
 **1. Data Readiness Score**: 6/10 ⚠️
 - ✅ 3+ years of transaction data available
 - ⚠️ Fraud labels inconsistent (some fraud undetected/unlabeled)
-- ❌ Organized fraud rings not well-documented
-- ⚠️ Return fraud patterns need better categorization
+- ❌ Organised fraud rings not well-documented
+- ⚠️ Return fraud patterns need better categorisation
 - **Action required**: 3-6 month data labeling project ($75K) before AI development
 
 **2. Continuous Learning Plan**: Real-time Learning (CRITICAL)
@@ -633,7 +633,7 @@ Committee announces investment decisions with rationale
 ### Debrief (10 min)
 - What made certain pitches stronger?
 - How did you balance competing priorities?
-- What would you do differently in your real organization?
+- What would you do differently in your real organisation?
 
 ### Key Learning Points to Surface
 - Not all AI initiatives are equal - strategic classification matters

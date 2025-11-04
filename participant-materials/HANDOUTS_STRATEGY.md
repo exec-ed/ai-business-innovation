@@ -88,7 +88,7 @@
 **Format:** Simple HTML booklet (like a mini-site)
 - Clean typography
 - Copy button next to each prompt
-- Organized by use case
+- Organised by use case
 - Mobile-friendly
 
 **Structure:**

@@ -201,7 +201,7 @@ _______________________________________________________________
 
 **What level of data maturity is required?**
 - [ ] Level 1: Data Collection (basic capture)
-- [ ] Level 2: Data Organization (clean, structured)
+- [ ] Level 2: Data Organisation (clean, structured)
 - [ ] Level 3: Insights & Reporting (descriptive analytics)
 - [ ] Level 4: Predictive Analytics (forecasting)
 - [ ] Level 5: Autonomous Operations (self-optimizing)
@@ -229,7 +229,7 @@ _______________________________________________________________
 |-------------|--------|---------------------|
 | Technical complexity | __ / 5 | __________________________ |
 | Data availability/quality | __ / 5 | __________________________ |
-| Organizational change | __ / 5 | __________________________ |
+| Organisational change | __ / 5 | __________________________ |
 | Vendor/partner dependence | __ / 5 | __________________________ |
 | Integration complexity | __ / 5 | __________________________ |
 | Regulatory/compliance | __ / 5 | __________________________ |
@@ -255,7 +255,7 @@ _______________________________________________________________
 - [ ] **Phase 1: Knowledge Building** - Learning, exploring use cases
 - [ ] **Phase 2: Pilot Experimentation** - Testing with limited scope
 - [ ] **Phase 3: Selective Deployment** - Rolling out to subset
-- [ ] **Phase 4: Scaling Operations** - Expanding across organization
+- [ ] **Phase 4: Scaling Operations** - Expanding across organisation
 - [ ] **Phase 5: Comprehensive Transformation** - Fully embedded
 
 **What's required to advance to the next phase?**
