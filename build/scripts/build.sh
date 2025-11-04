@@ -50,7 +50,11 @@ FILES=(
   "frameworks-reference-sheet"
   "ai-investment-checklist"
   "how-to-use-retailflow"
+  "retailflow-company-overview"
   "personal-action-plan-worksheet"
+  "strategic-prompting-guide"
+  "executive-ai-prompt-library"
+  "preparing-for-the-masterclass"
 )
 
 # Pre-readings to convert
@@ -61,9 +65,13 @@ PREREADING_FILES=(
 )
 
 # Instructor materials to convert (will be password protected)
+# Note: These are in subdirectories of instructor-materials/
 INSTRUCTOR_FILES=(
-  "facilitation-guide"
-  "exercise-facilitation-notes"
+  "facilitation-notes/facilitator-guide"
+  "facilitation-notes/delivery-timeline"
+  "facilitation-notes/storytelling-narratives"
+  "exercise-guides/exercise-2-guide"
+  "answer-keys/dragon-den-decision-rationales"
 )
 
 # Function: Convert markdown to HTML for web
@@ -74,8 +82,10 @@ convert_to_html() {
   local template=${4:-"material-page.html"}
 
   local source="$source_dir/${filename}.md"
-  local output="$output_dir/${filename}.html"
-  local title=$(echo "$filename" | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g')
+  # Use basename for output (no subdirectory paths)
+  local output_basename=$(basename "$filename")
+  local output="$output_dir/${output_basename}.html"
+  local title=$(echo "$output_basename" | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g')
 
   # Handle .txt files
   if [ ! -f "$source" ]; then
@@ -97,8 +107,8 @@ convert_to_html() {
     --toc \
     --toc-depth=2 \
     --variable title="$title" \
-    --variable filename="$filename" \
-    --css="../css/materials.css" \
+    --variable filename="$output_basename" \
+    --css="css/materials.css" \
     -o "$output" 2>/dev/null
 
   if [ $? -eq 0 ]; then
@@ -115,7 +125,9 @@ convert_to_pdf() {
   local output_dir=$3
 
   local source="$source_dir/${filename}.md"
-  local output="$output_dir/${filename}.pdf"
+  # Use basename for output (no subdirectory paths)
+  local output_basename=$(basename "$filename")
+  local output="$output_dir/${output_basename}.pdf"
 
   # Handle .txt files
   if [ ! -f "$source" ]; then
@@ -153,16 +165,11 @@ echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━�
 
 for file in "${FILES[@]}"; do
   convert_to_html "$file" "$SOURCE_DIR" "$OUTPUT_DIR"
-  convert_to_pdf "$file" "$SOURCE_DIR" "$OUTPUT_PDF"
+  # Skip PDF generation locally (enable in CI with LaTeX)
+  # convert_to_pdf "$file" "$SOURCE_DIR" "$OUTPUT_PDF"
 done
 
-# Special case: retailflow-company-overview.txt
-RETAILFLOW_FILE="retailflow-company-overview"
-if [ -f "$SOURCE_DIR/${RETAILFLOW_FILE}.txt" ]; then
-  echo -e "${BLUE}Converting RetailFlow (special case)...${NC}\n"
-  convert_to_html "$RETAILFLOW_FILE" "$SOURCE_DIR" "$OUTPUT_DIR"
-  convert_to_pdf "$RETAILFLOW_FILE" "$SOURCE_DIR" "$OUTPUT_PDF"
-fi
+# Note: retailflow-company-overview.md now included in FILES array above
 
 # Convert pre-readings
 echo -e "\n${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
@@ -171,7 +178,8 @@ echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━�
 
 for file in "${PREREADING_FILES[@]}"; do
   convert_to_html "$file" "$PREREADINGS_DIR" "$OUTPUT_DIR"
-  convert_to_pdf "$file" "$PREREADINGS_DIR" "$OUTPUT_PDF"
+  # Skip PDF generation locally (enable in CI with LaTeX)
+  # convert_to_pdf "$file" "$PREREADINGS_DIR" "$OUTPUT_PDF"
 done
 
 # Convert instructor materials (with password protection)
@@ -180,8 +188,20 @@ echo -e "${BLUE}Building Instructor Materials (Password Protected)${NC}"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 for file in "${INSTRUCTOR_FILES[@]}"; do
-  convert_to_html "$file" "$INSTRUCTOR_DIR" "$OUTPUT_INSTRUCTOR" "instructor-page.html"
-  convert_to_pdf "$file" "$INSTRUCTOR_DIR" "$OUTPUT_INSTRUCTOR_PDF"
+  # Extract filename without path for output
+  filename=$(basename "$file")
+  # Full path for source
+  source_path="$INSTRUCTOR_DIR/$file"
+  
+  # Check if source exists
+  if [ -f "${source_path}.md" ]; then
+    # Convert using full path
+    convert_to_html "$file" "$INSTRUCTOR_DIR" "$OUTPUT_INSTRUCTOR" "instructor-page.html"
+    # Skip PDF generation locally (enable in CI with LaTeX)
+    # convert_to_pdf "$file" "$INSTRUCTOR_DIR" "$OUTPUT_INSTRUCTOR_PDF"
+  else
+    echo -e "${YELLOW}⚠${NC} Warning: Instructor file not found: ${source_path}.md\n"
+  fi
 done
 
 # Build instructor materials index
@@ -256,6 +276,28 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
 EOF
 
 echo -e "${GREEN}✓${NC} Created instructor materials index\n"
+
+# Copy interactive HTML files (already HTML, no conversion needed)
+echo -e "\n${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${BLUE}Copying Interactive Tools${NC}"
+echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+INTERACTIVE_FILES=(
+  "participant-materials/ai-investment-checklist-interactive.html"
+  "participant-materials/executive-ai-prompt-library-interactive.html"
+  "activities/investment-calculator.html"
+  "activities/ai-leadership-style-assessment.html"
+)
+
+for file in "${INTERACTIVE_FILES[@]}"; do
+  if [ -f "$file" ]; then
+    filename=$(basename "$file")
+    cp "$file" "$OUTPUT_DIR/$filename"
+    echo -e "${GREEN}✓${NC} Copied: $filename\n"
+  else
+    echo -e "${YELLOW}⚠${NC} Warning: Interactive file not found: $file\n"
+  fi
+done
 
 echo -e "\n${BLUE}========================================${NC}"
 echo -e "${GREEN}Build Complete!${NC}"

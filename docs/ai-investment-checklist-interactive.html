@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Investment Checklist - Interactive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .project-info {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #667eea;
+        }
+
+        .project-info h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .project-info input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            background: #fafbfc;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.6em;
+        }
+
+        .section-status {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .section-status.pass {
+            color: #16a34a;
+        }
+
+        .section-status.fail {
+            color: #dc2626;
+        }
+
+        .section-status.partial {
+            color: #f59e0b;
+        }
+
+        .subsection {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 6px;
+            border-left: 4px solid #cbd5e1;
+        }
+
+        .subsection h3 {
+            color: #475569;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        input[type="number"],
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+            transition: border-colour 0.3s;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 10px;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .checkbox-item:hover {
+            border-color: #667eea;
+            background: #f8faff;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            cursor: pointer;
+        }
+
+        .checkbox-item.checked {
+            border-color: #16a34a;
+            background: #f0fdf4;
+        }
+
+        .data-readiness-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+
+        .data-readiness-table th,
+        .data-readiness-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .data-readiness-table th {
+            background: #f1f5f9;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .data-readiness-table input[type="number"] {
+            width: 80px;
+            text-align: center;
+        }
+
+        .score-display {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .score-display.high {
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+        }
+
+        .score-display.medium {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .score-display.low {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        }
+
+        .score-display .label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .score-display .value {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .recommendation {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid;
+        }
+
+        .recommendation.pass {
+            background: #f0fdf4;
+            border-left-color: #16a34a;
+            color: #15803d;
+        }
+
+        .recommendation.fail {
+            background: #fef2f2;
+            border-left-color: #dc2626;
+            color: #b91c1c;
+        }
+
+        .recommendation.warning {
+            background: #fffbeb;
+            border-left-color: #f59e0b;
+            color: #d97706;
+        }
+
+        .recommendation h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .final-results {
+            position: sticky;
+            top: 20px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .final-results h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .criteria-checklist {
+            margin: 20px 0;
+        }
+
+        .criteria-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 2px solid #e5e7eb;
+        }
+
+        .criteria-item.pass {
+            background: #f0fdf4;
+            border-color: #16a34a;
+        }
+
+        .criteria-item.fail {
+            background: #fef2f2;
+            border-color: #dc2626;
+        }
+
+        .criteria-icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .button {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .button-secondary {
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        .help-text {
+            font-size: 0.9em;
+            color: #64748b;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .radio-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .radio-item:hover {
+            border-color: #667eea;
+            background: #f8faff;
+        }
+
+        .radio-item input[type="radio"] {
+            margin-right: 12px;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+
+        .radio-item.selected {
+            border-color: #667eea;
+            background: #f8faff;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .button-group {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Investment Checklist</h1>
+            <p>Evaluate AI initiatives using traditional ROI + AI-specific criteria</p>
+        </div>
+
+        <div class="content">
+            <!-- Project Information -->
+            <div class="project-info">
+                <h2>Project Information</h2>
+                <div class="form-group">
+                    <label>Initiative Name</label>
+                    <input type="text" id="projectName" placeholder="e.g., Customer Service Chatbot">
+                </div>
+                <div class="form-group">
+                    <label>Brief Description</label>
+                    <textarea id="projectDescription" rows="3" placeholder="What does this AI initiative do?"></textarea>
+                </div>
+            </div>
+
+            <!-- Final Results Summary (Sticky) -->
+            <div class="final-results" id="finalResults">
+                <h2>📊 Investment Decision</h2>
+                <div class="criteria-checklist" id="criteriaChecklist">
+                    <!-- Dynamically populated -->
+                </div>
+                <div id="finalRecommendation"></div>
+                <div class="button-group">
+                    <button class="button button-primary" onclick="window.print()">🖨️ Print Results</button>
+                    <button class="button button-secondary" onclick="resetForm()">🔄 Reset</button>
+                    <button class="button button-secondary" onclick="saveProgress()">💾 Save Progress</button>
+                </div>
+            </div>
+
+            <!-- Section A: Traditional Criteria -->
+            <div class="section" id="sectionA">
+                <div class="section-header">
+                    <h2>Section A: Traditional Investment Criteria</h2>
+                    <span class="section-status" id="sectionAStatus">—</span>
+                </div>
+
+                <!-- Strategic Fit -->
+                <div class="subsection">
+                    <h3>Strategic Fit</h3>
+                    <div class="form-group">
+                        <label>Three Horizons Classification</label>
+                        <select id="horizon" onchange="updateResults()">
+                            <option value="">Select...</option>
+                            <option value="h1">Horizon 1: Optimize Core (0-12 months)</option>
+                            <option value="h2">Horizon 2: Build Emerging (1-3 years)</option>
+                            <option value="h3">Horizon 3: Create Future (3-5+ years)</option>
+                        </select>
+                        <p class="help-text">Portfolio targets: H1 60-70%, H2 20-30%, H3 10-15%</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>AI Transformation Matrix Quadrant</label>
+                        <select id="matrix" onchange="updateResults()">
+                            <option value="">Select...</option>
+                            <option value="optimize">Optimize (Process/Incremental)</option>
+                            <option value="enhance">Enhance (Strategic/Incremental)</option>
+                            <option value="revolutionize">Revolutionize (Process/Transformational)</option>
+                            <option value="transform">Transform (Strategic/Transformational)</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <div class="checkbox-item" onclick="toggleCheckbox('strategicGap')">
+                            <input type="checkbox" id="strategicGap" onchange="updateResults()">
+                            <label for="strategicGap">Does this address a strategic gap in our portfolio?</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial ROI -->
+                <div class="subsection">
+                    <h3>Financial ROI</h3>
+                    <div class="form-group">
+                        <label>Total Investment (3 years)</label>
+                        <input type="number" id="totalInvestment" placeholder="$" min="0" onchange="updateResults()">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Total Expected Benefits (3 years)</label>
+                        <input type="number" id="totalBenefits" placeholder="$" min="0" onchange="updateResults()">
+                        <p class="help-text">Sum of: Cost Reduction + Revenue Growth + Risk Reduction</p>
+                    </div>
+
+                    <div class="score-display" id="roiDisplay">
+                        <div class="label">3-Year ROI</div>
+                        <div class="value" id="roiValue">0%</div>
+                    </div>
+
+                    <div id="roiRecommendation"></div>
+                </div>
+
+                <!-- Implementation Feasibility -->
+                <div class="subsection">
+                    <h3>Implementation Feasibility</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item" onclick="toggleCheckbox('resources')">
+                            <input type="checkbox" id="resources" onchange="updateResults()">
+                            <label for="resources">Resources available (budget, people, time)</label>
+                        </div>
+                        <div class="checkbox-item" onclick="toggleCheckbox('sponsorship')">
+                            <input type="checkbox" id="sponsorship" onchange="updateResults()">
+                            <label for="sponsorship">Executive sponsorship secured</label>
+                        </div>
+                        <div class="checkbox-item" onclick="toggleCheckbox('timeline')">
+                            <input type="checkbox" id="timeline" onchange="updateResults()">
+                            <label for="timeline">Timeline realistic (not over-optimistic)</label>
+                        </div>
+                        <div class="checkbox-item" onclick="toggleCheckbox('dependencies')">
+                            <input type="checkbox" id="dependencies" onchange="updateResults()">
+                            <label for="dependencies">Dependencies identified and manageable</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section B: AI-Specific Criteria -->
+            <div class="section" id="sectionB">
+                <div class="section-header">
+                    <h2>Section B: AI-Specific Investment Criteria</h2>
+                    <span class="section-status" id="sectionBStatus">—</span>
+                </div>
+
+                <!-- 1. Data Readiness -->
+                <div class="subsection">
+                    <h3>1. Data Readiness Assessment</h3>
+                    <p style="margin-bottom: 20px; color: #64748b;">Score each factor from 0-10. Weighted total must be ≥7 to proceed.</p>
+                    
+                    <table class="data-readiness-table">
+                        <thead>
+                            <tr>
+                                <th>Factor</th>
+                                <th>Score (0-10)</th>
+                                <th>Weight</th>
+                                <th>Weighted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Data Availability</strong><br>
+                                    <span class="help-text">Do we have enough historical data?</span>
+                                </td>
+                                <td><input type="number" id="dataAvailability" min="0" max="10" value="0" onchange="calculateDataReadiness()"></td>
+                                <td>25%</td>
+                                <td id="dataAvailabilityWeighted">0.0</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Data Quality</strong><br>
+                                    <span class="help-text">Is data accurate, complete, consistent?</span>
+                                </td>
+                                <td><input type="number" id="dataQuality" min="0" max="10" value="0" onchange="calculateDataReadiness()"></td>
+                                <td>30%</td>
+                                <td id="dataQualityWeighted">0.0</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Data Access</strong><br>
+                                    <span class="help-text">Can we integrate necessary data sources?</span>
+                                </td>
+                                <td><input type="number" id="dataAccess" min="0" max="10" value="0" onchange="calculateDataReadiness()"></td>
+                                <td>20%</td>
+                                <td id="dataAccessWeighted">0.0</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Data Bias</strong><br>
+                                    <span class="help-text">Is historical data representative/unbiased?</span>
+                                </td>
+                                <td><input type="number" id="dataBias" min="0" max="10" value="0" onchange="calculateDataReadiness()"></td>
+                                <td>25%</td>
+                                <td id="dataBiasWeighted">0.0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="score-display" id="dataReadinessDisplay">
+                        <div class="label">Total Data Readiness Score</div>
+                        <div class="value" id="dataReadinessValue">0.0 / 10</div>
+                    </div>
+
+                    <div id="dataReadinessRecommendation"></div>
+                </div>
+
+                <!-- 2. Continuous Learning Plan -->
+                <div class="subsection">
+                    <h3>2. Continuous Learning Plan</h3>
+                    <div class="form-group">
+                        <label>Learning Approach</label>
+                        <div class="radio-group">
+                            <div class="radio-item" onclick="selectRadio('learningStatic')">
+                                <input type="radio" name="learning" id="learningStatic" value="static" onchange="updateResults()">
+                                <div>
+                                    <strong>Static AI</strong><br>
+                                    <span class="help-text">Trained once, doesn't learn from new data (Annual cost: ~10-15% of development)</span>
+                                </div>
+                            </div>
+                            <div class="radio-item" onclick="selectRadio('learningBatch')">
+                                <input type="radio" name="learning" id="learningBatch" value="batch" onchange="updateResults()">
+                                <div>
+                                    <strong>Batch Retraining</strong><br>
+                                    <span class="help-text">Periodic updates monthly/quarterly (Annual cost: ~25-30% of development)</span>
+                                </div>
+                            </div>
+                            <div class="radio-item" onclick="selectRadio('learningRealtime')">
+                                <input type="radio" name="learning" id="learningRealtime" value="realtime" onchange="updateResults()">
+                                <div>
+                                    <strong>Real-time Learning</strong><br>
+                                    <span class="help-text">Continuously learns from new data (Annual cost: ~35-50% of development)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <div class="checkbox-item" onclick="toggleCheckbox('learningBudget')">
+                            <input type="checkbox" id="learningBudget" onchange="updateResults()">
+                            <label for="learningBudget">Have we budgeted for ongoing retraining costs?</label>
+                        </div>
+                        <div class="checkbox-item" onclick="toggleCheckbox('learningInfra')">
+                            <input type="checkbox" id="learningInfra" onchange="updateResults()">
+                            <label for="learningInfra">Do we have infrastructure for continuous learning?</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Accuracy & Risk -->
+                <div class="subsection">
+                    <h3>3. Accuracy Requirements & Risk Tolerance</h3>
+                    <div class="form-group">
+                        <label>Business Impact of AI Error</label>
+                        <select id="riskLevel" onchange="updateResults()">
+                            <option value="">Select...</option>
+                            <option value="low">Low: Minor inconvenience (70-80% accuracy acceptable)</option>
+                            <option value="medium">Medium: Moderate impact (85-95% accuracy required)</option>
+                            <option value="high">High: Significant impact (95-99%+ accuracy required)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Expected AI Accuracy (%)</label>
+                        <input type="number" id="aiAccuracy" min="0" max="100" placeholder="%" onchange="updateResults()">
+                    </div>
+
+                    <div id="accuracyRecommendation"></div>
+
+                    <div class="checkbox-group">
+                        <div class="checkbox-item" onclick="toggleCheckbox('failureRate')">
+                            <input type="checkbox" id="failureRate" onchange="updateResults()">
+                            <label for="failureRate">Have we defined acceptable failure rate?</label>
+                        </div>
+                        <div class="checkbox-item" onclick="toggleCheckbox('humanOversight')">
+                            <input type="checkbox" id="humanOversight" onchange="updateResults()">
+                            <label for="humanOversight">Is human oversight plan defined and budgeted?</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Explainability -->
+                <div class="subsection">
+                    <h3>4. Explainability Requirements</h3>
+                    <div class="form-group">
+                        <label>Regulatory/Business Requirements</label>
+                        <select id="explainability" onchange="updateResults()">
+                            <option value="">Select...</option>
+                            <option value="high">High: Banking, lending, healthcare, legal (+15-20% budget)</option>
+                            <option value="medium">Medium: Operations, B2B, internal processes (+10-15% budget)</option>
+                            <option value="low">Low: Consumer recommendations, search (+0% budget)</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <div class="checkbox-item" onclick="toggleCheckbox('explainBudget')">
+                            <input type="checkbox" id="explainBudget" onchange="updateResults()">
+                            <label for="explainBudget">Have we budgeted for explainability tools/processes?</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Ethical Risk -->
+                <div class="subsection">
+                    <h3>5. Ethical Risk Assessment</h3>
+                    <div class="form-group">
+                        <label>Potential Discrimination Risk</label>
+                        <select id="ethicalRisk" onchange="updateResults()">
+                            <option value="">Select...</option>
+                            <option value="low">Low: No protected classes affected</option>
+                            <option value="medium">Medium: Indirect impact on protected classes</option>
+                            <option value="high">High: Direct decisions about protected classes</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <div class="checkbox-item" onclick="toggleCheckbox('biasAudit')">
+                            <input type="checkbox" id="biasAudit" onchange="updateResults()">
+                            <label for="biasAudit">Have we planned for bias testing and auditing?</label>
+                        </div>
+                        <div class="checkbox-item" onclick="toggleCheckbox('ethicsReview')">
+                            <input type="checkbox" id="ethicsReview" onchange="updateResults()">
+                            <label for="ethicsReview">Have we completed legal/ethics review?</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+            updateResults();
+        });
+
+        function toggleCheckbox(id) {
+            const checkbox = document.getElementById(id);
+            checkbox.checked = !checkbox.checked;
+            
+            // Update visual state
+            const item = checkbox.closest('.checkbox-item');
+            if (checkbox.checked) {
+                item.classList.add('checked');
+            } else {
+                item.classList.remove('checked');
+            }
+            
+            updateResults();
+        }
+
+        function selectRadio(id) {
+            document.getElementById(id).checked = true;
+            
+            // Update visual state
+            document.querySelectorAll('.radio-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+            document.getElementById(id).closest('.radio-item').classList.add('selected');
+            
+            updateResults();
+        }
+
+        function calculateDataReadiness() {
+            const availability = parseFloat(document.getElementById('dataAvailability').value) || 0;
+            const quality = parseFloat(document.getElementById('dataQuality').value) || 0;
+            const access = parseFloat(document.getElementById('dataAccess').value) || 0;
+            const bias = parseFloat(document.getElementById('dataBias').value) || 0;
+
+            // Calculate weighted scores
+            const availabilityWeighted = availability * 0.25;
+            const qualityWeighted = quality * 0.30;
+            const accessWeighted = access * 0.20;
+            const biasWeighted = bias * 0.25;
+
+            // Update display
+            document.getElementById('dataAvailabilityWeighted').textContent = availabilityWeighted.toFixed(1);
+            document.getElementById('dataQualityWeighted').textContent = qualityWeighted.toFixed(1);
+            document.getElementById('dataAccessWeighted').textContent = accessWeighted.toFixed(1);
+            document.getElementById('dataBiasWeighted').textContent = biasWeighted.toFixed(1);
+
+            // Calculate total
+            const total = availabilityWeighted + qualityWeighted + accessWeighted + biasWeighted;
+            
+            document.getElementById('dataReadinessValue').textContent = total.toFixed(1) + ' / 10';
+            
+            // Update display colour
+            const display = document.getElementById('dataReadinessDisplay');
+            display.className = 'score-display';
+            if (total >= 8) {
+                display.classList.add('high');
+            } else if (total >= 7) {
+                display.classList.add('medium');
+            } else {
+                display.classList.add('low');
+            }
+
+            // Show recommendation
+            const recDiv = document.getElementById('dataReadinessRecommendation');
+            if (total >= 8) {
+                recDiv.innerHTML = `
+                    <div class="recommendation pass">
+                        <h4>✅ Data Ready for AI</h4>
+                        <p>Your data infrastructure is strong. Proceed with AI implementation.</p>
+                    </div>
+                `;
+            } else if (total >= 7) {
+                recDiv.innerHTML = `
+                    <div class="recommendation warning">
+                        <h4>⚠️ Data Ready with Minor Improvements</h4>
+                        <p>Your data is acceptable but has gaps. Budget 10-15% additional for data quality improvements.</p>
+                    </div>
+                `;
+            } else {
+                recDiv.innerHTML = `
+                    <div class="recommendation fail">
+                        <h4>❌ Data Infrastructure Required First</h4>
+                        <p><strong>Do not proceed with AI until data readiness improves.</strong></p>
+                        <p>Budget 40% additional for data cleaning/integration. Timeline: Add 3-6 months for data preparation.</p>
+                        <p>Focus on improving lowest-scoring areas: ${getLowestDataFactors(availability, quality, access, bias)}</p>
+                    </div>
+                `;
+            }
+
+            updateResults();
+        }
+
+        function getLowestDataFactors(avail, quality, access, bias) {
+            const factors = [
+                { name: 'Data Availability', score: avail },
+                { name: 'Data Quality', score: quality },
+                { name: 'Data Access', score: access },
+                { name: 'Data Bias', score: bias }
+            ];
+            
+            factors.sort((a, b) => a.score - b.score);
+            return factors.slice(0, 2).map(f => f.name).join(', ');
+        }
+
+        function updateResults() {
+            calculateROI();
+            checkAccuracyMatch();
+            checkSectionStatus();
+            updateFinalRecommendation();
+        }
+
+        function calculateROI() {
+            const investment = parseFloat(document.getElementById('totalInvestment').value) || 0;
+            const benefits = parseFloat(document.getElementById('totalBenefits').value) || 0;
+            
+            if (investment > 0) {
+                const roi = ((benefits - investment) / investment * 100);
+                document.getElementById('roiValue').textContent = roi.toFixed(0) + '%';
+                
+                const display = document.getElementById('roiDisplay');
+                display.className = 'score-display';
+                if (roi >= 150) {
+                    display.classList.add('high');
+                } else if (roi >= 100) {
+                    display.classList.add('medium');
+                } else {
+                    display.classList.add('low');
+                }
+
+                // Check against horizon threshold
+                const horizon = document.getElementById('horizon').value;
+                const thresholds = {
+                    'h1': { threshold: 200, name: 'Horizon 1', period: 'Year 1' },
+                    'h2': { threshold: 150, name: 'Horizon 2', period: '3 years' },
+                    'h3': { threshold: 100, name: 'Horizon 3', period: '5 years' }
+                };
+
+                if (horizon && thresholds[horizon]) {
+                    const t = thresholds[horizon];
+                    const recDiv = document.getElementById('roiRecommendation');
+                    
+                    if (roi >= t.threshold) {
+                        recDiv.innerHTML = `
+                            <div class="recommendation pass">
+                                <h4>✅ ROI Exceeds ${t.name} Threshold</h4>
+                                <p>${roi.toFixed(0)}% ROI exceeds the ${t.threshold}% target for ${t.name} (${t.period}). Strong financial case.</p>
+                            </div>
+                        `;
+                    } else {
+                        recDiv.innerHTML = `
+                            <div class="recommendation fail">
+                                <h4>❌ ROI Below ${t.name} Threshold</h4>
+                                <p>${roi.toFixed(0)}% ROI is below the ${t.threshold}% target for ${t.name}. 
+                                Consider if strategic value justifies lower financial return, or revisit assumptions.</p>
+                            </div>
+                        `;
+                    }
+                }
+            } else {
+                document.getElementById('roiValue').textContent = '0%';
+            }
+        }
+
+        function checkAccuracyMatch() {
+            const riskLevel = document.getElementById('riskLevel').value;
+            const aiAccuracy = parseFloat(document.getElementById('aiAccuracy').value) || 0;
+            
+            const requirements = {
+                'low': { min: 70, max: 80, label: 'Low Risk' },
+                'medium': { min: 85, max: 95, label: 'Medium Risk' },
+                'high': { min: 95, max: 99, label: 'High Risk' }
+            };
+
+            if (riskLevel && aiAccuracy > 0) {
+                const req = requirements[riskLevel];
+                const recDiv = document.getElementById('accuracyRecommendation');
+                
+                if (aiAccuracy >= req.min) {
+                    recDiv.innerHTML = `
+                        <div class="recommendation pass">
+                            <h4>✅ Accuracy Matches Risk Level</h4>
+                            <p>${aiAccuracy}% accuracy is acceptable for ${req.label} applications (requires ${req.min}-${req.max}%).</p>
+                        </div>
+                    `;
+                } else {
+                    recDiv.innerHTML = `
+                        <div class="recommendation fail">
+                            <h4>❌ Accuracy Insufficient for Risk Level</h4>
+                            <p>${aiAccuracy}% accuracy is below the ${req.min}% minimum for ${req.label} applications.</p>
+                            <p><strong>Action required:</strong> Add human-in-loop oversight OR improve AI accuracy OR reduce risk exposure.</p>
+                        </div>
+                    `;
+                }
+            }
+        }
+
+        function checkSectionStatus() {
+            // Check Section A
+            const horizon = document.getElementById('horizon').value;
+            const matrix = document.getElementById('matrix').value;
+            const strategicGap = document.getElementById('strategicGap').checked;
+            const investment = parseFloat(document.getElementById('totalInvestment').value) || 0;
+            const benefits = parseFloat(document.getElementById('totalBenefits').value) || 0;
+            const roi = investment > 0 ? ((benefits - investment) / investment * 100) : 0;
+            
+            const resources = document.getElementById('resources').checked;
+            const sponsorship = document.getElementById('sponsorship').checked;
+            const timeline = document.getElementById('timeline').checked;
+            const dependencies = document.getElementById('dependencies').checked;
+
+            const sectionAPassed = horizon && matrix && roi >= 100 && resources && sponsorship && timeline && dependencies;
+            
+            const sectionAStatus = document.getElementById('sectionAStatus');
+            if (sectionAPassed) {
+                sectionAStatus.textContent = '✅ PASS';
+                sectionAStatus.className = 'section-status pass';
+            } else {
+                sectionAStatus.textContent = '❌ INCOMPLETE';
+                sectionAStatus.className = 'section-status fail';
+            }
+
+            // Check Section B
+            const dataReadiness = calculateDataReadinessScore();
+            const learning = document.querySelector('input[name="learning"]:checked');
+            const learningBudget = document.getElementById('learningBudget').checked;
+            const riskLevel = document.getElementById('riskLevel').value;
+            const aiAccuracy = parseFloat(document.getElementById('aiAccuracy').value) || 0;
+            const humanOversight = document.getElementById('humanOversight').checked;
+            const explainability = document.getElementById('explainability').value;
+            const ethicalRisk = document.getElementById('ethicalRisk').value;
+            const biasAudit = document.getElementById('biasAudit').checked;
+
+            const accuracyMatch = checkAccuracyRequirement(riskLevel, aiAccuracy);
+            const sectionBPassed = dataReadiness >= 7 && learning && learningBudget && accuracyMatch && 
+                                   humanOversight && explainability && ethicalRisk && biasAudit;
+
+            const sectionBStatus = document.getElementById('sectionBStatus');
+            if (sectionBPassed) {
+                sectionBStatus.textContent = '✅ PASS';
+                sectionBStatus.className = 'section-status pass';
+            } else {
+                sectionBStatus.textContent = '❌ INCOMPLETE';
+                sectionBStatus.className = 'section-status fail';
+            }
+        }
+
+        function calculateDataReadinessScore() {
+            const availability = parseFloat(document.getElementById('dataAvailability').value) || 0;
+            const quality = parseFloat(document.getElementById('dataQuality').value) || 0;
+            const access = parseFloat(document.getElementById('dataAccess').value) || 0;
+            const bias = parseFloat(document.getElementById('dataBias').value) || 0;
+            
+            return availability * 0.25 + quality * 0.30 + access * 0.20 + bias * 0.25;
+        }
+
+        function checkAccuracyRequirement(riskLevel, accuracy) {
+            const requirements = {
+                'low': 70,
+                'medium': 85,
+                'high': 95
+            };
+            return !riskLevel || !accuracy || accuracy >= requirements[riskLevel];
+        }
+
+        function updateFinalRecommendation() {
+            const checklist = document.getElementById('criteriaChecklist');
+            const finalRec = document.getElementById('finalRecommendation');
+            
+            // Evaluate criteria
+            const criteria = {
+                strategicFit: document.getElementById('horizon').value && document.getElementById('matrix').value,
+                roi: calculateROIPass(),
+                feasibility: checkFeasibility(),
+                dataReadiness: calculateDataReadinessScore() >= 7,
+                learningPlan: document.querySelector('input[name="learning"]:checked') && document.getElementById('learningBudget').checked,
+                accuracy: checkAccuracyMatch2(),
+                explainability: document.getElementById('explainability').value && document.getElementById('explainBudget').checked,
+                ethics: document.getElementById('ethicalRisk').value && document.getElementById('biasAudit').checked
+            };
+
+            // Build checklist
+            const criteriaLabels = {
+                strategicFit: 'Strategic Fit (Horizons + Matrix)',
+                roi: 'ROI Meets Threshold',
+                feasibility: 'Implementation Feasibility',
+                dataReadiness: 'Data Readiness ≥7',
+                learningPlan: 'Continuous Learning Plan',
+                accuracy: 'Accuracy Matches Risk',
+                explainability: 'Explainability Requirements',
+                ethics: 'Ethical Risk Management'
+            };
+
+            let html = '';
+            let passCount = 0;
+            
+            for (let key in criteria) {
+                const passed = criteria[key];
+                if (passed) passCount++;
+                
+                html += `
+                    <div class="criteria-item ${passed ? 'pass' : 'fail'}">
+                        <span class="criteria-icon">${passed ? '✅' : '❌'}</span>
+                        <span>${criteriaLabels[key]}</span>
+                    </div>
+                `;
+            }
+            
+            checklist.innerHTML = html;
+
+            // Final recommendation
+            const allPassed = passCount === Object.keys(criteria).length;
+            const majorityPassed = passCount >= 6;
+
+            if (allPassed) {
+                finalRec.innerHTML = `
+                    <div class="recommendation pass">
+                        <h4>✅ RECOMMENDED FOR INVESTMENT</h4>
+                        <p>This AI initiative passes all traditional and AI-specific criteria. Strong candidate for funding.</p>
+                    </div>
+                `;
+            } else if (majorityPassed) {
+                finalRec.innerHTML = `
+                    <div class="recommendation warning">
+                        <h4>⚠️ CONDITIONAL APPROVAL</h4>
+                        <p>Passed ${passCount}/8 criteria. Address remaining gaps before full investment:</p>
+                        <ul style="margin-top: 10px;">
+                            ${Object.keys(criteria).filter(k => !criteria[k]).map(k => `<li>${criteriaLabels[k]}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            } else {
+                finalRec.innerHTML = `
+                    <div class="recommendation fail">
+                        <h4>❌ NOT RECOMMENDED</h4>
+                        <p>Only passed ${passCount}/8 criteria. Significant gaps must be addressed before proceeding.</p>
+                        <p><strong>Critical failures:</strong> ${Object.keys(criteria).filter(k => !criteria[k]).map(k => criteriaLabels[k]).join(', ')}</p>
+                    </div>
+                `;
+            }
+        }
+
+        function calculateROIPass() {
+            const investment = parseFloat(document.getElementById('totalInvestment').value) || 0;
+            const benefits = parseFloat(document.getElementById('totalBenefits').value) || 0;
+            const horizon = document.getElementById('horizon').value;
+            
+            if (!investment || !benefits || !horizon) return false;
+            
+            const roi = ((benefits - investment) / investment * 100);
+            const thresholds = { 'h1': 200, 'h2': 150, 'h3': 100 };
+            
+            return roi >= thresholds[horizon];
+        }
+
+        function checkFeasibility() {
+            return document.getElementById('resources').checked &&
+                   document.getElementById('sponsorship').checked &&
+                   document.getElementById('timeline').checked &&
+                   document.getElementById('dependencies').checked;
+        }
+
+        function checkAccuracyMatch2() {
+            const riskLevel = document.getElementById('riskLevel').value;
+            const aiAccuracy = parseFloat(document.getElementById('aiAccuracy').value) || 0;
+            const humanOversight = document.getElementById('humanOversight').checked;
+            
+            if (!riskLevel || !aiAccuracy) return false;
+            
+            const requirements = { 'low': 70, 'medium': 85, 'high': 95 };
+            return aiAccuracy >= requirements[riskLevel] && humanOversight;
+        }
+
+        function saveProgress() {
+            const data = {
+                projectName: document.getElementById('projectName').value,
+                projectDescription: document.getElementById('projectDescription').value,
+                horizon: document.getElementById('horizon').value,
+                matrix: document.getElementById('matrix').value,
+                totalInvestment: document.getElementById('totalInvestment').value,
+                totalBenefits: document.getElementById('totalBenefits').value,
+                dataAvailability: document.getElementById('dataAvailability').value,
+                dataQuality: document.getElementById('dataQuality').value,
+                dataAccess: document.getElementById('dataAccess').value,
+                dataBias: document.getElementById('dataBias').value,
+                // Add all other fields...
+            };
+            
+            localStorage.setItem('aiInvestmentChecklist', JSON.stringify(data));
+            alert('Progress saved! You can reload this page anytime to continue.');
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('aiInvestmentChecklist');
+            if (saved) {
+                const data = JSON.parse(saved);
+                // Restore all fields
+                for (let key in data) {
+                    const element = document.getElementById(key);
+                    if (element) {
+                        element.value = data[key];
+                    }
+                }
+                calculateDataReadiness();
+                updateResults();
+            }
+        }
+
+        function resetForm() {
+            if (confirm('Reset all values? This will clear your progress.')) {
+                localStorage.removeItem('aiInvestmentChecklist');
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>

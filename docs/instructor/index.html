@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructor Materials | AI Innovation Masterclass</title>
+  <link rel="stylesheet" href="../css/materials.css">
+  <script src="../js/auth.js"></script>
+</head>
+<body onload="checkAuth()">
+  <nav class="topnav">
+    <div class="container">
+      <a href="../index.html" class="logo">AI Business Innovation</a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../materials.html">Public Materials</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" id="protected-content" style="display:none;">
+    <article class="material-content">
+      <header class="material-header">
+        <h1>🔒 Instructor Materials</h1>
+        <p style="color: #7f8c8d;">Password-protected resources for course facilitators</p>
+      </header>
+
+      <div class="content">
+        <h2>Facilitation Resources</h2>
+
+        <div class="resource-grid" style="display: grid; gap: 2rem; margin: 2rem 0;">
+          <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
+            <h3>📖 Facilitation Guide</h3>
+            <p>Complete delivery guide with timing, activities, and teaching notes</p>
+            <div style="margin-top: 1rem;">
+              <a href="facilitation-guide.html" class="btn-primary">View Online</a>
+              <a href="pdf/facilitation-guide.pdf" class="btn-secondary" style="margin-left: 1rem;">Download PDF</a>
+            </div>
+          </div>
+
+          <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
+            <h3>💡 Exercise Facilitation Notes</h3>
+            <p>Detailed notes for running each exercise effectively</p>
+            <div style="margin-top: 1rem;">
+              <a href="exercise-facilitation-notes.html" class="btn-primary">View Online</a>
+              <a href="pdf/exercise-facilitation-notes.pdf" class="btn-secondary" style="margin-left: 1rem;">Download PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <hr style="margin: 3rem 0; border: none; border-top: 1px solid #e5e7eb;">
+
+        <p style="text-align: center; color: #7f8c8d;">
+          <a href="#" onclick="logout(); return false;" style="color: #e74c3c; font-weight: 600;">🔓 Logout</a>
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>AI-Driven Business Innovation Masterclass | Curtin Business School</p>
+    </div>
+  </footer>
+</body>
+</html>
