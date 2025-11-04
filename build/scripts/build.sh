@@ -292,6 +292,21 @@ EOF
 
 echo -e "${GREEN}✓${NC} Created instructor materials index\n"
 
+# Copy slide decks to docs/ (if they exist)
+echo -e "\n${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${BLUE}Copying Slide Decks${NC}"
+echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+SLIDE_FORMATS=("pptx" "docx" "html" "pdf")
+for format in "${SLIDE_FORMATS[@]}"; do
+  if [ -f "slides/slide-deck.$format" ]; then
+    cp "slides/slide-deck.$format" "$OUTPUT_DIR/slide-deck.$format"
+    echo -e "${GREEN}✓${NC} Copied: slide-deck.$format\n"
+  else
+    echo -e "${YELLOW}⚠${NC} Warning: Slide deck not found: slides/slide-deck.$format\n"
+  fi
+done
+
 # Copy interactive HTML files (already HTML, no conversion needed)
 echo -e "\n${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BLUE}Copying Interactive Tools${NC}"
