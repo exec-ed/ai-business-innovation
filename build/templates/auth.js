@@ -16,7 +16,7 @@
  */
 
 // SHA-256 hash of "instructor2025"
-const INSTRUCTOR_PASSWORD_HASH = 'c8a5e0f7e5c3b7a8d9c1e4f6a2b3d5c6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2';
+const INSTRUCTOR_PASSWORD_HASH = 'd7b81d13d028a77664dec9858ed2a8a22c80105476021ab86ba28b969c22502f';
 
 // Session storage key
 const AUTH_KEY = 'instructor_auth_token';
