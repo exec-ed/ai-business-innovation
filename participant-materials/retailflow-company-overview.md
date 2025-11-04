@@ -1,12 +1,88 @@
-# RetailFlow: Company Overview
+<div style="text-align: center; padding: 8rem 2rem; page-break-after: always;">
 
-## About This Document
+![RetailFlow Case Study Cover](images/retailflow-cover.png)
 
-This document introduces RetailFlow, a fictional mid-market retail company that will serve as the basis for strategic exercises throughout the masterclass. You'll be making investment decisions about RetailFlow's AI initiatives.
+# RetailFlow Inc.
+
+## Company Overview & Case Study
+
+**Dragon's Den Investment Simulation**
+
+AI-Driven Business Innovation Masterclass
+
+---
+
+*Your strategic case study for AI investment decision-making*
+
+</div>
+
+<div style="page-break-after: always; padding: 3rem 2rem;">
+
+## About This Case Study
+
+RetailFlow Inc. is a fictional mid-market retail company that will serve as the basis for the Dragon's Den investment simulation exercises.
+
+### Your Challenge
+
+You will be asked to:
+- Analyze RetailFlow's strategic position
+- Evaluate AI investment proposals
+- Make funding recommendations
+- Present to an Investment Committee
+
+### How to Use This Document
+
+**Before the Exercise:**
+- Read the complete company overview carefully
+- Understand RetailFlow's strategic context and challenges
+- Note financial metrics and market position
+
+**During Dragon's Den:**
+- Reference specific data points in your analysis
+- Use the frameworks to evaluate proposals
+- Consider RetailFlow's constraints and opportunities
+- Think like an investment committee member
+
+**Key Information:**
+- This is a realistic but fictional company
+- Financial data is designed for learning purposes
+- Apply insights to your own organization
+
+---
+
+### Document Structure
+
+**Section 1: Company Profile**
+- Basic information and financials
+- Market position and competitive context
+
+**Section 2: Strategic Context**
+- CEO's vision and priorities
+- Current AI initiatives underway
+
+**Section 3: Technology & Data**
+- Current tech stack and capabilities
+- Data infrastructure maturity
+
+**Section 4: Financial Context**
+- Investment budget and constraints
+- Strategic priorities for AI spending
+
+**Section 5: Organizational Readiness**
+- Team capabilities
+- Change readiness
+
+---
 
 **Reading time:** 10 minutes
 
----
+**📧 Questions during exercise:** Ask your facilitator
+
+**🌐 Digital version:** https://exec-ed.github.io/ai-business-innovation/
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 ## Company Profile
 
@@ -332,3 +408,116 @@ The goal isn't to become an expert on RetailFlow—it's to use RetailFlow as a l
 ---
 
 **Now let's make some tough investment decisions about RetailFlow's AI future.**
+
+<div style="page-break-before: always; padding: 3rem 2rem;">
+
+## Quick Reference: Key RetailFlow Metrics
+
+### Financial Summary
+- **Revenue:** $450M (6% YoY growth)
+- **Operating Margin:** 8.2%
+- **E-commerce:** 40% of sales, growing 25% annually
+- **Physical stores:** 85 locations, Western US
+- **AI Investment Budget:** $5-8M over 18 months
+
+### Strategic Priorities (CEO)
+1. Grow younger customer segment (under 35)
+2. Defend margins against online competition
+3. Modernize customer experience
+4. Balance short-term profit with long-term transformation
+
+### Technology Readiness
+- **Data Maturity:** Level 2-3 (Integration to Descriptive)
+- **Cloud Infrastructure:** Partial (AWS, hybrid model)
+- **AI Experience:** Limited (pilot projects only)
+- **Tech Team:** 45 people, need upskilling
+
+### Key Constraints
+- Limited AI talent in-house
+- Legacy systems (POS, inventory)
+- Need to show ROI within 12-18 months
+- Change management challenges
+- Competing priorities for IT budget
+
+---
+
+## Investment Evaluation Checklist
+
+Use these questions when evaluating RetailFlow AI proposals:
+
+**Strategic Fit:**
+- ☐ Aligns with CEO's 3 priorities?
+- ☐ Addresses specific competitive weakness?
+- ☐ Builds on existing strengths?
+
+**Feasibility:**
+- ☐ Data readiness adequate?
+- ☐ Required skills available or acquirable?
+- ☐ Timeline realistic given constraints?
+
+**Financial:**
+- ☐ Within $5-8M budget?
+- ☐ ROI achievable in 12-18 months?
+- ☐ Risk level appropriate?
+
+**Organizational:**
+- ☐ Change management plan adequate?
+- ☐ Stakeholder buy-in likely?
+- ☐ Resources available?
+
+---
+
+## Related Resources
+
+**Apply the Frameworks:**
+- 🎯 **AI Transformation Matrix** - Which quadrant?
+- 📊 **Data Value Pyramid** - Ready for this initiative?
+- 🔭 **Three Horizons** - Portfolio balance?
+- 💰 **AI Investment Model** - Go/No-Go decision
+
+**Digital Tools:**
+- 🌐 **Website:** https://exec-ed.github.io/ai-business-innovation/
+- 📊 **Investment Calculator** - Calculate RetailFlow ROI
+- 📋 **AI Investment Checklist** - Systematic evaluation
+
+**Workshop Materials:**
+- 📚 **Frameworks Reference Sheet** - Quick reference guide
+- 📝 **Learning Journal** - Capture your insights
+
+---
+
+*This case study is designed for educational purposes. RetailFlow Inc. is a fictional company.*
+
+</div>
+
+<div style="text-align: center; padding: 8rem 2rem; page-break-before: always;">
+
+---
+
+<br><br><br><br>
+
+**RetailFlow Inc.**
+
+Company Overview & Case Study
+
+---
+
+*Dragon's Den Investment Simulation*
+
+AI-Driven Business Innovation Masterclass
+
+<br><br><br><br>
+
+**Executive Education | Curtin Business School**
+
+📧 michael.borck@curtin.edu.au
+
+🌐 https://exec-ed.github.io/ai-business-innovation/
+
+---
+
+© 2024 Curtin University
+
+</div>
+
+<div style="page-break-before: always;"></div>
