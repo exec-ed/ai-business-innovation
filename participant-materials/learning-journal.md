@@ -139,10 +139,10 @@ _______________________________________________________________________
 
 **Which quadrant had the most opportunities? Why do you think that is?**
 
-□ Optimize (Process + Incremental)
-□ Enhance (Strategic + Incremental)
-□ Revolutionize (Process + Transformational)
-□ Transform (Strategic + Transformational)
+- □ Optimize (Process + Incremental)
+- □ Enhance (Strategic + Incremental)
+- □ Revolutionize (Process + Transformational)
+- □ Transform (Strategic + Transformational)
 
 _______________________________________________________________________
 
@@ -164,11 +164,7 @@ _______________________________________________________________________
 
 **My biggest "aha moment" from this exercise:**
 
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│                                                  │
-│                                                  │
-└──────────────────────────────────────────────────┘
+<div style="border: 2px solid #000; padding: 1.5rem; min-height: 3rem; margin: 0.5rem 0; background: white;"></div>
 
 
 **Questions to explore further:**
@@ -218,10 +214,10 @@ _______________________________________________________________________
 
 **How did AI's analysis compare to your initial thinking?**
 
-□ Confirmed my assumptions
-□ Challenged my assumptions
-□ Offered new perspectives I hadn't considered
-□ Raised questions I need to investigate further
+- □ Confirmed my assumptions
+- □ Challenged my assumptions
+- □ Offered new perspectives I hadn't considered
+- □ Raised questions I need to investigate further
 
 _______________________________________________________________________
 
@@ -232,10 +228,10 @@ _______________________________________________________________________
 
 **Which prompting technique was most effective?**
 
-□ Risk Deep-Dive
-□ Reverse Prompting (AI argues against your position)
-□ AI Debate (multiple perspectives)
-□ Other: _____________________________
+- □ Risk Deep-Dive
+- □ Reverse Prompting (AI argues against your position)
+- □ AI Debate (multiple perspectives)
+- □ Other: _____________________________
 
 _______________________________________________________________________
 
@@ -246,11 +242,7 @@ _______________________________________________________________________
 
 **My biggest "aha moment" from this exercise:**
 
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│                                                  │
-│                                                  │
-└──────────────────────────────────────────────────┘
+<div style="border: 2px solid #000; padding: 1.5rem; min-height: 3rem; margin: 0.5rem 0; background: white;"></div>
 
 
 **How could you apply this AI-assisted analysis in your role?**
@@ -281,18 +273,18 @@ _______________________________________________________________________
 
 **Which RetailFlow investment scenario did your team receive?**
 
-□ Scenario A: _______________________________________
-□ Scenario B: _______________________________________
-□ Scenario C: _______________________________________
-□ Scenario D: _______________________________________
+- □ Scenario A: _______________________________________
+- □ Scenario B: _______________________________________
+- □ Scenario C: _______________________________________
+- □ Scenario D: _______________________________________
 
 ### Your Investment Recommendation
 
 **Your team's position:**
 
-□ Fund at requested level
-□ Fund with conditions: _____________________________________________
-□ Do not fund
+- □ Fund at requested level
+- □ Fund with conditions: _____________________________________________
+- □ Do not fund
 
 **Requested amount:** $________________
 
@@ -319,11 +311,11 @@ _______________________________________________________________________
 
 **Which frameworks did you apply in making your decision?**
 
-□ AI Transformation Matrix (which quadrant?)
-□ Data Value Pyramid (what level is RetailFlow at?)
-□ Three Horizons Model (which horizon?)
-□ AI Investment Model (strategic fit, feasibility, ROI)
-□ Innovation Adoption Framework (barriers to adoption)
+- □ AI Transformation Matrix (which quadrant?)
+- □ Data Value Pyramid (what level is RetailFlow at?)
+- □ Three Horizons Model (which horizon?)
+- □ AI Investment Model (strategic fit, feasibility, ROI)
+- □ Innovation Adoption Framework (barriers to adoption)
 
 _______________________________________________________________________
 
@@ -345,11 +337,7 @@ _______________________________________________________________________
 
 **My biggest "aha moment" from this exercise:**
 
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│                                                  │
-│                                                  │
-└──────────────────────────────────────────────────┘
+<div style="border: 2px solid #000; padding: 1.5rem; min-height: 3rem; margin: 0.5rem 0; background: white;"></div>
 
 
 **What will you do differently when evaluating AI investments at your organization?**
@@ -507,11 +495,7 @@ _______________________________________________________________________
 
 **My biggest "aha moment" from this exercise:**
 
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│                                                  │
-│                                                  │
-└──────────────────────────────────────────────────┘
+<div style="border: 2px solid #000; padding: 1.5rem; min-height: 3rem; margin: 0.5rem 0; background: white;"></div>
 
 ---
 
@@ -526,24 +510,15 @@ _______________________________________________________________________
 
 **1. Most important insight from today:**
 
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│                                                  │
-└──────────────────────────────────────────────────┘
+<div style="border: 2px solid #000; padding: 1.5rem; min-height: 2.5rem; margin: 0.5rem 0; background: white;"></div>
 
 **2. Most useful framework or tool:**
 
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│                                                  │
-└──────────────────────────────────────────────────┘
+<div style="border: 2px solid #000; padding: 1.5rem; min-height: 2.5rem; margin: 0.5rem 0; background: white;"></div>
 
 **3. Most surprising learning:**
 
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│                                                  │
-└──────────────────────────────────────────────────┘
+<div style="border: 2px solid #000; padding: 1.5rem; min-height: 2.5rem; margin: 0.5rem 0; background: white;"></div>
 
 
 ### Mindset Shifts
@@ -565,10 +540,7 @@ _______________________________________________________________________
 
 **First thing I'll do on Monday morning:**
 
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│                                                  │
-└──────────────────────────────────────────────────┘
+<div style="border: 2px solid #000; padding: 1.5rem; min-height: 2.5rem; margin: 0.5rem 0; background: white;"></div>
 
 
 **One conversation I need to have (and with whom):**
@@ -600,11 +572,11 @@ _______________________________________________________________________
 
 **Where will you find answers?**
 
-□ Follow-up with facilitator
-□ Research and reading
-□ Pilot project or experiment
-□ Discussion with colleagues
-□ Consultation with experts
+- □ Follow-up with facilitator
+- □ Research and reading
+- □ Pilot project or experiment
+- □ Discussion with colleagues
+- □ Consultation with experts
 
 ---
 
