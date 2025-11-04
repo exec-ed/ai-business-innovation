@@ -37,7 +37,12 @@ mkdir -p "$OUTPUT_INSTRUCTOR_PDF"
 # Copy CSS and JS to output
 if [ -f "$TEMPLATE_DIR/materials.css" ]; then
   cp "$TEMPLATE_DIR/materials.css" "$OUTPUT_DIR/css/"
-  echo -e "${GREEN}✓${NC} Copied CSS\n"
+  echo -e "${GREEN}✓${NC} Copied materials.css\n"
+fi
+
+if [ -f "$TEMPLATE_DIR/shared.css" ]; then
+  cp "$TEMPLATE_DIR/shared.css" "$OUTPUT_DIR/css/"
+  echo -e "${GREEN}✓${NC} Copied shared.css\n"
 fi
 
 if [ -f "$TEMPLATE_DIR/auth.js" ]; then
