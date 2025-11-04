@@ -311,6 +311,12 @@ You will fail.
 
 ---
 
+# Break
+
+![](images/break.png)
+
+---
+
 # Framework 3: Three Horizons Model
 
 ![](images/3-horizons.png)
@@ -427,6 +433,11 @@ Two AIs argue different perspectives
 
 :::
 
+---
+
+# Lunch
+
+![](images/lunch.png)
 
 ---
 
@@ -536,6 +547,13 @@ Budget for bias testing, diverse teams, monitoring
 
 ---
 
+# Break
+
+![](images/break.png)
+
+
+---
+
 # Exercise 3: Dragon's Den
 
 ![](images/dragons-den.png)
@@ -552,6 +570,20 @@ Budget for bias testing, diverse teams, monitoring
 
 - Project teams: Build investment case using AI criteria
 - Investment committee: Evaluate using complete framework
+:::
+
+---
+
+# Exercise 4: Strategic Response Scenarios
+
+![](images/strategic-response.png)
+
+::: {.notes}
+
+Three rapid-fire strategic decisions with anonymous voting (MS Forms). 
+
+Apply frameworks to realistic dilemmas: competitive threats, pilot performance, emerging technology timing. 
+
 :::
 
 ---
