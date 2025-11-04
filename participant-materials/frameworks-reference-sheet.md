@@ -1,8 +1,71 @@
-# AI-Driven Business Innovation - Framework Reference Sheet
+<div style="text-align: center; padding: 8rem 2rem; page-break-after: always;">
 
-Keep this handy for strategic AI decision-making.
+![Strategic Frameworks Cover](images/frameworks-cover.png)
+
+# AI-Driven Business Innovation
+
+## Strategic Frameworks Reference Sheet
+
+**Executive Education**
+Curtin Business School
 
 ---
+
+*Your quick-reference guide to the five strategic frameworks*
+
+</div>
+
+<div style="page-break-after: always; padding: 3rem 2rem;">
+
+## Five Strategic Frameworks
+
+This reference sheet provides quick access to the five frameworks taught in the AI-Driven Business Innovation Masterclass.
+
+### What You'll Find:
+
+**Framework 1: AI Transformation Matrix**
+- Classify AI initiatives by strategic value
+- Four quadrants: Optimize, Enhance, Revolutionize, Transform
+
+**Framework 2: Data Value Pyramid**
+- Assess your organization's data maturity
+- Five levels from collection to autonomous operations
+
+**Framework 3: Three Horizons Model**
+- Balance your AI portfolio across time horizons
+- Manage current operations while building the future
+
+**Framework 4: AI Investment Model**
+- Evaluate AI proposals systematically
+- Strategic fit, feasibility, ROI, and risk assessment
+
+**Framework 5: Innovation Adoption Framework**
+- Understand barriers to AI adoption
+- Plan for organizational change management
+
+---
+
+### How to Use This Guide
+
+**During the workshop:**
+- Keep this on your desk for quick reference
+- Use it during exercises to apply frameworks
+- Annotate with your own insights and notes
+
+**After the workshop:**
+- Pin near your workspace
+- Reference when evaluating AI opportunities
+- Share with colleagues on your AI team
+
+---
+
+**🌐 Digital Version:** https://exec-ed.github.io/ai-business-innovation/
+
+**📧 Questions:** michael.borck@curtin.edu.au
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 ## Framework 1: AI Transformation Matrix
 
@@ -292,12 +355,62 @@ For each AI proposal:
 
 **These frameworks are tools, not rules. Adapt them to your context, but use them consistently to make better strategic decisions about AI investments.**
 
+<div style="page-break-before: always; padding: 3rem 2rem;">
+
+## Quick Reference Summary
+
+### When to Use Each Framework:
+
+**🎯 AI Transformation Matrix**
+- **Use when:** Prioritizing AI initiatives in your portfolio
+- **Question it answers:** "Where does this initiative fit strategically?"
+- **Output:** Classification (Optimize/Enhance/Revolutionize/Transform)
+
+**📊 Data Value Pyramid**
+- **Use when:** Assessing organizational AI readiness
+- **Question it answers:** "Are we ready for this AI initiative?"
+- **Output:** Current data maturity level (1-5)
+
+**🔭 Three Horizons Model**
+- **Use when:** Building a balanced AI portfolio
+- **Question it answers:** "Are we investing across all time horizons?"
+- **Output:** Portfolio distribution (H1/H2/H3)
+
+**💰 AI Investment Model**
+- **Use when:** Evaluating specific AI proposals
+- **Question it answers:** "Should we fund this AI project?"
+- **Output:** Go/No-Go decision with rationale
+
+**🚀 Innovation Adoption Framework**
+- **Use when:** Planning AI implementation
+- **Question it answers:** "What barriers will we face and how do we overcome them?"
+- **Output:** Change management plan
+
 ---
 
-## Additional Resources
+### Common Mistakes to Avoid
 
-**Source:** Based on frameworks from Dr. Michael Borck's AI Innovation Masterclass
-**Website:** https://michaelborck-presentations.github.io/AAAC-AI-Innovation/
+❌ **Don't:** Only invest in Horizon 1 (Optimize)
+✅ **Do:** Balance portfolio across all three horizons
+
+❌ **Don't:** Skip data readiness assessment
+✅ **Do:** Check Data Value Pyramid before committing resources
+
+❌ **Don't:** Evaluate AI in isolation
+✅ **Do:** Use all frameworks together for comprehensive view
+
+❌ **Don't:** Ignore adoption barriers
+✅ **Do:** Plan for change management from the start
+
+---
+
+### Additional Resources
+
+**Digital Materials:**
+- 🌐 **Website:** https://exec-ed.github.io/ai-business-innovation/
+- 📊 **Interactive Tools:** AI Investment Checklist, ROI Calculator
+- 📚 **Prompt Library:** 1000+ strategic AI prompts
+- 🎯 **Leadership Assessment:** Evaluate your AI readiness
 
 **Further Reading:**
 - AI Metrics and ROI Indicators
@@ -305,4 +418,40 @@ For each AI proposal:
 - Five Key AI Capability Domains
 - Future AI Trend Analysis
 
-*Access additional resources at the source website*
+**Stay Connected:**
+- 📧 **Email:** michael.borck@curtin.edu.au
+- 💼 **LinkedIn:** [Your LinkedIn]
+
+---
+
+*Framework designs © 2024 Curtin University | Executive Education*
+
+</div>
+
+<div style="text-align: center; padding: 8rem 2rem; page-break-before: always;">
+
+---
+
+<br><br><br><br>
+
+**Strategic Frameworks Reference Sheet**
+
+AI-Driven Business Innovation Masterclass
+
+---
+
+*Your guide to strategic AI decision-making*
+
+<br><br><br><br>
+
+**Executive Education | Curtin Business School**
+
+📧 michael.borck@curtin.edu.au
+
+🌐 https://exec-ed.github.io/ai-business-innovation/
+
+---
+
+© 2024 Curtin University
+
+</div>
