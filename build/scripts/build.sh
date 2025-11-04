@@ -45,17 +45,16 @@ if [ -f "$TEMPLATE_DIR/auth.js" ]; then
   echo -e "${GREEN}✓${NC} Copied auth.js\n"
 fi
 
-# Participant materials to convert
+# Participant materials to convert (markdown to HTML)
 FILES=(
   "frameworks-reference-sheet"
-  "ai-investment-checklist"
   "how-to-use-retailflow"
   "retailflow-company-overview"
   "personal-action-plan-worksheet"
   "strategic-prompting-guide"
-  "executive-ai-prompt-library"
   "preparing-for-the-masterclass"
 )
+# Note: ai-investment-checklist and executive-ai-prompt-library now exist ONLY as interactive HTML (no markdown source)
 
 # Pre-readings to convert
 PREREADING_FILES=(
@@ -285,8 +284,8 @@ echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━�
 INTERACTIVE_FILES=(
   "participant-materials/ai-investment-checklist-interactive.html"
   "participant-materials/executive-ai-prompt-library-interactive.html"
-  "activities/investment-calculator.html"
-  "activities/ai-leadership-style-assessment.html"
+  "participant-materials/investment-calculator.html"
+  "participant-materials/ai-leadership-style-assessment.html"
 )
 
 for file in "${INTERACTIVE_FILES[@]}"; do
