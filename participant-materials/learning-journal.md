@@ -1,17 +1,37 @@
+<div style="text-align: center; padding: 8rem 2rem; page-break-after: always;">
+
+![Cover Image Placeholder](https://via.placeholder.com/400x500/2563eb/ffffff?text=AI+Business+Innovation)
+
 # AI-Driven Business Innovation Masterclass
+
 ## Learning Journal & Activity Guide
 
----
-
-**Participant Name:** _________________________________
-
-**Date:** _________________________________
-
-**Organization:** _________________________________
+**Executive Education**
+Curtin Business School
 
 ---
 
-## How to Use This Journal
+*Your guide to capturing insights and transforming learning into action*
+
+</div>
+
+<div style="page-break-after: always; padding: 3rem 2rem;">
+
+## Welcome to Your Learning Journey
+
+This Learning Journal is your companion throughout today's masterclass on AI-Driven Business Innovation.
+
+### Workshop Details
+
+**Date:** ___________________________
+
+**Location:** ___________________________
+
+**Facilitator:** ___________________________
+
+---
+
+### How to Use This Journal
 
 This is **your space** to capture insights, questions, and key takeaways throughout today's masterclass.
 
@@ -29,6 +49,66 @@ This is **your space** to capture insights, questions, and key takeaways through
 **There are no right or wrong answers** - this journal tracks YOUR learning journey.
 
 ---
+
+### Course Website & Resources
+
+Access all course materials, interactive tools, and additional resources:
+
+**🌐 Website:** https://exec-ed.github.io/ai-business-innovation/
+
+**📧 Contact:** michael.borck@curtin.edu.au
+
+---
+
+*Scan QR code for quick access to digital materials:*
+
+[QR Code Placeholder - Add your course website QR code here]
+
+</div>
+
+<div style="page-break-after: always;">
+
+## Your Information
+
+**Participant Name:** _________________________________
+
+**Organization:** _________________________________
+
+**Role/Title:** _________________________________
+
+**Email:** _________________________________
+
+**Phone:** _________________________________
+
+---
+
+## Workshop Objectives
+
+By the end of today's masterclass, you will be able to:
+
+✓ Apply 5 strategic frameworks to evaluate AI opportunities
+✓ Use AI tools for strategic analysis and decision-making
+✓ Assess AI investment proposals using structured criteria
+✓ Balance AI portfolio across innovation horizons
+✓ Create an actionable 90-day AI implementation plan
+
+---
+
+## Today's Agenda
+
+**Morning Session (9:00 AM - 12:30 PM)**
+- Exercise 1: AI Tech Radar
+- Exercise 2: AI-Assisted Strategic Analysis
+
+**Afternoon Session (1:30 PM - 4:30 PM)**
+- Exercise 3 & 4: Dragon's Den Investment Simulation
+- End of Day Synthesis
+
+---
+
+*Let's begin your transformation journey...*
+
+</div>
 
 <div style="page-break-before: always;"></div>
 
@@ -577,3 +657,111 @@ I completed the AI-Driven Business Innovation Masterclass on **[date]**.
 ---
 
 *This Learning Journal is your personal record of professional development. Keep it confidential or share as appropriate for your organization.*
+
+<div style="page-break-before: always; padding: 3rem 2rem;">
+
+## Next Steps: Continue Your AI Journey
+
+Congratulations on completing the AI-Driven Business Innovation Masterclass! Your learning journey continues beyond today.
+
+---
+
+### Immediate Actions (This Week)
+
+**1. Complete Your Personal Action Plan**
+- Dedicate 45-60 minutes to complete the worksheet
+- Translate today's insights into concrete actions
+- Share with your manager or leadership team
+
+**2. Apply One Framework**
+- Choose one framework from today
+- Apply it to a current challenge or opportunity
+- Document your findings and insights
+
+**3. Start Using AI Tools**
+- Try one prompting technique from Exercise 2
+- Use AI for a strategic analysis task
+- Experiment with different approaches
+
+---
+
+### Digital Resources
+
+Access all course materials online:
+
+**🌐 Course Website**
+https://exec-ed.github.io/ai-business-innovation/
+
+**Available Resources:**
+- ✓ Interactive AI Investment Checklist
+- ✓ Executive AI Prompt Library (1000+ prompts)
+- ✓ Investment Calculator Tool
+- ✓ Leadership Assessment
+- ✓ All Frameworks Reference Sheets
+- ✓ Strategic Prompting Guide
+
+---
+
+### Stay Connected
+
+**Questions or Follow-up?**
+
+📧 **Email:** michael.borck@curtin.edu.au
+
+📞 **Phone:** [Your phone number]
+
+🌐 **LinkedIn:** [Your LinkedIn]
+
+---
+
+### Share Your Success
+
+We'd love to hear how you apply today's learning:
+
+- Share your wins and insights
+- Request follow-up consulting
+- Refer colleagues to future workshops
+- Provide feedback to improve the course
+
+---
+
+### Recommended Reading
+
+Continue developing your AI strategy expertise:
+
+1. **HBR AI Strategy Collection** - Latest strategic thinking
+2. **Competing in the Age of AI** - Iansiti & Lakhani
+3. **AI Superpowers** - Kai-Fu Lee
+4. **The AI-First Company** - Ash Fontana
+
+---
+
+*Thank you for your participation and commitment to strategic innovation!*
+
+</div>
+
+<div style="text-align: center; padding: 8rem 2rem; page-break-before: always;">
+
+---
+
+<br><br><br><br>
+
+**AI-Driven Business Innovation Masterclass**
+
+Executive Education | Curtin Business School
+
+---
+
+*Transforming strategic thinking through AI-powered frameworks*
+
+<br><br><br><br>
+
+📧 michael.borck@curtin.edu.au
+
+🌐 https://exec-ed.github.io/ai-business-innovation/
+
+---
+
+© 2024 Curtin University
+
+</div>
