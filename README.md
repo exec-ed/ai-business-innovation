@@ -95,8 +95,8 @@ All materials are in root folder for GitHub Pages publishing:
 
 ### Framework 3: Three Horizons Model
 **What:** Balance AI portfolio across timeframes (optimize, emerge, transform)
-**When taught:** 10:50-11:20 AM (30 min)
-**Practiced:** Exercise 2 - Threat & Opportunity Mapping (11:20-12:20 PM, 60 min)
+**When taught:** 11:00-11:20 AM (20 min)
+**Practiced:** Exercise 2 - AI-Assisted Strategic Analysis (11:20-12:30 PM, 70 min)
 **Handout:** In `frameworks-reference-sheet.md`
 
 **Portfolio allocation:**
@@ -108,8 +108,8 @@ All materials are in root folder for GitHub Pages publishing:
 
 ### Framework 4: AI Investment Model
 **What:** Calculate ROI across 4 value categories to make investment decisions
-**When taught:** 1:15-1:45 PM (30 min)
-**Practiced:** Exercise 3 - AI Investment Dragon's Den (1:45-3:15 PM, 90 min)
+**When taught:** 1:30-2:00 PM (30 min)
+**Practiced:** Exercise 3 - AI Investment Dragon's Den (2:45-3:55 PM, 70 min)
 **Handout:** In `frameworks-reference-sheet.md`
 
 **Four value categories:**
@@ -127,8 +127,8 @@ All materials are in root folder for GitHub Pages publishing:
 
 ### Framework 5: Innovation Adoption Framework
 **What:** 5-phase journey from knowledge building to comprehensive transformation
-**When taught:** 3:30-4:00 PM (30 min)
-**Practiced:** Exercise 4 - Strategic Response (4:00-4:15 PM, 15 min)
+**When taught:** Throughout day (integrated with scenarios)
+**Practiced:** Exercise 4 - Strategic Response Scenarios (1:15-1:30 PM, 15 min)
 **Handout:** In `frameworks-reference-sheet.md`
 
 **Five phases:**
@@ -142,44 +142,50 @@ All materials are in root folder for GitHub Pages publishing:
 
 ## The 4 Exercises
 
-### Exercise 1: AI Tech Radar (9:50-10:35, 45 min)
-**What:** Map your organization's AI maturity and capabilities
+### Exercise 1: AI Tech Radar (9:55-10:40, 45 min)
+**What:** Map your organization's AI maturity and capabilities using physical capability cards
 **Frameworks used:** AI Transformation Matrix, Data Value Pyramid
-**Materials needed:** Capability cards, tech radar templates
+**Materials needed:** 12 capability cards (print & cut), matrix template
 **Output:** Visual map of AI readiness and gaps
 
 ---
 
-### Exercise 2: Threat & Opportunity Mapping (11:20-12:20, 60 min)
-**What:** Identify competitive threats and strategic opportunities from AI
+### Exercise 2: AI-Assisted Strategic Analysis (11:20-12:30, 70 min)
+**What:** Experience AI as strategic thought partner using Google Gemini/ChatGPT/Claude
 **Framework used:** Three Horizons Model
-**Materials needed:** Competitive landscape worksheets, horizon mapping templates
-**Output:** Strategic positioning map showing threats, opportunities, and time horizons
+**Materials needed:** Strategic Prompting Guide, AI tools (BYOD)
+**Three AI Techniques:**
+- Risk Deep-Dive: AI finds threats you missed
+- Reverse Prompting: AI asks YOU questions
+- AI Debate: Two AIs argue different perspectives
+**Output:** Strategic threats & opportunities identified through human-AI collaboration
 
 ---
 
-### Exercise 3: AI Investment Dragon's Den (1:45-3:15, 90 min)
+### Exercise 3: AI Investment Dragon's Den (2:45-3:55, 70 min) ⭐ CORE
 **What:** Investment committee simulation - pitch and evaluate AI initiatives
 **Framework used:** AI Investment Model
-**Materials needed:** Investment pitch templates, ROI calculators, RetailFlow scenarios
+**Materials needed:** Investment Calculator, AI Investment Checklist, RetailFlow scenarios
 **Setup:**
 - Half participants = Investment Committee
 - Half participants = Project Teams (3 teams)
-- Teams pitch AI initiatives (chatbot, inventory optimization, dynamic pricing)
-- Committee evaluates using AI Investment Model
+- Teams pitch AI initiatives (chatbot, dynamic pricing, inventory optimization, fraud detection)
+- Committee evaluates using AI Investment Model + AI-specific criteria
 - Committee allocates $2M budget
 **Output:** Portfolio investment decisions with ROI justification
+**The Dilemma:** Highest ROI projects have AI-specific red flags (ethics, data prep, budget)
 
 ---
 
-### Exercise 4: Strategic Response Scenarios (4:00-4:15, 15 min)
-**What:** Quick strategic decisions under pressure
-**Framework used:** Innovation Adoption Framework
+### Exercise 4: Strategic Response Scenarios (1:15-1:30, 15 min)
+**What:** Rapid strategic decisions with anonymous voting (post-lunch energizer)
+**Framework used:** Innovation Adoption Framework, Scale/Pivot/Kill Criteria
+**Format:** MS Forms voting, real-time results, group discussion
 **Scenarios:**
-- Competitor launches AI - how to respond?
-- AI pilot underperforms - scale/pivot/kill?
-- New AI tech emerges - invest now or wait?
-**Output:** Strategic decision-making practice
+- Competitive Threat: Fast-follow vs Differentiate vs Wait?
+- Pilot Performance: Scale vs Pivot vs Kill?
+- Emerging Tech: Pioneer vs Fast-Follower vs Wait?
+**Output:** Framework-based decision-making under time pressure
 
 ---
 
