@@ -56,6 +56,7 @@ FILES=(
   "how-to-use-retailflow"
   "retailflow-company-overview"
   "personal-action-plan-worksheet"
+  "learning-journal"
   "strategic-prompting-guide"
   "preparing-for-the-masterclass"
 )
@@ -291,6 +292,7 @@ INTERACTIVE_FILES=(
   "participant-materials/executive-ai-prompt-library-interactive.html"
   "participant-materials/investment-calculator.html"
   "participant-materials/ai-leadership-style-assessment.html"
+  "participant-materials/learning-journal-interactive.html"
 )
 
 for file in "${INTERACTIVE_FILES[@]}"; do
