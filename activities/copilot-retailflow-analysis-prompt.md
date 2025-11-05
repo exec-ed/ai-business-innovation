@@ -62,11 +62,36 @@ Prioritize by:
 Rank the top 10 stores and explain why.
 
 7. KEY VISUALIZATIONS NEEDED
-Create these charts:
-- Chart 1: Bar chart showing average revenue by region
-- Chart 2: Scatter plot of store age vs. customer satisfaction (with trendline)
-- Chart 3: Grouped column chart comparing WITH vs. WITHOUT chatbot (revenue, satisfaction, online %)
-- Chart 4: Scatter plot of online orders % vs. revenue (with trendline and R² value)
+Create these charts in Excel:
+
+Chart 1: REVENUE BY REGION
+- Type: Column chart
+- X-axis: Region (East, West, South, North)
+- Y-axis: Average Monthly Revenue
+- Add data labels showing dollar amounts
+
+Chart 2: STORE AGE vs. SATISFACTION
+- Type: Scatter plot with linear trendline
+- X-axis: Years_Open
+- Y-axis: Customer_Satisfaction
+- Show R² value on chart
+- Add trendline equation
+
+Chart 3: CHATBOT IMPACT COMPARISON
+- Type: Clustered column chart
+- Categories: With Chatbot vs. Without Chatbot
+- 3 series: Monthly Revenue, Customer Satisfaction (×100K for scale), Online Orders %
+- Different color for each metric
+- Include legend
+
+Chart 4: ONLINE ORDERS vs. REVENUE
+- Type: Scatter plot with linear trendline
+- X-axis: Online_Orders_Pct
+- Y-axis: Monthly_Revenue
+- Show R² value and trendline equation
+- Color points by Has_AI_Chatbot (different colors)
+
+Make all charts professional, presentation-ready, with clear titles and labels.
 
 8. STRATEGIC RECOMMENDATIONS
 Based on all analysis above, provide:
@@ -321,3 +346,88 @@ These follow-ups show **conversational AI** - not just one-shot questions.
 ---
 
 **Ready for impressive demo!** 🚀
+
+---
+
+## After Copilot Completes Analysis
+
+### Follow-Up Prompt for PowerPoint:
+
+Once Copilot finishes the analysis above, paste this follow-up:
+
+```
+Now create a PowerPoint presentation with these insights:
+
+SLIDE 1: Title Slide
+- Title: "RetailFlow Store Performance Analysis"
+- Subtitle: "Data-Driven AI Investment Strategy"
+- Your name/date
+
+SLIDE 2: Executive Summary
+- Title: "Key Findings"
+- 3 bullet points from your executive summary above
+- Use large, clear font
+
+SLIDE 3: AI Chatbot Impact
+- Title: "Proven ROI: AI Chatbot Performance"
+- Insert Chart 3 (chatbot comparison)
+- Add text box with key numbers:
+  • +46% revenue increase
+  • +15% satisfaction improvement
+  • +54% online order growth
+
+SLIDE 4: Regional Performance
+- Title: "Regional Performance Gaps"
+- Insert Chart 1 (revenue by region)
+- Add insight: "East region outperforms by 81%"
+
+SLIDE 5: Online is the Future
+- Title: "Digital Capability Drives Revenue"
+- Insert Chart 4 (online % vs revenue scatter plot)
+- Add insight: "Every +1% online = +$18K monthly revenue"
+
+SLIDE 6: Investment Recommendation
+- Title: "Recommended $2M AI Investment"
+- Priority 1: Deploy chatbot to 4 stores ($1.8M)
+- List the 4 stores
+- Expected ROI: 39% Year 1, 117% over 3 years
+- Timeline: 6-month rollout
+
+Use professional template. Keep text minimal. Let charts tell the story.
+```
+
+**Copilot will generate a complete PowerPoint deck ready to present!**
+
+---
+
+## Alternative: If Copilot Doesn't Create Charts
+
+Some versions of Copilot may analyze but not create charts. If this happens:
+
+### Manual Chart Creation (Fast):
+1. Select data for Chart 1
+2. Insert → Chart → Column chart
+3. Ask Copilot: "Format this chart to be presentation-ready"
+4. Repeat for other charts
+
+### Or Use ChatGPT/Claude with Code Interpreter:
+1. Upload CSV to ChatGPT (Plus) or Claude (Pro)
+2. Use the same analysis prompt
+3. Say: "Create Python matplotlib charts for the 4 visualizations"
+4. Download generated chart images
+5. Insert into PowerPoint manually
+
+---
+
+## Success Metrics for Demo
+
+Demo worked if participants:
+
+✅ Say: "Wow, that was fast—would take our team hours"
+✅ Ask: "Can I get that CSV to try myself?"
+✅ Reference data during Dragon's Den: "The pilot data shows chatbot increases satisfaction by 0.6 points"
+✅ Understand: AI does analysis speed, human does strategic interpretation
+
+---
+
+**The complete package is ready: Dataset + Analysis Prompt + PowerPoint Generation!** 🎯
