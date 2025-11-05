@@ -610,9 +610,10 @@
             
             // Store answer
             answers[questionIndex] = optionIndex;
-            
-            // Enable next button
+
+            // Enable next/finish button (whichever is visible)
             document.getElementById('nextBtn').disabled = false;
+            document.getElementById('finishBtn').disabled = false;
         }
 
         function showQuestion(index) {
