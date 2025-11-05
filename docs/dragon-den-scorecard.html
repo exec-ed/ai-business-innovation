@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon's Den Scorecard | AI Innovation Masterclass</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f3f4f6;
+            border-bottom: 2px solid #e5e7eb;
+            overflow-x: auto;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px 20px;
+            text-align: center;
+            cursor: pointer;
+            background: #f3f4f6;
+            border: none;
+            font-size: 1em;
+            font-weight: 600;
+            color: #6b7280;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+            min-width: 150px;
+        }
+
+        .tab:hover {
+            background: #e5e7eb;
+            color: #374151;
+        }
+
+        .tab.active {
+            background: white;
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 30px;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .project-header {
+            background: #f8faff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .project-header h2 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .project-meta-item {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .project-meta-item strong {
+            display: block;
+            color: #6b7280;
+            font-size: 0.85em;
+            margin-bottom: 5px;
+        }
+
+        .project-meta-item span {
+            color: #1f2937;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .criteria-section {
+            margin-bottom: 30px;
+        }
+
+        .criterion {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .criterion h3 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .criterion-description {
+            color: #6b7280;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .rating-scale {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .rating-option {
+            flex: 1;
+            min-width: 60px;
+        }
+
+        .rating-option input[type="radio"] {
+            display: none;
+        }
+
+        .rating-option label {
+            display: block;
+            padding: 12px;
+            text-align: center;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 600;
+        }
+
+        .rating-option label:hover {
+            border-color: #667eea;
+            background: #f8faff;
+        }
+
+        .rating-option input[type="radio"]:checked + label {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .score-display {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .score-display h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .score-display .score {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-display .breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .breakdown-item {
+            text-align: center;
+        }
+
+        .breakdown-item strong {
+            display: block;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .breakdown-item span {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+
+        .notes-section {
+            margin-top: 30px;
+        }
+
+        .notes-section h3 {
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+
+        .notes-section textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1em;
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .notes-section textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .summary-view {
+            padding: 30px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .summary-card {
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .summary-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+        }
+
+        .summary-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .summary-card .score-big {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #1f2937;
+            margin: 15px 0;
+        }
+
+        .summary-card .details {
+            font-size: 0.9em;
+            color: #6b7280;
+            line-height: 1.8;
+        }
+
+        .instructions {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .instructions h3 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+
+        .instructions p {
+            color: #78350f;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab {
+                border-bottom: 1px solid #e5e7eb;
+                border-left: 3px solid transparent;
+            }
+
+            .tab.active {
+                border-left-color: #667eea;
+                border-bottom-color: #e5e7eb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐉 Dragon's Den Investment Scorecard</h1>
+            <p>Evaluate each AI project using the 5 AI-specific criteria</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('chatbot')">Chatbot</button>
+            <button class="tab" onclick="showTab('pricing')">Dynamic Pricing</button>
+            <button class="tab" onclick="showTab('inventory')">Inventory Opt</button>
+            <button class="tab" onclick="showTab('fraud')">Fraud Detection</button>
+            <button class="tab" onclick="showTab('summary')">📊 Summary</button>
+        </div>
+
+        <!-- Chatbot Tab -->
+        <div id="chatbot" class="tab-content active">
+            <div class="project-header">
+                <h2>Project 1: AI Customer Service Chatbot</h2>
+                <div class="project-meta">
+                    <div class="project-meta-item">
+                        <strong>Investment</strong>
+                        <span>$450,000</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>3-Year ROI</strong>
+                        <span>92%</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>Timeline</strong>
+                        <span>9 months</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>Risk Level</strong>
+                        <span>LOW</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <h3>📋 How to Score</h3>
+                <p>Rate each criterion from 1 (Poor) to 5 (Excellent). Your total score will calculate automatically.</p>
+            </div>
+
+            <div class="criteria-section" id="chatbot-criteria">
+                <!-- Criteria will be inserted here -->
+            </div>
+
+            <div class="notes-section">
+                <h3>📝 Your Notes</h3>
+                <textarea id="chatbot-notes" placeholder="Key observations, concerns, or questions about this project..."></textarea>
+            </div>
+
+            <div class="score-display">
+                <h3>Overall Score</h3>
+                <div class="score" id="chatbot-score">0 / 25</div>
+                <div class="breakdown" id="chatbot-breakdown"></div>
+            </div>
+        </div>
+
+        <!-- Dynamic Pricing Tab -->
+        <div id="pricing" class="tab-content">
+            <div class="project-header">
+                <h2>Project 2: Dynamic Pricing Optimization</h2>
+                <div class="project-meta">
+                    <div class="project-meta-item">
+                        <strong>Investment</strong>
+                        <span>$850K → $1.3M</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>3-Year ROI</strong>
+                        <span>253%</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>Timeline</strong>
+                        <span>15 months</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>Risk Level</strong>
+                        <span style="color: #dc2626;">HIGH ETHICAL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <h3>⚠️ Key Concerns</h3>
+                <p>High ethical risk, exceeds budget cap, data sourcing challenges</p>
+            </div>
+
+            <div class="criteria-section" id="pricing-criteria"></div>
+
+            <div class="notes-section">
+                <h3>📝 Your Notes</h3>
+                <textarea id="pricing-notes" placeholder="Key observations, concerns, or questions about this project..."></textarea>
+            </div>
+
+            <div class="score-display">
+                <h3>Overall Score</h3>
+                <div class="score" id="pricing-score">0 / 25</div>
+                <div class="breakdown" id="pricing-breakdown"></div>
+            </div>
+        </div>
+
+        <!-- Inventory Optimization Tab -->
+        <div id="inventory" class="tab-content">
+            <div class="project-header">
+                <h2>Project 3: AI Inventory Optimization</h2>
+                <div class="project-meta">
+                    <div class="project-meta-item">
+                        <strong>Investment</strong>
+                        <span>$1.1M → $1.25M</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>3-Year ROI</strong>
+                        <span>264%</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>Timeline</strong>
+                        <span>18 months</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>Risk Level</strong>
+                        <span style="color: #f59e0b;">MEDIUM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <h3>⚠️ Key Concerns</h3>
+                <p>Exceeds $1.2M budget cap by $50K, requires change management</p>
+            </div>
+
+            <div class="criteria-section" id="inventory-criteria"></div>
+
+            <div class="notes-section">
+                <h3>📝 Your Notes</h3>
+                <textarea id="inventory-notes" placeholder="Key observations, concerns, or questions about this project..."></textarea>
+            </div>
+
+            <div class="score-display">
+                <h3>Overall Score</h3>
+                <div class="score" id="inventory-score">0 / 25</div>
+                <div class="breakdown" id="inventory-breakdown"></div>
+            </div>
+        </div>
+
+        <!-- Fraud Detection Tab -->
+        <div id="fraud" class="tab-content">
+            <div class="project-header">
+                <h2>Project 4: AI Fraud Detection</h2>
+                <div class="project-meta">
+                    <div class="project-meta-item">
+                        <strong>Investment</strong>
+                        <span>$650,000</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>3-Year ROI</strong>
+                        <span>315%</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>Timeline</strong>
+                        <span>12 months</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <strong>Risk Level</strong>
+                        <span style="color: #f59e0b;">MEDIUM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <h3>⚠️ Key Concerns</h3>
+                <p>Requires 6-month data preparation before AI deployment can begin</p>
+            </div>
+
+            <div class="criteria-section" id="fraud-criteria"></div>
+
+            <div class="notes-section">
+                <h3>📝 Your Notes</h3>
+                <textarea id="fraud-notes" placeholder="Key observations, concerns, or questions about this project..."></textarea>
+            </div>
+
+            <div class="score-display">
+                <h3>Overall Score</h3>
+                <div class="score" id="fraud-score">0 / 25</div>
+                <div class="breakdown" id="fraud-breakdown"></div>
+            </div>
+        </div>
+
+        <!-- Summary Tab -->
+        <div id="summary" class="tab-content">
+            <div class="summary-view">
+                <h2 style="color: #667eea; margin-bottom: 20px;">📊 Your Evaluation Summary</h2>
+                <p style="color: #6b7280; margin-bottom: 30px;">Compare scores across all four projects</p>
+
+                <div class="summary-grid" id="summary-grid"></div>
+
+                <div style="background: #f8faff; border: 2px solid #667eea; border-radius: 12px; padding: 25px; margin-top: 30px;">
+                    <h3 style="color: #667eea; margin-bottom: 15px;">💰 Investment Decision</h3>
+                    <p style="color: #6b7280; margin-bottom: 15px;"><strong>Budget Available:</strong> $2,000,000</p>
+                    <p style="color: #6b7280; margin-bottom: 15px;">Which projects would you fund? Discuss with your panel.</p>
+                    <textarea id="decision-notes" placeholder="Record your panel's investment decision and rationale here..." style="width: 100%; padding: 15px; border: 2px solid #e5e7eb; border-radius: 8px; font-family: inherit; font-size: 1em; resize: vertical; min-height: 120px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const criteria = [
+            {
+                id: 'data',
+                name: 'Data Readiness',
+                description: 'Quality and availability of data required to train and operate the AI system'
+            },
+            {
+                id: 'learning',
+                name: 'Continuous Learning Plan',
+                description: 'Strategy for updating and improving the AI model over time'
+            },
+            {
+                id: 'accuracy',
+                name: 'Accuracy & Risk Tolerance',
+                description: 'Required accuracy level and organizational tolerance for AI errors'
+            },
+            {
+                id: 'explainability',
+                name: 'Explainability Requirements',
+                description: 'Need for understanding and explaining AI decisions to stakeholders'
+            },
+            {
+                id: 'ethics',
+                name: 'Ethical Risk Assessment',
+                description: 'Potential for bias, discrimination, fairness concerns, and ethical issues'
+            }
+        ];
+
+        const projects = ['chatbot', 'pricing', 'inventory', 'fraud'];
+        const scores = {};
+
+        // Initialize scores
+        projects.forEach(project => {
+            scores[project] = {};
+            criteria.forEach(criterion => {
+                scores[project][criterion.id] = 0;
+            });
+        });
+
+        // Build criteria sections for each project
+        projects.forEach(project => {
+            const container = document.getElementById(`${project}-criteria`);
+            criteria.forEach((criterion, index) => {
+                const criterionHtml = `
+                    <div class="criterion">
+                        <h3>${index + 1}. ${criterion.name}</h3>
+                        <p class="criterion-description">${criterion.description}</p>
+                        <div class="rating-scale">
+                            ${[1, 2, 3, 4, 5].map(rating => `
+                                <div class="rating-option">
+                                    <input type="radio"
+                                           id="${project}-${criterion.id}-${rating}"
+                                           name="${project}-${criterion.id}"
+                                           value="${rating}"
+                                           onchange="updateScore('${project}', '${criterion.id}', ${rating})">
+                                    <label for="${project}-${criterion.id}-${rating}">
+                                        ${rating}<br>
+                                        <span style="font-size: 0.8em; font-weight: normal;">
+                                            ${rating === 1 ? 'Poor' : rating === 2 ? 'Fair' : rating === 3 ? 'Good' : rating === 4 ? 'Very Good' : 'Excellent'}
+                                        </span>
+                                    </label>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += criterionHtml;
+            });
+        });
+
+        function showTab(tabName) {
+            // Update tabs
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Update content
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+
+            // Update summary if showing summary tab
+            if (tabName === 'summary') {
+                updateSummary();
+            }
+        }
+
+        function updateScore(project, criterion, rating) {
+            scores[project][criterion] = rating;
+
+            // Calculate total score
+            const total = Object.values(scores[project]).reduce((sum, val) => sum + val, 0);
+
+            // Update display
+            document.getElementById(`${project}-score`).textContent = `${total} / 25`;
+
+            // Update breakdown
+            const breakdown = document.getElementById(`${project}-breakdown`);
+            breakdown.innerHTML = criteria.map(c => `
+                <div class="breakdown-item">
+                    <strong>${scores[project][c.id]}</strong>
+                    <span>${c.name.split(' ')[0]}</span>
+                </div>
+            `).join('');
+        }
+
+        function updateSummary() {
+            const summaryGrid = document.getElementById('summary-grid');
+            const projectNames = {
+                chatbot: 'AI Chatbot',
+                pricing: 'Dynamic Pricing',
+                inventory: 'Inventory Optimization',
+                fraud: 'Fraud Detection'
+            };
+
+            summaryGrid.innerHTML = projects.map(project => {
+                const total = Object.values(scores[project]).reduce((sum, val) => sum + val, 0);
+                const notes = document.getElementById(`${project}-notes`).value;
+
+                return `
+                    <div class="summary-card">
+                        <h3>${projectNames[project]}</h3>
+                        <div class="score-big">${total}/25</div>
+                        <div class="details">
+                            ${criteria.map(c => `
+                                <div>${c.name}: <strong>${scores[project][c.id]}/5</strong></div>
+                            `).join('')}
+                        </div>
+                        ${notes ? `<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #e5e7eb; font-size: 0.85em; color: #6b7280;">
+                            <strong>Notes:</strong> ${notes.substring(0, 100)}${notes.length > 100 ? '...' : ''}
+                        </div>` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Auto-save to localStorage
+        setInterval(() => {
+            localStorage.setItem('dragonDenScores', JSON.stringify(scores));
+            projects.forEach(project => {
+                const notes = document.getElementById(`${project}-notes`).value;
+                localStorage.setItem(`${project}-notes`, notes);
+            });
+            const decision = document.getElementById('decision-notes').value;
+            localStorage.setItem('decision-notes', decision);
+        }, 2000);
+
+        // Load from localStorage on page load
+        window.addEventListener('load', () => {
+            const savedScores = localStorage.getItem('dragonDenScores');
+            if (savedScores) {
+                const loaded = JSON.parse(savedScores);
+                projects.forEach(project => {
+                    criteria.forEach(criterion => {
+                        const rating = loaded[project][criterion.id];
+                        if (rating > 0) {
+                            scores[project][criterion.id] = rating;
+                            document.getElementById(`${project}-${criterion.id}-${rating}`).checked = true;
+                            updateScore(project, criterion.id, rating);
+                        }
+                    });
+
+                    const notes = localStorage.getItem(`${project}-notes`);
+                    if (notes) {
+                        document.getElementById(`${project}-notes`).value = notes;
+                    }
+                });
+
+                const decision = localStorage.getItem('decision-notes');
+                if (decision) {
+                    document.getElementById('decision-notes').value = decision;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
