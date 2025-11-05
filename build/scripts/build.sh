@@ -69,6 +69,7 @@ FILES=(
   "learning-journal"
   "strategic-prompting-guide"
   "preparing-for-the-masterclass"
+  "exercise-2-prompts"
 )
 # Note: ai-investment-checklist and executive-ai-prompt-library now exist ONLY as interactive HTML (no markdown source)
 
