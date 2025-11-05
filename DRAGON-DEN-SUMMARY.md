@@ -35,6 +35,32 @@
 - Must fund at least 2 initiatives (diversification)
 - Maximum for any single initiative: $1.2M
 - Timeline: All must show results within 18 months
+- **Three Horizons Portfolio Requirement:**
+  - Target: 70% H1, 20% H2, 10% H3
+  - Must include at least ONE H2 or transformational initiative
+  - Cannot fund ONLY H1 optimization projects
+- **CEO Directive:** "I want strategic impact, not just three cost-cutting projects. Show me a balanced portfolio."
+
+---
+
+## Cost Structure Clarification
+
+**All costs shown are YEAR 1 TOTAL** (upfront + first year ongoing):
+
+| Initiative | Year 1 Total | Breakdown | Year 2+ Annual |
+|------------|--------------|-----------|----------------|
+| Chatbot | $450K | $280K upfront + $170K annual | $170K/year |
+| Pricing | $850K | $600K upfront + $250K annual | $420K/year |
+| Inventory | $1.1M | $900K upfront + $200K annual | $385K/year |
+| Fraud | $650K | $400K upfront + $250K annual | $250K/year |
+
+**3-Year Total Cost of Ownership:**
+- Chatbot: $450K + $170K + $170K = $790K
+- Pricing: $850K + $420K + $420K = $1.69M
+- Inventory: $1.1M + $385K + $385K = $1.87M
+- Fraud: $650K + $250K + $250K = $1.15M
+
+**This is critical for ROI calculations!**
 
 ---
 
@@ -64,7 +90,7 @@
 - ✅ Ethical risk: Low (no discrimination concerns)
 
 **Matrix:** Optimize (Process/Incremental)  
-**Horizon:** H1 (0-12 months)  
+**Horizon:** **H1** (0-12 months, operational efficiency)  
 **The Case:** Safest bet, proven technology, but LOWEST ROI (92% vs 200% H1 threshold)
 
 ---
@@ -93,8 +119,8 @@
 - 🚨 Ethical risk: **VERY HIGH** - Price discrimination lawsuits, fairness concerns
 
 **Matrix:** Enhance (Strategic/Incremental)  
-**Horizon:** H1-H2 (12-18 months to full value)  
-**The Dilemma:** HIGHEST ROI but HIGHEST ethical risk + exceeds budget after ongoing costs
+**Horizon:** **H2** (1-3 years, strategic capability building)  
+**The Dilemma:** HIGHEST Year 1 ROI (253%) but HIGHEST ethical risk + high ongoing costs
 
 ---
 
@@ -122,8 +148,8 @@
 - ✅ Ethical risk: Low (operational decision, no customer impact)
 
 **Matrix:** Revolutionize (Process/Transformational)  
-**Horizon:** H1-H2 (operational transformation)  
-**The Challenge:** Strong ROI but **EXCEEDS $2M budget** if funded alone (takes $1.1M of $2M)
+**Horizon:** **H2** (1-3 years, operational transformation)  
+**The Challenge:** Strong ROI (264%) but takes $1.1M (55% of total budget) - limits other options
 
 ---
 
@@ -151,8 +177,8 @@
 - ✅ Ethical risk: Medium (could flag certain demographics disproportionately)
 
 **Matrix:** Optimize (Process/Incremental)  
-**Horizon:** H1 (operational efficiency)  
-**The Catch:** **HIGHEST ROI (315%) but needs 6-month data preparation FIRST** - Can't launch for 6 months
+**Horizon:** **H1** (0-12 months, operational efficiency)  
+**The Catch:** HIGHEST 3-year ROI (315%) but needs 6-month data preparation FIRST - can't deploy immediately
 
 ---
 
@@ -160,21 +186,28 @@
 
 ### The Numbers Tell a Story:
 
-| Initiative | Investment | Year 1 ROI | 3-Year ROI | Data Ready? | Ethical Risk | Can Deploy Now? |
-|------------|-----------|------------|------------|-------------|--------------|-----------------|
-| **Chatbot** | $450K | 92% | 180% | ✅ Yes (8/10) | ✅ Low | ✅ Yes |
-| **Pricing** | $850K | 253% | 400%+ | ⚠️ Borderline (6-7/10) | 🚨 **VERY HIGH** | ⚠️ Risky |
-| **Inventory** | $1.1M | 145% | 264% | ⚠️ Needs work (7/10) | ✅ Low | ⚠️ Budget issue |
-| **Fraud** | $650K | 197% | 315% | 🚨 **NO (5/10)** | ⚠️ Medium | 🚨 **6-mo delay** |
+| Initiative | $ | Horizon | Year 1 ROI | 3-Year ROI | Data Ready? | Ethical Risk | Key Issue |
+|------------|---|---------|------------|------------|-------------|--------------|-----------|
+| 💬 **Chatbot** | $450K | **H1** | 92% | 180% | ✅ 8/10 | ✅ Low | Below H1 threshold (200%) |
+| 💰 **Pricing** | $850K | **H2** | 253% | 400%+ | ⚠️ 6-7/10 | 🚨 **VERY HIGH** | Discrimination lawsuits |
+| 📦 **Inventory** | $1.1M | **H2** | 145% | 264% | ⚠️ 7/10 | ✅ Low | 55% of budget |
+| 🔍 **Fraud** | $650K | **H1** | 197% | 315% | 🚨 5/10 | ⚠️ Medium | 6-month data prep needed |
 
-### The Traditional ROI View (WRONG):
+### The Traditional ROI View (Seems Obvious):
+"Just fund the three cheapest with highest ROIs!"
+
 1. Fund Fraud Detection ($650K) - 315% ROI ✅
 2. Fund Dynamic Pricing ($850K) - 253% ROI ✅
-3. Total: $1.5M, leaving $500K ✅
-4. Fund Chatbot ($450K) ✅
-5. **Total budget: $1.95M** ✅
+3. Fund Chatbot ($450K) - 92% ROI ✅
+4. **Total: $1.95M** (within budget!) ✅
 
 **Result:** Maximize ROI! 🎉
+
+**But wait... problems:**
+- ❌ Fraud can't deploy for 6 months (data not ready)
+- ❌ Dynamic Pricing has unacceptable ethical risk
+- ❌ Portfolio is 2 H1 + 1 H2 = 77% in H1 (imbalanced, CEO wants transformation)
+- ❌ All three have significant AI-specific red flags
 
 ### The AI-Specific View (CORRECT):
 1. **Fraud Detection:** Can't deploy for 6 months (data prep needed) ❌
