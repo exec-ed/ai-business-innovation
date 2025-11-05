@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retailflow Data Analysis | AI Innovation Masterclass</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/materials.css">
+  <meta name="description" content="Retailflow Data Analysis - AI-Driven Business Innovation Masterclass">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">AI Business Innovation</a>
+      <ul class="nav-links">
+        <li><a href="overview.html">Overview</a></li>
+        <li><a href="frameworks.html">Frameworks</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li class="nav-item has-dropdown">
+          <span class="dropdown-trigger" style="color: var(--primary);">Materials</span>
+          <div class="dropdown-menu">
+            <a href="materials-interactive-tools.html">Interactive Tools</a>
+            <a href="materials-pre-readings.html">Pre-Readings</a>
+            <a href="materials-reference.html">Reference Materials</a>
+            <a href="materials-case-study.html">RetailFlow Case Study</a>
+            <a href="materials-worksheets.html">Worksheets</a>
+            <a href="instructor/index.html">Instructor Portal</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="material-content">
+      <header class="material-header">
+        <h1>Retailflow Data Analysis</h1>
+        <div class="material-meta">
+          <span>AI-Driven Business Innovation Masterclass</span>
+          <button onclick="window.print()" class="btn-primary" style="cursor: pointer; border: none;">🖨️ Print to PDF</button>
+        </div>
+      </header>
+
+            <nav id="toc" class="toc">
+        <h2>Contents</h2>
+        <ul>
+        <li><a href="#retailflow-data-analysis"
+        id="toc-retailflow-data-analysis">RetailFlow Data Analysis</a>
+        <ul>
+        <li><a href="#using-ai-to-analyze-store-performance-data"
+        id="toc-using-ai-to-analyze-store-performance-data">Using AI to
+        Analyze Store Performance Data</a></li>
+        <li><a href="#about-the-dataset"
+        id="toc-about-the-dataset">About the Dataset</a></li>
+        <li><a href="#how-to-use-this-data"
+        id="toc-how-to-use-this-data">How to Use This Data</a></li>
+        <li><a href="#suggested-analysis-prompts"
+        id="toc-suggested-analysis-prompts">Suggested Analysis
+        Prompts</a></li>
+        <li><a href="#key-patterns-to-discover"
+        id="toc-key-patterns-to-discover">Key Patterns to
+        Discover</a></li>
+        <li><a href="#questions-to-explore"
+        id="toc-questions-to-explore">Questions to Explore</a></li>
+        <li><a href="#connection-to-dragons-den"
+        id="toc-connection-to-dragons-den">Connection to Dragon’s
+        Den</a></li>
+        <li><a href="#what-youll-learn" id="toc-what-youll-learn">What
+        You’ll Learn</a></li>
+        <li><a href="#tips-for-effective-analysis"
+        id="toc-tips-for-effective-analysis">Tips for Effective
+        Analysis</a></li>
+        <li><a href="#exercise-workflow"
+        id="toc-exercise-workflow">Exercise Workflow</a></li>
+        <li><a href="#files" id="toc-files">Files</a></li>
+        <li><a href="#additional-resources"
+        id="toc-additional-resources">Additional Resources</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+      
+      <div class="content">
+        <h1 id="retailflow-data-analysis">RetailFlow Data Analysis</h1>
+        <h2 id="using-ai-to-analyze-store-performance-data">Using AI to
+        Analyze Store Performance Data</h2>
+        <p><strong>Dataset:</strong> <a
+        href="../activities/retailflow-mock-data.csv">retailflow-mock-data.csv</a></p>
+        <p>Use this RetailFlow store performance data to practice
+        AI-assisted data analysis during Exercise 2.</p>
+        <hr />
+        <h2 id="about-the-dataset">About the Dataset</h2>
+        <p><strong>What it contains:</strong> - 45 RetailFlow stores
+        across Australia - 14 performance metrics per store - Real
+        patterns and correlations to discover</p>
+        <p><strong>Metrics included:</strong> - Store location and
+        demographics (State, Region, Size, Age) - Financial performance
+        (Revenue, Costs, Profit Margin) - Customer metrics (Count,
+        Average Transaction, Satisfaction) - Digital capability (Online
+        Orders %, AI Chatbot adoption) - Operations (Employee Count,
+        Inventory Turnover)</p>
+        <hr />
+        <h2 id="how-to-use-this-data">How to Use This Data</h2>
+        <h3 id="option-1-excel-with-copilot">Option 1: Excel with
+        Copilot</h3>
+        <ol type="1">
+        <li>Download the CSV file</li>
+        <li>Open in Excel Online</li>
+        <li>Use Copilot to analyze</li>
+        </ol>
+        <h3 id="option-2-google-sheets-with-gemini">Option 2: Google
+        Sheets with Gemini</h3>
+        <ol type="1">
+        <li>Upload CSV to Google Drive</li>
+        <li>Open in Google Sheets</li>
+        <li>Use Gemini to analyze</li>
+        </ol>
+        <h3 id="option-3-chatgpt-claude">Option 3: ChatGPT / Claude</h3>
+        <ol type="1">
+        <li>Upload CSV file directly</li>
+        <li>Use Code Interpreter (ChatGPT Plus) or Claude’s analysis
+        features</li>
+        </ol>
+        <hr />
+        <h2 id="suggested-analysis-prompts">Suggested Analysis
+        Prompts</h2>
+        <h3 id="discovery-find-patterns">Discovery: Find Patterns</h3>
+        <pre><code>Analyze this RetailFlow store performance data.
+
+What are the top 3 insights or patterns you see?
+Focus on what drives revenue and customer satisfaction.</code></pre>
+        <p><strong>What AI should find:</strong> - Stores with AI
+        chatbots perform better - Older stores underperform newer stores
+        - Online order % strongly correlates with revenue</p>
+        <hr />
+        <h3 id="comparison-chatbot-impact">Comparison: Chatbot
+        Impact</h3>
+        <pre><code>Compare stores WITH AI chatbot vs. WITHOUT.
+
+Show me the difference in:
+- Customer satisfaction
+- Online orders %
+- Revenue
+
+Create a comparison table.</code></pre>
+        <p><strong>Expected insight:</strong> Stores with chatbots have
+        ~15% higher satisfaction, ~50% more online orders, and ~45%
+        higher revenue.</p>
+        <hr />
+        <h3 id="strategic-investment-prioritization">Strategic:
+        Investment Prioritization</h3>
+        <pre><code>Which 10 stores should get the AI chatbot investment next?
+
+Prioritize by:
+- Currently low online order %
+- Decent revenue base
+- Potential for improvement
+
+Create a ranked list with rationale.</code></pre>
+        <p><strong>What AI should do:</strong> Identify stores with good
+        fundamentals but lacking digital capability.</p>
+        <hr />
+        <h3 id="visualization-create-charts">Visualization: Create
+        Charts</h3>
+        <pre><code>Create 3 charts:
+
+1. Bar chart: Average revenue by region
+2. Scatter plot: Store age vs. customer satisfaction
+3. Column chart: Chatbot impact comparison (with vs. without)
+   for satisfaction, online %, and revenue
+
+Make them presentation-ready.</code></pre>
+        <hr />
+        <h3 id="advanced-predictive-analysis">Advanced: Predictive
+        Analysis</h3>
+        <pre><code>Based on stores with chatbots, predict the revenue impact if we
+roll out to all stores without chatbots.
+
+Show me:
+- Projected revenue increase
+- ROI calculation
+- Payback period</code></pre>
+        <hr />
+        <h3 id="strategic-portfolio-optimization">Strategic: Portfolio
+        Optimization</h3>
+        <pre><code>We have $2M budget. Chatbot deployment costs $525K per store.
+
+Which stores should we prioritize to maximize:
+1. Total revenue impact
+2. Customer satisfaction improvement
+3. Strategic market coverage
+
+Give me 3 different portfolio recommendations and explain the trade-offs.</code></pre>
+        <hr />
+        <h2 id="key-patterns-to-discover">Key Patterns to Discover</h2>
+        <h3 id="pattern-1-ai-chatbot-works">Pattern 1: AI Chatbot Works
+        ⭐</h3>
+        <p>Stores with AI chatbots show measurably better performance
+        across multiple metrics. This validates the chatbot investment
+        proposal in Dragon’s Den.</p>
+        <h3 id="pattern-2-legacy-store-problem">Pattern 2: Legacy Store
+        Problem</h3>
+        <p>Older stores (15+ years) significantly underperform. They may
+        need modernization or AI investment to catch up.</p>
+        <h3 id="pattern-3-digital-drives-growth">Pattern 3: Digital
+        Drives Growth</h3>
+        <p>Online order percentage is the strongest predictor of overall
+        store performance. Digital capability matters.</p>
+        <h3 id="pattern-4-regional-gaps">Pattern 4: Regional Gaps</h3>
+        <p>East region (NSW, VIC, QLD) outperforms West and South. This
+        suggests regional strategy differences.</p>
+        <h3 id="pattern-5-size-vs.-efficiency">Pattern 5: Size
+        vs. Efficiency</h3>
+        <p>Larger stores generate more revenue but don’t necessarily
+        have better margins or satisfaction. Operational excellence
+        matters more than size.</p>
+        <hr />
+        <h2 id="questions-to-explore">Questions to Explore</h2>
+        <h3 id="business-questions">Business Questions:</h3>
+        <ul>
+        <li>Which stores should get AI investments first?</li>
+        <li>What’s the ROI of chatbot based on actual pilot data?</li>
+        <li>Should we invest in old stores or focus on new ones?</li>
+        <li>How does digital capability affect performance?</li>
+        </ul>
+        <h3 id="analytical-questions">Analytical Questions:</h3>
+        <ul>
+        <li>What’s the correlation between online orders % and
+        revenue?</li>
+        <li>Do larger stores have better margins?</li>
+        <li>Which region has the biggest performance gap?</li>
+        <li>What predicts customer satisfaction best?</li>
+        </ul>
+        <h3 id="investment-questions">Investment Questions:</h3>
+        <ul>
+        <li>If chatbot increases revenue by $177K/year and costs $525K,
+        what’s the payback?</li>
+        <li>How many stores can we deploy to with $2M budget?</li>
+        <li>Which stores have the best fundamentals for AI
+        investment?</li>
+        </ul>
+        <hr />
+        <h2 id="connection-to-dragons-den">Connection to Dragon’s
+        Den</h2>
+        <p>This dataset supports the <strong>AI Customer Service Chatbot
+        proposal</strong> ($525K, 119% ROI):</p>
+        <ul>
+        <li>12 stores in the data have chatbots (pilot program)</li>
+        <li>Clear performance lift across satisfaction, online orders,
+        and revenue</li>
+        <li>Provides evidence for the business case you’re
+        evaluating</li>
+        </ul>
+        <p><strong>Use this data during Dragon’s Den deliberation
+        to:</strong> - Validate the chatbot ROI projections - Identify
+        which stores should get chatbot next - Inform your investment
+        decision with real data</p>
+        <hr />
+        <h2 id="what-youll-learn">What You’ll Learn</h2>
+        <h3 id="about-ai-data-analysis">About AI + Data Analysis:</h3>
+        <ul>
+        <li>AI can find patterns in minutes that take humans hours</li>
+        <li>AI excels at comparisons, correlations, and
+        visualizations</li>
+        <li>You provide questions; AI provides speed and pattern
+        detection</li>
+        </ul>
+        <h3 id="about-strategic-decisions">About Strategic
+        Decisions:</h3>
+        <ul>
+        <li>Data informs decisions but doesn’t make them</li>
+        <li>Same data can support different strategic conclusions</li>
+        <li>Context and business judgment still required</li>
+        </ul>
+        <h3 id="key-insight">Key Insight:</h3>
+        <blockquote>
+        <p>“AI shows you WHAT the data says. YOU decide WHAT IT MEANS
+        and WHAT TO DO about it.</p>
+        <p>This is augmentation, not replacement.”</p>
+        </blockquote>
+        <hr />
+        <h2 id="tips-for-effective-analysis">Tips for Effective
+        Analysis</h2>
+        <h3 id="start-broad-then-narrow">1. Start Broad, Then
+        Narrow</h3>
+        <ul>
+        <li>Begin with: “What patterns do you see?”</li>
+        <li>Then drill down: “Tell me more about Pattern #2”</li>
+        </ul>
+        <h3 id="ask-for-structure">2. Ask for Structure</h3>
+        <ul>
+        <li>“Create a comparison table”</li>
+        <li>“Give me 3 options with pros/cons”</li>
+        <li>“Rank these by priority”</li>
+        </ul>
+        <h3 id="ground-ai-in-data">3. Ground AI in Data</h3>
+        <ul>
+        <li>“Only use data from this spreadsheet”</li>
+        <li>“Show me the calculation”</li>
+        <li>“Which stores specifically?”</li>
+        </ul>
+        <h3 id="iterate">4. Iterate</h3>
+        <ul>
+        <li>First answer reveals new questions</li>
+        <li>Follow up: “What if we only had $1M budget?”</li>
+        <li>Challenge: “What risks does this approach have?”</li>
+        </ul>
+        <h3 id="visualize">5. Visualize</h3>
+        <ul>
+        <li>Charts reveal patterns text misses</li>
+        <li>Ask for presentation-ready visuals</li>
+        <li>Use charts in your Dragon’s Den deliberation</li>
+        </ul>
+        <hr />
+        <h2 id="exercise-workflow">Exercise Workflow</h2>
+        <p><strong>During Exercise 2 (optional advanced
+        activity):</strong></p>
+        <ol type="1">
+        <li><strong>Download the dataset</strong> (CSV file)</li>
+        <li><strong>Upload to your AI tool</strong> (Excel Copilot,
+        ChatGPT, Claude, Gemini)</li>
+        <li><strong>Run 3-5 analysis prompts</strong> (from suggestions
+        above)</li>
+        <li><strong>Capture key insights</strong> relevant to Dragon’s
+        Den</li>
+        <li><strong>Share findings</strong> with your table during
+        discussion</li>
+        </ol>
+        <p><strong>Time: 15-20 minutes</strong> if you want to explore
+        this dataset</p>
+        <hr />
+        <h2 id="files">Files</h2>
+        <ul>
+        <li><strong>Dataset:</strong> <a
+        href="../activities/retailflow-mock-data.csv">retailflow-mock-data.csv</a></li>
+        <li><strong>Full methodology:</strong> See instructor if curious
+        about how data was generated</li>
+        </ul>
+        <hr />
+        <h2 id="additional-resources">Additional Resources</h2>
+        <ul>
+        <li><a href="exercise-2-prompts.html">Exercise 2 Prompt
+        Templates</a> - Strategic analysis prompts</li>
+        <li><a href="retailflow-company-overview.html">RetailFlow
+        Company Overview</a> - Case study context</li>
+        <li><a href="exercises.html#exercise-3">Dragon’s Den
+        Scenarios</a> - Investment proposals</li>
+        </ul>
+        <hr />
+        <p><strong>Ready to analyze? Download the CSV and start asking
+        AI questions!</strong> 📊</p>
+      </div>
+
+      <footer class="material-footer">
+        <p><a href="materials.html">← Back to All Materials</a> | <a href="index.html">Home</a></p>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>AI-Driven Business Innovation Masterclass</strong></p>
+      <p style="margin-top: 0.5rem; opacity: 0.8;">Executive Education | Curtin Business School</p>
+      <p style="margin-top: 1rem;"><a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></p>
+    </div>
+  </footer>
+</body>
+</html>
