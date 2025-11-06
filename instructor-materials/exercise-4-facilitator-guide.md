@@ -45,7 +45,7 @@ Open the voting link on your device."
 ## Scenario 1: Competitive Threat (3 min total)
 
 **Read aloud (30 sec):**
-"Competitor just launched AI-powered personalization. They're picking up our customers. Your options:
+"Competitor just launched AI-powered personalisation. They're picking up our customers. Your options:
 1. **Fast-Follow:** Build similar AI in 6 months (safe, reactive)
 2. **Differentiate:** Invest in different AI capability (risky, could miss)
 3. **Wait:** Let market mature, then enter with better technology (patient, could be too late)
@@ -179,7 +179,7 @@ If Wait: "What's your confidence that it won't disrupt you in 2 years?"
 - Participants vote quickly (framework thinking is automatic)
 - Voting shows diversity (not everyone agrees, frameworks give options)
 - Discussion reveals framework thinking ("portfolio," "data readiness," "time horizons")
-- Participants realize they're using frameworks naturally
+- Participants realise they're using frameworks naturally
 
 ---
 

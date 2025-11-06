@@ -1,7 +1,7 @@
 # RetailFlow Data Analysis Demo
-## Using Copilot to Analyze Retail Performance Data
+## Using Copilot to Analyse Retail Performance Data
 
-**Purpose:** Demonstrate how AI/Copilot can analyze business data, identify trends, and create PowerPoint presentations
+**Purpose:** Demonstrate how AI/Copilot can analyse business data, identify trends, and create PowerPoint presentations
 
 **Use in workshop:** Show executives how AI can augment business analysis (connects to Exercise 2 themes)
 
@@ -353,7 +353,7 @@ DIFFERENCE:
 
 1. Share the CSV file with tables
 2. Tables upload to their own Excel/Sheets
-3. Use Copilot/ChatGPT to analyze
+3. Use Copilot/ChatGPT to analyse
 4. Compare insights across tables
 
 **Prompt for participants:**
@@ -372,7 +372,7 @@ DIFFERENCE:
 ### Option 1: CSV (Provided)
 - `retailflow-mock-data.csv`
 - Works with: Excel, Google Sheets, any Copilot
-- Import and analyze
+- Import and analyse
 
 ### Option 2: Excel with Pre-built Charts (Optional)
 If you want to save time:
@@ -414,8 +414,8 @@ If you want to save time:
 ## Connection to Course Content
 
 ### Links to Exercise 2 (AI-Assisted Strategic Analysis):
-- This demo shows AI analyzing QUANTITATIVE data (numbers, patterns)
-- Exercise 2 shows AI analyzing QUALITATIVE strategy (threats, opportunities)
+- This demo shows AI analysing QUANTITATIVE data (numbers, patterns)
+- Exercise 2 shows AI analysing QUALITATIVE strategy (threats, opportunities)
 - Both use same principle: AI augments human thinking
 
 ### Links to Dragon's Den:
@@ -439,7 +439,7 @@ If you want to save time:
 
 ### "Charts are ugly"
 **Solution:** Ask for refinement
-- "Make this chart presentation-ready with better colors and clear labels"
+- "Make this chart presentation-ready with better colours and clear labels"
 - "Create a professional bar chart showing revenue by region"
 
 ### "AI is making stuff up"
@@ -459,7 +459,7 @@ If you want to save time:
 ## What Participants Learn
 
 ### Surface Learning:
-- AI can analyze data quickly
+- AI can analyse data quickly
 - AI can generate charts
 - AI can create presentations
 
@@ -470,9 +470,9 @@ If you want to save time:
 - Together: Better decisions, faster
 
 ### Strategic Insight:
-> "If AI can help YOU (executives with deep expertise) analyze data better and faster...
+> "If AI can help YOU (executives with deep expertise) analyse data better and faster...
 > 
-> Imagine what it can do for your organization when deployed thoughtfully.
+> Imagine what it can do for your organisation when deployed thoughtfully.
 > 
 > This validates the AI investment you're evaluating.
 > The chatbot proposal? We just proved with data that it works."

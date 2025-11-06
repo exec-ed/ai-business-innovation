@@ -62,7 +62,7 @@ body {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
-  transition: color 0.3s;
+  transition: colour 0.3s;
 }
 
 .topnav .nav-links a:hover {
@@ -331,7 +331,7 @@ main {
   border: 2px solid var(--border);
   border-radius: 12px;
   padding: 2rem;
-  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, border-colour 0.3s;
 }
 
 .material-card:hover {

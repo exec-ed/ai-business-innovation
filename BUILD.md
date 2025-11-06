@@ -151,7 +151,7 @@ Instructor materials protected with password: `instructor2025`
 ---
 
 For detailed documentation, see:
-- FOLDER-STRUCTURE-CLARITY.md - File organization
+- FOLDER-STRUCTURE-CLARITY.md - File organisation
 - instructor-materials/README.md - Instructor materials guide
 
 **Build system is production-ready and fully automated.**

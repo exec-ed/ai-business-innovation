@@ -284,7 +284,7 @@ Autonomous decisions | Level 4-5 | Dynamic pricing, auto-ordering
 
 You will fail.
 
-**Most organizations:**
+**Most organisations:**
 
 - Current state: Level 2-3
 - AI ambition: Level 5
@@ -362,7 +362,7 @@ Audit your AI portfolio: Are you balanced?
 - Strong business case ✓
 - **But:** 70% of digital transformation fails due to people resistance
 
-**Must assess organizational readiness BEFORE investing**
+**Must assess organisational readiness BEFORE investing**
 :::
 
 ---
@@ -377,7 +377,7 @@ Every AI initiative faces resistance:
 
 1. **Skill Gap** - Do people have required capabilities?
 2. **Process Change** - How much disruption to workflows?
-3. **Cultural Fit** - Does it align with organizational values?
+3. **Cultural Fit** - Does it align with organisational values?
 4. **Trust** - Do people believe in the technology?
 5. **Change Fatigue** - Are people exhausted from prior changes?
 :::
@@ -633,7 +633,7 @@ This is your new governance standard.
 
 **Framework 3: Three Horizons Model** - Balance across timeframes
 
-**Framework 4: Innovation Adoption** - Organizational readiness
+**Framework 4: Innovation Adoption** - Organisational readiness
 
 **Framework 5: AI Investment Model** - Traditional + AI-specific criteria
 

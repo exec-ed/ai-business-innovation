@@ -1,5 +1,5 @@
 # RetailFlow Data Analysis
-## Using AI to Analyze Store Performance Data
+## Using AI to Analyse Store Performance Data
 
 **Dataset:** [retailflow-mock-data.csv](../activities/retailflow-mock-data.csv)
 
@@ -28,12 +28,12 @@ Use this RetailFlow store performance data to practice AI-assisted data analysis
 ### Option 1: Excel with Copilot
 1. Download the CSV file
 2. Open in Excel Online
-3. Use Copilot to analyze
+3. Use Copilot to analyse
 
 ### Option 2: Google Sheets with Gemini
 1. Upload CSV to Google Drive
 2. Open in Google Sheets
-3. Use Gemini to analyze
+3. Use Gemini to analyse
 
 ### Option 3: ChatGPT / Claude
 1. Upload CSV file directly
@@ -46,7 +46,7 @@ Use this RetailFlow store performance data to practice AI-assisted data analysis
 ### Discovery: Find Patterns
 
 ```
-Analyze this RetailFlow store performance data.
+Analyse this RetailFlow store performance data.
 
 What are the top 3 insights or patterns you see?
 Focus on what drives revenue and customer satisfaction.
@@ -269,4 +269,4 @@ This dataset supports the **AI Customer Service Chatbot proposal** ($525K, 119% 
 
 ---
 
-**Ready to analyze? Download the CSV and start asking AI questions!** 📊
+**Ready to analyse? Download the CSV and start asking AI questions!** 📊

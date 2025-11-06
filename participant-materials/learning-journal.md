@@ -74,7 +74,7 @@ Access all course materials, interactive tools, and additional resources:
 
 **Participant Name:** _________________________________
 
-**Organization:** _________________________________
+**Organisation:** _________________________________
 
 **Role/Title:** _________________________________
 
@@ -120,7 +120,7 @@ By the end of today's masterclass, you will be able to:
 **Time:** 9:50-10:35 AM (45 minutes)
 
 ## Your Challenge
-Map AI opportunities for your organization using the **AI Transformation Matrix**
+Map AI opportunities for your organisation using the **AI Transformation Matrix**
 
 ### Reflection Questions
 
@@ -183,7 +183,7 @@ _______________________________________________________________________
 **Time:** 11:30-12:30 PM (70 minutes)
 
 ## Your Challenge
-Use AI tools to analyze strategic threats and opportunities, practicing advanced prompting techniques
+Use AI tools to analyse strategic threats and opportunities, practicing advanced prompting techniques
 
 ### Reflection Questions
 
@@ -636,7 +636,7 @@ I completed the AI-Driven Business Innovation Masterclass on **[date]**.
 
 ---
 
-*This Learning Journal is your personal record of professional development. Keep it confidential or share as appropriate for your organization.*
+*This Learning Journal is your personal record of professional development. Keep it confidential or share as appropriate for your organisation.*
 
 <div style="page-break-before: always; padding: 3rem 2rem;">
 

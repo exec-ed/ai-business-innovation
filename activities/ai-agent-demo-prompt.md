@@ -1,6 +1,6 @@
 # AI Agent Demo: Investment Proposal Analyzer
 
-**Purpose:** Demonstrate how AI can act as an autonomous agent to analyze investment proposals using strategic frameworks
+**Purpose:** Demonstrate how AI can act as an autonomous agent to analyse investment proposals using strategic frameworks
 
 **When to use:** During or after Dragon's Den exercise to show AI evaluating AI investments
 
@@ -121,17 +121,17 @@ Ready. Give me an AI investment proposal to analyze.
 
 ## Example Use During Workshop
 
-### Scenario 1: Analyze the Chatbot Proposal
+### Scenario 1: Analyse the Chatbot Proposal
 
 **Say to the AI agent:**
-> Analyze this proposal:
+> Analyse this proposal:
 > 
 > **Customer Service Chatbot**
 > - Investment: $450,000 (Year 1)
 > - Ongoing costs: $180,000/year (40% of initial)
 > - Expected ROI: 92% Year 1, 180% over 3 years
 > - What it does: Handle routine customer inquiries (order status, returns, store hours)
-> - Current call center: 25 agents, $1.8M/year cost
+> - Current call centre: 25 agents, $1.8M/year cost
 > - Expected impact: Reduce call volume by 40%, handle 24/7 inquiries
 > - Data available: 2 years of call transcripts, FAQ database
 > - Accuracy target: 85% (medium risk - customer satisfaction impact)
@@ -146,10 +146,10 @@ Ready. Give me an AI investment proposal to analyze.
 - Flag that this is low strategic value but safe bet
 - **Recommend:** GO WITH CONDITIONS (acceptable but not exciting)
 
-### Scenario 2: Analyze the Dynamic Pricing Proposal
+### Scenario 2: Analyse the Dynamic Pricing Proposal
 
 **Say to the AI agent:**
-> Analyze this proposal:
+> Analyse this proposal:
 >
 > **Dynamic Pricing Optimization**
 > - Investment: $850,000 (Year 1)
@@ -221,7 +221,7 @@ After committee announces decisions:
 
 **Option B: As Exercise 2 Extension (12:15 PM)**
 After tables finish AI-Assisted Strategic Analysis:
-1. "You just used AI to analyze threats. Now let's see AI analyzing AI investments."
+1. "You just used AI to analyse threats. Now let's see AI analysing AI investments."
 2. Demo with one Dragon's Den scenario
 3. Preview what they'll evaluate this afternoon
 4. Plant seed: "You could use this technique during Dragon's Den prep"

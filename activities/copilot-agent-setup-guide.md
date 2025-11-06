@@ -107,7 +107,7 @@ Click "Knowledge" → "Upload files" → Select files
 
 Click "Test" and try:
 ```
-Analyze this proposal:
+Analyse this proposal:
 
 Customer Service Chatbot
 - Investment: $450,000
@@ -161,14 +161,14 @@ If participants have ChatGPT Plus:
 3. Under "How would you like ChatGPT to respond?", paste:
 
 ```
-When I ask you to analyze an AI investment proposal, use this framework:
+When I ask you to analyse an AI investment proposal, use this framework:
 
 [PASTE THE AGENT INSTRUCTIONS FROM ABOVE]
 
 For all other questions, respond normally.
 ```
 
-**Benefit:** Agent behavior persists across all ChatGPT sessions
+**Benefit:** Agent behaviour persists across all ChatGPT sessions
 
 ---
 
@@ -184,7 +184,7 @@ For all other questions, respond normally.
 
 **Benefit:** 
 - Agent remembers context across conversations
-- Can analyze multiple proposals in one session
+- Can analyse multiple proposals in one session
 - Knowledge base persists
 
 ---
@@ -196,7 +196,7 @@ For all other questions, respond normally.
 - Paste into free Copilot/ChatGPT/Gemini
 - No login, no setup
 - Project on screen
-- Analyze 1-2 proposals live
+- Analyse 1-2 proposals live
 
 ### For Participant Use:
 **Provide Option 2** (Simple Prompt)

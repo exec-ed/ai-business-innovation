@@ -91,7 +91,7 @@ format:
 **The Foundation of Modern AI Applications:**
 
 1. **Data Collection:** Gathering relevant business information
-2. **Data Preparation:** Cleaning and organizing for analysis
+2. **Data Preparation:** Cleaning and organising for analysis
 3. **Algorithm Selection:** Choosing appropriate mathematical approaches
 4. **Training:** System learns patterns from historical data
 5. **Testing & Validation:** Ensuring accuracy and reliability
@@ -453,7 +453,7 @@ format:
 - Timeline expectations are crucial - some benefits appear quickly while transformational value takes longer
 - The AgBot II example demonstrates this comprehensive approach to ROI calculation
 - Initial costs included development, manufacturing, and implementation
-- Value categories included reduced herbicide costs, labor savings, and yield improvements
+- Value categories included reduced herbicide costs, labour savings, and yield improvements
 - Their measurement approach compared traditional methods to autonomous operations
 - Timeline expectations recognised short-term operational savings and long-term transformation of weed management
 - The projected AU$1.3 billion national impact shows the scaling potential
@@ -502,7 +502,7 @@ format:
 - Resource Assessment identifies capability gaps in technology, data, expertise, and infrastructure
 - Cost-Benefit Structure creates a comprehensive model of investment and returns
 - The Wagga Wagga "hands-free" farm applied this approach to autonomous farming
-- They identified specific problems - labor shortages, precision limitations, and management complexity
+- They identified specific problems - labour shortages, precision limitations, and management complexity
 - Their value proposition focused on higher yields, reduced inputs, and consistent quality
 - Their resource assessment identified gaps in technical infrastructure and staff capabilities
 - Their cost-benefit structure modeled initial investment against multi-year productivity gains

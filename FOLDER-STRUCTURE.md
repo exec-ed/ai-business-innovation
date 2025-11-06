@@ -1,6 +1,6 @@
 # Folder Structure - Clear Separation of Concerns
 
-## Final Organization (After Cleanup)
+## Final Organisation (After Cleanup)
 
 ### 📁 `participant-materials/` - ALL PARTICIPANT-FACING CONTENT
 **Purpose:** Everything participants see/use during and after workshop

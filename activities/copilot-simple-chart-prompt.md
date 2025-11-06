@@ -9,7 +9,7 @@
 ## THE SIMPLE PROMPT (Copy This)
 
 ```
-Analyze this RetailFlow store data and create 3 charts:
+Analyse this RetailFlow store data and create 3 charts:
 
 1. Create a column chart showing average Monthly_Revenue by Region (East, West, South, North). Title it "Revenue by Region".
 

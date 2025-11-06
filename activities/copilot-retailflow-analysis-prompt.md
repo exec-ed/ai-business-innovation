@@ -7,7 +7,7 @@
 ## THE PROMPT (Copy Everything Below)
 
 ```
-You are a retail business analyst for RetailFlow. Analyze this store performance data and provide strategic insights.
+You are a retail business analyst for RetailFlow. Analyse this store performance data and provide strategic insights.
 
 ANALYSIS REQUIRED:
 
@@ -43,7 +43,7 @@ Compare East, West, South, and North regions:
 Which region should be priority for AI investment rollout?
 
 5. LEGACY STORE PROBLEM
-Analyze stores by age:
+Analyse stores by age:
 - Group stores into: New (0-5 years), Established (6-14 years), Legacy (15+ years)
 - Show average revenue, satisfaction, and online % for each group
 - Create a table showing the "aging curve"
@@ -81,7 +81,7 @@ Chart 3: CHATBOT IMPACT COMPARISON
 - Type: Clustered column chart
 - Categories: With Chatbot vs. Without Chatbot
 - 3 series: Monthly Revenue, Customer Satisfaction (×100K for scale), Online Orders %
-- Different color for each metric
+- Different colour for each metric
 - Include legend
 
 Chart 4: ONLINE ORDERS vs. REVENUE
@@ -89,7 +89,7 @@ Chart 4: ONLINE ORDERS vs. REVENUE
 - X-axis: Online_Orders_Pct
 - Y-axis: Monthly_Revenue
 - Show R² value and trendline equation
-- Color points by Has_AI_Chatbot (different colors)
+- Colour points by Has_AI_Chatbot (different colors)
 
 Make all charts professional, presentation-ready, with clear titles and labels.
 
@@ -239,7 +239,7 @@ EXPECTED 3-YEAR RETURN:
 If you only have 5 minutes, use this condensed prompt:
 
 ```
-Analyze this RetailFlow store data:
+Analyse this RetailFlow store data:
 
 1. Compare stores WITH AI chatbot vs. WITHOUT. Show average revenue, customer satisfaction, and online orders % for each group. What's the chatbot impact?
 
@@ -284,14 +284,14 @@ Be specific with numbers. Show calculations.
 ### Timeline:
 
 **11:30 AM - Before Exercise 2:**
-- "Let me show you AI analyzing RetailFlow data"
+- "Let me show you AI analysing RetailFlow data"
 - 10-minute demo with this prompt
 - Shows speed and pattern detection
 - Then: "Now YOU'll use AI for strategic analysis"
 
 **12:30 PM - During Lunch (Optional):**
 - Share CSV with interested participants
-- "Try analyzing this yourself over lunch"
+- "Try analysing this yourself over lunch"
 - Compare findings when session resumes
 
 **2:15 PM - During Dragon's Den Prep:**
@@ -402,7 +402,7 @@ Use professional template. Keep text minimal. Let charts tell the story.
 
 ## Alternative: If Copilot Doesn't Create Charts
 
-Some versions of Copilot may analyze but not create charts. If this happens:
+Some versions of Copilot may analyse but not create charts. If this happens:
 
 ### Manual Chart Creation (Fast):
 1. Select data for Chart 1

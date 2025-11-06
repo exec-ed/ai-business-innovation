@@ -29,7 +29,7 @@ RetailFlow Inc. is a fictional mid-market retail company that will serve as the 
 ### Your Challenge
 
 You will be asked to:
-- Analyze RetailFlow's strategic position
+- Analyse RetailFlow's strategic position
 - Evaluate AI investment proposals
 - Make funding recommendations
 - Present to an Investment Committee
@@ -50,7 +50,7 @@ You will be asked to:
 **Key Information:**
 - This is a realistic but fictional company
 - Financial data is designed for learning purposes
-- Apply insights to your own organization
+- Apply insights to your own organisation
 
 ---
 
@@ -72,7 +72,7 @@ You will be asked to:
 - Investment budget and constraints
 - Strategic priorities for AI spending
 
-**Section 5: Organizational Readiness**
+**Section 5: Organisational Readiness**
 - Team capabilities
 - Change readiness
 

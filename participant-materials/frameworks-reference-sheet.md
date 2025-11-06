@@ -41,7 +41,7 @@ This reference sheet provides quick access to the five frameworks taught in the 
 
 **Framework 5: Innovation Adoption Framework**
 - Understand barriers to AI adoption
-- Plan for organizational change management
+- Plan for organisational change management
 
 ---
 
@@ -367,7 +367,7 @@ For each AI proposal:
 - **Output:** Classification (Optimize/Enhance/Revolutionize/Transform)
 
 **📊 Data Value Pyramid**
-- **Use when:** Assessing organizational AI readiness
+- **Use when:** Assessing organisational AI readiness
 - **Question it answers:** "Are we ready for this AI initiative?"
 - **Output:** Current data maturity level (1-5)
 

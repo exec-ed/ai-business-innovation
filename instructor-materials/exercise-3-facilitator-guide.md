@@ -48,7 +48,7 @@
 - **Chatbot team:** Positions as "safe, reliable, fits budget"
 - **Pricing team:** Highlights ROI, downplays ethics question
 - **Inventory team:** Claims it's "worth the premium investment," justifies exceeding cap
-- **Fraud team:** Focuses on "highest ROI," tries to minimize 6-mo delay impact
+- **Fraud team:** Focuses on "highest ROI," tries to minimise 6-mo delay impact
 
 **Don't interfere.** Teams naturally advocate for their projects. That's the point.
 

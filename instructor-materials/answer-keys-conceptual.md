@@ -57,7 +57,7 @@ You: "I'm noticing 8 of 10 cards here. Is that intentional or default?"
 Team: "Just how we naturally think"
 You: "Got it. Question: If competitors invest 30% in Transform, what happens to you if you stay 90% Optimize?"
 
-*Don't tell them to change. Let them realize the strategic risk.*
+*Don't tell them to change. Let them realise the strategic risk.*
 
 **If team dismisses Transform:**
 You: "What would a transformational AI initiative look like for you?"
@@ -69,7 +69,7 @@ You: "That uncertainty—is it 'impossible' or 'we haven't thought about it'?"
 ### What Teams Learn (Not Outputs)
 
 ✓ Strategic balance isn't accidental
-✓ Most organizations cluster in Optimize by default
+✓ Most organisations cluster in Optimize by default
 ✓ Intentional portfolio strategy requires explicit conversation
 ✓ Transform initiatives feel risky because they ARE—but that's the point
 
@@ -107,14 +107,14 @@ Team reads AI response: "AI says competitors will use embedded finance. That's n
 **What AI typically generates:**
 - Platform aggregators (Google Shopping, Pinterest) bypassing your website
 - Suppliers going direct-to-consumer with AI
-- Gen Z expectations about AI personalization
+- Gen Z expectations about AI personalisation
 - Second-order effects of dynamic pricing (data flywheel)
 - Customer data devaluation as competitors learn faster
 
 **What good teams do with this:**
 - Pick ONE insight: "The Gen Z expectations gap is real for us"
 - Connect to their business: "We're averaging customer age 38. Gen Z is already shopping elsewhere."
-- Build on it: "So our priority should be personalization, not pricing optimization?"
+- Build on it: "So our priority should be personalisation, not pricing optimization?"
 - Decide to act: "Add to our H2 roadmap"
 
 **You observe:** Team didn't accept AI wholesale. They evaluated, connected to their context, decided what matters.
@@ -229,7 +229,7 @@ You: "That's the value. Not accuracy, but different perspective."
 **You hear:** "AI identified competitive threats from adjacent industries"
 **You think:** Good—they extracted breadth value from AI
 
-**You hear:** "We realized we've been optimizing when we should transform"
+**You hear:** "We realised we've been optimizing when we should transform"
 **You think:** Good—frameworks + exercise created insight
 
 **You hear:** "AI said X and we're going to do it"

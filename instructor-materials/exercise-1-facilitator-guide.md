@@ -1,6 +1,6 @@
 # Exercise 1: AI Tech Radar - Facilitator Guide
 **Duration:** 45 minutes (9:55 AM - 10:40 AM)
-**Core Learning:** Most organizations cluster in "Optimize" quadrant. Strategic leaders intentionally balance across all four.
+**Core Learning:** Most organisations cluster in "Optimize" quadrant. Strategic leaders intentionally balance across all four.
 
 ---
 
@@ -20,7 +20,7 @@
 ## Phase 1: Card Introduction (5 min)
 
 **Script:**
-"You're going to map your organization's AI capabilities using 12 capability cards. Each card represents a different AI application your company COULD pursue.
+"You're going to map your organisation's AI capabilities using 12 capability cards. Each card represents a different AI application your company COULD pursue.
 
 Your job: Place each card on the matrix to identify:
 1. Which quadrant it belongs (Optimize = Process Improvements, Transform = Business Model Innovation)
@@ -72,7 +72,7 @@ Go."
 - Ask: "Is this intentional or an accident?"
 
 **Key insight to surface (but let them discover):**
-"Strategic organizations intentionally spread across all four quadrants. Why? Because you need:
+"Strategic organisations intentionally spread across all four quadrants. Why? Because you need:
 - **Optimize:** Keep lights on, improve margins
 - **Transform:** Prepare for future competition
 - **H1:** Immediate ROI

@@ -33,7 +33,7 @@ Framework understanding → AI-augmented thinking → Investment decisions using
 
 Morning: Participants learn traditional frameworks (ROI, portfolio balance, Three Horizons)
 
-Afternoon Dragon's Den: They apply frameworks and realize **AI-specific criteria change which projects to fund**
+Afternoon Dragon's Den: They apply frameworks and realise **AI-specific criteria change which projects to fund**
 
 **The insight:**
 - Traditional IT: "Highest ROI wins"
@@ -148,7 +148,7 @@ This is the whole point. Let it emerge naturally.
 ## Key Teaching Points (Weave In Naturally)
 
 **Exercise 1:**
-- "Most organizations cluster in Optimize. Strategic leaders intentionally balance."
+- "Most organisations cluster in Optimize. Strategic leaders intentionally balance."
 - "Transform feels risky because it IS. But the risk of ONLY optimizing is worse."
 
 **Exercise 2:**
