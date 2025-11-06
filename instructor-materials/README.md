@@ -1,166 +1,172 @@
-# Instructor Materials
-
+# Instructor Materials - Simplified Structure
 **Confidential - For Course Facilitators Only**
 
 ---
 
-## Folder Structure
+## Quick Start
 
-```
-instructor-materials/
-├── README.md                    ← This file
-├── exercise-guides/             ← Detailed facilitation guides for each exercise
-│   ├── exercise-1-guide.md      (AI Tech Radar with Data Readiness)
-│   ├── exercise-2-guide.md      (AI-Assisted Strategic Analysis)
-│   └── exercise-3-guide.md      (Dragon's Den Investment Simulation)
-├── facilitation-notes/          ← Tips, common issues, what to watch for
-│   ├── what-makes-ai-different-notes.md
-│   ├── dragon-den-debrief-notes.md
-│   └── ai-tools-troubleshooting.md
-└── answer-keys/                 ← Expected outputs, sample responses
-    ├── exercise-1-sample-outputs.md
-    ├── exercise-2-ai-responses.md
-    └── dragon-den-decision-rationales.md
-```
+**New to this course?** Read `FACILITATOR-START-HERE.md` (10 minutes)
+
+**Preparing to teach?**
+1. Read `FACILITATOR-START-HERE.md`
+2. Read the 3 exercise facilitator guides (1 hour total)
+3. Review `answer-keys-conceptual.md`
+4. Print materials (checklist in START-HERE)
 
 ---
 
-## What's Different from Student Materials?
+## Your Core Materials
 
-**Student-facing (activities/ folder):**
-- Exercise instructions
-- Templates to fill out
-- Scenarios without "answers"
-- Prompts to try
+### 1. FACILITATOR-START-HERE.md
+**One-page overview + navigation guide**
+- Course structure
+- The 3 exercises at a glance
+- Pre-course checklist
+- Facilitation philosophy
+- Common scenarios & solutions
+- What success looks like
 
-**Instructor-facing (this folder):**
-- Facilitation strategies
-- Expected student struggles
-- Sample "good" responses
-- What to emphasize
-- Timing flexibility notes
-- Troubleshooting
+### 2. Exercise Facilitator Guides (Lean, 2-3 pages each)
 
----
+**exercise-1-facilitator-guide.md**
+- AI Tech Radar (9:55-10:40 AM, 45 min)
+- Map 12 AI capabilities onto matrix
+- Help teams notice patterns
+- Simple: Setup → Work → Debrief
 
-## How to Use These Materials
+**exercise-2-facilitator-guide.md**
+- AI-Assisted Strategic Analysis (11:20 AM-12:30 PM, 70 min)
+- Three AI techniques: Risk Deep-Dive, Reverse Prompting, AI Debate
+- Tech troubleshooting (what if internet fails?)
+- BYOD guidelines
+- Backup plans included
 
-**1 week before delivery:**
-- Read exercise-guides/ for each exercise
-- Review sample outputs to know what "good" looks like
-- Prepare for common student issues
+**exercise-3-facilitator-guide.md**
+- Dragon's Den (2:45-3:55 PM, 70 min)
+- Investment committee simulation
+- Four pitch scenarios (Chatbot, Pricing, Inventory, Fraud)
+- Decision archetypes (what different committees typically choose)
+- Debrief talking points
 
-**During delivery:**
-- Keep facilitation-notes/ handy on tablet/laptop
-- Reference during exercises for real-time guidance
-- Use answer-keys/ to calibrate student outputs
+### 3. answer-keys-conceptual.md
+**What "good thinking" looks like (not prescriptive answers)**
 
-**After delivery:**
-- Add your own notes (what worked? what didn't?)
-- Update with new facilitation strategies discovered
-- Share improvements with other facilitators
+For Exercise 1:
+- What to listen for during team discussions
+- Common placement patterns (all valid)
+- Indicators of strong vs. weak thinking
+- What teams learn
 
----
-
-## Key Instructor Resources
-
-### Exercise 1: AI Tech Radar
-**Student facing:** `activities/ai-capability-cards.md` (cards to sort)  
-**Instructor guide:** `exercise-guides/exercise-1-guide.md` (facilitation)  
-**Sample output:** `answer-keys/exercise-1-sample-outputs.md` (what good looks like)
-
-### Exercise 2: AI-Assisted Strategic Analysis ⭐ NEW
-**Student facing:** `activities/ai-assisted-strategic-analysis.md` (instructions)  
-**Instructor guide:** `exercise-guides/exercise-2-guide.md` (facilitation)  
-**Sample responses:** `answer-keys/exercise-2-ai-responses.md` (what AI typically says)  
-**Troubleshooting:** `facilitation-notes/ai-tools-troubleshooting.md` (tech issues)
-
-### Exercise 3: Dragon's Den
-**Student facing:** `activities/investment-pitch-scenarios.md` (scenarios)  
-**Instructor guide:** `exercise-guides/exercise-3-guide.md` (facilitation)  
-**Decision rationales:** `answer-keys/dragon-den-decision-rationales.md` (what committees typically decide)
+For Exercise 2:
+- Signs of good AI engagement
+- Sample prompt/response patterns
+- How to recognize strong thinking
+- Common discoveries teams make
 
 ---
 
-## Common Facilitator Questions
+## What's NOT Here (By Design)
 
-**Q: "Should I give students the answer keys?"**  
-A: No. Answer keys show what "good" looks like so YOU can calibrate. Students discover through facilitated discussion.
+❌ **25+ separate files** (consolidated to 6)
+❌ **Redundant content** (cleaned up)
+❌ **Prescriptive "right answers"** (conceptual guidance instead)
+❌ **Dense theory** (lean, actionable guides)
 
-**Q: "What if students' outputs don't match the sample outputs?"**  
-A: That's okay! Samples show one path, not THE path. Use samples to identify if students are on the right track (thinking critically, applying frameworks) not whether they match exactly.
-
-**Q: "Exercise 2 is new (AI tools). What if it goes poorly?"**  
-A: See `facilitation-notes/ai-tools-troubleshooting.md`. Backup plan: You demonstrate AI live, students observe and discuss. The learning still happens.
-
-**Q: "Students want to skip frameworks and just use AI for everything."**  
-A: This is the key teaching moment. See `facilitation-notes/dragon-den-debrief-notes.md` for how to emphasize: "AI helps you THINK, frameworks help you DECIDE. You need both."
+✅ **What you need to facilitate well**
+✅ **Clear, findable, usable**
 
 ---
 
-## Continuous Improvement
+## How to Use During the Course
 
-**After each delivery, update:**
+**Day of course:**
+- Have `FACILITATOR-START-HERE.md` printed at your station
+- 30 min before each exercise, open that exercise's guide
+- Use checklist during setup
+- Refer to troubleshooting sections as needed
 
-1. **What worked well?** Add to facilitation-notes/
-2. **What confused students?** Update exercise-guides/ with clearer instructions
-3. **New student insights?** Add to answer-keys/ as alternatives
-4. **Timing issues?** Update FACILITATOR_GUIDE.md with better estimates
-
-**Share with other facilitators:**
-- What facilitation techniques worked?
-- What student questions stumped you?
-- What "aha!" moments happened?
-
----
-
-## Quick Reference
-
-### Pre-Course Prep
-1. Read: FACILITATOR_GUIDE.md (complete guide)
-2. Read: DELIVERY_TIMELINE.md (timing)
-3. Read: All 3 exercise-guides/ (detailed facilitation)
-4. Skim: answer-keys/ (know what good looks like)
-
-### During Exercise 1
-Open: `exercise-guides/exercise-1-guide.md`  
-Reference: `answer-keys/exercise-1-sample-outputs.md`
-
-### During Exercise 2
-Open: `exercise-guides/exercise-2-guide.md`  
-Reference: `answer-keys/exercise-2-ai-responses.md`  
-If tech issues: `facilitation-notes/ai-tools-troubleshooting.md`
-
-### During Exercise 3
-Open: `exercise-guides/exercise-3-guide.md`  
-Reference: `answer-keys/dragon-den-decision-rationales.md`  
-For debrief: `facilitation-notes/dragon-den-debrief-notes.md`
+**Between courses:**
+- Add notes to guides ("this worked well," "students asked about X")
+- Share tips with other facilitators
+- Keep guides updated
 
 ---
 
-## Philosophy: Facilitation vs. Lecturing
+## Reference Materials
 
-**These materials help you FACILITATE, not LECTURE.**
+**Background reading (optional depth):**
+- `gemini-reports/` - Case studies on AI in business
+- `wisdom-ai/` - Thought leadership pieces
+
+These are NOT required prep—they're background reading if you want deeper context.
+
+---
+
+## Philosophy
+
+These guides help you **facilitate, not lecture.**
 
 **Facilitation means:**
 - ✅ Students discover insights through guided exercises
 - ✅ You ask probing questions, don't give answers
-- ✅ Use answer keys to calibrate, not to dictate "right" answers
+- ✅ Productive struggle teaches better than clear answers
 - ✅ Create "aha!" moments through experience
 
-**NOT:**
-- ❌ "Here's the right answer" (kills learning)
-- ❌ "Everyone should have X in their output" (forces conformity)
-- ❌ Rushing to "fix" student responses (let them struggle productively)
-
-**The best facilitation:**
-Student: "So AI identified these 3 threats we missed..."  
-You: "Interesting. Why do you think your team missed those?"  
-Student: "Because we're too close to our business. AI has breadth we lack."  
-You: "That's the insight. AI augments, doesn't replace. You brought context, AI brought breadth."
-
-**Use these materials to enable that kind of learning.**
+**Tools:**
+- Exercise guides: Tell you what to SAY and DO
+- Conceptual answer keys: Show you what good THINKING looks like
+- START-HERE: Help you stay on track
 
 ---
 
-**This folder is your teaching toolkit. Keep it updated. Share what works. Make it better for the next facilitator.**
+## Files at a Glance
+
+```
+instructor-materials/
+├── FACILITATOR-START-HERE.md          ← Start here (10 min)
+├── exercise-1-facilitator-guide.md    ← Exercise 1 (45 min activity)
+├── exercise-2-facilitator-guide.md    ← Exercise 2 (70 min activity)
+├── exercise-3-facilitator-guide.md    ← Exercise 3 (70 min activity)
+├── answer-keys-conceptual.md          ← What "good" looks like
+├── README.md                          ← This file
+├── gemini-reports/                    ← Background reading (optional)
+└── wisdom-ai/                         ← Background reading (optional)
+```
+
+---
+
+## Common Questions
+
+**Q: Should I memorize these guides?**
+A: No. Use them during course. They're checklists + scripts, not memorization material.
+
+**Q: What if I want to change something?**
+A: Great. Experiment. If it works, update the guide. Share with other facilitators.
+
+**Q: How do I handle student pushback on exercises?**
+A: See `FACILITATOR-START-HERE.md` section "Common Situations & How to Handle Them"
+
+**Q: What if tech fails during Exercise 2?**
+A: See `exercise-2-facilitator-guide.md` "Backup Plans" section.
+
+**Q: Should I show students the answer keys?**
+A: No. They show you what good thinking looks like, not what students must produce.
+
+---
+
+## For Next Facilitator
+
+When you're done teaching:
+1. Add notes to the guides (what worked, what didn't)
+2. Update checklists based on your experience
+3. Share tips with the facilitator community
+4. Keep these guides current
+
+**Example updates:**
+- "Added this facilitation move to Exercise 1, seemed to help"
+- "Removed this tech requirement, too much setup"
+- "Students asked about X, added to troubleshooting section"
+
+---
+
+**These materials are your toolkit. Keep them simple. Keep them updated. Make them better for the next facilitator.**
