@@ -48,6 +48,13 @@
 - Decision archetypes (what different committees typically choose)
 - Debrief talking points
 
+**exercise-4-facilitator-guide.md**
+- Strategic Response Scenarios (1:15-1:30 PM, 15 min)
+- Post-lunch energizer with rapid-fire decisions
+- Anonymous voting (MS Forms) and group discussion
+- Three scenarios building on frameworks
+- Muscle memory development for framework thinking
+
 ### 3. answer-keys-conceptual.md
 **What "good thinking" looks like (not prescriptive answers)**
 
@@ -127,6 +134,7 @@ instructor-materials/
 ├── exercise-1-facilitator-guide.md    ← Exercise 1 (45 min activity)
 ├── exercise-2-facilitator-guide.md    ← Exercise 2 (70 min activity)
 ├── exercise-3-facilitator-guide.md    ← Exercise 3 (70 min activity)
+├── exercise-4-facilitator-guide.md    ← Exercise 4 (15 min activity)
 ├── answer-keys-conceptual.md          ← What "good" looks like
 ├── README.md                          ← This file
 ├── gemini-reports/                    ← Background reading (optional)

@@ -43,7 +43,7 @@ This is the whole point. Let it emerge naturally.
 
 ---
 
-## The 3 Exercises at a Glance
+## The 4 Exercises at a Glance
 
 ### Exercise 1: AI Tech Radar (45 min)
 **What:** Map 12 AI capability cards onto matrix
@@ -65,6 +65,14 @@ This is the whole point. Let it emerge naturally.
 **Your job:** Brief teams, moderate pitches, let committee debate, debrief on AI-specific thinking
 
 **Read:** `exercise-3-facilitator-guide.md`
+
+### Exercise 4: Strategic Response Scenarios (15 min)
+**What:** Three rapid-fire strategic decisions with anonymous voting (MS Forms)
+**Why:** Build framework muscle memory. Participants use frameworks automatically under time pressure.
+**Your job:** Read scenarios, time voting, facilitate discussion, celebrate framework thinking
+
+**Read:** `exercise-4-facilitator-guide.md`
+**When:** 1:15 PM - 1:30 PM (post-lunch energizer, before Dragon's Den team prep)
 
 ---
 
@@ -268,7 +276,8 @@ Usually skeptics convert after seeing results.
 **Break (10:40-11:20)**
 **Exercise 2 (11:20-12:30):** Open `exercise-2-facilitator-guide.md`
 **Lunch (12:30-1:15)**
-**Exercise 3 Prep (1:15-2:45):** Brief teams using `exercise-3-facilitator-guide.md`
+**Exercise 4 (1:15-1:30):** Open `exercise-4-facilitator-guide.md` (3 scenarios, anonymous voting)
+**Exercise 3 Team Prep (1:30-2:45):** Brief teams using `exercise-3-facilitator-guide.md`
 **Exercise 3 Pitches/Deliberation (2:45-3:50):** Facilitation steps in `exercise-3-facilitator-guide.md`
 **Debrief & Final Reflection (3:50-4:25)**
 

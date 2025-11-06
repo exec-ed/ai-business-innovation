@@ -82,13 +82,14 @@ PREREADING_FILES=(
 )
 
 # Instructor materials to convert (will be password protected)
-# Note: These are in subdirectories of instructor-materials/
+# Note: These are now in the root of instructor-materials/ (simplified structure)
 INSTRUCTOR_FILES=(
-  "facilitation-notes/facilitator-guide"
-  "facilitation-notes/delivery-timeline"
-  "facilitation-notes/storytelling-narratives"
-  "exercise-guides/exercise-2-guide"
-  "answer-keys/dragon-den-decision-rationales"
+  "FACILITATOR-START-HERE"
+  "exercise-1-facilitator-guide"
+  "exercise-2-facilitator-guide"
+  "exercise-3-facilitator-guide"
+  "exercise-4-facilitator-guide"
+  "answer-keys-conceptual"
 )
 
 # Function: Convert markdown to HTML for web
@@ -205,14 +206,11 @@ echo -e "${BLUE}Building Instructor Materials (Password Protected)${NC}"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 for file in "${INSTRUCTOR_FILES[@]}"; do
-  # Extract filename without path for output
-  filename=$(basename "$file")
-  # Full path for source
+  # Files are now in root of instructor-materials/, not subdirectories
   source_path="$INSTRUCTOR_DIR/$file"
-  
+
   # Check if source exists
   if [ -f "${source_path}.md" ]; then
-    # Convert using full path
     convert_to_html "$file" "$INSTRUCTOR_DIR" "$OUTPUT_INSTRUCTOR" "instructor-page.html"
     # Skip PDF generation locally (enable in CI with LaTeX)
     # convert_to_pdf "$file" "$INSTRUCTOR_DIR" "$OUTPUT_INSTRUCTOR_PDF"
@@ -252,24 +250,63 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
       </header>
 
       <div class="content">
-        <h2>Facilitation Resources</h2>
+        <h2>Quick Start</h2>
+        <div class="resource-grid" style="display: grid; gap: 2rem; margin: 2rem 0;">
+          <div class="resource-item" style="border: 3px solid #667eea; padding: 1.5rem; border-radius: 8px; background: #f0f4ff;">
+            <h3>🚀 START HERE</h3>
+            <p>One-page overview, navigation, prep checklists, facilitation philosophy</p>
+            <div style="margin-top: 1rem;">
+              <a href="facilitator-start-here.html" class="btn-primary">Read Now</a>
+            </div>
+          </div>
+        </div>
 
+        <hr style="margin: 3rem 0; border: none; border-top: 1px solid #e5e7eb;">
+
+        <h2>Exercise Facilitator Guides (Use During Course)</h2>
         <div class="resource-grid" style="display: grid; gap: 2rem; margin: 2rem 0;">
           <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
-            <h3>📖 Facilitation Guide</h3>
-            <p>Complete delivery guide with timing, activities, and teaching notes</p>
+            <h3>1️⃣ AI Tech Radar (45 min)</h3>
+            <p>Portfolio mapping with capability cards. Help teams notice patterns.</p>
             <div style="margin-top: 1rem;">
-              <a href="facilitation-guide.html" class="btn-primary">View Online</a>
-              <a href="pdf/facilitation-guide.pdf" class="btn-secondary" style="margin-left: 1rem;">Download PDF</a>
+              <a href="exercise-1-facilitator-guide.html" class="btn-primary">View Guide</a>
             </div>
           </div>
 
           <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
-            <h3>💡 Exercise Facilitation Notes</h3>
-            <p>Detailed notes for running each exercise effectively</p>
+            <h3>2️⃣ AI-Assisted Strategic Analysis (70 min)</h3>
+            <p>Three AI techniques: Risk Deep-Dive, Reverse Prompting, AI Debate. Includes tech troubleshooting.</p>
             <div style="margin-top: 1rem;">
-              <a href="exercise-facilitation-notes.html" class="btn-primary">View Online</a>
-              <a href="pdf/exercise-facilitation-notes.pdf" class="btn-secondary" style="margin-left: 1rem;">Download PDF</a>
+              <a href="exercise-2-facilitator-guide.html" class="btn-primary">View Guide</a>
+            </div>
+          </div>
+
+          <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
+            <h3>3️⃣ Dragon's Den Investment Simulation (70 min)</h3>
+            <p>Investment committee simulation. Decision archetypes show 4 different committee types.</p>
+            <div style="margin-top: 1rem;">
+              <a href="exercise-3-facilitator-guide.html" class="btn-primary">View Guide</a>
+            </div>
+          </div>
+
+          <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
+            <h3>4️⃣ Strategic Response Scenarios (15 min)</h3>
+            <p>Post-lunch energizer. Three rapid-fire decisions with anonymous voting. Builds framework muscle memory.</p>
+            <div style="margin-top: 1rem;">
+              <a href="exercise-4-facilitator-guide.html" class="btn-primary">View Guide</a>
+            </div>
+          </div>
+        </div>
+
+        <hr style="margin: 3rem 0; border: none; border-top: 1px solid #e5e7eb;">
+
+        <h2>Reference Materials</h2>
+        <div class="resource-grid" style="display: grid; gap: 2rem; margin: 2rem 0;">
+          <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
+            <h3>📚 Conceptual Answer Keys</h3>
+            <p>What "good thinking" looks like for Exercises 1 & 2. Not prescriptive answers, but facilitation guidance.</p>
+            <div style="margin-top: 1rem;">
+              <a href="answer-keys-conceptual.html" class="btn-primary">View Online</a>
             </div>
           </div>
         </div>
