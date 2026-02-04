@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-AI is software that learns patterns from data rather than following explicit rules. Five types matter for business: Predictive Analytics (forecasting demand, churn, fraud), Natural Language Processing (chatbots, document analysis), Computer Vision (quality inspection, security), Generative AI (content creation, code generation), and Recommendation Systems (personalisation, cross-sell). Your organisation's data maturity determines which AI is realistic—most companies are at Level 2-3 (basic data collection/integration) but attempt Level 4-5 AI (predictive/autonomous), causing the 85% failure rate. Before investing, assess: Do you have 2+ years of clean, unbiased, integrated data? Are patterns stable enough to predict? What's the cost of being wrong? Data readiness gates everything else.
+AI is software that learns patterns from data rather than following explicit rules. Six types matter for business: Predictive Analytics (forecasting demand, churn, fraud), Natural Language Processing (chatbots, document analysis), Computer Vision (quality inspection, security), Generative AI (content creation, code generation), AI Agents (autonomous multi-step task completion), and Recommendation Systems (personalisation, cross-sell). Your organisation's data maturity determines which AI is realistic—most companies are at Level 2-3 (basic data collection/integration) but attempt Level 4-5 AI (predictive/autonomous), causing the 85% failure rate. Before investing, assess: Do you have 2+ years of clean, unbiased, integrated data? Are patterns stable enough to predict? What's the cost of being wrong? Data readiness gates everything else.
 
 **Reading time:** 12 minutes
 **Key takeaway:** Match your AI ambitions to your data reality—you can't do Level 5 AI with Level 2 data.
@@ -114,6 +114,29 @@ AI is software that learns patterns from data rather than following explicit rul
 - Creativity and variation are valued
 
 **Example:** Marketing teams using ChatGPT to draft email campaigns.
+
+### 6. AI Agents
+**What they do:** Autonomously complete multi-step tasks by planning, using tools, and adapting
+
+**Business applications:**
+- Automated research and report generation
+- Customer onboarding workflows
+- IT operations and incident response
+- Supply chain coordination across systems
+
+**When they work well:**
+- Tasks have clear objectives but variable paths
+- Multiple systems or tools need coordinating
+- Human oversight is built into the workflow
+
+**What makes them different:**
+- Traditional AI: single input → single output (one prediction, one classification)
+- AI Agents: receive a goal → plan steps → execute across tools → adapt if something fails
+- Can chain together multiple AI capabilities (search, analyse, draft, verify)
+
+**Example:** An AI agent that receives "prepare a competitive analysis" then autonomously searches databases, pulls financial reports, drafts a summary, and flags areas needing human review.
+
+**Strategic implication:** AI agents are shifting the conversation from "AI as a tool" to "AI as a worker." This changes how you scope AI initiatives — some projects that previously required teams of people coordinating across systems can now be partially automated. But agents also amplify the risks covered in this masterclass: data dependency, ethical risk, and the need for human oversight all become more critical when AI operates autonomously.
 
 ---
 
@@ -416,7 +439,7 @@ Understanding where you are helps determine where to invest.
 
 2. **Data is the foundation:** Without quality data, AI won't work.
 
-3. **AI is narrow:** Each application requires separate development.
+3. **AI is mostly narrow, but agents are changing this:** Each application typically requires separate development, though AI agents are beginning to chain capabilities together for multi-step tasks.
 
 4. **Change management matters:** Technology success ≠ business success.
 

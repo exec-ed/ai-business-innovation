@@ -5,7 +5,7 @@
 **Duration:** 1 day (9:00 AM - 4:30 PM)
 **Target:** Executives, C-suite leaders, strategists, innovation officers, portfolio managers
 **Style:** Strategic frameworks with investment decision simulation
-**Goal:** Learn to evaluate, prioritize, and invest in AI initiatives using proven strategic frameworks
+**Goal:** Learn to evaluate, prioritise, and invest in AI initiatives using proven strategic frameworks. This is a strategic leadership masterclass — not a technical implementation or hands-on coding workshop.
 
 ---
 

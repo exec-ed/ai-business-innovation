@@ -74,6 +74,13 @@ Human bias | Amplified bias at scale
 
 **Implication:** AI needs DIFFERENT evaluation criteria
 
+**The latest shift: AI Agents**
+Traditional AI: Single task (predict, classify, generate)
+AI Agents: Multi-step autonomous workflows (plan → execute → adapt)
+
+This makes AI-specific evaluation criteria even MORE important.
+You covered this in your pre-reading.
+
 :::
 
 ---

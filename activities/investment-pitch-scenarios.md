@@ -562,34 +562,69 @@ Implement AI-powered fraud detection across online transactions, returns, and lo
 
 ## Investment Committee Evaluation Framework
 
-### Use the AI Investment Model to Score Each Pitch
+### Step 1: Agree on Weights (Committee Discussion — 5 min)
 
-**Step 1: Value Category Assessment**
-Score each initiative (1-5) on:
-- Cost Reduction potential
-- Revenue Growth potential
-- Risk Reduction impact
-- Strategic Positioning value
+Before hearing pitches, the Investment Committee must agree on how much each criterion matters.
+Weights must total 100%. This discussion is itself a strategic exercise — what does RetailFlow
+value most?
 
-**Step 2: Three Horizons Fit**
-- Which horizon does this belong to?
-- Do we have the right portfolio balance?
-- Are we over/under-investing in any horizon?
+| # | Criterion | Category | Suggested Weight | Your Weight |
+|---|-----------|----------|-----------------|-------------|
+| 1 | Strategic Fit | Traditional | 15% | ___% |
+| 2 | Financial ROI | Traditional | 15% | ___% |
+| 3 | Implementation Feasibility | Traditional | 10% | ___% |
+| 4 | Portfolio Balance (Horizons) | Traditional | 10% | ___% |
+| 5 | Data Readiness | AI-Specific | 20% | ___% |
+| 6 | Ethical Risk (inverse) | AI-Specific | 15% | ___% |
+| 7 | Explainability Fit | AI-Specific | 10% | ___% |
+| 8 | Continuous Learning Viability | AI-Specific | 5% | ___% |
+|   | **TOTAL** | | **100%** | **100%** |
 
-**Step 3: Data & Implementation Readiness**
-- Do we have the required data?
-- Do we have the capabilities to execute?
-- What's the realistic timeline?
+**Facilitation note:** The suggested weights deliberately give AI-specific criteria 50% of the
+total weight. If the committee shifts weight toward traditional criteria (especially ROI), the
+Dragon's Den outcome changes — and that's the learning moment.
 
-**Step 4: ROI Calculation**
-- What's the 3-year net present value?
-- What are the assumptions/risks?
-- How does it compare to our hurdle rates?
+### Step 2: Score Each Pitch (During Pitches)
 
-**Step 5: Portfolio Optimization**
-- With $2M budget, what combination creates most value?
-- Are we diversified across horizons?
-- Do initiatives build on each other?
+After each pitch, score the initiative 1-5 on each criterion:
+
+**Scoring Guide:**
+- **5** = Excellent (strong evidence, low risk, high readiness)
+- **4** = Good (solid case, manageable gaps)
+- **3** = Adequate (meets minimum, some concerns)
+- **2** = Weak (significant gaps or risks)
+- **1** = Poor (fundamental issues, not ready)
+
+#### Scorecard
+
+| Criterion | Weight | Chatbot | Pricing | Inventory | Fraud |
+|-----------|--------|---------|---------|-----------|-------|
+| Strategic Fit | ___% | /5 | /5 | /5 | /5 |
+| Financial ROI | ___% | /5 | /5 | /5 | /5 |
+| Implementation Feasibility | ___% | /5 | /5 | /5 | /5 |
+| Portfolio Balance | ___% | /5 | /5 | /5 | /5 |
+| Data Readiness | ___% | /5 | /5 | /5 | /5 |
+| Ethical Risk (inverse) | ___% | /5 | /5 | /5 | /5 |
+| Explainability Fit | ___% | /5 | /5 | /5 | /5 |
+| Continuous Learning | ___% | /5 | /5 | /5 | /5 |
+| **Weighted Total** | 100% | | | | |
+
+*Weighted Total = Sum of (Score × Weight) for each criterion*
+
+### Step 3: Calculate and Compare
+
+1. Multiply each score by its weight
+2. Sum weighted scores for each initiative
+3. Rank initiatives by weighted total
+4. Check: Does the ranking match what ROI alone would tell you?
+
+### Step 4: Portfolio Decision
+
+With $2M budget and the constraint rules (at least 2 initiatives, max $1.2M each,
+18-month results), select your portfolio. Use the weighted scores to justify your choices.
+
+**Key question for debrief:** "If you had weighted ROI at 50% instead, which projects
+would you have funded? What would you have missed?"
 
 ### Sample Decision Frameworks
 
@@ -641,3 +676,4 @@ Committee announces investment decisions with rationale
 - Portfolio balance vs. "best" single initiative
 - Data readiness is often the constraint
 - Change management is as important as technology
+- Weighting criteria is itself a strategic decision — what you value determines what you fund
