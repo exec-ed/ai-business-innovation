@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own AI Assessment App | AI-Driven Business Innovation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .intro {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #3498db;
+        }
+        .prompt-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .prompt-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .prompt-number {
+            background: #3498db;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .prompt-number.two { background: #9b59b6; }
+        .prompt-number.three { background: #27ae60; }
+        .prompt-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .prompt-description {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        .prompt-box {
+            background: #f4f5f7;
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.85rem;
+            white-space: pre-wrap;
+            border: 1px solid #e1e4e8;
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        .copy-btn:hover {
+            background: #2980b9;
+        }
+        .copy-btn.copied {
+            background: #27ae60;
+        }
+        .tips {
+            background: #fef9e7;
+            border-left: 4px solid #f39c12;
+            padding: 1rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 2rem;
+        }
+        .tips h3 {
+            color: #d68910;
+            margin-bottom: 0.5rem;
+        }
+        .tips ul {
+            margin-left: 1.25rem;
+        }
+        .tips li {
+            margin-bottom: 0.5rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e1e4e8;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="materials.html" class="back-link">← Back to Materials</a>
+
+        <h1>Build Your Own AI Assessment App</h1>
+        <p class="subtitle">Three prompts to create a practical tool using what you learned today</p>
+
+        <div class="intro">
+            <p><strong>Take today's frameworks home.</strong> Use these prompts with ChatGPT, Claude, or any AI assistant to build your own AI project assessment tool. Each prompt builds on the previous one.</p>
+        </div>
+
+        <div class="prompt-card">
+            <div class="prompt-header">
+                <div class="prompt-number">1</div>
+                <span class="prompt-title">Basic SPA</span>
+            </div>
+            <p class="prompt-description">Creates a working single-page app with the 5 AI-specific assessment criteria from today's workshop.</p>
+            <div class="prompt-box">
+                <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>Create a single-page web application for assessing AI project readiness. Include these 5 criteria with 1-10 scoring:
+
+1. Data Readiness - Is data available, clean, and sufficient?
+2. Continuous Learning Cost - What's the ongoing maintenance burden?
+3. Accuracy vs Risk - Does AI capability match business risk tolerance?
+4. Explainability - Can we explain AI decisions to stakeholders?
+5. Ethical Risk - Could this discriminate or cause harm?
+
+Calculate a total score with traffic light rating (Red/Amber/Green). Show recommendation: "Ready to proceed" / "Proceed with caution" / "Not ready - address gaps first"
+
+Use HTML, CSS, and vanilla JavaScript in a single file.</div>
+        </div>
+
+        <div class="prompt-card">
+            <div class="prompt-header">
+                <div class="prompt-number two">2</div>
+                <span class="prompt-title">Add Mobile-First Design</span>
+            </div>
+            <p class="prompt-description">Makes your app work beautifully on phones and tablets.</p>
+            <div class="prompt-box">
+                <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>Update this SPA to be mobile-first responsive:
+- Stack form fields vertically on mobile
+- Touch-friendly input sliders instead of number fields
+- Larger tap targets (min 44px)
+- Readable on screens 320px and up
+- Collapsible help text for each criterion</div>
+        </div>
+
+        <div class="prompt-card">
+            <div class="prompt-header">
+                <div class="prompt-number three">3</div>
+                <span class="prompt-title">Add Accessibility</span>
+            </div>
+            <p class="prompt-description">Makes your app usable by everyone, including those using screen readers.</p>
+            <div class="prompt-box">
+                <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>Make this SPA accessible (WCAG 2.1 AA):
+- Proper form labels and ARIA attributes
+- Keyboard navigation for all controls
+- Screen reader announcements for score changes
+- Sufficient color contrast (4.5:1 minimum)
+- Focus indicators visible
+- Skip link to main content</div>
+        </div>
+
+        <div class="tips">
+            <h3>💡 Tips for Success</h3>
+            <ul>
+                <li><strong>Iterate:</strong> Run each prompt, test the result, then add the next layer</li>
+                <li><strong>Customize:</strong> Add your organization's specific criteria or branding</li>
+                <li><strong>Extend:</strong> Ask AI to add PDF export, save/load projects, or team sharing</li>
+                <li><strong>Deploy:</strong> Host on GitHub Pages for free - ask AI to help you set it up</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>AI-Driven Business Innovation Masterclass | Executive Education | Curtin Business School</p>
+            <p>📧 michael.borck@curtin.edu.au</p>
+        </footer>
+    </div>
+
+    <script>
+        function copyPrompt(btn) {
+            const promptBox = btn.parentElement;
+            const text = promptBox.textContent.replace('Copy', '').trim();
+            navigator.clipboard.writeText(text).then(() => {
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Copy';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
