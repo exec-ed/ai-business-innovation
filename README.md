@@ -1,5 +1,9 @@
 # AI-Driven Business Innovation - One Day Masterclass
 
+<!-- BADGES:START -->
+[![presentation](https://img.shields.io/badge/-presentation-9c27b0?style=flat-square)](https://github.com/topics/presentation) [![exec-ed](https://img.shields.io/badge/-exec--ed-673ab7?style=flat-square)](https://github.com/topics/exec-ed) [![ai](https://img.shields.io/badge/-ai-ff6f00?style=flat-square)](https://github.com/topics/ai) [![artificial-intelligence](https://img.shields.io/badge/-artificial--intelligence-blue?style=flat-square)](https://github.com/topics/artificial-intelligence) [![business-strategy](https://img.shields.io/badge/-business--strategy-blue?style=flat-square)](https://github.com/topics/business-strategy) [![edtech](https://img.shields.io/badge/-edtech-4caf50?style=flat-square)](https://github.com/topics/edtech) [![executive-education](https://img.shields.io/badge/-executive--education-blue?style=flat-square)](https://github.com/topics/executive-education) [![frameworks](https://img.shields.io/badge/-frameworks-blue?style=flat-square)](https://github.com/topics/frameworks) [![investment-analysis](https://img.shields.io/badge/-investment--analysis-blue?style=flat-square)](https://github.com/topics/investment-analysis) [![masterclass](https://img.shields.io/badge/-masterclass-blue?style=flat-square)](https://github.com/topics/masterclass)
+<!-- BADGES:END -->
+
 ## Overview
 
 **Duration:** 1 day (9:00 AM - 4:30 PM)
